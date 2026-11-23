@@ -77,7 +77,7 @@
     const grid = svgEl("pattern", { id: "grid", width: 5, height: 5, patternUnits: "userSpaceOnUse" });
     grid.appendChild(svgEl("path", { d: "M5 0H0V5", class: "grid-line" }));
     const hatch = svgEl("pattern", { id: "hatch", width: 0.9, height: 0.9, patternUnits: "userSpaceOnUse", patternTransform: "rotate(45)" });
-    hatch.appendChild(svgEl("rect", { width: 0.3, height: 0.9, fill: "#ffd23a", "fill-opacity": 0.85 }));
+    hatch.appendChild(svgEl("rect", { width: 0.3, height: 0.9, fill: "#e5df00", "fill-opacity": 0.9 }));
     defs.append(grid, hatch);
     svg.appendChild(defs);
     svg.appendChild(svgEl("rect", { x: left, y: top, width, height, fill: "url(#grid)" }));
