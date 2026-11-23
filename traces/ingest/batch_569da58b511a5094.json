@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "FLR-HARD-EXT-SF",
+  "1": "FLR-HARD-EXT-SF",
+  "10": "UNSURE",
+  "11": "CNT-BARRIER-SF",
+  "12": "EQ-AIRM-DAY",
+  "13": "CLN-ANTI-SF",
+  "14": "UNSURE",
+  "15": "CLN-ANTI-SF",
+  "16": "UNSURE",
+  "17": "BSB-RMV-LF",
+  "18": "UNSURE",
+  "19": "UNSURE",
+  "2": "LBR-TECH-HR",
+  "3": "LBR-TECH-HR",
+  "4": "LBR-TECH-HR",
+  "5": "LBR-TECH-HR",
+  "6": "UNSURE",
+  "7": "UNSURE",
+  "8": "UNSURE",
+  "9": "UNSURE"
+ },
+ "texts": [
+  "WTR EXTRACT TIEL/VINYL",
+  "WTR EXTRACT TILE/VINYL",
+  "WTR TECHNICIAN HRS",
+  "WTR TECHNICIAN HRS (bedroom)",
+  "WTR techincian hrs",
+  "WTR technician hrs",
+  "WTR technician hrs ***",
+  "WTR technician hrs - per sf",
+  "WTR technician hrs per estimator",
+  "WTR techniican hrs",
+  "Water mitigation technician, per hour per estimator",
+  "ZIP WALL CONTAINMENT",
+  "air movers (bedroom)",
+  "antimicrobial spray (bedroom)",
+  "antimicrobial spray per estimator",
+  "antimircobial spray",
+  "apply antimicrobial per estimator",
+  "baseboard R&R - remove only",
+  "baseboard R&R - remove only - per sf",
+  "baseboard R&R - reomve only"
+ ],
+ "usage": {
+  "input_tokens": 899,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 355,
+  "usd": 0.0
+ }
+}

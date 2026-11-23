@@ -1,0 +1,232 @@
+{
+ "error": null,
+ "input_hash": "963fee794a95d18d",
+ "items": [
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "The notes say the base cabinets are wet."
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "The notes say the tile floor is wet."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "VAN-DR-EA",
+   "reason": "The notes say the vanity supply line burst."
+  },
+  {
+   "code": "CAB-TOE-RMV-LF",
+   "reason": "The notes say the base cabinets are wet."
+  },
+  {
+   "code": "CLN-TOILET-EA",
+   "reason": "The notes say the vanity supply line burst."
+  },
+  {
+   "code": "PLM-TOILET-DR",
+   "reason": "The notes say the vanity supply line burst."
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "CAB-DRILL-EA",
+   "reason": "The notes say the base cabinets are wet."
+  },
+  {
+   "code": "CLN-ANTI-SF",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "The notes say the floor register is in the wet area."
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "CNT-BARRIER-SF",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "EQ-SCRUB-DAY",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "PPE-EA",
+   "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bathroom"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 16, \"items\": [{\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.88, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.88, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.88, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.75, \"jobs\": 12, \"often_missed\": false}, {\"code\": \"CLN-FINAL-S",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bathroom"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J002\", \"category\": 1, \"notes\": \"Category 1 water: tub overflowed. Tile floor, water on the surface. Drywall wet well above two feet, wicking high on the walls.\", \"items\": [\"CLN-TOILET-EA\", \"DRY-FLDCUT-LF\", \"DRY-RMV-SF\", \"EQ-DEHU-DAY\", \"FLR-HARD-EXT-SF\", \"MON-MOIST-DAY\", \"PLM-TOILET-DR\"]}, {\"job\": \"J018\", \"category\": 1, \"notes\": \"Category 1 water: tub overflowed. Tile floor, water on the surface. Drywall wet to about 10 inches. Floor register in the wet area.\", \"items\": [\"BSB-RMV-LF\", \"CLN-ANTI-SF\", \"CLN-TOILET-EA\", \"DRY-FLDCUT-LF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-HARD-EXT-SF\", \"MO",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "The notes say the base cabinets are wet."
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "The notes say the tile floor is wet."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "VAN-DR-EA",
+      "reason": "The notes say the vanity supply line burst."
+     },
+     {
+      "code": "CAB-TOE-RMV-LF",
+      "reason": "The notes say the base cabinets are wet."
+     },
+     {
+      "code": "CLN-TOILET-EA",
+      "reason": "The notes say the vanity supply line burst."
+     },
+     {
+      "code": "PLM-TOILET-DR",
+      "reason": "The notes say the vanity supply line burst."
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "CAB-DRILL-EA",
+      "reason": "The notes say the base cabinets are wet."
+     },
+     {
+      "code": "CLN-ANTI-SF",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "The notes say the floor register is in the wet area."
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "CNT-BARRIER-SF",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "EQ-SCRUB-DAY",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "PPE-EA",
+      "reason": "The notes say the drywall is wet well above two feet, wicking high on the walls."
+     }
+    ],
+    "room_id": "J014"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7699,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 820,
+  "usd": 0.0
+ }
+}

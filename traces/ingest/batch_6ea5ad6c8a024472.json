@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "UNSURE",
+  "1": "UNSURE",
+  "10": "BSB-RMV-LF",
+  "11": "BSB-RMV-LF",
+  "12": "CAB-TOE-RMV-LF",
+  "13": "TRIM-CSG-RMV-LF",
+  "14": "TRIM-CSG-RMV-LF",
+  "15": "TRIM-CSG-RMV-LF",
+  "16": "APP-DW-DR",
+  "17": "DOR-DR-EA",
+  "18": "DOR-DR-EA",
+  "19": "PLM-TOILET-DR",
+  "2": "MON-MOIST-DAY",
+  "3": "UNSURE",
+  "4": "UNSURE",
+  "5": "CNT-BARRIER-SF",
+  "6": "PPE-EA",
+  "7": "PPE-EA",
+  "8": "PPE-EA",
+  "9": "UNSURE"
+ },
+ "texts": [
+  "MOISTURE READINGS DAILY",
+  "MOISTURE READINGS DAILY (bedroom)",
+  "MONITORING / MAPPING - per sf",
+  "MONITORING / MAPPNIG",
+  "MOVE FURNITURE",
+  "PAD DEMO + BAG",
+  "POLY BARRIER",
+  "PPE",
+  "PPE per estimator",
+  "PROTECTIVE GEAR PER DAY",
+  "PULL BASE",
+  "PULL BASE (bedroom)",
+  "PULL CABINET TOE KICKS",
+  "PULL CASING",
+  "PULL CASING (bedroom)",
+  "PULL CASING ***",
+  "PULL DISHWASHER",
+  "PULL DOOR + RESET",
+  "PULL DOOR + RESET per estimator",
+  "PULL TOILET + RESET"
+ ],
+ "usage": {
+  "input_tokens": 894,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 361,
+  "usd": 0.0
+ }
+}

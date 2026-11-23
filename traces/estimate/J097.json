@@ -1,0 +1,208 @@
+{
+ "error": null,
+ "input_hash": "043557bea8aee086",
+ "items": [
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "The notes say the room is wet, so we need to monitor the moisture."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "The notes say the drywall is wet to about 10 inches, so we need to flood cut it."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "The notes say the room is wet, so we need to clean it."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "The notes say the room is wet, so we need a technician to work on it."
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "The notes say the room is wet, so we need to remove the baseboard."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "The notes say the room is wet, so we need a dehumidifier to dry it."
+  },
+  {
+   "code": "FLR-CRP-EXT-SF",
+   "reason": "The notes say the carpet is soaked, so we need to extract the water from it."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "The notes say the room is wet, so we need an air mover to dry it."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "The notes say there is a window in the wet area, so we need to detach and reset the window screen."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "The notes say the room is wet, so we need to remove the door casing."
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "The notes say the drywall is wet to about 10 inches, so we need to remove it."
+  },
+  {
+   "code": "FLR-CRP-RMV-SF",
+   "reason": "The notes say the carpet is soaked, so we need to remove it."
+  },
+  {
+   "code": "CNT-BARRIER-SF",
+   "reason": "The notes say the room is wet, so we need to set up a containment barrier."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "The notes say the room is full of furniture, so we need to move and block the contents."
+  },
+  {
+   "code": "FLR-WOOD-MAT-DAY",
+   "reason": "The notes say the room is wet, so we need to set up a hardwood floor drying mat system."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "The notes say there is a floor register in the wet area, so we need to clean it."
+  },
+  {
+   "code": "FLR-PAD-RMV-SF",
+   "reason": "The notes say the carpet is soaked, so we need to remove the carpet pad."
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "The notes say the room is wet, so we need to detach and reset the interior door."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "The notes say the room is wet, so we need to extract the water from the hard surface floor."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bedroom"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 10, \"items\": [{\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 1.0, \"jobs\": 10, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"CLN-FINAL-SF\", \"description\": \"Final cleaning, per SF\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR\", \"description\": \"Water mitigation technician, per hour\", \"share_of_jobs\": 0.8, \"jobs\": 8, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"descri",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bedroom"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J016\", \"category\": 1, \"notes\": \"Category 1 water: water heater failed in the next room. Carpet and pad are soaked. Drywall wet to about 16 inches. 3 windows on the outside wall.\", \"items\": [\"BSB-RMV-LF\", \"CLN-FINAL-SF\", \"CNT-BARRIER-SF\", \"CNT-MOVE-HR\", \"DRY-FLDCUT-LF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-CRP-EXT-SF\", \"FLR-CRP-RMV-SF\", \"FLR-PAD-RMV-SF\", \"HVAC-REG-CLN\", \"LBR-TECH-HR\", \"MON-MOIST-DAY\"]}, {\"job\": \"J022\", \"category\": 1, \"notes\": \"Category 1 water: roof leak during a storm. Hardwood floor, boards starting to cup. Drywall wet well above two feet, wicking high on the walls. 3",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "The notes say the room is wet, so we need to monitor the moisture."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "The notes say the drywall is wet to about 10 inches, so we need to flood cut it."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "The notes say the room is wet, so we need to clean it."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "The notes say the room is wet, so we need a technician to work on it."
+     },
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "The notes say the room is wet, so we need to remove the baseboard."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "The notes say the room is wet, so we need a dehumidifier to dry it."
+     },
+     {
+      "code": "FLR-CRP-EXT-SF",
+      "reason": "The notes say the carpet is soaked, so we need to extract the water from it."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "The notes say the room is wet, so we need an air mover to dry it."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "The notes say there is a window in the wet area, so we need to detach and reset the window screen."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "The notes say the room is wet, so we need to remove the door casing."
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "The notes say the drywall is wet to about 10 inches, so we need to remove it."
+     },
+     {
+      "code": "FLR-CRP-RMV-SF",
+      "reason": "The notes say the carpet is soaked, so we need to remove it."
+     },
+     {
+      "code": "CNT-BARRIER-SF",
+      "reason": "The notes say the room is wet, so we need to set up a containment barrier."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "The notes say the room is full of furniture, so we need to move and block the contents."
+     },
+     {
+      "code": "FLR-WOOD-MAT-DAY",
+      "reason": "The notes say the room is wet, so we need to set up a hardwood floor drying mat system."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "The notes say there is a floor register in the wet area, so we need to clean it."
+     },
+     {
+      "code": "FLR-PAD-RMV-SF",
+      "reason": "The notes say the carpet is soaked, so we need to remove the carpet pad."
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "The notes say the room is wet, so we need to detach and reset the interior door."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "The notes say the room is wet, so we need to extract the water from the hard surface floor."
+     }
+    ],
+    "room_id": "J097"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 6997,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 775,
+  "usd": 0.0
+ }
+}

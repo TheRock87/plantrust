@@ -1,0 +1,144 @@
+{
+ "error": null,
+ "input_hash": "bc772e47f40ac9e6",
+ "items": [
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Notes: hardwood floor, boards starting to cup."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "Notes: hardwood floor, boards starting to cup."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Notes: drywall wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "Notes: drywall wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "Notes: drywall wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "Notes: drywall wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "Notes: floor register in the wet area."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "Notes: floor register in the wet area."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "Notes: hardwood floor, boards starting to cup."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Notes: 2 windows on the outside wall."
+  },
+  {
+   "code": "FLR-WOOD-MAT-DAY",
+   "reason": "Notes: hardwood floor, boards starting to cup."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "living"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 10, \"items\": [{\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.8, \"jobs\": 8, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.8, \"jobs\": 8, \"often_missed\": false}, {\"code\": \"EQ-AIRM-DAY\", \"description\": \"Air mover, per 24 hour period\", \"share_of_jobs\": 0.7, \"jobs\": 7, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "living"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J026\", \"category\": 1, \"notes\": \"Category 1 water: pipe burst in the wall. Laminate floor is cupping at the seams. 3 windows on the outside wall. Room is full of furniture.\", \"items\": [\"BSB-RMV-LF\", \"CNT-MOVE-HR\", \"DOR-DR-EA\", \"EQ-DEHU-DAY\", \"LBR-TECH-HR\"]}, {\"job\": \"J043\", \"category\": 1, \"notes\": \"Category 1 water: water heater failed in the next room. Carpet and pad are soaked. Drywall wet to about 16 inches. 2 windows on the outside wall. Floor register in the wet area.\", \"items\": [\"BSB-RMV-LF\", \"DRY-FLDCUT-LF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-CRP-EXT-SF\", \"FLR-PAD-RMV-SF\"]}, {\"",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Notes: hardwood floor, boards starting to cup."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "Notes: hardwood floor, boards starting to cup."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Notes: drywall wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "Notes: drywall wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "Notes: drywall wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "Notes: drywall wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "Notes: floor register in the wet area."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "Notes: floor register in the wet area."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "Notes: hardwood floor, boards starting to cup."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Notes: 2 windows on the outside wall."
+     },
+     {
+      "code": "FLR-WOOD-MAT-DAY",
+      "reason": "Notes: hardwood floor, boards starting to cup."
+     }
+    ],
+    "room_id": "J058"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 6839,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 418,
+  "usd": 0.0
+ }
+}

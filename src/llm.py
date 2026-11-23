@@ -1,19 +1,20 @@
 """One place that builds the chat models, reads the keys, and counts tokens and cost.
 
-Main model: Mistral `mistral-small-latest` on Mistral's free mode (no card; the largest free allowance found
-in November 2026). Fallback: Gemini Flash-Lite on Google's free tier. Free tiers change without notice, so
-when the main model fails (rate limit, outage), LangChain's ModelFallbackMiddleware retries on the fallback.
-Override with PLANTRUST_MODEL / PLANTRUST_FALLBACK, for example PLANTRUST_FALLBACK=none.
-Keys come from the environment or a local .env file: MISTRAL_API_KEY, GOOGLE_API_KEY.
+Main model: Mistral `voxtral-small-latest` on Mistral's free mode (no card). Measured on this account on
+2026-11-23: free mode gives mistral-small/medium 0 requests a minute and the ministral models 2, while
+voxtral-small (Mistral's audio-and-text model, with tool calling) gets 60. Fallback: ministral-14b on the
+same key (slow, 2 requests a minute): when the main model fails (rate limit, outage), LangChain's
+ModelFallbackMiddleware retries the call there. Override with PLANTRUST_MODEL / PLANTRUST_FALLBACK
+(PLANTRUST_FALLBACK=none turns it off). The key comes from the environment or a local .env file: MISTRAL_API_KEY.
 """
 import os
 
 from .common import ROOT, TRACES, load, save
 
-PRIMARY = os.environ.get("PLANTRUST_MODEL", "mistralai:mistral-small-latest")
-FALLBACK = os.environ.get("PLANTRUST_FALLBACK", "google_genai:gemini-flash-lite-latest")
-KEY_ENV = {"mistralai": "MISTRAL_API_KEY", "google_genai": "GOOGLE_API_KEY"}
-REQUESTS_PER_MINUTE = {"mistralai": 50, "google_genai": 12}  # under each free tier's per-minute limit
+PRIMARY = os.environ.get("PLANTRUST_MODEL", "mistralai:voxtral-small-latest")
+FALLBACK = os.environ.get("PLANTRUST_FALLBACK", "mistralai:ministral-14b-latest")
+KEY_ENV = {"mistralai": "MISTRAL_API_KEY"}
+REQUESTS_PER_MINUTE = {"mistralai:voxtral-small-latest": 40}  # others default to 2, the free limit
 PRICE_PER_M = {"input": 0.0, "output": 0.0}  # free tiers bill nothing; the cap still protects a paid key
 BUDGET_USD = 4.50
 
@@ -64,7 +65,7 @@ def _build(spec):
         from langchain.chat_models import init_chat_model
         from langchain_core.rate_limiters import InMemoryRateLimiter
 
-        rpm = REQUESTS_PER_MINUTE.get(_provider(spec), 20)
+        rpm = REQUESTS_PER_MINUTE.get(spec, REQUESTS_PER_MINUTE.get(_provider(spec), 2))
         limiter = InMemoryRateLimiter(requests_per_second=rpm / 60, max_bucket_size=1)
         _built[spec] = init_chat_model(spec, temperature=0, max_retries=4, rate_limiter=limiter)
     return _built[spec]

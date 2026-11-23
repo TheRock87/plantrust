@@ -1,0 +1,152 @@
+{
+ "error": null,
+ "input_hash": "20ed03a7041e36f2",
+ "items": [
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Notes: baseboard present"
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "Notes: wet drywall"
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Notes: drywall wet well above two feet"
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "Notes: drywall wet well above two feet"
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "Notes: drywall wet well above two feet"
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "Notes: drywall wet well above two feet"
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "Notes: floor register in the wet area"
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "Notes: drywall wet well above two feet"
+  },
+  {
+   "code": "FLR-WOOD-MAT-DAY",
+   "reason": "Notes: hardwood floor, boards starting to cup"
+  },
+  {
+   "code": "INS-RMV-SF",
+   "reason": "Notes: drywall wet well above two feet"
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Notes: floor register in the wet area"
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "Notes: floor register in the wet area"
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 2,
+    "room_type": "living"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 16, \"items\": [{\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.94, \"jobs\": 15, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.88, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.75, \"jobs\": 12, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.69, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 2,
+    "room_type": "living"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J019\", \"category\": 3, \"notes\": \"Category 3 water: toilet overflowed with waste. Carpet and pad are soaked. Drywall wet to about 14 inches. Strong odor; crew needs full protection.\", \"items\": [\"BSB-RMV-LF\", \"CLN-ANTI-SF\", \"CLN-FINAL-SF\", \"CNT-BARRIER-SF\", \"DRY-FLDCUT-LF\", \"EQ-DEHU-DAY\", \"EQ-SCRUB-DAY\", \"FLR-CRP-RMV-SF\", \"FLR-PAD-RMV-SF\", \"INS-RMV-SF\", \"LBR-TECH-HR\", \"MON-MOIST-DAY\", \"PPE-EA\"]}, {\"job\": \"J026\", \"category\": 1, \"notes\": \"Category 1 water: pipe burst in the wall. Laminate floor is cupping at the seams. 3 windows on the outside wall. Room is full of furniture.\", \"items\": [",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Notes: baseboard present"
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "Notes: wet drywall"
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Notes: drywall wet well above two feet"
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "Notes: drywall wet well above two feet"
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "Notes: drywall wet well above two feet"
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "Notes: drywall wet well above two feet"
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "Notes: floor register in the wet area"
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "Notes: drywall wet well above two feet"
+     },
+     {
+      "code": "FLR-WOOD-MAT-DAY",
+      "reason": "Notes: hardwood floor, boards starting to cup"
+     },
+     {
+      "code": "INS-RMV-SF",
+      "reason": "Notes: drywall wet well above two feet"
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Notes: floor register in the wet area"
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "Notes: floor register in the wet area"
+     }
+    ],
+    "room_id": "J004"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7711,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 393,
+  "usd": 0.0
+ }
+}

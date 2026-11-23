@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "UNSURE",
+  "1": "BSB-RMV-LF",
+  "10": "DRY-FLDCUT-LF",
+  "11": "LBR-TECH-HR",
+  "12": "LBR-TECH-HR",
+  "13": "LBR-TECH-HR",
+  "14": "LBR-TECH-HR",
+  "15": "PLM-TOILET-DR",
+  "16": "PPE-EA",
+  "17": "WIN-SCR-DR",
+  "18": "FLR-WOOD-MAT-DAY",
+  "19": "FLR-HARD-EXT-SF",
+  "2": "INS-RMV-SF",
+  "3": "FLR-CRP-RMV-SF",
+  "4": "STR-CRP-RMV-EA",
+  "5": "FLR-PAD-RMV-SF",
+  "6": "FLR-PAD-RMV-SF",
+  "7": "DRY-RMV-SF",
+  "8": "DRY-RMV-SF",
+  "9": "DRY-FLDCUT-LF"
+ },
+ "texts": [
+  "TEAR OUT BASE TRIM",
+  "TEAR OUT BASE TRIM - per sf",
+  "TEAR OUT BATT INSULATION",
+  "TEAR OUT CARPET",
+  "TEAR OUT CARPET ON STEPS",
+  "TEAR OUT CARPET PAD",
+  "TEAR OUT CRAPET PAD",
+  "TEAR OUT WET DRYWALL",
+  "TEAR OUT WET DRYWALL - per sf",
+  "TEAR OUT WET SHEETROCK 2FT FLOOD CUT",
+  "TEAR OUT WET SHEETROCK 2FT FLOOD CUT - per sf",
+  "TECH LABOR",
+  "TECH LABOR ***",
+  "TECH LBAOR",
+  "TECH LBAOR per estimator",
+  "TOILET R&R",
+  "TYVEK SUITS + RESPIRATORS",
+  "WINDOW SCREENS",
+  "WOOD FLOOR DRYING SYSTEM",
+  "WTR ETXRACT TILE/VINYL"
+ ],
+ "usage": {
+  "input_tokens": 937,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 387,
+  "usd": 0.0
+ }
+}

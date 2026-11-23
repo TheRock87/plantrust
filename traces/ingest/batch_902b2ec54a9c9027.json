@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "FLR-LAM-RMV-SF",
+  "1": "MON-MOIST-DAY",
+  "10": "MON-MOIST-DAY",
+  "11": "MON-MOIST-DAY",
+  "12": "MON-MOIST-DAY",
+  "13": "MON-MOIST-DAY",
+  "14": "MON-MOIST-DAY",
+  "15": "MON-MOIST-DAY",
+  "16": "CNT-MOVE-HR",
+  "17": "UNSURE",
+  "18": "CNT-MOVE-HR",
+  "19": "EQ-AIRM-DAY",
+  "2": "LBR-TECH-HR",
+  "3": "UNSURE",
+  "4": "UNSURE",
+  "5": "LBR-TECH-HR",
+  "6": "UNSURE",
+  "7": "MON-MOIST-DAY",
+  "8": "MON-MOIST-DAY",
+  "9": "MON-MOIST-DAY"
+ },
+ "texts": [
+  "laminate demo per estimator",
+  "miosture readings daily",
+  "mitigation labor per hour",
+  "mitigation labor per hour ***",
+  "mitigation labor per hour - per sf",
+  "mitigation labor per hour per estimator",
+  "mitigatoin labor per hour",
+  "moisture map + mnoitor - per sf",
+  "moisture readings daily",
+  "moisture readings daily (bedroom)",
+  "moisture readings daily ***",
+  "moisture readings daily per estimator",
+  "moisture readings dialy",
+  "monitoring / mapping (bedroom)",
+  "monitoring / mapping per estimator",
+  "monitornig / mapping",
+  "move furniture",
+  "move furniture - per sf",
+  "move furntiure",
+  "negative air machine"
+ ],
+ "usage": {
+  "input_tokens": 856,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 373,
+  "usd": 0.0
+ }
+}

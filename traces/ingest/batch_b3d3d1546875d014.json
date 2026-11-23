@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "EQ-AIRM-DAY",
+  "1": "UNSURE",
+  "10": "UNSURE",
+  "11": "CLN-ANTI-SF",
+  "12": "CLN-ANTI-SF",
+  "13": "CAB-DRILL-EA",
+  "14": "FLR-CRP-RMV-SF",
+  "15": "HVAC-REG-CLN",
+  "16": "HVAC-REG-CLN",
+  "17": "CLN-TOILET-EA",
+  "18": "CLN-FINAL-SF",
+  "19": "CNT-MOVE-HR",
+  "2": "UNSURE",
+  "3": "UNSURE",
+  "4": "UNSURE",
+  "5": "UNSURE",
+  "6": "CLN-ANTI-SF",
+  "7": "UNSURE",
+  "8": "BSB-RMV-LF",
+  "9": "BSB-RMV-LF"
+ },
+ "texts": [
+  "AIR MOVER, PER 24 HOUR PERIOD per estimator",
+  "AIR MOVERS - per sf",
+  "AM X 3 DAYS",
+  "AM X 3 DAYS ***",
+  "AM x 3 days",
+  "AM x 3 days ***",
+  "AM x 3 days - per sf",
+  "APPLY ANTIMICROBIAL per estimator",
+  "Air mover, per 24 hour period - per sf",
+  "BASEBOARD R&R - REMOVE ONLY",
+  "BASEBOARD R&R - REMOVE ONLY - per sf",
+  "BIOCDIE APPLICATION",
+  "BIOCIDE APPLICATION",
+  "CABINET DIRLLING",
+  "CARPET DEMO",
+  "CLEAN FLOOR REGISTER",
+  "CLEAN REGISTERS",
+  "CLEAN TOILET SEAT",
+  "CLEAN UP AFTER MITIGATION",
+  "CONTENT MANIPULATION"
+ ],
+ "usage": {
+  "input_tokens": 916,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 361,
+  "usd": 0.0
+ }
+}

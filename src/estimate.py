@@ -18,15 +18,16 @@ from .history import DB, draw_job, quantities, scope_notes, true_items
 from .prices import CATALOG, MockPriceSource
 
 MAX_MODEL_STEPS = 8
-PROMPT_VERSION = "e1"
+PROMPT_VERSION = "e2"
 FREQ_RULE = 0.5      # baseline: include items seen in at least half of similar past jobs
 OFTEN_MISSED_HINT = 0.25
 PRICES = MockPriceSource()
 Code = Literal[tuple(sorted(CATALOG))]
 
-SYSTEM_PROMPT = """You draft the mitigation line items for one water-damaged room.
-Decide WHICH catalog items belong in this job. Do not compute quantities or prices: code does that from the
-floor plan and the price source.
+SYSTEM_PROMPT = """You draft the mitigation line items for one water-damaged room, using the tools.
+Work in this order: call item_frequency for the room type and water category, call find_similar_jobs if you
+want examples, then call submit_draft with the catalog codes you choose. Your job is to decide WHICH items
+belong; code computes the quantities from the floor plan and the prices from the price source afterwards.
 
 Evidence, in order of strength:
 1. The technician's scope notes for this room (what is actually there: floor type, wet cabinets, windows,
@@ -149,9 +150,10 @@ def run_agent(target, hist, model, fallbacks=()):
     from .agent import _trace
 
     box = {"items": None}
-    agent = create_agent(model, make_tools(target, hist, box), system_prompt=SYSTEM_PROMPT,
-                         middleware=llm.agent_middleware(fallbacks))
-    ask = (f"Draft the line items for room {target['id']}: a {target['room_type']}, {target['width']:g} x "
+    # Measured 2026-11-23: voxtral-small ignores its tools when these instructions are a system message
+    # ("I don't have the tools"), but uses them when the same text opens the user message. So it goes there.
+    agent = create_agent(model, make_tools(target, hist, box), middleware=llm.agent_middleware(fallbacks))
+    ask = (SYSTEM_PROMPT + "\n\n" + f"Draft the line items for room {target['id']}: a {target['room_type']}, {target['width']:g} x "
            f"{target['depth']:g} ft, ceiling {target['ceiling']:g} ft, region {target['region']}, month "
            f"{target['month']}.\nTechnician scope notes: {target['notes']}")
     messages, error = [], None

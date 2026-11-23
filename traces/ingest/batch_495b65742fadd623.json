@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "CNT-BARRIER-SF",
+  "1": "UNSURE",
+  "10": "VAN-DR-EA",
+  "11": "TRIM-CSG-RMV-LF",
+  "12": "CAB-DRILL-EA",
+  "13": "UNSURE",
+  "14": "EQ-AIRM-DAY",
+  "15": "APP-DW-DR",
+  "16": "EQ-DEHU-DAY",
+  "17": "EQ-DEHU-DAY",
+  "18": "EQ-AIRM-DAY",
+  "19": "EQ-AIRM-DAY",
+  "2": "EQ-DEHU-DAY",
+  "3": "UNSURE",
+  "4": "EQ-DEHU-DAY",
+  "5": "EQ-DEHU-DAY",
+  "6": "EQ-DEHU-DAY",
+  "7": "DRY-RMV-SF",
+  "8": "DRY-RMV-SF",
+  "9": "DOR-DR-EA"
+ },
+ "texts": [
+  "Contaimnent barrier, plastic sheeting, per SF",
+  "DEHU",
+  "DEHU LARGE 24HR",
+  "DEHU LARGE 24HR - per sf",
+  "DEHUMDIIFIER PER DAY",
+  "DEHUMIDIFIER PER DAY (bedroom)",
+  "DEHUMIDIFIER PER DAY per estimator",
+  "DEMO WET GYPSUM BOARD",
+  "DEMO WET GYPSUM BORAD",
+  "DETACH & RESET DOOR",
+  "DETACH & RESET VANITY per estimator",
+  "DOOR TRIM REMOVAL",
+  "DRILL HOLES CAB BASES (bedroom)",
+  "DRYING FAN RENTAL",
+  "DW R&R",
+  "DYRING FAN RENTAL",
+  "Dehumidifier, large, per 24 hour period per estimator",
+  "Dehumidifier, large, per 24 hour peroid",
+  "FANS / AIR MOVERS PER DAY",
+  "FANS / AIR MOVERS PER DAY per estimator"
+ ],
+ "usage": {
+  "input_tokens": 955,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 371,
+  "usd": 0.0
+ }
+}

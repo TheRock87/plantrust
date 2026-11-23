@@ -1,0 +1,53 @@
+{
+ "answers": {
+  "0": "DRY-FLDCUT-LF",
+  "1": "LBR-TECH-HR",
+  "10": "VAN-DR-EA",
+  "11": "VAN-DR-EA",
+  "12": "WIN-SCR-DR",
+  "13": "WIN-SCR-DR",
+  "14": "FLR-WOOD-MAT-DAY",
+  "15": "FLR-WOOD-MAT-DAY",
+  "16": "FLR-HARD-EXT-SF",
+  "17": "FLR-HARD-EXT-SF",
+  "18": "FLR-HARD-EXT-SF",
+  "2": "LBR-TECH-HR",
+  "3": "LBR-TECH-HR",
+  "4": "LBR-TECH-HR",
+  "5": "PLM-TOILET-DR",
+  "6": "CLN-TOILET-EA",
+  "7": "PPE-EA",
+  "8": "PPE-EA",
+  "9": "PPE-EA"
+ },
+ "texts": [
+  "tear out wet sheetrock 2ft flood cut per estimator",
+  "tech labor",
+  "tech labor (bedroom)",
+  "tech labor ***",
+  "tech labor per estimator",
+  "tech lbaor",
+  "toilet R&R",
+  "toilet clean",
+  "tyvek suits + resiprators",
+  "tyvek suits + respirators",
+  "tyvek suits + respirators - per sf",
+  "vainty D&R",
+  "vanity D&R (bedroom)",
+  "window screens",
+  "window screens ***",
+  "wood floor drying system - per sf",
+  "wood floor drying system per estimator",
+  "wtr extarct tile/vinyl",
+  "wtr extract tiel/vinyl",
+  "wtr extract tile/vinyl"
+ ],
+ "usage": {
+  "input_tokens": 865,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 367,
+  "usd": 0.0
+ }
+}

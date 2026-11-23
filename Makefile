@@ -6,6 +6,7 @@ all:
 	$(PY) -m src.checks
 	$(PY) -m src.agent
 	$(PY) -m src.evaluate
+	$(PY) -m src.failure_fix build
 	$(PY) -m src.export
 	$(PY) -m src.history
 	$(PY) -m src.ingest

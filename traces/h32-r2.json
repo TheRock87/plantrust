@@ -1,0 +1,69 @@
+{
+ "error": null,
+ "house": "h32",
+ "input_hash": "c0d067f5b2f9b59c",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "reason": "The plan has one door, the tour has none. A missing door is a real error type, even though tour door counts are sometimes off by one.",
+ "room_id": "h32-r2",
+ "steps": [
+  {
+   "args": {
+    "room_id": "h32-r2"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h32-r2"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h32-r2"
+   },
+   "name": "get_check_results",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": true, \"ceiling\": 8.0, \"doors\": [{\"wall\": 3, \"width\": 3.0}], \"flags\": [], \"id\": \"h32-r2\", \"label\": \"bedroom\", \"polygon\": [[23.0, 0.0], [34.5, 0.0], [34.5, 13.0], [23.0, 13.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 7.9, \"doors\": 0, \"label\": \"bedroom\", \"walls\": [11.3, 12.8, 11.5, 13.0]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_check_results",
+   "text": "{\"status\": \"unclear\", \"reasons\": [\"Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)\"], \"numbers\": {\"affected\": true, \"flags\": [], \"overlaps\": [], \"plan_ceiling\": 8.0, \"plan_doors\": 1, \"plan_label\": \"bedroom\", \"plan_walls\": [11.5, 13.0, 11.5, 13.0], \"tour_ceiling\": 7.9, \"tour_doors\": 0, \"tour_label\": \"bedroom\", \"tour_walls\": [11.3, 12.8, 11.5, 13.0], \"worst_wall_diff_pct\": 1.8}, \"estimated_cost_at_risk_usd\": 8.1}",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "reason": "The plan has one door, the tour has none. A missing door is a real error type, even though tour door counts are sometimes off by one.",
+    "room_id": "h32-r2",
+    "verdict": "send_to_drafter"
+   },
+   "name": "submit_verdict",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_verdict",
+   "text": "Verdict recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 1928,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 144,
+  "usd": 0.0
+ },
+ "verdict": "send_to_drafter"
+}

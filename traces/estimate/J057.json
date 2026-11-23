@@ -1,0 +1,176 @@
+{
+ "error": null,
+ "input_hash": "00d0cdac8c043bac",
+ "items": [
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Notes: Base cabinets are wet."
+  },
+  {
+   "code": "CAB-TOE-RMV-LF",
+   "reason": "Notes: Base cabinets are wet."
+  },
+  {
+   "code": "CLN-ANTI-SF",
+   "reason": "Notes: Strong odor; crew needs full protection."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "Notes: Strong odor; crew needs full protection."
+  },
+  {
+   "code": "CNT-BARRIER-SF",
+   "reason": "Notes: Strong odor; crew needs full protection."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Notes: Drywall wet to about 12 inches."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "History: 70% of similar jobs."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "History: 80% of similar jobs."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "Notes: Vinyl floor, water standing at the edges."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "Notes: Floor register in the wet area."
+  },
+  {
+   "code": "INS-RMV-SF",
+   "reason": "Notes: Drywall wet to about 12 inches."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "History: 90% of similar jobs."
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "History: 90% of similar jobs."
+  },
+  {
+   "code": "PPE-EA",
+   "reason": "Notes: Strong odor; crew needs full protection."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Notes: 1 window on the outside wall."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 3,
+    "room_type": "kitchen"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 10, \"items\": [{\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 1.0, \"jobs\": 10, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR\", \"description\": \"Water mitigation technician, per hour\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"PPE-EA\", \"description\": \"Personal protective equipment, per person per day\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\"",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 3,
+    "room_type": "kitchen"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J028\", \"category\": 3, \"notes\": \"Category 3 water: flood water came in from outside. Laminate floor is cupping at the seams. Drywall wet well above two feet, wicking high on the walls. Base cabinets are wet. 1 window on the outside wall. Floor register in the wet area. Strong odor; crew needs full protection.\", \"items\": [\"BSB-RMV-LF\", \"CAB-DRILL-EA\", \"CAB-TOE-RMV-LF\", \"CLN-FINAL-SF\", \"CNT-BARRIER-SF\", \"DRY-RMV-SF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-LAM-RMV-SF\", \"HVAC-REG-CLN\", \"LBR-TECH-HR\", \"MON-MOIST-DAY\", \"PPE-EA\"]}, {\"job\": \"J032\", \"category\": 3, \"notes\": \"Category 3 water: flood",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Notes: Base cabinets are wet."
+     },
+     {
+      "code": "CAB-TOE-RMV-LF",
+      "reason": "Notes: Base cabinets are wet."
+     },
+     {
+      "code": "CLN-ANTI-SF",
+      "reason": "Notes: Strong odor; crew needs full protection."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "Notes: Strong odor; crew needs full protection."
+     },
+     {
+      "code": "CNT-BARRIER-SF",
+      "reason": "Notes: Strong odor; crew needs full protection."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Notes: Drywall wet to about 12 inches."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "History: 70% of similar jobs."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "History: 80% of similar jobs."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "Notes: Vinyl floor, water standing at the edges."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "Notes: Floor register in the wet area."
+     },
+     {
+      "code": "INS-RMV-SF",
+      "reason": "Notes: Drywall wet to about 12 inches."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "History: 90% of similar jobs."
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "History: 90% of similar jobs."
+     },
+     {
+      "code": "PPE-EA",
+      "reason": "Notes: Strong odor; crew needs full protection."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Notes: 1 window on the outside wall."
+     }
+    ],
+    "room_id": "J057"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7788,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 491,
+  "usd": 0.0
+ }
+}

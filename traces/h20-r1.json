@@ -1,0 +1,69 @@
+{
+ "error": null,
+ "house": "h20",
+ "input_hash": "70a7e68c5f88d3d0",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "reason": "The label differs between the plan and the tour, and the room is a known weak spot for scanners.",
+ "room_id": "h20-r1",
+ "steps": [
+  {
+   "args": {
+    "room_id": "h20-r1"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h20-r1"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h20-r1"
+   },
+   "name": "get_check_results",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": true, \"ceiling\": 17.0, \"doors\": [{\"wall\": 2, \"width\": 3.0}], \"flags\": [\"stairs\", \"tall_ceiling\"], \"id\": \"h20-r1\", \"label\": \"stairwell\", \"polygon\": [[9.0, 0.0], [17.5, 0.0], [17.5, 15.0], [9.0, 15.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 17.0, \"doors\": 1, \"label\": \"bathroom\", \"walls\": [8.4, 15.2, 8.6, 14.7]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_check_results",
+   "text": "{\"status\": \"unclear\", \"reasons\": [\"Label: 'stairwell' in the plan, 'bathroom' in the tour\", \"Known weak spot for scanners: stairwell, tall ceiling\"], \"numbers\": {\"affected\": true, \"flags\": [\"stairs\", \"tall_ceiling\"], \"overlaps\": [], \"plan_ceiling\": 17.0, \"plan_doors\": 1, \"plan_label\": \"stairwell\", \"plan_walls\": [8.5, 15.0, 8.5, 15.0], \"tour_ceiling\": 17.0, \"tour_doors\": 1, \"tour_label\": \"bathroom\", \"tour_walls\": [8.4, 15.2, 8.6, 14.7], \"worst_wall_diff_pct\": 2.0}, \"estimated_cost_at_risk_usd\": 1.8}",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "reason": "The label differs between the plan and the tour, and the room is a known weak spot for scanners.",
+    "room_id": "h20-r1",
+    "verdict": "send_to_drafter"
+   },
+   "name": "submit_verdict",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_verdict",
+   "text": "Verdict recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 1948,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 135,
+  "usd": 0.0
+ },
+ "verdict": "send_to_drafter"
+}

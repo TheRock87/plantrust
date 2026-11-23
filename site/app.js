@@ -122,13 +122,13 @@
       `Code checks settled ${c.pass + c.fail} rooms (${c.pass} pass, ${c.fail} fail); ${c.unclear} were unclear.`;
     const rows = [["Code checks only (unclear rooms go to a drafter)", DATA.scores.code_only, false],
                   ["Code checks + agent for unclear rooms", DATA.scores.code_plus_agent, true]];
-    let html = "<thead><tr><th>Approach</th><th>Errors caught</th><th>False alarms</th><th>Rooms sent to drafter</th><th>Cost at risk caught</th><th>Model cost</th></tr></thead><tbody>";
+    let html = "<thead><tr><th>Approach</th><th>Errors caught</th><th>False alarms</th><th>Rooms sent to drafter</th><th>Cost at risk caught</th><th>Model use</th></tr></thead><tbody>";
     rows.forEach(([name, s, isAgent]) => {
       if (isAgent && !agentRowReady()) {
         html += `<tr><td>${esc(name)}</td><td colspan="5" class="pending">Agent run pending (${s.agent_rooms_run} of ${s.agent_rooms_needed} unclear rooms reviewed).</td></tr>`;
         return;
       }
-      const cost = isAgent ? `${(s.llm_usd_per_house * 100).toFixed(2)} cents per house` : "0";
+      const cost = isAgent ? `about ${s.tokens_per_house.toLocaleString("en-US")} tokens per house (free tier)` : "none";
       html += `<tr><td>${esc(name)}</td>
         <td class="num">${s.caught} of ${s.errors} (${pct(s.caught, s.errors)})</td>
         <td class="num">${s.false_alarms} of ${s.clean_rooms} (${pct(s.false_alarms, s.clean_rooms)})</td>

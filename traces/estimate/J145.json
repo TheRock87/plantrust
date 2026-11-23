@@ -1,0 +1,208 @@
+{
+ "error": null,
+ "input_hash": "43530eb8e68eba9a",
+ "items": [
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for moisture monitoring and mapping."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for flood cutting the drywall."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "The technician's notes mention that the carpet and pad are soaked, which indicates the need for final cleaning."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for a water mitigation technician."
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for removing the baseboard."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for a dehumidifier."
+  },
+  {
+   "code": "FLR-CRP-EXT-SF",
+   "reason": "The technician's notes mention that the carpet and pad are soaked, which indicates the need for water extraction from the carpet."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for an air mover."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "The technician's notes mention that there is a window on the outside wall, which indicates the need for detaching and resetting the window screen."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for removing the door casing."
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for removing the wet drywall."
+  },
+  {
+   "code": "FLR-CRP-RMV-SF",
+   "reason": "The technician's notes mention that the carpet and pad are soaked, which indicates the need for removing the wet carpet."
+  },
+  {
+   "code": "CNT-BARRIER-SF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for a containment barrier."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for moving and blocking room contents."
+  },
+  {
+   "code": "FLR-WOOD-MAT-DAY",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for a hardwood floor drying mat system."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "The technician's notes mention that there is a floor register in the wet area, which indicates the need for cleaning the heating and cooling register."
+  },
+  {
+   "code": "FLR-PAD-RMV-SF",
+   "reason": "The technician's notes mention that the carpet and pad are soaked, which indicates the need for removing the wet carpet pad."
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for detaching and resetting the interior door."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for water extraction from the hard surface floor."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bedroom"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 10, \"items\": [{\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 1.0, \"jobs\": 10, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"CLN-FINAL-SF\", \"description\": \"Final cleaning, per SF\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR\", \"description\": \"Water mitigation technician, per hour\", \"share_of_jobs\": 0.8, \"jobs\": 8, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"descri",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bedroom"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J016\", \"category\": 1, \"notes\": \"Category 1 water: water heater failed in the next room. Carpet and pad are soaked. Drywall wet to about 16 inches. 3 windows on the outside wall.\", \"items\": [\"BSB-RMV-LF\", \"CLN-FINAL-SF\", \"CNT-BARRIER-SF\", \"CNT-MOVE-HR\", \"DRY-FLDCUT-LF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-CRP-EXT-SF\", \"FLR-CRP-RMV-SF\", \"FLR-PAD-RMV-SF\", \"HVAC-REG-CLN\", \"LBR-TECH-HR\", \"MON-MOIST-DAY\"]}, {\"job\": \"J022\", \"category\": 1, \"notes\": \"Category 1 water: roof leak during a storm. Hardwood floor, boards starting to cup. Drywall wet well above two feet, wicking high on the walls. 3",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for moisture monitoring and mapping."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for flood cutting the drywall."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "The technician's notes mention that the carpet and pad are soaked, which indicates the need for final cleaning."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for a water mitigation technician."
+     },
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for removing the baseboard."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for a dehumidifier."
+     },
+     {
+      "code": "FLR-CRP-EXT-SF",
+      "reason": "The technician's notes mention that the carpet and pad are soaked, which indicates the need for water extraction from the carpet."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for an air mover."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "The technician's notes mention that there is a window on the outside wall, which indicates the need for detaching and resetting the window screen."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for removing the door casing."
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for removing the wet drywall."
+     },
+     {
+      "code": "FLR-CRP-RMV-SF",
+      "reason": "The technician's notes mention that the carpet and pad are soaked, which indicates the need for removing the wet carpet."
+     },
+     {
+      "code": "CNT-BARRIER-SF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for a containment barrier."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for moving and blocking room contents."
+     },
+     {
+      "code": "FLR-WOOD-MAT-DAY",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for a hardwood floor drying mat system."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "The technician's notes mention that there is a floor register in the wet area, which indicates the need for cleaning the heating and cooling register."
+     },
+     {
+      "code": "FLR-PAD-RMV-SF",
+      "reason": "The technician's notes mention that the carpet and pad are soaked, which indicates the need for removing the wet carpet pad."
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for detaching and resetting the interior door."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, wicking high on the walls, which indicates the need for water extraction from the hard surface floor."
+     }
+    ],
+    "room_id": "J145"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7024,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 1006,
+  "usd": 0.0
+ }
+}

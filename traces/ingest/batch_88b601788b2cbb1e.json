@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "HVAC-REG-CLN",
+  "1": "HVAC-REG-CLN",
+  "10": "FLR-CRP-EXT-SF",
+  "11": "DRY-FLDCUT-LF",
+  "12": "UNSURE",
+  "13": "UNSURE",
+  "14": "EQ-DEHU-DAY",
+  "15": "EQ-DEHU-DAY",
+  "16": "UNSURE",
+  "17": "EQ-DEHU-DAY",
+  "18": "EQ-DEHU-DAY",
+  "19": "EQ-DEHU-DAY",
+  "2": "HVAC-REG-CLN",
+  "3": "CLN-TOILET-EA",
+  "4": "CLN-TOILET-EA",
+  "5": "CLN-FINAL-SF",
+  "6": "CLN-FINAL-SF",
+  "7": "CLN-FINAL-SF",
+  "8": "CNT-MOVE-HR",
+  "9": "FLR-CRP-RMV-SF"
+ },
+ "texts": [
+  "clean registres",
+  "clean regsiters",
+  "clean reigsters",
+  "clean toilet seat",
+  "clean toilet seat (bedroom)",
+  "clean up after mitigation",
+  "clean up after mitigation ***",
+  "clean up after mitigation per estimator",
+  "content manipulation",
+  "crapet demo",
+  "crapet extraction",
+  "cut drywall 2 ft up (bedroom)",
+  "cut drywall 2 ft up - per sf",
+  "cut drywall 2 ft up per estimator",
+  "dehu",
+  "dehu ***",
+  "dehu - per sf",
+  "dehu lagre 24hr",
+  "dehu large 24hr",
+  "dehu large 24hr ***"
+ ],
+ "usage": {
+  "input_tokens": 865,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 383,
+  "usd": 0.0
+ }
+}

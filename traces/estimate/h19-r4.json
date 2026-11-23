@@ -1,0 +1,19 @@
+{
+ "error": null,
+ "input_hash": "423ae6b5c6fc7b26",
+ "items": null,
+ "steps": [
+  {
+   "text": "I'm sorry, but I currently don't have the tools needed to draft the line items for your room h19-r4. However, I can guide you on how to approach this task.\n\nTo draft the line items, you'll need to consider the following:\n\n1. **Room Dimensions**: The room is 26 x 16 ft with an 8 ft ceiling.\n2. **Water Category**: Category 1 water from a water heater failure.\n3. **Floor Type**: Hardwood floor with cupping boards.\n4. **Drywall**: Wet to about 10 inches.\n5. **Windows**: 3 windows on the outside wall.\n6. **Furniture**: The room is full of furniture.\n\nYou should include line items for:\n- Water extra",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 1133,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 215,
+  "usd": 0.0
+ }
+}

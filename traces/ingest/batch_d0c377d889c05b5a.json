@@ -1,0 +1,20 @@
+{
+ "answers": {
+  "0": "FLR-HARD-EXT-SF",
+  "1": "CNT-BARRIER-SF",
+  "2": "CNT-BARRIER-SF"
+ },
+ "texts": [
+  "wtr extract tile/vniyl",
+  "zip wall contaimnent",
+  "zip wall containment"
+ ],
+ "usage": {
+  "input_tokens": 712,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 76,
+  "usd": 0.0
+ }
+}

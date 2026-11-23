@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "UNSURE",
+  "1": "UNSURE",
+  "10": "UNSURE",
+  "11": "UNSURE",
+  "12": "FLR-CRP-EXT-SF",
+  "13": "HVAC-REG-CLN",
+  "14": "UNSURE",
+  "15": "UNSURE",
+  "16": "UNSURE",
+  "17": "UNSURE",
+  "18": "UNSURE",
+  "19": "UNSURE",
+  "2": "UNSURE",
+  "3": "UNSURE",
+  "4": "UNSURE",
+  "5": "UNSURE",
+  "6": "UNSURE",
+  "7": "CAB-DRILL-EA",
+  "8": "UNSURE",
+  "9": "UNSURE"
+ },
+ "texts": [
+  "biocide appilcation",
+  "biocide applicaiton",
+  "biocide application",
+  "biocide application (bedroom)",
+  "biocide application ***",
+  "biocide application - per sf",
+  "biocide application per estimator",
+  "bioicde application - per sf",
+  "cabinet drilling",
+  "cabinet drilling per estimator",
+  "carept demo",
+  "carpet demo",
+  "carpet extarction",
+  "celan registers",
+  "claen floor register",
+  "claen registers",
+  "clean floor register",
+  "clean regisetrs",
+  "clean registers",
+  "clean registers - per sf"
+ ],
+ "usage": {
+  "input_tokens": 838,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 324,
+  "usd": 0.0
+ }
+}

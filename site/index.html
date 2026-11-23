@@ -124,6 +124,9 @@
     <li><strong>Synthetic houses</strong> of rectangular rooms, with errors I planted myself. It shows the method, not real-world accuracy.</li>
     <li><strong>Simulated tour measurements</strong> with simple noise (about 2% on walls, 0.3 ft on ceilings, door counts sometimes off by one). Real tours are messier.</li>
     <li><strong>Illustrative prices</strong> for two items (wet drywall removal, drying fans by the IICRC (Institute of Inspection, Cleaning and Restoration Certification) rule of thumb). They are not real price lists.</li>
+    <li><strong>The estimation agent over-includes.</strong> It finds far more of the real items and most of the often-missed ones, but it also adds extra items a human must strike out. Tuning that trade-off (for example, requiring a note or a strong history share for each item) is the next step, measured on a fresh held-out set rather than the one shown here.</li>
+    <li><strong>Many of the review agent's decisions could be written as code rules,</strong> now that the failure-and-fix spelled them out. That is the point of the exercise: the agent earns its place where the evidence is mixed, and every rule it reveals can move into code.</li>
+    <li><strong>Model:</strong> Mistral <code>voxtral-small-latest</code> on Mistral's free mode, chosen because it was the one model with a usable free allowance on this account. A stronger model would likely do better; the harness, the tests and the scoring stay the same.</li>
     <li><strong>With real data</strong> I would build the test set from drafters' corrections, use the vision team's real outputs as input, add every miss as a test case, and let the agent decide alone only where the numbers prove it is safe.</li>
   </ul>
 </section>

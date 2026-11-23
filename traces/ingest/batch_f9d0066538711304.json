@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "EQ-AIRM-DAY",
+  "1": "EQ-AIRM-DAY",
+  "10": "DRY-FLDCUT-LF",
+  "11": "FLR-WOOD-MAT-DAY",
+  "12": "FLR-WOOD-MAT-DAY",
+  "13": "FLR-HARD-EXT-SF",
+  "14": "FLR-HARD-EXT-SF",
+  "15": "FLR-HARD-EXT-SF",
+  "16": "FLR-HARD-EXT-SF",
+  "17": "FLR-WOOD-MAT-DAY",
+  "18": "INS-RMV-SF",
+  "19": "FLR-LAM-RMV-SF",
+  "2": "CLN-FINAL-SF",
+  "3": "CLN-FINAL-SF",
+  "4": "CLN-FINAL-SF",
+  "5": "CLN-FINAL-SF",
+  "6": "UNSURE",
+  "7": "DRY-FLDCUT-LF",
+  "8": "DRY-FLDCUT-LF",
+  "9": "DRY-FLDCUT-LF"
+ },
+ "texts": [
+  "fans / air movers per day",
+  "fans / air movers per day ***",
+  "final celan (bedroom)",
+  "final claen - per sf",
+  "final cleaning of room (bedroom)",
+  "final cleaning of room - per sf",
+  "final clenaing of room per estimator",
+  "flood cut 2'",
+  "flood cut 2' ***",
+  "flood cut dryawll 24in (bedroom)",
+  "flood cut drywall 24in per estimator",
+  "floor drying mats",
+  "floor drying mats (bedroom)",
+  "hard floor exrtaction",
+  "hard floor extraction",
+  "hard floor extraction ***",
+  "hard folor extraction",
+  "injectidry mats per day",
+  "insulation demo",
+  "laminate demo"
+ ],
+ "usage": {
+  "input_tokens": 878,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 399,
+  "usd": 0.0
+ }
+}

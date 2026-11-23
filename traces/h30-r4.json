@@ -1,0 +1,59 @@
+{
+ "error": null,
+ "house": "h30",
+ "input_hash": "d595c6118c28c3e2",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "reason": "Agent could not decide; a drafter checks it.",
+ "room_id": "h30-r4",
+ "steps": [
+  {
+   "args": {
+    "room_id": "h30-r4"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h30-r4"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h30-r4"
+   },
+   "name": "get_check_results",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": true, \"ceiling\": 17.0, \"doors\": [{\"wall\": 1, \"width\": 3.0}], \"flags\": [\"stairs\", \"tall_ceiling\"], \"id\": \"h30-r4\", \"label\": \"stairwell\", \"polygon\": [[0.0, 12.0], [8.5, 12.0], [8.5, 24.0], [0.0, 24.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 16.8, \"doors\": 0, \"label\": \"stairwell\", \"walls\": [8.6, 11.9, 8.5, 11.8]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_check_results",
+   "text": "{\"status\": \"unclear\", \"reasons\": [\"Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)\", \"Known weak spot for scanners: stairwell, tall ceiling\"], \"numbers\": {\"affected\": true, \"flags\": [\"stairs\", \"tall_ceiling\"], \"overlaps\": [], \"plan_ceiling\": 17.0, \"plan_doors\": 1, \"plan_label\": \"stairwell\", \"plan_walls\": [8.5, 12.0, 8.5, 12.0], \"tour_ceiling\": 16.8, \"tour_doors\": 0, \"tour_label\": \"stairwell\", \"tour_walls\": [8.6, 11.9, 8.5, 11.8], \"worst_wall_diff_pct\": 1.7}, \"estimated_cost_at_risk_usd\": 3.42}",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan has a door, the tour does not. The tour is missing a door, or the plan has an extra one. The plan has a tall ceiling and a stairwell, which are weak spots for scanners. The walls and ceiling match the tour within noise.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 1960,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 127,
+  "usd": 0.0
+ },
+ "verdict": "send_to_drafter"
+}

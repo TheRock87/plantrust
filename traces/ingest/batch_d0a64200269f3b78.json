@@ -1,0 +1,53 @@
+{
+ "answers": {
+  "0": "CAB-TOE-RMV-LF",
+  "1": "CAB-TOE-RMV-LF",
+  "10": "DRY-RMV-SF",
+  "11": "DRY-RMV-SF",
+  "12": "CLN-TOILET-EA",
+  "13": "UNSURE",
+  "14": "UNSURE",
+  "15": "WIN-SCR-DR",
+  "16": "EQ-AIRM-DAY",
+  "17": "STR-CRP-RMV-EA",
+  "18": "STR-CRP-RMV-EA",
+  "2": "UNSURE",
+  "3": "DRY-RMV-SF",
+  "4": "CAB-TOE-RMV-LF",
+  "5": "DRY-RMV-SF",
+  "6": "WIN-SCR-DR",
+  "7": "BSB-RMV-LF",
+  "8": "BSB-RMV-LF",
+  "9": "TRIM-CSG-RMV-LF"
+ },
+ "texts": [
+  "R&R TOE KICK",
+  "R&R toe kick",
+  "R&R toe kick - per sf",
+  "REMOVE PAD",
+  "REMOVE SHEETROCK FULL HEIGHT",
+  "REMOVE TOE KICK",
+  "REMOVE WET DRYWALL, PER SF - per sf",
+  "REMOVE/RESET SCREENS",
+  "Remove baseboard, per LF (bedroom)",
+  "Remove baseboard, per LF per estimator",
+  "Remove door casing, per LF per estimator",
+  "Remove wet drywall, per SF - per sf",
+  "Remove wet drywall, per SF per estimator",
+  "SANITIZE TOILET",
+  "SANITIZE W/ ANTIMICROBAIL",
+  "SANITIZE W/ ANTIMICROBIAL",
+  "SCREENS D&R",
+  "SET AIR MOVER - per sf",
+  "STAIRS CARPET DEMO PER STEP",
+  "STAIRS CARPET DEMO PER STEP (bedroom)"
+ ],
+ "usage": {
+  "input_tokens": 936,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 354,
+  "usd": 0.0
+ }
+}

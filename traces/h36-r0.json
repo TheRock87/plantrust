@@ -1,0 +1,69 @@
+{
+ "error": null,
+ "house": "h36",
+ "input_hash": "9a410301ebe7d790",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "reason": "The label differs between the plan and the tour, and the worst wall difference is 2.0%, which is within the noise margin. However, the label discrepancy suggests a potential error that needs further review by a drafter.",
+ "room_id": "h36-r0",
+ "steps": [
+  {
+   "args": {
+    "room_id": "h36-r0"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h36-r0"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h36-r0"
+   },
+   "name": "get_check_results",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": true, \"ceiling\": 8.0, \"doors\": [{\"wall\": 3, \"width\": 3.0}, {\"wall\": 3, \"width\": 3.0}], \"flags\": [], \"id\": \"h36-r0\", \"label\": \"bedroom\", \"polygon\": [[0.0, 0.0], [10.0, 0.0], [10.0, 12.0], [0.0, 12.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 7.7, \"doors\": 2, \"label\": \"closet\", \"walls\": [10.2, 11.9, 9.8, 11.9]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_check_results",
+   "text": "{\"status\": \"unclear\", \"reasons\": [\"Label: 'bedroom' in the plan, 'closet' in the tour\"], \"numbers\": {\"affected\": true, \"flags\": [], \"overlaps\": [], \"plan_ceiling\": 8.0, \"plan_doors\": 2, \"plan_label\": \"bedroom\", \"plan_walls\": [10.0, 12.0, 10.0, 12.0], \"tour_ceiling\": 7.7, \"tour_doors\": 2, \"tour_label\": \"closet\", \"tour_walls\": [10.2, 11.9, 9.8, 11.9], \"worst_wall_diff_pct\": 2.0}, \"estimated_cost_at_risk_usd\": 17.21}",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "reason": "The label differs between the plan and the tour, and the worst wall difference is 2.0%, which is within the noise margin. However, the label discrepancy suggests a potential error that needs further review by a drafter.",
+    "room_id": "h36-r0",
+    "verdict": "send_to_drafter"
+   },
+   "name": "submit_verdict",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_verdict",
+   "text": "Verdict recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 1935,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 159,
+  "usd": 0.0
+ },
+ "verdict": "send_to_drafter"
+}

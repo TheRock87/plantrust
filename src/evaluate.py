@@ -73,6 +73,8 @@ def main():
     llm_usd = sum(v["usage"]["usd"] for v in agent.values())
     code_only["llm_usd_per_house"] = 0.0
     with_agent["llm_usd_per_house"] = round(llm_usd / N_HOUSES, 5)
+    with_agent["tokens_per_house"] = round(sum(v["usage"]["input_tokens"] + v["usage"]["output_tokens"]
+                                              for v in agent.values()) / N_HOUSES)
     with_agent["agent_rooms_run"] = len(agent)
     with_agent["agent_rooms_needed"] = n_unclear
     out = {"code_only": code_only, "code_plus_agent": with_agent,

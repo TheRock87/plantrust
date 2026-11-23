@@ -1,0 +1,152 @@
+{
+ "error": null,
+ "input_hash": "ce7f7c2e94ce8656",
+ "items": [
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "FLR-WOOD-MAT-DAY",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bedroom"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 14, \"items\": [{\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 1.0, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.93, \"jobs\": 13, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR\", \"description\": \"Water mitigation technician, per hour\", \"share_of_jobs\": 0.86, \"jobs\": 12, \"often_missed\": false}, {\"code\": \"CLN-FINAL-SF\", \"description\": \"Final cleaning, per SF\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bedroom"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J016\", \"category\": 1, \"notes\": \"Category 1 water: water heater failed in the next room. Carpet and pad are soaked. Drywall wet to about 16 inches. 3 windows on the outside wall.\", \"items\": [\"BSB-RMV-LF\", \"CLN-FINAL-SF\", \"CNT-BARRIER-SF\", \"CNT-MOVE-HR\", \"DRY-FLDCUT-LF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-CRP-EXT-SF\", \"FLR-CRP-RMV-SF\", \"FLR-PAD-RMV-SF\", \"HVAC-REG-CLN\", \"LBR-TECH-HR\", \"MON-MOIST-DAY\"]}, {\"job\": \"J022\", \"category\": 1, \"notes\": \"Category 1 water: roof leak during a storm. Hardwood floor, boards starting to cup. Drywall wet well above two feet, wicking high on the walls. 3",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "FLR-WOOD-MAT-DAY",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "Notes: Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture."
+     }
+    ],
+    "room_id": "h04-r3"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7365,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 777,
+  "usd": 0.0
+ }
+}

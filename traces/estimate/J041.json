@@ -1,0 +1,219 @@
+{
+ "error": null,
+ "input_hash": "9f9accaa50f4635e",
+ "items": [
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "EQ-SCRUB-DAY",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "FLR-LAM-RMV-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "PPE-EA",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "FLR-CRP-EXT-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "CLN-ANTI-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "INS-RMV-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "CNT-BARRIER-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "FLR-CRP-RMV-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "FLR-PAD-RMV-SF",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "Strong history pattern"
+  },
+  {
+   "code": "PLM-TOILET-DR",
+   "reason": "Strong history pattern"
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 3,
+    "room_type": "hallway"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 8, \"items\": [{\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.88, \"jobs\": 7, \"often_missed\": false}, {\"code\": \"EQ-AIRM-DAY\", \"description\": \"Air mover, per 24 hour period\", \"share_of_jobs\": 0.88, \"jobs\": 7, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.75, \"jobs\": 6, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.75, \"jobs\": 6, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\"",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "EQ-SCRUB-DAY",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "FLR-LAM-RMV-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "PPE-EA",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "FLR-CRP-EXT-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "CLN-ANTI-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "INS-RMV-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "CNT-BARRIER-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "FLR-CRP-RMV-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "FLR-PAD-RMV-SF",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "Strong history pattern"
+     },
+     {
+      "code": "PLM-TOILET-DR",
+      "reason": "Strong history pattern"
+     }
+    ],
+    "room_id": "J041"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3522,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 495,
+  "usd": 0.0
+ }
+}

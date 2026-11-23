@@ -1,0 +1,232 @@
+{
+ "error": null,
+ "input_hash": "8017f9c8cdced3c7",
+ "items": [
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "History pattern"
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "History pattern"
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "History pattern"
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "History pattern"
+  },
+  {
+   "code": "VAN-DR-EA",
+   "reason": "History pattern"
+  },
+  {
+   "code": "CAB-TOE-RMV-LF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "CLN-TOILET-EA",
+   "reason": "History pattern"
+  },
+  {
+   "code": "PLM-TOILET-DR",
+   "reason": "History pattern"
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "History pattern"
+  },
+  {
+   "code": "CAB-DRILL-EA",
+   "reason": "History pattern"
+  },
+  {
+   "code": "CLN-ANTI-SF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "History pattern"
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "CNT-BARRIER-SF",
+   "reason": "History pattern"
+  },
+  {
+   "code": "EQ-SCRUB-DAY",
+   "reason": "History pattern"
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "History pattern"
+  },
+  {
+   "code": "PPE-EA",
+   "reason": "History pattern"
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bathroom"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 16, \"items\": [{\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.88, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.88, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.88, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.75, \"jobs\": 12, \"often_missed\": false}, {\"code\": \"CLN-FINAL-S",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "bathroom"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J002\", \"category\": 1, \"notes\": \"Category 1 water: tub overflowed. Tile floor, water on the surface. Drywall wet well above two feet, wicking high on the walls.\", \"items\": [\"CLN-TOILET-EA\", \"DRY-FLDCUT-LF\", \"DRY-RMV-SF\", \"EQ-DEHU-DAY\", \"FLR-HARD-EXT-SF\", \"MON-MOIST-DAY\", \"PLM-TOILET-DR\"]}, {\"job\": \"J018\", \"category\": 1, \"notes\": \"Category 1 water: tub overflowed. Tile floor, water on the surface. Drywall wet to about 10 inches. Floor register in the wet area.\", \"items\": [\"BSB-RMV-LF\", \"CLN-ANTI-SF\", \"CLN-TOILET-EA\", \"DRY-FLDCUT-LF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-HARD-EXT-SF\", \"MO",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "History pattern"
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "History pattern"
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "History pattern"
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "History pattern"
+     },
+     {
+      "code": "VAN-DR-EA",
+      "reason": "History pattern"
+     },
+     {
+      "code": "CAB-TOE-RMV-LF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "CLN-TOILET-EA",
+      "reason": "History pattern"
+     },
+     {
+      "code": "PLM-TOILET-DR",
+      "reason": "History pattern"
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "History pattern"
+     },
+     {
+      "code": "CAB-DRILL-EA",
+      "reason": "History pattern"
+     },
+     {
+      "code": "CLN-ANTI-SF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "History pattern"
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "CNT-BARRIER-SF",
+      "reason": "History pattern"
+     },
+     {
+      "code": "EQ-SCRUB-DAY",
+      "reason": "History pattern"
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "History pattern"
+     },
+     {
+      "code": "PPE-EA",
+      "reason": "History pattern"
+     }
+    ],
+    "room_id": "J147"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7694,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 507,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,240 @@
+{
+ "error": null,
+ "input_hash": "82696ae5f22ebde8",
+ "items": [
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "Technician labor is always needed."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Drywall is wet above 2 feet."
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "Moisture monitoring is common in similar jobs."
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Baseboards are present and need to be removed."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "Dehumidification is necessary for drying."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "Water extraction from the tile floor is needed."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "Air movers are commonly used in similar jobs."
+  },
+  {
+   "code": "CAB-TOE-RMV-LF",
+   "reason": "Base cabinets are wet and need to be detached."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "Final cleaning is common in similar jobs."
+  },
+  {
+   "code": "INS-RMV-SF",
+   "reason": "Wet wall insulation needs to be removed."
+  },
+  {
+   "code": "VAN-DR-EA",
+   "reason": "Vanity needs to be detached and reset."
+  },
+  {
+   "code": "CLN-TOILET-EA",
+   "reason": "Toilet cleaning is necessary due to the overflow."
+  },
+  {
+   "code": "PLM-TOILET-DR",
+   "reason": "Toilet needs to be detached and reset."
+  },
+  {
+   "code": "CLN-ANTI-SF",
+   "reason": "Applying antimicrobial agent is common in similar jobs."
+  },
+  {
+   "code": "PPE-EA",
+   "reason": "Personal protective equipment is necessary for the technicians."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "Door casing needs to be removed."
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "Wet drywall needs to be removed."
+  },
+  {
+   "code": "EQ-SCRUB-DAY",
+   "reason": "Air scrubber is commonly used in similar jobs."
+  },
+  {
+   "code": "CAB-DRILL-EA",
+   "reason": "Cabinet bases need to be drilled for drying."
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "Interior door needs to be detached and reset."
+  },
+  {
+   "code": "APP-DW-DR",
+   "reason": "Dishwasher needs to be detached and reset."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "Heating and cooling register needs to be cleaned."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Window screen needs to be detached and reset."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 2,
+    "room_type": "bathroom"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 14, \"items\": [{\"code\": \"LBR-TECH-HR\", \"description\": \"Water mitigation technician, per hour\", \"share_of_jobs\": 0.86, \"jobs\": 12, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\",",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 2,
+    "room_type": "bathroom"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J003\", \"category\": 2, \"notes\": \"Category 2 water: vanity supply line burst. Tile floor, water on the surface. Drywall wet well above two feet, wicking high on the walls. Base cabinets are wet. Floor register in the wet area.\", \"items\": [\"CAB-DRILL-EA\", \"CAB-TOE-RMV-LF\", \"CLN-ANTI-SF\", \"DRY-FLDCUT-LF\", \"DRY-RMV-SF\", \"EQ-DEHU-DAY\", \"EQ-SCRUB-DAY\", \"FLR-HARD-EXT-SF\", \"INS-RMV-SF\", \"LBR-TECH-HR\", \"PPE-EA\", \"TRIM-CSG-RMV-LF\"]}, {\"job\": \"J006\", \"category\": 2, \"notes\": \"Category 2 water: toilet overflowed. Vinyl floor, water standing at the edges. Drywall wet to about 16 inches. Base cabine",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "Technician labor is always needed."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Drywall is wet above 2 feet."
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "Moisture monitoring is common in similar jobs."
+     },
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Baseboards are present and need to be removed."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "Dehumidification is necessary for drying."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "Water extraction from the tile floor is needed."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "Air movers are commonly used in similar jobs."
+     },
+     {
+      "code": "CAB-TOE-RMV-LF",
+      "reason": "Base cabinets are wet and need to be detached."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "Final cleaning is common in similar jobs."
+     },
+     {
+      "code": "INS-RMV-SF",
+      "reason": "Wet wall insulation needs to be removed."
+     },
+     {
+      "code": "VAN-DR-EA",
+      "reason": "Vanity needs to be detached and reset."
+     },
+     {
+      "code": "CLN-TOILET-EA",
+      "reason": "Toilet cleaning is necessary due to the overflow."
+     },
+     {
+      "code": "PLM-TOILET-DR",
+      "reason": "Toilet needs to be detached and reset."
+     },
+     {
+      "code": "CLN-ANTI-SF",
+      "reason": "Applying antimicrobial agent is common in similar jobs."
+     },
+     {
+      "code": "PPE-EA",
+      "reason": "Personal protective equipment is necessary for the technicians."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "Door casing needs to be removed."
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "Wet drywall needs to be removed."
+     },
+     {
+      "code": "EQ-SCRUB-DAY",
+      "reason": "Air scrubber is commonly used in similar jobs."
+     },
+     {
+      "code": "CAB-DRILL-EA",
+      "reason": "Cabinet bases need to be drilled for drying."
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "Interior door needs to be detached and reset."
+     },
+     {
+      "code": "APP-DW-DR",
+      "reason": "Dishwasher needs to be detached and reset."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "Heating and cooling register needs to be cleaned."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Window screen needs to be detached and reset."
+     }
+    ],
+    "room_id": "h03-r2"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7780,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 692,
+  "usd": 0.0
+ }
+}

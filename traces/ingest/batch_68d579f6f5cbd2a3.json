@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "UNSURE",
+  "1": "UNSURE",
+  "10": "BSB-RMV-LF",
+  "11": "UNSURE",
+  "12": "INS-RMV-SF",
+  "13": "INS-RMV-SF",
+  "14": "FLR-CRP-RMV-SF",
+  "15": "STR-CRP-RMV-EA",
+  "16": "FLR-PAD-RMV-SF",
+  "17": "DRY-RMV-SF",
+  "18": "DRY-FLDCUT-LF",
+  "19": "DRY-FLDCUT-LF",
+  "2": "CLN-ANTI-SF",
+  "3": "UNSURE",
+  "4": "WIN-SCR-DR",
+  "5": "EQ-AIRM-DAY",
+  "6": "EQ-AIRM-DAY",
+  "7": "BSB-RMV-LF",
+  "8": "BSB-RMV-LF",
+  "9": "BSB-RMV-LF"
+ },
+ "texts": [
+  "sanitize w/ antimicrobial",
+  "sanitize w/ antimicrobial ***",
+  "sanitize w/ antimicrobial - per sf",
+  "sanitzie w/ antimicrobial",
+  "screens D&R",
+  "set air moevr (bedroom)",
+  "set air mover (bedroom)",
+  "tear out base trim",
+  "tear out base trim (bedroom)",
+  "tear out base trim ***",
+  "tear out base trim - per sf",
+  "tear out base trim per estimator",
+  "tear out batt insulation",
+  "tear out batt isnulation",
+  "tear out carpet",
+  "tear out carpet on steps",
+  "tear out carpet pad",
+  "tear out wet drywall",
+  "tear out wet sheetrock 2ft flood cut",
+  "tear out wet sheetrock 2ft flood cut - per sf"
+ ],
+ "usage": {
+  "input_tokens": 878,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 368,
+  "usd": 0.0
+ }
+}

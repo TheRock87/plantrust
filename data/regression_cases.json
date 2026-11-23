@@ -1,0 +1,4 @@
+[
+ {"room_id": "h07-r1", "expected": "accept", "why": "Stairwell flagged as a weak spot; walls within 2 % and ceiling within 0.1 ft of the tour"},
+ {"room_id": "h01-r3", "expected": "send_to_drafter", "why": "Planted error E3: the plan lost the bathroom's only door"}
+]

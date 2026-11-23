@@ -1,0 +1,59 @@
+{
+ "error": null,
+ "house": "h03",
+ "input_hash": "83e0b80b978eb7d2",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "reason": "Agent could not decide; a drafter checks it.",
+ "room_id": "h03-r3",
+ "steps": [
+  {
+   "args": {
+    "room_id": "h03-r3"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h03-r3"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h03-r3"
+   },
+   "name": "get_check_results",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": true, \"ceiling\": 8.0, \"doors\": [{\"wall\": 3, \"width\": 3.0}], \"flags\": [], \"id\": \"h03-r3\", \"label\": \"living\", \"polygon\": [[0.0, 14.0], [26.0, 14.0], [26.0, 26.0], [0.0, 26.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 8.0, \"doors\": 1, \"label\": \"bedroom\", \"walls\": [26.3, 11.9, 25.5, 12.1]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_check_results",
+   "text": "{\"status\": \"unclear\", \"reasons\": [\"Label: 'living' in the plan, 'bedroom' in the tour\", \"Overlaps h03-r4 by 12 sq ft\"], \"numbers\": {\"affected\": true, \"flags\": [], \"overlaps\": [{\"other\": \"h03-r4\", \"sqft\": 12.0}], \"plan_ceiling\": 8.0, \"plan_doors\": 1, \"plan_label\": \"living\", \"plan_walls\": [26.0, 12.0, 26.0, 12.0], \"tour_ceiling\": 8.0, \"tour_doors\": 1, \"tour_label\": \"bedroom\", \"tour_walls\": [26.3, 11.9, 25.5, 12.1], \"worst_wall_diff_pct\": 2.0}, \"estimated_cost_at_risk_usd\": 1.44}",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan and the tour agree on the ceiling height and the number of doors, but the labels differ ('living' vs 'bedroom'). The plan walls are within 2% of the tour walls, except for one wall that is 2% off. The plan overlaps with h03-r4 by 12 sq ft.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 1959,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 141,
+  "usd": 0.0
+ },
+ "verdict": "send_to_drafter"
+}

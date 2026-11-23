@@ -1,0 +1,240 @@
+{
+ "error": null,
+ "input_hash": "d1138d683e912f45",
+ "items": [
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Baseboard is present and needs to be removed."
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "Moisture monitoring and mapping is necessary for this job."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "Water mitigation technician is required for this job."
+  },
+  {
+   "code": "PPE-EA",
+   "reason": "Personal protective equipment is needed due to the strong odor and Category 3 water."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "Dehumidifier is needed to remove moisture from the air."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "Air mover is needed to circulate air and aid in drying."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Flood cut wet drywall 2 ft is necessary due to the high water level on the walls."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "Final cleaning is required to ensure the area is clean and safe."
+  },
+  {
+   "code": "CNT-BARRIER-SF",
+   "reason": "Containment barrier is needed to prevent the spread of contaminants."
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "Remove wet drywall is necessary due to the high water level on the walls."
+  },
+  {
+   "code": "INS-RMV-SF",
+   "reason": "Remove wet wall insulation is necessary to prevent mold growth."
+  },
+  {
+   "code": "CLN-ANTI-SF",
+   "reason": "Apply antimicrobial agent is necessary to prevent mold growth."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "Water extraction from hard surface floor is necessary to remove standing water."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "Clean heating and cooling register is necessary to prevent the spread of contaminants."
+  },
+  {
+   "code": "CAB-TOE-RMV-LF",
+   "reason": "Detach cabinet toe kick is necessary to allow for proper drying."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Detach and reset window screen is necessary to allow for proper ventilation."
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "Detach and reset interior door is necessary to allow for proper ventilation."
+  },
+  {
+   "code": "FLR-LAM-RMV-SF",
+   "reason": "Remove laminate flooring is necessary to allow for proper drying."
+  },
+  {
+   "code": "EQ-SCRUB-DAY",
+   "reason": "Air scrubber is needed to remove contaminants from the air."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "Move and block room contents is necessary to allow for proper drying."
+  },
+  {
+   "code": "CAB-DRILL-EA",
+   "reason": "Drill cabinet bases for drying is necessary to allow for proper drying."
+  },
+  {
+   "code": "VAN-DR-EA",
+   "reason": "Detach and reset vanity is necessary to allow for proper drying."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "Remove door casing is necessary to allow for proper ventilation."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 3,
+    "room_type": "kitchen"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 10, \"items\": [{\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 1.0, \"jobs\": 10, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR\", \"description\": \"Water mitigation technician, per hour\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"PPE-EA\", \"description\": \"Personal protective equipment, per person per day\", \"share_of_jobs\": 0.9, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\"",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 3,
+    "room_type": "kitchen"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J028\", \"category\": 3, \"notes\": \"Category 3 water: flood water came in from outside. Laminate floor is cupping at the seams. Drywall wet well above two feet, wicking high on the walls. Base cabinets are wet. 1 window on the outside wall. Floor register in the wet area. Strong odor; crew needs full protection.\", \"items\": [\"BSB-RMV-LF\", \"CAB-DRILL-EA\", \"CAB-TOE-RMV-LF\", \"CLN-FINAL-SF\", \"CNT-BARRIER-SF\", \"DRY-RMV-SF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-LAM-RMV-SF\", \"HVAC-REG-CLN\", \"LBR-TECH-HR\", \"MON-MOIST-DAY\", \"PPE-EA\"]}, {\"job\": \"J032\", \"category\": 3, \"notes\": \"Category 3 water: flood",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Baseboard is present and needs to be removed."
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "Moisture monitoring and mapping is necessary for this job."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "Water mitigation technician is required for this job."
+     },
+     {
+      "code": "PPE-EA",
+      "reason": "Personal protective equipment is needed due to the strong odor and Category 3 water."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "Dehumidifier is needed to remove moisture from the air."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "Air mover is needed to circulate air and aid in drying."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Flood cut wet drywall 2 ft is necessary due to the high water level on the walls."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "Final cleaning is required to ensure the area is clean and safe."
+     },
+     {
+      "code": "CNT-BARRIER-SF",
+      "reason": "Containment barrier is needed to prevent the spread of contaminants."
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "Remove wet drywall is necessary due to the high water level on the walls."
+     },
+     {
+      "code": "INS-RMV-SF",
+      "reason": "Remove wet wall insulation is necessary to prevent mold growth."
+     },
+     {
+      "code": "CLN-ANTI-SF",
+      "reason": "Apply antimicrobial agent is necessary to prevent mold growth."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "Water extraction from hard surface floor is necessary to remove standing water."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "Clean heating and cooling register is necessary to prevent the spread of contaminants."
+     },
+     {
+      "code": "CAB-TOE-RMV-LF",
+      "reason": "Detach cabinet toe kick is necessary to allow for proper drying."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Detach and reset window screen is necessary to allow for proper ventilation."
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "Detach and reset interior door is necessary to allow for proper ventilation."
+     },
+     {
+      "code": "FLR-LAM-RMV-SF",
+      "reason": "Remove laminate flooring is necessary to allow for proper drying."
+     },
+     {
+      "code": "EQ-SCRUB-DAY",
+      "reason": "Air scrubber is needed to remove contaminants from the air."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "Move and block room contents is necessary to allow for proper drying."
+     },
+     {
+      "code": "CAB-DRILL-EA",
+      "reason": "Drill cabinet bases for drying is necessary to allow for proper drying."
+     },
+     {
+      "code": "VAN-DR-EA",
+      "reason": "Detach and reset vanity is necessary to allow for proper drying."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "Remove door casing is necessary to allow for proper ventilation."
+     }
+    ],
+    "room_id": "J062"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7750,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 775,
+  "usd": 0.0
+ }
+}

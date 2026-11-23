@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "CLN-FINAL-SF",
+  "1": "CLN-FINAL-SF",
+  "10": "HVAC-REG-CLN",
+  "11": "UNSURE",
+  "12": "FLR-WOOD-MAT-DAY",
+  "13": "INS-RMV-SF",
+  "14": "INS-RMV-SF",
+  "15": "EQ-DEHU-DAY",
+  "16": "EQ-DEHU-DAY",
+  "17": "EQ-DEHU-DAY",
+  "18": "EQ-DEHU-DAY",
+  "19": "LBR-TECH-HR",
+  "2": "DRY-FLDCUT-LF",
+  "3": "CLN-FINAL-SF",
+  "4": "DRY-FLDCUT-LF",
+  "5": "FLR-HARD-EXT-SF",
+  "6": "EQ-SCRUB-DAY",
+  "7": "EQ-SCRUB-DAY",
+  "8": "HVAC-REG-CLN",
+  "9": "HVAC-REG-CLN"
+ },
+ "texts": [
+  "FINAL CLEAN per estimator",
+  "FINAL CLEANING, PER SF - per sf",
+  "FLOOD CUT 2'",
+  "Fianl cleaning, per SF - per sf",
+  "Flood cut wet drywall 2 ft, per LF per estimator",
+  "HARD FLOOR EXTRACTION",
+  "HEPA SCRUBBER PER DAY",
+  "HEPA scrubber per day",
+  "HVAC VENT CLEANING",
+  "HVAC vent cleaning",
+  "HVAC vent cleaning (bedroom)",
+  "HVAC vent cleaning - per sf",
+  "INJECTIDRY MATS PER DAY",
+  "INSULATION DEMO",
+  "INSULATION DEMO per estimator",
+  "LGR dehumidifier (bedroom)",
+  "LGR dehumidifier - per sf",
+  "LGR dehumidifier per estimator",
+  "LGR dehumidiifer - per sf",
+  "MITIGATION LABOR PER HOUR"
+ ],
+ "usage": {
+  "input_tokens": 914,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 388,
+  "usd": 0.0
+ }
+}

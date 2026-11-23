@@ -1,9 +1,40 @@
 {
  "all_lines": 1675,
  "holdout_lines": 100,
- "model_calls": 0,
- "model_examples": [],
- "model_ran": false,
+ "model_calls": 17,
+ "model_examples": [
+  {
+   "code": "FLR-WOOD-MAT-DAY",
+   "correct": true,
+   "text": "WOOD FLOOR DRYING SYSTEM"
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "correct": true,
+   "text": "dehu"
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "correct": true,
+   "text": "WTR technician hrs"
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "correct": true,
+   "text": "TECH LABOR"
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "correct": true,
+   "text": "pull base"
+  },
+  {
+   "code": "CAB-TOE-RMV-LF",
+   "correct": true,
+   "text": "PULL CABINET TOE KICKS"
+  }
+ ],
+ "model_ran": true,
  "per_layer": {
   "exact": {
    "correct": 10,
@@ -14,33 +45,33 @@
    "settled": 22
   },
   "model": {
-   "correct": 0,
-   "settled": 0
+   "correct": 49,
+   "settled": 50
   },
   "review": {
    "correct": 0,
-   "settled": 68
+   "settled": 18
   }
  },
  "review_examples": [
-  "AIR MOVER, PER 24 HOUR PERIOD per estimator",
   "AIR MOVERS - per sf",
   "AM X 3 DAYS",
   "AM X 3 DAYS ***",
   "AM x 3 days",
   "AM x 3 days ***",
-  "AM x 3 days - per sf",
   "APPLY ANTIMICROBIAL per estimator",
-  "Air mover, per 24 hour period - per sf",
-  "BASEBOARD R&R - REMOVE ONLY",
   "BASEBOARD R&R - REMOVE ONLY - per sf",
-  "BIOCDIE APPLICATION"
+  "DEHU",
+  "DEHU LARGE 24HR - per sf",
+  "DRYING FAN RENTAL",
+  "FINAL CLEAN per estimator",
+  "Fianl cleaning, per SF - per sf"
  ],
  "unique_by_layer": {
   "exact": 60,
   "fuzzy": 113,
-  "model": 0,
-  "review": 323
+  "model": 233,
+  "review": 90
  },
  "unique_texts": 496
 }

@@ -1,0 +1,69 @@
+{
+ "error": null,
+ "house": "h17",
+ "input_hash": "8fb00cb21770f6ec",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "reason": "The label differs between the plan and the tour, which is a reason to look at the numbers.",
+ "room_id": "h17-r1",
+ "steps": [
+  {
+   "args": {
+    "room_id": "h17-r1"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h17-r1"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h17-r1"
+   },
+   "name": "get_check_results",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": true, \"ceiling\": 8.0, \"doors\": [{\"wall\": 1, \"width\": 2.5}, {\"wall\": 0, \"width\": 2.5}], \"flags\": [], \"id\": \"h17-r1\", \"label\": \"hallway\", \"polygon\": [[7.0, 0.0], [13.5, 0.0], [13.5, 12.0], [7.0, 12.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 8.0, \"doors\": 2, \"label\": \"bedroom\", \"walls\": [6.4, 12.1, 6.5, 11.9]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_check_results",
+   "text": "{\"status\": \"unclear\", \"reasons\": [\"Label: 'hallway' in the plan, 'bedroom' in the tour\"], \"numbers\": {\"affected\": true, \"flags\": [], \"overlaps\": [], \"plan_ceiling\": 8.0, \"plan_doors\": 2, \"plan_label\": \"hallway\", \"plan_walls\": [6.5, 12.0, 6.5, 12.0], \"tour_ceiling\": 8.0, \"tour_doors\": 2, \"tour_label\": \"bedroom\", \"tour_walls\": [6.4, 12.1, 6.5, 11.9], \"worst_wall_diff_pct\": 1.6}, \"estimated_cost_at_risk_usd\": 6.32}",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "reason": "The label differs between the plan and the tour, which is a reason to look at the numbers.",
+    "room_id": "h17-r1",
+    "verdict": "send_to_drafter"
+   },
+   "name": "submit_verdict",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_verdict",
+   "text": "Verdict recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 1926,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 133,
+  "usd": 0.0
+ },
+ "verdict": "send_to_drafter"
+}

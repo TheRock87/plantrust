@@ -1,0 +1,33 @@
+{
+ "answers": {},
+ "texts": [
+  "dehu per estimator",
+  "dehumidfiier per day",
+  "demo wet gypsum board",
+  "detach & reset door",
+  "detach & reset toilet per estimator",
+  "dheumidifier per day",
+  "door D&R",
+  "door D&R (bedroom)",
+  "door D&R - per sf",
+  "door trim remoavl",
+  "door trim removal",
+  "drill hoels cab bases",
+  "drill holes cab bases",
+  "drill holes cab bsaes",
+  "driyng fan rental",
+  "drying fan rental",
+  "drying fan rental ***",
+  "drying fan rental - per sf",
+  "drying fan rental per estimator",
+  "extract water hard surface per estimator"
+ ],
+ "usage": {
+  "input_tokens": 858,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 378,
+  "usd": 0.0
+ }
+}

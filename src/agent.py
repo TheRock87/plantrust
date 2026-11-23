@@ -23,7 +23,7 @@ from .common import DATA, TRACES, load, save
 
 MODEL = llm.MODEL
 MAX_MODEL_STEPS = 6
-PROMPT_VERSION = "v2"
+PROMPT_VERSION = "v3"
 
 SYSTEM_PROMPT = """You review one room of a preliminary floor plan drawn by a scanner (the AI plan).
 A drafter's time is expensive, so only rooms that need a human should go to a drafter.
@@ -34,11 +34,14 @@ and what the code checks found. Then call submit_verdict exactly once:
 - accept: the plan agrees with the tour within normal measurement noise, and you can say why.
 - send_to_drafter: anything a drafter must look at, or anything you are unsure about.
 
-Facts about the inputs:
-- Tour wall lengths carry about 2 % noise; tour ceilings about 0.3 ft.
-- Tour door counts are usually right but sometimes off by one; tour room labels are usually right.
-- Stairwells, tall ceilings and glass walls are known weak spots for scanners.
-- If two rooms overlap, usually only one of them was drawn wrong; the one whose walls disagree with its tour is the suspect.
+Each finding from the code checks is a reason to look at the numbers, not a verdict. Tour walls carry about
+2 % noise and tour ceilings about 0.3 ft, so differences inside that are agreement. For each finding:
+- Weak spot (stairwell, tall ceiling, glass wall): accept if walls and ceiling match the tour within noise.
+- Overlap with another room: accept if this room's walls match its tour; the neighbour drawn wrong is the suspect.
+- Label differs from the tour: the label does not change quantities; accept if the measurements match.
+- Door count differs from the tour: send to drafter. A missing door is a real error type, even though tour
+  door counts are sometimes off by one.
+- Wall or ceiling near the limit: send to drafter.
 Give the reason in one or two sentences with the numbers."""
 
 

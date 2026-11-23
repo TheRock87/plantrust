@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "DOR-DR-EA",
+  "1": "PLM-TOILET-DR",
+  "10": "FLR-CRP-RMV-SF",
+  "11": "FLR-CRP-RMV-SF",
+  "12": "UNSURE",
+  "13": "UNSURE",
+  "14": "UNSURE",
+  "15": "DRY-RMV-SF",
+  "16": "FLR-PAD-RMV-SF",
+  "17": "DRY-RMV-SF",
+  "18": "CLN-TOILET-EA",
+  "19": "UNSURE",
+  "2": "VAN-DR-EA",
+  "3": "BSB-RMV-LF",
+  "4": "FLR-LAM-RMV-SF",
+  "5": "FLR-PAD-RMV-SF",
+  "6": "DRY-RMV-SF",
+  "7": "DRY-RMV-SF",
+  "8": "STR-CRP-RMV-EA",
+  "9": "CAB-TOE-RMV-LF"
+ },
+ "texts": [
+  "pull door + reset per estimator",
+  "pull toilet + reset",
+  "pull vanity for drying",
+  "remove baseboard per estimator",
+  "remove lamiante",
+  "remove pad",
+  "remove sheetrock full height",
+  "remove sheetrock full height per estimator",
+  "remove stair carpet",
+  "remove toe kick",
+  "remove wet capret",
+  "remove wet carpet",
+  "remove/reest screens",
+  "remove/reset screens",
+  "remove/reset screens - per sf",
+  "reomve sheetrock full height (bedroom)",
+  "rmeove pad - per sf",
+  "rmeove sheetrock full height",
+  "sanitize toilet",
+  "sanitize toilet - per sf"
+ ],
+ "usage": {
+  "input_tokens": 856,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 376,
+  "usd": 0.0
+ }
+}

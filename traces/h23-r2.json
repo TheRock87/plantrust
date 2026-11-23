@@ -1,0 +1,69 @@
+{
+ "error": null,
+ "house": "h23",
+ "input_hash": "00373b11f20510c2",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "reason": "The tall ceiling is a known weak spot, but the walls and ceiling match the tour within noise: 1.8 % worst wall difference, 0.1 ft ceiling difference.",
+ "room_id": "h23-r2",
+ "steps": [
+  {
+   "args": {
+    "room_id": "h23-r2"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h23-r2"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h23-r2"
+   },
+   "name": "get_check_results",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": false, \"ceiling\": 14.0, \"doors\": [{\"wall\": 2, \"width\": 2.5}, {\"wall\": 0, \"width\": 2.5}], \"flags\": [\"tall_ceiling\"], \"id\": \"h23-r2\", \"label\": \"living\", \"polygon\": [[13.5, 0.0], [34.5, 0.0], [34.5, 16.0], [13.5, 16.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 14.1, \"doors\": 2, \"label\": \"living\", \"walls\": [21.0, 16.3, 21.2, 16.2]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_check_results",
+   "text": "{\"status\": \"unclear\", \"reasons\": [\"Known weak spot for scanners: tall ceiling\"], \"numbers\": {\"affected\": false, \"flags\": [\"tall_ceiling\"], \"overlaps\": [], \"plan_ceiling\": 14.0, \"plan_doors\": 2, \"plan_label\": \"living\", \"plan_walls\": [21.0, 16.0, 21.0, 16.0], \"tour_ceiling\": 14.1, \"tour_doors\": 2, \"tour_label\": \"living\", \"tour_walls\": [21.0, 16.3, 21.2, 16.2], \"worst_wall_diff_pct\": -1.8}, \"estimated_cost_at_risk_usd\": 0.0}",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "reason": "The tall ceiling is a known weak spot, but the walls and ceiling match the tour within noise: 1.8 % worst wall difference, 0.1 ft ceiling difference.",
+    "room_id": "h23-r2",
+    "verdict": "accept"
+   },
+   "name": "submit_verdict",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_verdict",
+   "text": "Verdict recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 1941,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 146,
+  "usd": 0.0
+ },
+ "verdict": "accept"
+}

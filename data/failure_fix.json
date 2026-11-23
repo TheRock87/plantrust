@@ -1,0 +1,25 @@
+{
+ "steps": [
+  {
+   "text": "Room h07-r1, a stairwell. Plan walls [6.0, 10.0, 6.0, 10.0], tour walls [6.0, 10.1, 6.0, 10.2] ft (worst -2%), ceiling 17 ft in the plan and 17.1 ft in the tour, doors 1 and 1. Everything agrees within noise, yet the agent answered: \"Known weak spot for scanners: stairwell, tall ceiling.\"",
+   "title": "Read the trace"
+  },
+  {
+   "text": "The agent repeated the code's warning as its verdict. The instruction said what the inputs mean, but never that a warning is a reason to look at the numbers, not a reason to reject. So 'when unsure, send to a drafter' won every time.",
+   "title": "Find the cause"
+  },
+  {
+   "text": "2 rooms became regression cases with the verdict a drafter would expect, including h07-r1 (accept) and a bathroom with a truly missing door (send to drafter). tests/test_failure_fix.py fails if a rerun breaks any of them.",
+   "title": "Add the case"
+  },
+  {
+   "text": "Each warning now says what to check: a weak spot or an overlap is fine when this room's measurements match the tour; a label mismatch alone does not change quantities; a door-count mismatch still goes to a drafter, because a missing door is a real error type.",
+   "title": "Change the instruction"
+  },
+  {
+   "text": "False alarms 71 to 36 of 250 clean rooms; errors caught 32 to 32 of 32; rooms sent to a drafter 103 to 68 (35 fewer). h07-r1 now: accept, \"The plan agrees with the tour within normal measurement noise: the ceiling is 0.1 ft off, and the walls are off by 0.1 ft or 2 %.\"",
+   "title": "Before, after"
+  }
+ ],
+ "summary": "The first run of the agent sent all 76 unclear rooms to a drafter, so it removed none of the 71 false alarms the code checks had raised."
+}

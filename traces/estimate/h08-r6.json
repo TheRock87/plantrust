@@ -1,0 +1,160 @@
+{
+ "error": null,
+ "input_hash": "dabfd8e119b4b496",
+ "items": [
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "History: 8 out of 11 similar jobs."
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "History: 8 out of 11 similar jobs."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "History: 7 out of 11 similar jobs."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "History: 7 out of 11 similar jobs."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "Notes: Room is full of furniture."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "History: 5 out of 11 similar jobs."
+  },
+  {
+   "code": "FLR-WOOD-MAT-DAY",
+   "reason": "Notes: Hardwood floor, boards starting to cup."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Notes: 2 windows on the outside wall."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "History: 3 out of 11 similar jobs."
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "Notes: Floor register in the wet area."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "living"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 11, \"items\": [{\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.91, \"jobs\": 10, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.82, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.73, \"jobs\": 8, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.73, \"jobs\": 8, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR\", ",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "living"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J026\", \"category\": 1, \"notes\": \"Category 1 water: pipe burst in the wall. Laminate floor is cupping at the seams. 3 windows on the outside wall. Room is full of furniture.\", \"items\": [\"BSB-RMV-LF\", \"CNT-MOVE-HR\", \"DOR-DR-EA\", \"EQ-DEHU-DAY\", \"LBR-TECH-HR\"]}, {\"job\": \"J043\", \"category\": 1, \"notes\": \"Category 1 water: water heater failed in the next room. Carpet and pad are soaked. Drywall wet to about 16 inches. 2 windows on the outside wall. Floor register in the wet area.\", \"items\": [\"BSB-RMV-LF\", \"DRY-FLDCUT-LF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-CRP-EXT-SF\", \"FLR-PAD-RMV-SF\"]}, {\"",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "History: 8 out of 11 similar jobs."
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "History: 8 out of 11 similar jobs."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "History: 7 out of 11 similar jobs."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "History: 7 out of 11 similar jobs."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "Notes: Room is full of furniture."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "History: 5 out of 11 similar jobs."
+     },
+     {
+      "code": "FLR-WOOD-MAT-DAY",
+      "reason": "Notes: Hardwood floor, boards starting to cup."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Notes: 2 windows on the outside wall."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "History: 3 out of 11 similar jobs."
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "Notes: Floor register in the wet area."
+     }
+    ],
+    "room_id": "h08-r6"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7128,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 473,
+  "usd": 0.0
+ }
+}

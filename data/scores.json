@@ -1,5 +1,5 @@
 {
- "agent_complete": false,
+ "agent_complete": true,
  "code_only": {
   "caught": 32,
   "clean_rooms": 250,
@@ -35,11 +35,11 @@
  },
  "code_plus_agent": {
   "agent_rooms_needed": 76,
-  "agent_rooms_run": 0,
+  "agent_rooms_run": 76,
   "caught": 32,
   "clean_rooms": 250,
   "errors": 32,
-  "false_alarms": 71,
+  "false_alarms": 36,
   "llm_usd_per_house": 0.0,
   "per_type": {
    "E1": {
@@ -64,9 +64,10 @@
    }
   },
   "rooms": 282,
-  "sent_to_drafter": 103,
+  "sent_to_drafter": 68,
+  "tokens_per_house": 3938,
   "usd_at_risk_caught": 9228.78,
   "usd_at_risk_total": 9228.78
  },
- "llm_usd_total": 0
+ "llm_usd_total": 0.0
 }

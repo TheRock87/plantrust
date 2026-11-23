@@ -1,0 +1,216 @@
+{
+ "error": null,
+ "input_hash": "64a42237a66e873f",
+ "items": [
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "The technician's notes mention a dishwasher supply line failure, which is a common cause for water damage in kitchens. Dehumidifiers are essential for removing moisture from the air and preventing further damage."
+  },
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "The technician's notes mention that the base cabinets are wet. Removing the baseboard is necessary to access and dry the wet drywall behind it."
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Moisture monitoring and mapping are essential for tracking the drying process and ensuring that all affected areas are properly dried."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Flood cutting the wet drywall is necessary to remove the damaged material and prevent further damage."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Air movers are essential for circulating air and promoting drying."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Water mitigation technicians are necessary for performing the necessary tasks to mitigate the water damage."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Final cleaning is necessary to remove any remaining dirt, debris, or contaminants from the affected areas."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "The technician's notes mention that the laminate floor is cupping at the seams, indicating water damage. Water extraction from the hard surface floor is necessary to remove the standing water and prevent further damage."
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Removing the wet drywall is necessary to remove the damaged material and prevent further damage."
+  },
+  {
+   "code": "CLN-ANTI-SF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Applying an antimicrobial agent is necessary to prevent the growth of mold and other microorganisms."
+  },
+  {
+   "code": "APP-DW-DR",
+   "reason": "The technician's notes mention a dishwasher supply line failure, which is a common cause for water damage in kitchens. Detaching and resetting the dishwasher is necessary to repair the damage and prevent further damage."
+  },
+  {
+   "code": "FLR-LAM-RMV-SF",
+   "reason": "The technician's notes mention that the laminate floor is cupping at the seams, indicating water damage. Removing the laminate flooring is necessary to remove the damaged material and prevent further damage."
+  },
+  {
+   "code": "CAB-TOE-RMV-LF",
+   "reason": "The technician's notes mention that the base cabinets are wet. Detaching the cabinet toe kick is necessary to access and dry the wet drywall behind it."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Detaching and resetting the window screen is necessary to repair the damage and prevent further damage."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Moving and blocking room contents is necessary to prevent further damage and facilitate the drying process."
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Detaching and resetting the interior door is necessary to repair the damage and prevent further damage."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Removing the door casing is necessary to access and dry the wet drywall behind it."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Cleaning the heating and cooling register is necessary to prevent the spread of contaminants and promote proper airflow."
+  },
+  {
+   "code": "PPE-EA",
+   "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Personal protective equipment is necessary to protect the workers from exposure to contaminants and other hazards."
+  },
+  {
+   "code": "CAB-DRILL-EA",
+   "reason": "The technician's notes mention that the base cabinets are wet. Drilling the cabinet bases for drying is necessary to access and dry the wet drywall behind it."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "kitchen"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 21, \"items\": [{\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.95, \"jobs\": 20, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.86, \"jobs\": 18, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.81, \"jobs\": 17, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.76, \"jobs\": 16, \"often_missed\": false}, {\"code\": \"EQ-AIRM-DAY",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "loss_category": 1,
+    "room_type": "kitchen"
+   },
+   "name": "find_similar_jobs",
+   "type": "tool_call"
+  },
+  {
+   "name": "find_similar_jobs",
+   "text": "[{\"job\": \"J008\", \"category\": 1, \"notes\": \"Category 1 water: refrigerator ice-maker line leaked. Laminate floor is cupping at the seams. Drywall wet well above two feet, wicking high on the walls. Floor register in the wet area.\", \"items\": [\"BSB-RMV-LF\", \"CLN-ANTI-SF\", \"CLN-FINAL-SF\", \"DRY-RMV-SF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"LBR-TECH-HR\", \"MON-MOIST-DAY\", \"WIN-SCR-DR\"]}, {\"job\": \"J020\", \"category\": 1, \"notes\": \"Category 1 water: sink supply line burst. Vinyl floor, water standing at the edges. Drywall wet to about 18 inches.\", \"items\": [\"BSB-RMV-LF\", \"CLN-FINAL-SF\", \"DRY-FLDCUT-LF\", \"EQ-AIR",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "The technician's notes mention a dishwasher supply line failure, which is a common cause for water damage in kitchens. Dehumidifiers are essential for removing moisture from the air and preventing further damage."
+     },
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "The technician's notes mention that the base cabinets are wet. Removing the baseboard is necessary to access and dry the wet drywall behind it."
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Moisture monitoring and mapping are essential for tracking the drying process and ensuring that all affected areas are properly dried."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Flood cutting the wet drywall is necessary to remove the damaged material and prevent further damage."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Air movers are essential for circulating air and promoting drying."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Water mitigation technicians are necessary for performing the necessary tasks to mitigate the water damage."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Final cleaning is necessary to remove any remaining dirt, debris, or contaminants from the affected areas."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "The technician's notes mention that the laminate floor is cupping at the seams, indicating water damage. Water extraction from the hard surface floor is necessary to remove the standing water and prevent further damage."
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Removing the wet drywall is necessary to remove the damaged material and prevent further damage."
+     },
+     {
+      "code": "CLN-ANTI-SF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Applying an antimicrobial agent is necessary to prevent the growth of mold and other microorganisms."
+     },
+     {
+      "code": "APP-DW-DR",
+      "reason": "The technician's notes mention a dishwasher supply line failure, which is a common cause for water damage in kitchens. Detaching and resetting the dishwasher is necessary to repair the damage and prevent further damage."
+     },
+     {
+      "code": "FLR-LAM-RMV-SF",
+      "reason": "The technician's notes mention that the laminate floor is cupping at the seams, indicating water damage. Removing the laminate flooring is necessary to remove the damaged material and prevent further damage."
+     },
+     {
+      "code": "CAB-TOE-RMV-LF",
+      "reason": "The technician's notes mention that the base cabinets are wet. Detaching the cabinet toe kick is necessary to access and dry the wet drywall behind it."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Detaching and resetting the window screen is necessary to repair the damage and prevent further damage."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Moving and blocking room contents is necessary to prevent further damage and facilitate the drying process."
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Detaching and resetting the interior door is necessary to repair the damage and prevent further damage."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Removing the door casing is necessary to access and dry the wet drywall behind it."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Cleaning the heating and cooling register is necessary to prevent the spread of contaminants and promote proper airflow."
+     },
+     {
+      "code": "PPE-EA",
+      "reason": "The technician's notes mention that the drywall is wet well above two feet, indicating a significant amount of water damage. Personal protective equipment is necessary to protect the workers from exposure to contaminants and other hazards."
+     },
+     {
+      "code": "CAB-DRILL-EA",
+      "reason": "The technician's notes mention that the base cabinets are wet. Drilling the cabinet bases for drying is necessary to access and dry the wet drywall behind it."
+     }
+    ],
+    "room_id": "h03-r1"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 7354,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 1231,
+  "usd": 0.0
+ }
+}

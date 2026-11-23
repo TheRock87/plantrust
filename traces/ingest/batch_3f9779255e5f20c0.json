@@ -1,0 +1,54 @@
+{
+ "answers": {
+  "0": "UNSURE",
+  "1": "FLR-PAD-RMV-SF",
+  "10": "BSB-RMV-LF",
+  "11": "BSB-RMV-LF",
+  "12": "CAB-TOE-RMV-LF",
+  "13": "CAB-TOE-RMV-LF",
+  "14": "CAB-TOE-RMV-LF",
+  "15": "CAB-TOE-RMV-LF",
+  "16": "TRIM-CSG-RMV-LF",
+  "17": "APP-DW-DR",
+  "18": "DOR-DR-EA",
+  "19": "DOR-DR-EA",
+  "2": "FLR-PAD-RMV-SF",
+  "3": "FLR-PAD-RMV-SF",
+  "4": "CNT-BARRIER-SF",
+  "5": "CNT-BARRIER-SF",
+  "6": "PPE-EA",
+  "7": "PPE-EA",
+  "8": "PPE-EA",
+  "9": "BSB-RMV-LF"
+ },
+ "texts": [
+  "negative air mcahine ***",
+  "pad demo + bag",
+  "pad demo + bag ***",
+  "pad demo + bag per estimator",
+  "poly barrier",
+  "poly barrier (bedroom)",
+  "protective gear per day",
+  "protective gear per day (bedroom)",
+  "protective gear per day per estimator",
+  "pull base",
+  "pull base ***",
+  "pull base - per sf",
+  "pull cabinet toe kciks",
+  "pull cabinet toe kicks",
+  "pull cabinet toe kicks ***",
+  "pull cabinet toe kicks per estimator",
+  "pull casing",
+  "pull dishwasher",
+  "pull door + reset",
+  "pull door + reset ***"
+ ],
+ "usage": {
+  "input_tokens": 849,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 379,
+  "usd": 0.0
+ }
+}
