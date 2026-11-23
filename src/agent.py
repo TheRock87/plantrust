@@ -105,12 +105,13 @@ def _trace(messages):
     return steps
 
 
-def review_room(room_id, plan_room, tour_room, check, model):
+def review_room(room_id, plan_room, tour_room, check, model, fallbacks=()):
     """Run the agent on one room. Never raises; any failure becomes send_to_drafter."""
     from langchain.agents import create_agent
 
     box = {"room_id": room_id, "verdict": None, "reason": None}
-    agent = create_agent(model, make_tools(room_id, plan_room, tour_room, check, box), system_prompt=SYSTEM_PROMPT)
+    agent = create_agent(model, make_tools(room_id, plan_room, tour_room, check, box), system_prompt=SYSTEM_PROMPT,
+                         middleware=llm.agent_middleware(fallbacks))
     messages, error = [], None
     try:
         out = agent.invoke({"messages": [{"role": "user", "content": f"Review room {room_id}."}]},
@@ -140,7 +141,7 @@ def main():
             if chk["status"] == "unclear":
                 jobs.append((hid, rid, rooms[rid], tours[hid][rid], chk))
 
-    model = None
+    model, fallbacks = None, []
     verdicts, cached, new, skipped = {}, 0, 0, 0
     for hid, rid, plan_room, tour_room, chk in jobs:
         path = TRACES / f"{rid}.json"
@@ -151,16 +152,16 @@ def main():
             continue
         if model is None:
             if not llm.has_key():
-                print(f"agent: no {llm.KEY_ENV.get(llm.provider())} (environment or .env); unclear rooms without "
+                print(f"agent: no {llm.key_names()} (environment or .env); unclear rooms without "
                       "a cached trace are left for the drafter and marked 'agent not run'.")
                 skipped = len(jobs) - cached - new
                 break
-            model = llm.get_model()
+            model, fallbacks = llm.get_model(), llm.get_fallbacks()
         if llm.over_budget():
             print(f"agent: budget cap {llm.BUDGET_USD} USD reached; remaining rooms go to the drafter.")
             skipped = len(jobs) - cached - new
             break
-        res = review_room(rid, plan_room, tour_room, chk, model)
+        res = review_room(rid, plan_room, tour_room, chk, model, fallbacks)
         res.update({"room_id": rid, "house": hid, "input_hash": h, "model": MODEL})
         if res["error"] and "rate" in res["error"].lower():
             print(f"  {rid}: provider limit hit ({res['error'][:80]}); stopping, rerun later to continue.")

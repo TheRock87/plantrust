@@ -144,12 +144,13 @@ def make_tools(target, hist, box):
     ]
 
 
-def run_agent(target, hist, model):
+def run_agent(target, hist, model, fallbacks=()):
     from langchain.agents import create_agent
     from .agent import _trace
 
     box = {"items": None}
-    agent = create_agent(model, make_tools(target, hist, box), system_prompt=SYSTEM_PROMPT)
+    agent = create_agent(model, make_tools(target, hist, box), system_prompt=SYSTEM_PROMPT,
+                         middleware=llm.agent_middleware(fallbacks))
     ask = (f"Draft the line items for room {target['id']}: a {target['room_type']}, {target['width']:g} x "
            f"{target['depth']:g} ft, ceiling {target['ceiling']:g} ft, region {target['region']}, month "
            f"{target['month']}.\nTechnician scope notes: {target['notes']}")
@@ -197,8 +198,8 @@ def cached_agent(target, hist, model_box):
     if not llm.has_key() or llm.over_budget():
         return None
     if model_box[0] is None:
-        model_box[0] = llm.get_model()
-    res = run_agent(target, hist, model_box[0])
+        model_box[0] = (llm.get_model(), llm.get_fallbacks())
+    res = run_agent(target, hist, *model_box[0])
     if res["error"] and "rate" in res["error"].lower():
         print(f"  {target['id']}: provider limit hit; rerun later to continue.")
         return None

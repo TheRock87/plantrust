@@ -3965,7 +3965,7 @@
    ]
   }
  ],
- "model": "groq:openai/gpt-oss-120b",
+ "model": "mistralai:mistral-small-latest (fallback google_genai:gemini-flash-lite-latest)",
  "part2": {
   "estimate": {
    "demos": [

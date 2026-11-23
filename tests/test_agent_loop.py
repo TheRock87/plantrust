@@ -53,3 +53,23 @@ def test_step_limit_goes_to_drafter():
     res = review_room("h99-r0", ROOM, TOUR, CHECK, ScriptedModel(messages=iter(loop)))
     assert res["verdict"] == "send_to_drafter"
     assert "Recursion" in (res["error"] or "")
+
+
+class FailingModel(ScriptedModel):
+    def _generate(self, *args, **kwargs):
+        raise RuntimeError("429 rate limit")
+
+
+def test_fallback_model_takes_over_when_main_model_fails():
+    backup = ScriptedModel(messages=iter([
+        AIMessage(content="", tool_calls=[call("submit_verdict", {"room_id": "h99-r0", "verdict": "accept",
+                                                                   "reason": "Matches the tour."}, 1)]),
+    ]))
+    res = review_room("h99-r0", ROOM, TOUR, CHECK, FailingModel(messages=iter([])), fallbacks=[backup])
+    assert res["verdict"] == "accept" and res["error"] is None
+
+
+def test_both_models_failing_goes_to_drafter():
+    res = review_room("h99-r0", ROOM, TOUR, CHECK, FailingModel(messages=iter([])),
+                      fallbacks=[FailingModel(messages=iter([]))])
+    assert res["verdict"] == "send_to_drafter"

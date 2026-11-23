@@ -74,9 +74,8 @@ def model_layer(texts):
     if not texts:
         return out, 0
     if not llm.has_key():
-        print(f"ingest: no {llm.KEY_ENV.get(llm.provider())}; {len(texts)} lines go to review without a model pass.")
+        print(f"ingest: no {llm.key_names()}; {len(texts)} lines go to review without a model pass.")
         return out, 0
-    structured = None
     calls = 0
     for start in range(0, len(texts), BATCH):
         batch = texts[start:start + BATCH]
@@ -88,10 +87,10 @@ def model_layer(texts):
             if llm.over_budget():
                 print("ingest: budget cap reached; the rest goes to review.")
                 break
-            if structured is None:
-                structured = llm.get_model().with_structured_output(Mappings, include_raw=True)
             try:
-                raw = structured.invoke(model_prompt(batch))
+                prompt = model_prompt(batch)
+                raw, _spec = llm.invoke_with_fallback(
+                    lambda m: m.with_structured_output(Mappings, include_raw=True).invoke(prompt))
                 parsed = raw["parsed"].mappings if raw.get("parsed") else []
                 u = llm.usage([raw["raw"]])
                 res = {"texts": batch, "answers": {str(m.index): m.code for m in parsed}, "usage": u}
