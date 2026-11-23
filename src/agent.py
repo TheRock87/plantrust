@@ -13,17 +13,15 @@ What `create_agent` does under the hood (the whole loop, nothing hidden):
 """
 import hashlib
 import json
-import os
 import sys
 from typing import Literal
 
 from pydantic import BaseModel, Field
 
-from .common import DATA, ROOT, TRACES, load, save
+from . import llm
+from .common import DATA, TRACES, load, save
 
-MODEL = "claude-haiku-5-5"
-PRICE_PER_M = {"input": 0.10, "output": 0.50}  # USD per million tokens, Claude Haiku 5.5
-BUDGET_USD = 4.50                               # hard cap for the whole project (brief: about 5 USD)
+MODEL = llm.MODEL
 MAX_MODEL_STEPS = 6
 PROMPT_VERSION = "v2"
 
@@ -107,13 +105,6 @@ def _trace(messages):
     return steps
 
 
-def _usage(messages):
-    tin = sum((getattr(m, "usage_metadata", None) or {}).get("input_tokens", 0) for m in messages)
-    tout = sum((getattr(m, "usage_metadata", None) or {}).get("output_tokens", 0) for m in messages)
-    usd = tin / 1e6 * PRICE_PER_M["input"] + tout / 1e6 * PRICE_PER_M["output"]
-    return {"input_tokens": tin, "output_tokens": tout, "usd": round(usd, 6)}
-
-
 def review_room(room_id, plan_room, tour_room, check, model):
     """Run the agent on one room. Never raises; any failure becomes send_to_drafter."""
     from langchain.agents import create_agent
@@ -132,21 +123,12 @@ def review_room(room_id, plan_room, tour_room, check, model):
         verdict = "send_to_drafter"
         reason = "Agent could not decide" + (f" ({error})" if error else "") + "; a drafter checks it."
     return {"verdict": verdict, "reason": reason, "error": error,
-            "steps": _trace(messages), "usage": _usage(messages)}
+            "steps": _trace(messages), "usage": llm.usage(messages)}
 
 
 def input_hash(plan_room, tour_room, check):
     blob = json.dumps([MODEL, PROMPT_VERSION, SYSTEM_PROMPT, plan_room, tour_room, check], sort_keys=True)
     return hashlib.sha256(blob.encode()).hexdigest()[:16]
-
-
-def _load_env_key():
-    """Read ANTHROPIC_API_KEY from a local .env file if it is not already set."""
-    env = ROOT / ".env"
-    if not os.environ.get("ANTHROPIC_API_KEY") and env.exists():
-        for line in env.read_text(encoding="utf-8").splitlines():
-            if line.startswith("ANTHROPIC_API_KEY="):
-                os.environ["ANTHROPIC_API_KEY"] = line.split("=", 1)[1].strip().strip('"')
 
 
 def main():
@@ -158,8 +140,6 @@ def main():
             if chk["status"] == "unclear":
                 jobs.append((hid, rid, rooms[rid], tours[hid][rid], chk))
 
-    ledger_path = TRACES / "_spend.json"
-    ledger = load(ledger_path) if ledger_path.exists() else {"usd": 0.0, "calls": 0}
     model = None
     verdicts, cached, new, skipped = {}, 0, 0, 0
     for hid, rid, plan_room, tour_room, chk in jobs:
@@ -170,32 +150,33 @@ def main():
             cached += 1
             continue
         if model is None:
-            _load_env_key()
-            if not os.environ.get("ANTHROPIC_API_KEY"):
-                print("agent: no ANTHROPIC_API_KEY (environment or .env); unclear rooms without a cached "
-                      "trace are left for the drafter and marked 'agent not run'.")
+            if not llm.has_key():
+                print(f"agent: no {llm.KEY_ENV.get(llm.provider())} (environment or .env); unclear rooms without "
+                      "a cached trace are left for the drafter and marked 'agent not run'.")
                 skipped = len(jobs) - cached - new
                 break
-            from langchain_anthropic import ChatAnthropic
-            model = ChatAnthropic(model=MODEL, max_tokens=4096, max_retries=2)
-        if ledger["usd"] >= BUDGET_USD:
-            print(f"agent: budget cap {BUDGET_USD} USD reached; remaining rooms go to the drafter.")
+            model = llm.get_model()
+        if llm.over_budget():
+            print(f"agent: budget cap {llm.BUDGET_USD} USD reached; remaining rooms go to the drafter.")
             skipped = len(jobs) - cached - new
             break
         res = review_room(rid, plan_room, tour_room, chk, model)
         res.update({"room_id": rid, "house": hid, "input_hash": h, "model": MODEL})
+        if res["error"] and "rate" in res["error"].lower():
+            print(f"  {rid}: provider limit hit ({res['error'][:80]}); stopping, rerun later to continue.")
+            skipped = len(jobs) - cached - new
+            break
         save(path, res)
-        ledger["usd"] = round(ledger["usd"] + res["usage"]["usd"], 6)
-        ledger["calls"] += 1
-        save(ledger_path, ledger)
+        llm.record(res["usage"])
         verdicts[rid] = res
         new += 1
-        print(f"  {rid}: {res['verdict']}  ({res['usage']['usd']:.4f} USD)", flush=True)
+        print(f"  {rid}: {res['verdict']}  ({res['usage']['input_tokens']}+{res['usage']['output_tokens']} tokens)",
+              flush=True)
 
     save(DATA / "agent_verdicts.json", {rid: {k: v[k] for k in ("verdict", "reason", "usage", "error")}
                                         for rid, v in verdicts.items()})
     print(f"agent: {len(jobs)} unclear rooms, {cached} from cache, {new} new, {skipped} not run; "
-          f"total spend so far {ledger['usd']:.4f} USD")
+          f"total spend so far {llm.ledger()['usd']:.4f} USD")
     return 0
 
 

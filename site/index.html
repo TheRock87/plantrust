@@ -69,6 +69,27 @@
   <div id="failure-fix"></div>
 </section>
 
+<section id="part2" hidden>
+  <h2>From trusted plan to draft estimate</h2>
+  <p>Part 2 takes a room PlanTrust trusted and drafts its mitigation line items. The quantities come from the floor plan, the choice of items comes from past jobs and the technician's scope notes, and every item shows its evidence.</p>
+  <p class="muted">In production, prices come from Xactimate through the existing Verisk integration. This demo uses a mock price source with example prices, because real Xactimate price lists are licensed. The agents do not change; only the price source does.</p>
+  <div class="viewer-plan" style="margin-top:14px">
+    <label class="select">Trusted room
+      <select id="estimate-select"></select>
+    </label>
+    <div id="estimate-room"></div>
+  </div>
+
+  <h3>Step 1: turning messy history into a database</h3>
+  <p class="muted" id="ingest-intro"></p>
+  <div class="table-wrap"><table id="ingest-table"></table></div>
+
+  <h3>Step 2: drafting items, scored on held-out past jobs</h3>
+  <p class="muted" id="estimate-intro"></p>
+  <div class="table-wrap"><table id="estimate-table"></table></div>
+  <p style="margin-top:14px">This is the same pattern I built in production for bills of quantities: code first, model last, every number with a source.</p>
+</section>
+
 <section>
   <h2>How it works</h2>
   <ol class="flow">

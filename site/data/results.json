@@ -3965,7 +3965,222 @@
    ]
   }
  ],
- "model": "claude-haiku-5-5",
+ "model": "groq:openai/gpt-oss-120b",
+ "part2": {
+  "estimate": {
+   "demos": [
+    {
+     "check_often_missed": [],
+     "drafted_by": "frequency rule (agent not run yet)",
+     "lines": [
+      {
+       "code": "EQ-AIRM-DAY",
+       "description": "Air mover, per 24 hour period",
+       "often_missed": false,
+       "quantity": 30,
+       "reason": "In 50% of similar past jobs",
+       "share_of_similar": 0.5,
+       "similar_jobs": 14,
+       "source_jobs": 7,
+       "total_usd": 924.3,
+       "unit": "EA-DAY",
+       "unit_price_usd": 30.81
+      },
+      {
+       "code": "MON-MOIST-DAY",
+       "description": "Moisture monitoring and mapping, per day",
+       "often_missed": false,
+       "quantity": 3,
+       "reason": "In 64% of similar past jobs",
+       "share_of_similar": 0.64,
+       "similar_jobs": 14,
+       "source_jobs": 9,
+       "total_usd": 138.63,
+       "unit": "DAY",
+       "unit_price_usd": 46.21
+      }
+     ],
+     "month": "2026-10",
+     "notes": "Category 2 water: toilet overflowed. Tile floor, water on the surface. Base cabinets are wet.",
+     "region": "FL-TAMPA",
+     "room_id": "h03-r2",
+     "room_type": "bathroom",
+     "size": "15.5 x 14 ft, ceiling 8 ft",
+     "steps": [],
+     "total_usd": 1062.93
+    },
+    {
+     "check_often_missed": [],
+     "drafted_by": "frequency rule (agent not run yet)",
+     "lines": [
+      {
+       "code": "DRY-FLDCUT-LF",
+       "description": "Flood cut wet drywall 2 ft, per LF",
+       "often_missed": false,
+       "quantity": 41.0,
+       "reason": "In 64% of similar past jobs",
+       "share_of_similar": 0.64,
+       "similar_jobs": 14,
+       "source_jobs": 9,
+       "total_usd": 130.38,
+       "unit": "LF",
+       "unit_price_usd": 3.18
+      },
+      {
+       "code": "FLR-CRP-EXT-SF",
+       "description": "Water extraction from carpet, per SF",
+       "often_missed": false,
+       "quantity": 120.0,
+       "reason": "In 71% of similar past jobs",
+       "share_of_similar": 0.71,
+       "similar_jobs": 14,
+       "source_jobs": 10,
+       "total_usd": 55.2,
+       "unit": "SF",
+       "unit_price_usd": 0.46
+      }
+     ],
+     "month": "2026-10",
+     "notes": "Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 16 inches. Room is full of furniture.",
+     "region": "FL-TAMPA",
+     "room_id": "h04-r3",
+     "room_type": "bedroom",
+     "size": "10 x 12 ft, ceiling 8 ft",
+     "steps": [],
+     "total_usd": 185.58
+    },
+    {
+     "check_often_missed": [],
+     "drafted_by": "frequency rule (agent not run yet)",
+     "lines": [
+      {
+       "code": "CLN-FINAL-SF",
+       "description": "Final cleaning, per SF",
+       "often_missed": false,
+       "quantity": 127.5,
+       "reason": "In 56% of similar past jobs",
+       "share_of_similar": 0.56,
+       "similar_jobs": 9,
+       "source_jobs": 5,
+       "total_usd": 26.77,
+       "unit": "SF",
+       "unit_price_usd": 0.21
+      },
+      {
+       "code": "MON-MOIST-DAY",
+       "description": "Moisture monitoring and mapping, per day",
+       "often_missed": false,
+       "quantity": 3,
+       "reason": "In 67% of similar past jobs",
+       "share_of_similar": 0.67,
+       "similar_jobs": 9,
+       "source_jobs": 6,
+       "total_usd": 138.63,
+       "unit": "DAY",
+       "unit_price_usd": 46.21
+      }
+     ],
+     "month": "2026-10",
+     "notes": "Category 2 water: dishwasher supply line failed. Laminate floor is cupping at the seams. Drywall wet well above two feet, wicking high on the walls. Base cabinets are wet. 1 window on the outside wall.",
+     "region": "FL-TAMPA",
+     "room_id": "h06-r8",
+     "room_type": "kitchen",
+     "size": "8.5 x 15 ft, ceiling 8 ft",
+     "steps": [],
+     "total_usd": 165.4
+    },
+    {
+     "check_often_missed": [
+      {
+       "code": "CNT-MOVE-HR",
+       "description": "Move and block room contents, per hour",
+       "share_of_similar": 0.36
+      }
+     ],
+     "drafted_by": "frequency rule (agent not run yet)",
+     "lines": [],
+     "month": "2026-10",
+     "notes": "Category 1 water: water heater failed in the next room. Hardwood floor, boards starting to cup. Drywall wet to about 10 inches. 3 windows on the outside wall. Room is full of furniture.",
+     "region": "FL-TAMPA",
+     "room_id": "h19-r4",
+     "room_type": "living",
+     "size": "26 x 16 ft, ceiling 8 ft",
+     "steps": [],
+     "total_usd": 0
+    }
+   ],
+   "scores": {
+    "agent": {
+     "extra": 0,
+     "found": 0,
+     "jobs": 0,
+     "missed": 0,
+     "often_missed_caught": 0,
+     "often_missed_total": 0,
+     "true_items": 0
+    },
+    "agent_complete": false,
+    "agent_jobs_run": 0,
+    "freq_rule_threshold": 0.5,
+    "frequency_rule": {
+     "extra": 7,
+     "found": 48,
+     "jobs": 20,
+     "missed": 192,
+     "often_missed_caught": 0,
+     "often_missed_total": 29,
+     "true_items": 240
+    },
+    "holdout_jobs": 20
+   }
+  },
+  "ingest": {
+   "all_lines": 1675,
+   "holdout_lines": 100,
+   "model_calls": 0,
+   "model_examples": [],
+   "model_ran": false,
+   "per_layer": {
+    "exact": {
+     "correct": 10,
+     "settled": 10
+    },
+    "fuzzy": {
+     "correct": 22,
+     "settled": 22
+    },
+    "model": {
+     "correct": 0,
+     "settled": 0
+    },
+    "review": {
+     "correct": 0,
+     "settled": 68
+    }
+   },
+   "review_examples": [
+    "AIR MOVER, PER 24 HOUR PERIOD per estimator",
+    "AIR MOVERS - per sf",
+    "AM X 3 DAYS",
+    "AM X 3 DAYS ***",
+    "AM x 3 days",
+    "AM x 3 days ***",
+    "AM x 3 days - per sf",
+    "APPLY ANTIMICROBIAL per estimator",
+    "Air mover, per 24 hour period - per sf",
+    "BASEBOARD R&R - REMOVE ONLY",
+    "BASEBOARD R&R - REMOVE ONLY - per sf",
+    "BIOCDIE APPLICATION"
+   ],
+   "unique_by_layer": {
+    "exact": 60,
+    "fuzzy": 113,
+    "model": 0,
+    "review": 323
+   },
+   "unique_texts": 496
+  }
+ },
  "scores": {
   "agent_complete": false,
   "code_only": {

@@ -83,6 +83,10 @@ def main():
         "error_types": ERRORS,
         "failure_fix": load(fix_path) if fix_path.exists() else None,
         "houses": houses,
+        "part2": {
+            "ingest": load(DATA / "ingest_scores.json") if (DATA / "ingest_scores.json").exists() else None,
+            "estimate": load(DATA / "estimate_results.json") if (DATA / "estimate_results.json").exists() else None,
+        },
     })
     print(f"export: {len(houses)} houses -> site/data/results.json")
 

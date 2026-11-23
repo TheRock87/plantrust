@@ -31,6 +31,72 @@
     });
     sel.addEventListener("change", () => renderHouse(sel.value));
     renderHouse(DATA.houses[0].id);
+    renderPart2();
+  }
+
+  function renderPart2() {
+    const p2 = DATA.part2 || {};
+    const ing = p2.ingest, est = p2.estimate;
+    if (!ing || !est) return;
+    $("#part2").hidden = false;
+
+    const sel = $("#estimate-select");
+    est.demos.forEach((d, i) => {
+      const o = document.createElement("option");
+      o.value = i;
+      o.textContent = `${d.room_type} (${d.room_id}, ${d.size})`;
+      sel.appendChild(o);
+    });
+    sel.addEventListener("change", () => renderEstimateRoom(est.demos[+sel.value]));
+    if (est.demos.length) renderEstimateRoom(est.demos[0]);
+
+    const layers = [["exact", "Exact match to a catalog description"], ["fuzzy", "Fuzzy match (rapidfuzz), one clear winner"],
+                    ["model", "Model, only for what is left"], ["review", "Still unsure: please review"]];
+    $("#ingest-intro").textContent =
+      `${ing.all_lines} past line items (${ing.unique_texts} distinct wordings) from 150 made-up jobs, written "by different estimators". ` +
+      `Scored on ${ing.holdout_lines} held-out lines with a known correct code.` +
+      (ing.model_ran ? ` Model calls: ${ing.model_calls}.` : " The model layer has not run yet, so its share sits in review.");
+    let t = "<thead><tr><th>Layer</th><th>Lines settled (of 100)</th><th>Correct</th><th>Distinct wordings settled</th></tr></thead><tbody>";
+    layers.forEach(([k, name]) => {
+      const v = ing.per_layer[k];
+      const correct = k === "review" ? "goes to a human" : (v.settled ? `${v.correct} of ${v.settled}` : "n/a");
+      t += `<tr><td>${esc(name)}</td><td class="num">${v.settled}</td><td class="num">${correct}</td><td class="num">${ing.unique_by_layer[k]}</td></tr>`;
+    });
+    $("#ingest-table").className = "data";
+    $("#ingest-table").innerHTML = t + "</tbody>";
+
+    const s = est.scores;
+    $("#estimate-intro").textContent =
+      `${s.holdout_jobs} past jobs held out of the history. For each one, the draft is compared with the items the estimator really wrote. ` +
+      `The plain-code baseline includes every item seen in at least ${Math.round(s.freq_rule_threshold * 100)}% of similar past jobs; it cannot read the scope notes.`;
+    const row = (name, v, ready) => ready
+      ? `<tr><td>${esc(name)}</td><td class="num">${v.found} of ${v.true_items} (${pct(v.found, v.true_items)})</td><td class="num">${v.missed}</td><td class="num">${v.extra}</td><td class="num">${v.often_missed_caught} of ${v.often_missed_total}</td></tr>`
+      : `<tr><td>${esc(name)}</td><td colspan="4" class="pending">Agent run pending (${s.agent_jobs_run} of ${s.holdout_jobs} jobs drafted).</td></tr>`;
+    $("#estimate-table").className = "data";
+    $("#estimate-table").innerHTML = "<thead><tr><th>Approach</th><th>Real items found</th><th>Missed</th><th>Extra</th><th>Often-missed items caught</th></tr></thead><tbody>" +
+      row("Frequency rule (plain code)", s.frequency_rule, true) + row("Estimation agent", s.agent, s.agent_complete) + "</tbody>";
+  }
+
+  function renderEstimateRoom(d) {
+    let html = `<p style="margin-top:12px"><strong>Scope notes:</strong> ${esc(d.notes)}</p>
+      <p class="muted">${esc(d.size)} · region ${esc(d.region)} · ${esc(d.month)} · drafted by ${esc(d.drafted_by)}</p>`;
+    html += `<div class="table-wrap"><table class="data"><thead><tr><th>Item</th><th>Quantity (from plan)</th><th>Unit price (mock)</th><th>Total</th><th>History</th></tr></thead><tbody>`;
+    d.lines.forEach((l) => {
+      html += `<tr><td>${esc(l.description)}${l.often_missed ? ' <span class="badge drafter">often missed</span>' : ""}<br><span class="panel-id">${esc(l.code)}</span>${l.reason ? `<br><span class="muted" style="font-size:0.85rem">${esc(l.reason)}</span>` : ""}</td>
+        <td class="num">${l.quantity} ${esc(l.unit)}</td><td class="num">$${l.unit_price_usd.toFixed(2)}</td><td class="num">$${l.total_usd.toFixed(2)}</td>
+        <td>in ${Math.round(l.share_of_similar * 100)}% of similar past ${esc(d.room_type)}s (${l.source_jobs} of ${l.similar_jobs} jobs)</td></tr>`;
+    });
+    html += `</tbody></table></div><p style="margin-top:10px"><strong>Draft total:</strong> $${d.total_usd.toFixed(2)} <span class="muted">(example prices)</span></p>`;
+    if (d.check_often_missed.length) {
+      html += `<p><strong>Often missed, worth a check:</strong> ${d.check_often_missed.map((c) => `${esc(c.description)} (in ${Math.round(c.share_of_similar * 100)}% of similar jobs)`).join("; ")}</p>`;
+    }
+    if (d.steps && d.steps.length) {
+      html += `<details><summary>Agent steps (${d.steps.length})</summary><ol class="steps">` + d.steps.map((s) =>
+        s.type === "tool_call" ? `<li class="tool_call"><span class="step-kind">tool call</span><code>${esc(s.name)}(${esc(JSON.stringify(s.args))})</code></li>`
+          : s.type === "tool_result" ? `<li><span class="step-kind">result of ${esc(s.name)}</span><code>${esc(s.text)}</code></li>`
+          : `<li><span class="step-kind">model</span>${esc(s.text)}</li>`).join("") + "</ol></details>";
+    }
+    $("#estimate-room").innerHTML = html;
   }
 
   function agentRowReady() { return DATA.scores.agent_complete; }

@@ -7,6 +7,10 @@ all:
 	$(PY) -m src.agent
 	$(PY) -m src.evaluate
 	$(PY) -m src.export
+	$(PY) -m src.history
+	$(PY) -m src.ingest
+	$(PY) -m src.estimate
+	$(PY) -m src.export
 
 test:
 	uv run pytest -q
