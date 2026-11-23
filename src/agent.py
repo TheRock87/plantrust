@@ -9,11 +9,10 @@ What `create_agent` does under the hood (the whole loop, nothing hidden):
     so the loop ends right there, or until the step limit (recursion_limit) stops it.
  6. Our wrapper reads the verdict. No verdict, a bad verdict, an API error or the step limit
     all mean "send to drafter": the agent can never auto-accept by failing.
- Every message in the loop is saved to traces/<house>_<room>.json and reused on the next run.
+ Every message in the loop is saved to traces/<room id>.json and reused on the next run.
 """
 import hashlib
 import json
-import sys
 from typing import Literal
 
 from pydantic import BaseModel, Field
@@ -92,7 +91,8 @@ def make_tools(room_id, plan_room, tour_room, check, box):
     ]
 
 
-def _trace(messages):
+def trace_steps(messages):
+    """The conversation as a short list of steps for the page: model text, tool calls, tool results."""
     steps = []
     for m in messages:
         kind = m.__class__.__name__
@@ -127,7 +127,7 @@ def review_room(room_id, plan_room, tour_room, check, model, fallbacks=()):
         verdict = "send_to_drafter"
         reason = "Agent could not decide" + (f" ({error})" if error else "") + "; a drafter checks it."
     return {"verdict": verdict, "reason": reason, "error": error,
-            "steps": _trace(messages), "usage": llm.usage(messages)}
+            "steps": trace_steps(messages), "usage": llm.usage(messages)}
 
 
 def input_hash(plan_room, tour_room, check):
@@ -166,7 +166,7 @@ def main():
             break
         res = review_room(rid, plan_room, tour_room, chk, model, fallbacks)
         res.update({"room_id": rid, "house": hid, "input_hash": h, "model": MODEL})
-        if res["error"] and "rate" in res["error"].lower():
+        if llm.is_rate_limit(res["error"]):
             print(f"  {rid}: provider limit hit ({res['error'][:80]}); stopping, rerun later to continue.")
             skipped = len(jobs) - cached - new
             break
@@ -181,8 +181,7 @@ def main():
                                         for rid, v in verdicts.items()})
     print(f"agent: {len(jobs)} unclear rooms, {cached} from cache, {new} new, {skipped} not run; "
           f"total spend so far {llm.ledger()['usd']:.4f} USD")
-    return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()

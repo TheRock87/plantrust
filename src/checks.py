@@ -80,6 +80,16 @@ def check_house(plan, tour):
     ov = overlaps(plan["rooms"])
     out = {}
     for room in plan["rooms"]:
+        if room["id"] not in tour:
+            # Scanners can draw rooms that are not there (reflections); nothing to compare, so a human looks.
+            out[room["id"]] = {
+                "status": "fail", "not_in_tour": True,
+                "reasons": [f"The plan has a {room['label']} that the tour never captured"],
+                "numbers": {"plan_walls": walls(room["polygon"]), "plan_ceiling": room["ceiling"],
+                            "plan_doors": len(room["doors"]), "plan_label": room["label"]},
+                "est_cost_at_risk_usd": room_cost(room)["usd"],
+            }
+            continue
         out[room["id"]] = check_room(room, tour[room["id"]], ov[room["id"]])
     plan_ids = {r["id"] for r in plan["rooms"]}
     for rid, t in tour.items():

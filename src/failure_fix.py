@@ -62,4 +62,7 @@ def build():
 
 
 if __name__ == "__main__":
-    {"snapshot": snapshot, "build": build}[sys.argv[1]]()
+    commands = {"snapshot": snapshot, "build": build}
+    if len(sys.argv) != 2 or sys.argv[1] not in commands:
+        sys.exit("usage: python -m src.failure_fix snapshot|build")
+    commands[sys.argv[1]]()

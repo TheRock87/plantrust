@@ -54,6 +54,13 @@ def test_overlap_is_found_on_both_rooms():
     assert out["b"]["status"] == "unclear"
 
 
+def test_room_the_tour_never_captured_fails():
+    a, ghost = room("a", 0, 10), room("ghost", 10, 20)
+    out = run([a, ghost], {"a": tour_of(a)})
+    assert out["ghost"]["status"] == "fail" and out["ghost"]["not_in_tour"]
+    assert out["a"]["status"] == "pass"
+
+
 def test_missing_room_fails():
     a, b = room("a", 0, 10), room("b", 10, 20)
     out = run([a], {"a": tour_of(a), "b": tour_of(b)})

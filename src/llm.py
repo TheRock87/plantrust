@@ -8,17 +8,9 @@ ModelFallbackMiddleware retries the call there. Override with PLANTRUST_MODEL / 
 (PLANTRUST_FALLBACK=none turns it off). The key comes from the environment or a local .env file: MISTRAL_API_KEY.
 """
 import os
+import re
 
 from .common import ROOT, TRACES, load, save
-
-PRIMARY = os.environ.get("PLANTRUST_MODEL", "mistralai:voxtral-small-latest")
-FALLBACK = os.environ.get("PLANTRUST_FALLBACK", "mistralai:ministral-14b-latest")
-KEY_ENV = {"mistralai": "MISTRAL_API_KEY"}
-REQUESTS_PER_MINUTE = {"mistralai:voxtral-small-latest": 40}  # others default to 2, the free limit
-PRICE_PER_M = {"input": 0.0, "output": 0.0}  # free tiers bill nothing; the cap still protects a paid key
-BUDGET_USD = 4.50
-
-_built = {}
 
 
 def _load_env():
@@ -30,13 +22,24 @@ def _load_env():
                 os.environ.setdefault(k.strip(), v.strip().strip('"'))
 
 
+_load_env()  # before the model names below, so PLANTRUST_MODEL in .env is honoured
+
+PRIMARY = os.environ.get("PLANTRUST_MODEL", "mistralai:voxtral-small-latest")
+FALLBACK = os.environ.get("PLANTRUST_FALLBACK", "mistralai:ministral-14b-latest")
+KEY_ENV = {"mistralai": "MISTRAL_API_KEY"}
+REQUESTS_PER_MINUTE = {"mistralai:voxtral-small-latest": 40}  # below the 60 allowed; others default to 2
+PRICE_PER_M = {"input": 0.0, "output": 0.0}  # free tiers bill nothing; the cap still protects a paid key
+BUDGET_USD = 4.50
+
+_built = {}
+
+
 def _provider(spec):
     return spec.split(":", 1)[0]
 
 
 def specs():
     """Configured models whose key is present, main model first."""
-    _load_env()
     out = []
     for spec in (PRIMARY, FALLBACK):
         if spec and spec != "none" and os.environ.get(KEY_ENV.get(_provider(spec), ""), ""):
@@ -65,7 +68,7 @@ def _build(spec):
         from langchain.chat_models import init_chat_model
         from langchain_core.rate_limiters import InMemoryRateLimiter
 
-        rpm = REQUESTS_PER_MINUTE.get(spec, REQUESTS_PER_MINUTE.get(_provider(spec), 2))
+        rpm = REQUESTS_PER_MINUTE.get(spec, 2)
         limiter = InMemoryRateLimiter(requests_per_second=rpm / 60, max_bucket_size=1)
         _built[spec] = init_chat_model(spec, temperature=0, max_retries=4, rate_limiter=limiter)
     return _built[spec]
@@ -98,11 +101,16 @@ def invoke_with_fallback(make_call):
     raise err or RuntimeError("no model available")
 
 
+def is_rate_limit(error):
+    """True when an error message is the provider saying "slow down": stop, and rerun later."""
+    return bool(error) and re.search(r"429|rate.?limit|too many requests", error, re.I) is not None
+
+
 def models_used(messages):
     names = []
     for m in messages:
-        n = (getattr(m, "response_metadata", None) or {}).get("model_name") or \
-            (getattr(m, "response_metadata", None) or {}).get("model")
+        meta = getattr(m, "response_metadata", None) or {}
+        n = meta.get("model_name") or meta.get("model")
         if n and n not in names:
             names.append(n)
     return names

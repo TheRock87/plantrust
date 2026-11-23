@@ -1,17 +1,7 @@
 PY = uv run python
 
 all:
-	$(PY) -m src.generate
-	$(PY) -m src.plant
-	$(PY) -m src.checks
-	$(PY) -m src.agent
-	$(PY) -m src.evaluate
-	$(PY) -m src.failure_fix build
-	$(PY) -m src.export
-	$(PY) -m src.history
-	$(PY) -m src.ingest
-	$(PY) -m src.estimate
-	$(PY) -m src.export
+	$(PY) run_all.py
 
 test:
 	uv run pytest -q

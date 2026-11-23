@@ -10,7 +10,6 @@ import hashlib
 import json
 import re
 import sqlite3
-from typing import Literal
 
 from pydantic import BaseModel, Field
 from rapidfuzz import fuzz, process
@@ -69,41 +68,46 @@ def model_prompt(texts):
 
 
 def model_layer(texts):
-    """Map texts with the model in batches; cached per batch on disk. Returns {text: code or None}."""
-    out = {}
-    if not texts:
-        return out, 0
-    if not llm.has_key():
-        print(f"ingest: no {llm.key_names()}; {len(texts)} lines go to review without a model pass.")
-        return out, 0
-    calls = 0
+    """Map texts with the model in batches, each batch cached on disk.
+
+    Returns ({text: code or None}, number of batches answered). A cached batch needs no key, so a rerun
+    is free; a batch that cannot be answered leaves its lines for review.
+    """
+    out, answered, blocked = {}, 0, None
     for start in range(0, len(texts), BATCH):
         batch = texts[start:start + BATCH]
         h = hashlib.sha256(json.dumps([llm.MODEL, PROMPT_VERSION, batch]).encode()).hexdigest()[:16]
         path = TRACES / "ingest" / f"batch_{h}.json"
         if path.exists():
             res = load(path)
+        elif blocked:
+            continue
+        elif not llm.has_key():
+            blocked = f"no {llm.key_names()}"
+            continue
+        elif llm.over_budget():
+            blocked = "budget cap reached"
+            continue
         else:
-            if llm.over_budget():
-                print("ingest: budget cap reached; the rest goes to review.")
-                break
             try:
                 prompt = model_prompt(batch)
                 raw, _spec = llm.invoke_with_fallback(
                     lambda m: m.with_structured_output(Mappings, include_raw=True).invoke(prompt))
-                parsed = raw["parsed"].mappings if raw.get("parsed") else []
-                u = llm.usage([raw["raw"]])
-                res = {"texts": batch, "answers": {str(m.index): m.code for m in parsed}, "usage": u}
-                llm.record(u)
-                calls += 1
             except Exception as e:  # a failed batch goes to review, never into the database
                 print(f"ingest: model batch failed ({type(e).__name__}: {str(e)[:100]}); batch goes to review.")
                 continue
+            parsed = raw["parsed"].mappings if raw.get("parsed") else []
+            u = llm.usage([raw["raw"]])
+            res = {"texts": batch, "answers": {str(m.index): m.code for m in parsed}, "usage": u}
+            llm.record(u)
             save(path, res)
+        answered += 1
         for i, t in enumerate(batch):
             code = res["answers"].get(str(i))
             out[t] = code if code in CATALOG else None
-    return out, calls
+    if blocked:
+        print(f"ingest: {blocked}; lines without a cached answer go to review.")
+    return out, answered
 
 
 def main():
@@ -122,7 +126,7 @@ def main():
             layer[t], code_of[t] = "fuzzy", c
             continue
         left.append(t)
-    mapped, calls = model_layer(left)
+    mapped, batches = model_layer(left)
     for t in left:
         if mapped.get(t):
             layer[t], code_of[t] = "model", mapped[t]
@@ -148,14 +152,14 @@ def main():
             examples.append({"text": t, "code": code_of[t], "correct": code_of[t] == truth[str(lid)]})
     review = sorted({t for t in texts if layer[t] == "review"})
     out = {
-        "holdout_lines": len(hold), "per_layer": per, "model_calls": calls,
+        "holdout_lines": len(hold), "per_layer": per, "model_calls": batches,
         "all_lines": len(rows), "unique_texts": len(texts),
         "unique_by_layer": {k: sum(1 for t in texts if layer[t] == k) for k in per},
         "review_examples": review[:12], "model_examples": examples,
-        "model_ran": llm.has_key(),
+        "model_ran": batches > 0,
     }
     save(DATA / "ingest_scores.json", out)
-    print("ingest (holdout of 100):", {k: f"{v['correct']}/{v['settled']}" for k, v in per.items()})
+    print(f"ingest (holdout of {len(hold)}):", {k: f"{v['correct']}/{v['settled']}" for k, v in per.items()})
 
 
 if __name__ == "__main__":

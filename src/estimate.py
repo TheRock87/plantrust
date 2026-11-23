@@ -14,6 +14,8 @@ from pydantic import BaseModel, Field
 
 from . import llm
 from .common import DATA, SEED, TRACES, dims, load, save
+from .evaluate import final_verdicts
+from .export import pick_houses
 from .history import DB, draw_job, quantities, scope_notes, true_items
 from .prices import CATALOG, MockPriceSource
 
@@ -147,7 +149,7 @@ def make_tools(target, hist, box):
 
 def run_agent(target, hist, model, fallbacks=()):
     from langchain.agents import create_agent
-    from .agent import _trace
+    from .agent import trace_steps
 
     box = {"items": None}
     # Measured 2026-11-23: voxtral-small ignores its tools when these instructions are a system message
@@ -163,7 +165,7 @@ def run_agent(target, hist, model, fallbacks=()):
         messages = out["messages"]
     except Exception as e:
         error = f"{type(e).__name__}: {str(e)[:200]}"
-    return {"items": box["items"], "error": error, "steps": _trace(messages), "usage": llm.usage(messages)}
+    return {"items": box["items"], "error": error, "steps": trace_steps(messages), "usage": llm.usage(messages)}
 
 
 def baseline(target, hist):
@@ -202,7 +204,7 @@ def cached_agent(target, hist, model_box):
     if model_box[0] is None:
         model_box[0] = (llm.get_model(), llm.get_fallbacks())
     res = run_agent(target, hist, *model_box[0])
-    if res["error"] and "rate" in res["error"].lower():
+    if llm.is_rate_limit(res["error"]):
         print(f"  {target['id']}: provider limit hit; rerun later to continue.")
         return None
     res["input_hash"] = h
@@ -227,13 +229,18 @@ def score(drafts, truth_sets):
 
 
 def demo_rooms():
-    """Rooms PlanTrust accepted on the page, given synthetic scope notes so the agent has something to read."""
-    res = load(DATA.parent / "site" / "data" / "results.json")
+    """One accepted, water-affected room of each main type from the houses on the page.
+
+    Each gets synthetic scope notes, so the agent has something to read.
+    """
+    plans, checks, answers = load(DATA / "ai_plan.json"), load(DATA / "checks.json"), load(DATA / "answers.json")
+    agent_path = DATA / "agent_verdicts.json"
+    verdicts = final_verdicts(checks, load(agent_path) if agent_path.exists() else {}, True)
     picked, seen = [], set()
-    for h in res["houses"]:
-        for r in h["rooms"]:
-            if r["verdict"] == "accept" and r["affected"] and r["label"] in ("kitchen", "bathroom", "bedroom", "living") \
-                    and r["label"] not in seen:
+    for hid in pick_houses(answers, checks):
+        for r in plans[hid]["rooms"]:
+            if (verdicts[r["id"]][0] == "accept" and r["affected"] and r["label"] not in seen
+                    and r["label"] in ("kitchen", "bathroom", "bedroom", "living")):
                 seen.add(r["label"])
                 picked.append(r)
     rooms = []
@@ -242,7 +249,7 @@ def demo_rooms():
         job = draw_job(rng, r["id"], room=r["label"])
         w, d = dims(r["polygon"])
         job.update({"room_type": r["label"], "width": round(w, 1), "depth": round(d, 1), "ceiling": r["ceiling"],
-                    "doors": r["numbers"]["plan_doors"], "region": "FL-TAMPA", "month": "2026-10"})
+                    "doors": len(r["doors"]), "region": "FL-TAMPA", "month": "2026-10"})
         job["notes"] = scope_notes(rng, job, true_items(rng, job))
         rooms.append(job)
     return rooms
