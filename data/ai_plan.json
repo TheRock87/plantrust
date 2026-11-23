@@ -1,0 +1,8966 @@
+{
+ "h01": {
+  "id": "h01",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h01-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      14.5,
+      0.0
+     ],
+     [
+      14.5,
+      15.0
+     ],
+     [
+      0.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h01-r1",
+    "label": "living",
+    "polygon": [
+     [
+      14.5,
+      0.0
+     ],
+     [
+      46.0,
+      0.0
+     ],
+     [
+      46.0,
+      15.0
+     ],
+     [
+      14.5,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h01-r2",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      15.0
+     ],
+     [
+      32.5,
+      15.0
+     ],
+     [
+      32.5,
+      25.0
+     ],
+     [
+      0.0,
+      25.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [],
+    "flags": [],
+    "id": "h01-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      32.5,
+      15.0
+     ],
+     [
+      46.0,
+      15.0
+     ],
+     [
+      46.0,
+      25.0
+     ],
+     [
+      32.5,
+      25.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h02": {
+  "id": "h02",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h02-r0",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      28.5,
+      0.0
+     ],
+     [
+      28.5,
+      13.0
+     ],
+     [
+      0.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h02-r1",
+    "label": "bedroom",
+    "polygon": [
+     [
+      27.0,
+      0.0
+     ],
+     [
+      40.0,
+      0.0
+     ],
+     [
+      40.0,
+      13.0
+     ],
+     [
+      27.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h02-r2",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      13.0
+     ],
+     [
+      9.0,
+      13.0
+     ],
+     [
+      9.0,
+      25.0
+     ],
+     [
+      0.0,
+      25.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h03": {
+  "id": "h03",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h03-r1",
+    "label": "kitchen",
+    "polygon": [
+     [
+      10.5,
+      0.0
+     ],
+     [
+      30.5,
+      0.0
+     ],
+     [
+      30.5,
+      14.0
+     ],
+     [
+      10.5,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h03-r2",
+    "label": "bathroom",
+    "polygon": [
+     [
+      30.5,
+      0.0
+     ],
+     [
+      46.0,
+      0.0
+     ],
+     [
+      46.0,
+      14.0
+     ],
+     [
+      30.5,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h03-r3",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      14.0
+     ],
+     [
+      26.0,
+      14.0
+     ],
+     [
+      26.0,
+      26.0
+     ],
+     [
+      0.0,
+      26.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h03-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      25.0,
+      14.0
+     ],
+     [
+      46.0,
+      14.0
+     ],
+     [
+      46.0,
+      26.0
+     ],
+     [
+      25.0,
+      26.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h04": {
+  "id": "h04",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h04-r0",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      7.0,
+      0.0
+     ],
+     [
+      7.0,
+      12.0
+     ],
+     [
+      0.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h04-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      7.0,
+      0.0
+     ],
+     [
+      14.0,
+      0.0
+     ],
+     [
+      14.0,
+      12.0
+     ],
+     [
+      7.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h04-r2",
+    "label": "kitchen",
+    "polygon": [
+     [
+      14.0,
+      0.0
+     ],
+     [
+      24.0,
+      0.0
+     ],
+     [
+      24.0,
+      12.0
+     ],
+     [
+      14.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h04-r3",
+    "label": "bedroom",
+    "polygon": [
+     [
+      24.0,
+      0.0
+     ],
+     [
+      34.0,
+      0.0
+     ],
+     [
+      34.0,
+      12.0
+     ],
+     [
+      24.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h04-r4",
+    "label": "hallway",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      5.5,
+      12.0
+     ],
+     [
+      5.5,
+      23.0
+     ],
+     [
+      0.0,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h04-r5",
+    "label": "bedroom",
+    "polygon": [
+     [
+      5.5,
+      12.0
+     ],
+     [
+      12.5,
+      12.0
+     ],
+     [
+      12.5,
+      23.0
+     ],
+     [
+      5.5,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h04-r6",
+    "label": "bathroom",
+    "polygon": [
+     [
+      12.5,
+      12.0
+     ],
+     [
+      20.0,
+      12.0
+     ],
+     [
+      20.0,
+      23.0
+     ],
+     [
+      12.5,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h04-r7",
+    "label": "living",
+    "polygon": [
+     [
+      20.0,
+      12.0
+     ],
+     [
+      34.0,
+      12.0
+     ],
+     [
+      34.0,
+      23.0
+     ],
+     [
+      20.0,
+      23.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h05": {
+  "id": "h05",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     },
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h05-r0",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      23.1,
+      0.0
+     ],
+     [
+      23.1,
+      13.0
+     ],
+     [
+      0.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h05-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      25.5,
+      0.0
+     ],
+     [
+      44.5,
+      0.0
+     ],
+     [
+      44.5,
+      13.0
+     ],
+     [
+      25.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h05-r2",
+    "label": "hallway",
+    "polygon": [
+     [
+      44.5,
+      0.0
+     ],
+     [
+      50.0,
+      0.0
+     ],
+     [
+      50.0,
+      13.0
+     ],
+     [
+      44.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     },
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h05-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      31.0,
+      13.0
+     ],
+     [
+      50.0,
+      13.0
+     ],
+     [
+      50.0,
+      29.0
+     ],
+     [
+      31.0,
+      29.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h06": {
+  "id": "h06",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h06-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      8.5,
+      0.0
+     ],
+     [
+      8.5,
+      11.0
+     ],
+     [
+      0.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h06-r1",
+    "label": "closet",
+    "polygon": [
+     [
+      8.5,
+      0.0
+     ],
+     [
+      14.0,
+      0.0
+     ],
+     [
+      14.0,
+      11.0
+     ],
+     [
+      8.5,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h06-r2",
+    "label": "closet",
+    "polygon": [
+     [
+      14.0,
+      0.0
+     ],
+     [
+      20.0,
+      0.0
+     ],
+     [
+      20.0,
+      11.0
+     ],
+     [
+      14.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h06-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      20.0,
+      0.0
+     ],
+     [
+      25.0,
+      0.0
+     ],
+     [
+      25.0,
+      11.0
+     ],
+     [
+      20.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h06-r4",
+    "label": "hallway",
+    "polygon": [
+     [
+      25.0,
+      0.0
+     ],
+     [
+      30.0,
+      0.0
+     ],
+     [
+      30.0,
+      11.0
+     ],
+     [
+      25.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h06-r5",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      11.0
+     ],
+     [
+      5.5,
+      11.0
+     ],
+     [
+      5.5,
+      26.0
+     ],
+     [
+      0.0,
+      26.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h06-r6",
+    "label": "living",
+    "polygon": [
+     [
+      3.5,
+      11.0
+     ],
+     [
+      16.5,
+      11.0
+     ],
+     [
+      16.5,
+      26.0
+     ],
+     [
+      3.5,
+      26.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h06-r7",
+    "label": "closet",
+    "polygon": [
+     [
+      16.5,
+      11.0
+     ],
+     [
+      21.5,
+      11.0
+     ],
+     [
+      21.5,
+      26.0
+     ],
+     [
+      16.5,
+      26.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h06-r8",
+    "label": "kitchen",
+    "polygon": [
+     [
+      21.5,
+      11.0
+     ],
+     [
+      30.0,
+      11.0
+     ],
+     [
+      30.0,
+      26.0
+     ],
+     [
+      21.5,
+      26.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h07": {
+  "id": "h07",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h07-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      8.0,
+      0.0
+     ],
+     [
+      8.0,
+      10.0
+     ],
+     [
+      0.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h07-r1",
+    "label": "stairwell",
+    "polygon": [
+     [
+      8.0,
+      0.0
+     ],
+     [
+      14.0,
+      0.0
+     ],
+     [
+      14.0,
+      10.0
+     ],
+     [
+      8.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h07-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      14.0,
+      0.0
+     ],
+     [
+      24.5,
+      0.0
+     ],
+     [
+      24.5,
+      10.0
+     ],
+     [
+      14.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h07-r3",
+    "label": "kitchen",
+    "polygon": [
+     [
+      24.5,
+      0.0
+     ],
+     [
+      38.0,
+      0.0
+     ],
+     [
+      38.0,
+      10.0
+     ],
+     [
+      24.5,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h07-r4",
+    "label": "hallway",
+    "polygon": [
+     [
+      0.0,
+      10.0
+     ],
+     [
+      6.5,
+      10.0
+     ],
+     [
+      6.5,
+      23.0
+     ],
+     [
+      0.0,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 16.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "tall_ceiling",
+     "glass_wall"
+    ],
+    "id": "h07-r5",
+    "label": "living",
+    "polygon": [
+     [
+      6.5,
+      10.0
+     ],
+     [
+      25.0,
+      10.0
+     ],
+     [
+      25.0,
+      23.0
+     ],
+     [
+      6.5,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h07-r6",
+    "label": "closet",
+    "polygon": [
+     [
+      25.0,
+      10.0
+     ],
+     [
+      30.0,
+      10.0
+     ],
+     [
+      30.0,
+      23.0
+     ],
+     [
+      25.0,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h07-r7",
+    "label": "bathroom",
+    "polygon": [
+     [
+      30.0,
+      10.0
+     ],
+     [
+      38.0,
+      10.0
+     ],
+     [
+      38.0,
+      23.0
+     ],
+     [
+      30.0,
+      23.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h08": {
+  "id": "h08",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h08-r0",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      15.0,
+      0.0
+     ],
+     [
+      15.0,
+      12.0
+     ],
+     [
+      0.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     },
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h08-r1",
+    "label": "hallway",
+    "polygon": [
+     [
+      15.0,
+      0.0
+     ],
+     [
+      23.0,
+      0.0
+     ],
+     [
+      23.0,
+      12.0
+     ],
+     [
+      15.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h08-r2",
+    "label": "closet",
+    "polygon": [
+     [
+      23.0,
+      0.0
+     ],
+     [
+      34.0,
+      0.0
+     ],
+     [
+      34.0,
+      12.0
+     ],
+     [
+      23.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h08-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      32.0,
+      0.0
+     ],
+     [
+      42.0,
+      0.0
+     ],
+     [
+      42.0,
+      12.0
+     ],
+     [
+      32.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h08-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      15.5,
+      12.0
+     ],
+     [
+      15.5,
+      23.0
+     ],
+     [
+      0.0,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 14.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h08-r6",
+    "label": "living",
+    "polygon": [
+     [
+      23.0,
+      12.0
+     ],
+     [
+      42.0,
+      12.0
+     ],
+     [
+      42.0,
+      23.0
+     ],
+     [
+      23.0,
+      23.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h09": {
+  "id": "h09",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h09-r0",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      7.5,
+      0.0
+     ],
+     [
+      7.5,
+      14.0
+     ],
+     [
+      0.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h09-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      7.5,
+      0.0
+     ],
+     [
+      15.0,
+      0.0
+     ],
+     [
+      15.0,
+      14.0
+     ],
+     [
+      7.5,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h09-r2",
+    "label": "stairwell",
+    "polygon": [
+     [
+      15.0,
+      0.0
+     ],
+     [
+      20.5,
+      0.0
+     ],
+     [
+      20.5,
+      14.0
+     ],
+     [
+      15.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h09-r3",
+    "label": "living",
+    "polygon": [
+     [
+      20.5,
+      0.0
+     ],
+     [
+      30.0,
+      0.0
+     ],
+     [
+      30.0,
+      14.0
+     ],
+     [
+      20.5,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h09-r4",
+    "label": "kitchen",
+    "polygon": [
+     [
+      30.0,
+      0.0
+     ],
+     [
+      38.0,
+      0.0
+     ],
+     [
+      38.0,
+      14.0
+     ],
+     [
+      30.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [],
+    "flags": [],
+    "id": "h09-r5",
+    "label": "closet",
+    "polygon": [
+     [
+      0.0,
+      14.0
+     ],
+     [
+      8.0,
+      14.0
+     ],
+     [
+      8.0,
+      24.0
+     ],
+     [
+      0.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h09-r6",
+    "label": "bathroom",
+    "polygon": [
+     [
+      8.0,
+      14.0
+     ],
+     [
+      16.5,
+      14.0
+     ],
+     [
+      16.5,
+      24.0
+     ],
+     [
+      8.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h09-r7",
+    "label": "bedroom",
+    "polygon": [
+     [
+      16.5,
+      14.0
+     ],
+     [
+      27.5,
+      14.0
+     ],
+     [
+      27.5,
+      24.0
+     ],
+     [
+      16.5,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h09-r8",
+    "label": "bathroom",
+    "polygon": [
+     [
+      27.5,
+      14.0
+     ],
+     [
+      38.0,
+      14.0
+     ],
+     [
+      38.0,
+      24.0
+     ],
+     [
+      27.5,
+      24.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h10": {
+  "id": "h10",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 15.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h10-r0",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      23.5,
+      0.0
+     ],
+     [
+      23.5,
+      16.0
+     ],
+     [
+      0.0,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h10-r1",
+    "label": "bedroom",
+    "polygon": [
+     [
+      23.5,
+      0.0
+     ],
+     [
+      33.0,
+      0.0
+     ],
+     [
+      33.0,
+      16.0
+     ],
+     [
+      23.5,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h10-r2",
+    "label": "stairwell",
+    "polygon": [
+     [
+      33.0,
+      0.0
+     ],
+     [
+      38.0,
+      0.0
+     ],
+     [
+      38.0,
+      16.0
+     ],
+     [
+      33.0,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h10-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      16.0
+     ],
+     [
+      9.0,
+      16.0
+     ],
+     [
+      9.0,
+      29.0
+     ],
+     [
+      0.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h10-r4",
+    "label": "kitchen",
+    "polygon": [
+     [
+      9.0,
+      16.0
+     ],
+     [
+      31.0,
+      16.0
+     ],
+     [
+      31.0,
+      29.0
+     ],
+     [
+      9.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h10-r5",
+    "label": "bedroom",
+    "polygon": [
+     [
+      31.0,
+      16.0
+     ],
+     [
+      38.0,
+      16.0
+     ],
+     [
+      38.0,
+      29.0
+     ],
+     [
+      31.0,
+      29.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h11": {
+  "id": "h11",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h11-r0",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      10.0,
+      0.0
+     ],
+     [
+      10.0,
+      13.0
+     ],
+     [
+      0.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h11-r1",
+    "label": "closet",
+    "polygon": [
+     [
+      10.0,
+      0.0
+     ],
+     [
+      19.0,
+      0.0
+     ],
+     [
+      19.0,
+      13.0
+     ],
+     [
+      10.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     },
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h11-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      19.0,
+      0.0
+     ],
+     [
+      29.5,
+      0.0
+     ],
+     [
+      29.5,
+      13.0
+     ],
+     [
+      19.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h11-r3",
+    "label": "stairwell",
+    "polygon": [
+     [
+      29.5,
+      0.0
+     ],
+     [
+      36.0,
+      0.0
+     ],
+     [
+      36.0,
+      13.0
+     ],
+     [
+      29.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 15.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h11-r4",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      13.0
+     ],
+     [
+      18.5,
+      13.0
+     ],
+     [
+      18.5,
+      25.0
+     ],
+     [
+      0.0,
+      25.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h11-r5",
+    "label": "hallway",
+    "polygon": [
+     [
+      18.5,
+      13.0
+     ],
+     [
+      24.0,
+      13.0
+     ],
+     [
+      24.0,
+      25.0
+     ],
+     [
+      18.5,
+      25.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h11-r6",
+    "label": "kitchen",
+    "polygon": [
+     [
+      24.0,
+      13.0
+     ],
+     [
+      36.0,
+      13.0
+     ],
+     [
+      36.0,
+      25.0
+     ],
+     [
+      24.0,
+      25.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h12": {
+  "id": "h12",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h12-r0",
+    "label": "hallway",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      5.0,
+      0.0
+     ],
+     [
+      5.0,
+      12.0
+     ],
+     [
+      0.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h12-r1",
+    "label": "stairwell",
+    "polygon": [
+     [
+      5.0,
+      0.0
+     ],
+     [
+      15.5,
+      0.0
+     ],
+     [
+      15.5,
+      12.0
+     ],
+     [
+      5.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     },
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h12-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      15.5,
+      0.0
+     ],
+     [
+      29.5,
+      0.0
+     ],
+     [
+      29.5,
+      12.0
+     ],
+     [
+      15.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h12-r3",
+    "label": "living",
+    "polygon": [
+     [
+      29.5,
+      0.0
+     ],
+     [
+      48.0,
+      0.0
+     ],
+     [
+      48.0,
+      12.0
+     ],
+     [
+      29.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h12-r4",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      20.0,
+      12.0
+     ],
+     [
+      20.0,
+      22.0
+     ],
+     [
+      0.0,
+      22.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h12-r5",
+    "label": "bathroom",
+    "polygon": [
+     [
+      20.0,
+      12.0
+     ],
+     [
+      36.0,
+      12.0
+     ],
+     [
+      36.0,
+      22.0
+     ],
+     [
+      20.0,
+      22.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h12-r6",
+    "label": "hallway",
+    "polygon": [
+     [
+      36.0,
+      12.0
+     ],
+     [
+      48.0,
+      12.0
+     ],
+     [
+      48.0,
+      22.0
+     ],
+     [
+      36.0,
+      22.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h13": {
+  "id": "h13",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h13-r0",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      10.0,
+      0.0
+     ],
+     [
+      10.0,
+      15.0
+     ],
+     [
+      0.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h13-r1",
+    "label": "kitchen",
+    "polygon": [
+     [
+      10.0,
+      0.0
+     ],
+     [
+      18.5,
+      0.0
+     ],
+     [
+      18.5,
+      15.0
+     ],
+     [
+      10.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h13-r2",
+    "label": "hallway",
+    "polygon": [
+     [
+      18.5,
+      0.0
+     ],
+     [
+      23.5,
+      0.0
+     ],
+     [
+      23.5,
+      15.0
+     ],
+     [
+      18.5,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h13-r3",
+    "label": "stairwell",
+    "polygon": [
+     [
+      23.5,
+      0.0
+     ],
+     [
+      30.0,
+      0.0
+     ],
+     [
+      30.0,
+      15.0
+     ],
+     [
+      23.5,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h13-r4",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      15.0
+     ],
+     [
+      8.0,
+      15.0
+     ],
+     [
+      8.0,
+      30.0
+     ],
+     [
+      0.0,
+      30.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h13-r5",
+    "label": "bedroom",
+    "polygon": [
+     [
+      8.0,
+      15.0
+     ],
+     [
+      16.5,
+      15.0
+     ],
+     [
+      16.5,
+      30.0
+     ],
+     [
+      8.0,
+      30.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h13-r6",
+    "label": "closet",
+    "polygon": [
+     [
+      16.5,
+      15.0
+     ],
+     [
+      22.5,
+      15.0
+     ],
+     [
+      22.5,
+      30.0
+     ],
+     [
+      16.5,
+      30.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h13-r7",
+    "label": "bedroom",
+    "polygon": [
+     [
+      22.5,
+      15.0
+     ],
+     [
+      30.0,
+      15.0
+     ],
+     [
+      30.0,
+      30.0
+     ],
+     [
+      22.5,
+      30.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h14": {
+  "id": "h14",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h14-r0",
+    "label": "closet",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      5.5,
+      0.0
+     ],
+     [
+      5.5,
+      11.0
+     ],
+     [
+      0.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h14-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      5.5,
+      0.0
+     ],
+     [
+      16.0,
+      0.0
+     ],
+     [
+      16.0,
+      11.0
+     ],
+     [
+      5.5,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h14-r2",
+    "label": "living",
+    "polygon": [
+     [
+      16.0,
+      0.0
+     ],
+     [
+      33.5,
+      0.0
+     ],
+     [
+      33.5,
+      11.0
+     ],
+     [
+      16.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h14-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      33.5,
+      0.0
+     ],
+     [
+      42.0,
+      0.0
+     ],
+     [
+      42.0,
+      11.0
+     ],
+     [
+      33.5,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h14-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      11.0
+     ],
+     [
+      11.5,
+      11.0
+     ],
+     [
+      11.5,
+      23.0
+     ],
+     [
+      0.0,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h14-r5",
+    "label": "kitchen",
+    "polygon": [
+     [
+      11.5,
+      11.0
+     ],
+     [
+      24.0,
+      11.0
+     ],
+     [
+      24.0,
+      23.0
+     ],
+     [
+      11.5,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h14-r7",
+    "label": "hallway",
+    "polygon": [
+     [
+      32.5,
+      11.0
+     ],
+     [
+      42.0,
+      11.0
+     ],
+     [
+      42.0,
+      23.0
+     ],
+     [
+      32.5,
+      23.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h15": {
+  "id": "h15",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h15-r0",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      9.0,
+      0.0
+     ],
+     [
+      9.0,
+      14.0
+     ],
+     [
+      0.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h15-r1",
+    "label": "living",
+    "polygon": [
+     [
+      9.0,
+      0.0
+     ],
+     [
+      20.5,
+      0.0
+     ],
+     [
+      20.5,
+      14.0
+     ],
+     [
+      9.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 10.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h15-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      20.5,
+      0.0
+     ],
+     [
+      30.0,
+      0.0
+     ],
+     [
+      30.0,
+      14.0
+     ],
+     [
+      20.5,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h15-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      30.0,
+      0.0
+     ],
+     [
+      35.5,
+      0.0
+     ],
+     [
+      35.5,
+      14.0
+     ],
+     [
+      30.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h15-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      35.5,
+      0.0
+     ],
+     [
+      44.0,
+      0.0
+     ],
+     [
+      44.0,
+      14.0
+     ],
+     [
+      35.5,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h15-r5",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      14.0
+     ],
+     [
+      10.0,
+      14.0
+     ],
+     [
+      10.0,
+      24.0
+     ],
+     [
+      0.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h15-r6",
+    "label": "bathroom",
+    "polygon": [
+     [
+      10.0,
+      14.0
+     ],
+     [
+      20.5,
+      14.0
+     ],
+     [
+      20.5,
+      24.0
+     ],
+     [
+      10.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h15-r7",
+    "label": "bathroom",
+    "polygon": [
+     [
+      20.5,
+      14.0
+     ],
+     [
+      28.5,
+      14.0
+     ],
+     [
+      28.5,
+      24.0
+     ],
+     [
+      20.5,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h15-r8",
+    "label": "kitchen",
+    "polygon": [
+     [
+      28.5,
+      14.0
+     ],
+     [
+      44.0,
+      14.0
+     ],
+     [
+      44.0,
+      24.0
+     ],
+     [
+      28.5,
+      24.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h16": {
+  "id": "h16",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h16-r0",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      12.5,
+      0.0
+     ],
+     [
+      12.5,
+      10.0
+     ],
+     [
+      0.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h16-r1",
+    "label": "closet",
+    "polygon": [
+     [
+      12.5,
+      0.0
+     ],
+     [
+      25.0,
+      0.0
+     ],
+     [
+      25.0,
+      10.0
+     ],
+     [
+      12.5,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     },
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h16-r2",
+    "label": "kitchen",
+    "polygon": [
+     [
+      25.0,
+      0.0
+     ],
+     [
+      38.5,
+      0.0
+     ],
+     [
+      38.5,
+      10.0
+     ],
+     [
+      25.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h16-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      38.5,
+      0.0
+     ],
+     [
+      46.0,
+      0.0
+     ],
+     [
+      46.0,
+      10.0
+     ],
+     [
+      38.5,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h16-r4",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      10.0
+     ],
+     [
+      8.5,
+      10.0
+     ],
+     [
+      8.5,
+      21.0
+     ],
+     [
+      0.0,
+      21.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h16-r5",
+    "label": "hallway",
+    "polygon": [
+     [
+      8.5,
+      10.0
+     ],
+     [
+      15.5,
+      10.0
+     ],
+     [
+      15.5,
+      21.0
+     ],
+     [
+      8.5,
+      21.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 15.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h16-r6",
+    "label": "living",
+    "polygon": [
+     [
+      15.5,
+      10.0
+     ],
+     [
+      34.0,
+      10.0
+     ],
+     [
+      34.0,
+      21.0
+     ],
+     [
+      15.5,
+      21.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h16-r7",
+    "label": "bedroom",
+    "polygon": [
+     [
+      34.0,
+      10.0
+     ],
+     [
+      46.0,
+      10.0
+     ],
+     [
+      46.0,
+      21.0
+     ],
+     [
+      34.0,
+      21.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h17": {
+  "id": "h17",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h17-r0",
+    "label": "closet",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      7.0,
+      0.0
+     ],
+     [
+      7.0,
+      12.0
+     ],
+     [
+      0.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h17-r1",
+    "label": "hallway",
+    "polygon": [
+     [
+      7.0,
+      0.0
+     ],
+     [
+      13.5,
+      0.0
+     ],
+     [
+      13.5,
+      12.0
+     ],
+     [
+      7.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h17-r2",
+    "label": "hallway",
+    "polygon": [
+     [
+      13.5,
+      0.0
+     ],
+     [
+      21.0,
+      0.0
+     ],
+     [
+      21.0,
+      12.0
+     ],
+     [
+      13.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h17-r3",
+    "label": "hallway",
+    "polygon": [
+     [
+      21.0,
+      0.0
+     ],
+     [
+      26.0,
+      0.0
+     ],
+     [
+      26.0,
+      12.0
+     ],
+     [
+      21.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h17-r4",
+    "label": "closet",
+    "polygon": [
+     [
+      26.0,
+      0.0
+     ],
+     [
+      32.0,
+      0.0
+     ],
+     [
+      32.0,
+      12.0
+     ],
+     [
+      26.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h17-r5",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      6.5,
+      12.0
+     ],
+     [
+      6.5,
+      27.0
+     ],
+     [
+      0.0,
+      27.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h17-r6",
+    "label": "kitchen",
+    "polygon": [
+     [
+      6.5,
+      12.0
+     ],
+     [
+      14.5,
+      12.0
+     ],
+     [
+      14.5,
+      27.0
+     ],
+     [
+      6.5,
+      27.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 16.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h17-r7",
+    "label": "living",
+    "polygon": [
+     [
+      14.5,
+      12.0
+     ],
+     [
+      25.0,
+      12.0
+     ],
+     [
+      25.0,
+      27.0
+     ],
+     [
+      14.5,
+      27.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h17-r8",
+    "label": "bedroom",
+    "polygon": [
+     [
+      25.0,
+      12.0
+     ],
+     [
+      32.0,
+      12.0
+     ],
+     [
+      32.0,
+      27.0
+     ],
+     [
+      25.0,
+      27.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h18": {
+  "id": "h18",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h18-r0",
+    "label": "stairwell",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      5.0,
+      0.0
+     ],
+     [
+      5.0,
+      11.0
+     ],
+     [
+      0.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h18-r1",
+    "label": "closet",
+    "polygon": [
+     [
+      5.0,
+      0.0
+     ],
+     [
+      15.5,
+      0.0
+     ],
+     [
+      15.5,
+      11.0
+     ],
+     [
+      5.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     },
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h18-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      15.5,
+      0.0
+     ],
+     [
+      38.0,
+      0.0
+     ],
+     [
+      38.0,
+      11.0
+     ],
+     [
+      15.5,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h18-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      38.0,
+      0.0
+     ],
+     [
+      44.0,
+      0.0
+     ],
+     [
+      44.0,
+      11.0
+     ],
+     [
+      38.0,
+      11.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h18-r4",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      11.0
+     ],
+     [
+      20.0,
+      11.0
+     ],
+     [
+      20.0,
+      27.0
+     ],
+     [
+      0.0,
+      27.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h18-r5",
+    "label": "bathroom",
+    "polygon": [
+     [
+      20.0,
+      11.0
+     ],
+     [
+      28.5,
+      11.0
+     ],
+     [
+      28.5,
+      27.0
+     ],
+     [
+      20.0,
+      27.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h18-r6",
+    "label": "kitchen",
+    "polygon": [
+     [
+      28.5,
+      11.0
+     ],
+     [
+      44.0,
+      11.0
+     ],
+     [
+      44.0,
+      27.0
+     ],
+     [
+      28.5,
+      27.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h19": {
+  "id": "h19",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     },
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h19-r0",
+    "label": "hallway",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      8.0,
+      0.0
+     ],
+     [
+      8.0,
+      15.0
+     ],
+     [
+      0.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h19-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      8.0,
+      0.0
+     ],
+     [
+      16.5,
+      0.0
+     ],
+     [
+      16.5,
+      15.0
+     ],
+     [
+      8.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h19-r2",
+    "label": "kitchen",
+    "polygon": [
+     [
+      16.5,
+      0.0
+     ],
+     [
+      42.0,
+      0.0
+     ],
+     [
+      42.0,
+      15.0
+     ],
+     [
+      16.5,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h19-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      0.0,
+      15.0
+     ],
+     [
+      5.0,
+      15.0
+     ],
+     [
+      5.0,
+      32.4
+     ],
+     [
+      0.0,
+      32.4
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h19-r4",
+    "label": "living",
+    "polygon": [
+     [
+      5.0,
+      15.0
+     ],
+     [
+      31.0,
+      15.0
+     ],
+     [
+      31.0,
+      31.0
+     ],
+     [
+      5.0,
+      31.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h19-r5",
+    "label": "bedroom",
+    "polygon": [
+     [
+      31.0,
+      15.0
+     ],
+     [
+      42.0,
+      15.0
+     ],
+     [
+      42.0,
+      31.0
+     ],
+     [
+      31.0,
+      31.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h20": {
+  "id": "h20",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h20-r0",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      9.0,
+      0.0
+     ],
+     [
+      9.0,
+      15.0
+     ],
+     [
+      0.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h20-r1",
+    "label": "stairwell",
+    "polygon": [
+     [
+      9.0,
+      0.0
+     ],
+     [
+      17.5,
+      0.0
+     ],
+     [
+      17.5,
+      15.0
+     ],
+     [
+      9.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h20-r2",
+    "label": "living",
+    "polygon": [
+     [
+      17.5,
+      0.0
+     ],
+     [
+      32.0,
+      0.0
+     ],
+     [
+      32.0,
+      15.0
+     ],
+     [
+      17.5,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h20-r3",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      15.0
+     ],
+     [
+      13.0,
+      15.0
+     ],
+     [
+      13.0,
+      31.0
+     ],
+     [
+      0.0,
+      31.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h20-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      13.0,
+      15.0
+     ],
+     [
+      25.5,
+      15.0
+     ],
+     [
+      25.5,
+      31.0
+     ],
+     [
+      13.0,
+      31.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h20-r5",
+    "label": "closet",
+    "polygon": [
+     [
+      25.5,
+      15.0
+     ],
+     [
+      32.0,
+      15.0
+     ],
+     [
+      32.0,
+      31.0
+     ],
+     [
+      25.5,
+      31.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h21": {
+  "id": "h21",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h21-r0",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      21.0,
+      0.0
+     ],
+     [
+      21.0,
+      14.0
+     ],
+     [
+      0.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h21-r1",
+    "label": "bedroom",
+    "polygon": [
+     [
+      20.0,
+      0.0
+     ],
+     [
+      36.0,
+      0.0
+     ],
+     [
+      36.0,
+      14.0
+     ],
+     [
+      20.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h21-r2",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      14.0
+     ],
+     [
+      29.5,
+      14.0
+     ],
+     [
+      29.5,
+      28.0
+     ],
+     [
+      0.0,
+      28.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h21-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      29.5,
+      14.0
+     ],
+     [
+      36.0,
+      14.0
+     ],
+     [
+      36.0,
+      28.0
+     ],
+     [
+      29.5,
+      28.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h22": {
+  "id": "h22",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h22-r0",
+    "label": "closet",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      7.5,
+      0.0
+     ],
+     [
+      7.5,
+      12.0
+     ],
+     [
+      0.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h22-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      7.5,
+      0.0
+     ],
+     [
+      21.5,
+      0.0
+     ],
+     [
+      21.5,
+      12.0
+     ],
+     [
+      7.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h22-r2",
+    "label": "kitchen",
+    "polygon": [
+     [
+      21.5,
+      0.0
+     ],
+     [
+      38.0,
+      0.0
+     ],
+     [
+      38.0,
+      12.0
+     ],
+     [
+      21.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 18.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h22-r3",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      21.0,
+      12.0
+     ],
+     [
+      21.0,
+      22.0
+     ],
+     [
+      0.0,
+      22.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     },
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h22-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      21.0,
+      12.0
+     ],
+     [
+      38.0,
+      12.0
+     ],
+     [
+      38.0,
+      22.0
+     ],
+     [
+      21.0,
+      22.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h23": {
+  "id": "h23",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     },
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h23-r0",
+    "label": "hallway",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      7.5,
+      0.0
+     ],
+     [
+      7.5,
+      16.0
+     ],
+     [
+      0.0,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h23-r1",
+    "label": "stairwell",
+    "polygon": [
+     [
+      7.5,
+      0.0
+     ],
+     [
+      13.5,
+      0.0
+     ],
+     [
+      13.5,
+      16.0
+     ],
+     [
+      7.5,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 14.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     },
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h23-r2",
+    "label": "living",
+    "polygon": [
+     [
+      13.5,
+      0.0
+     ],
+     [
+      34.5,
+      0.0
+     ],
+     [
+      34.5,
+      16.0
+     ],
+     [
+      13.5,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h23-r3",
+    "label": "bedroom",
+    "polygon": [
+     [
+      34.5,
+      0.0
+     ],
+     [
+      48.0,
+      0.0
+     ],
+     [
+      48.0,
+      16.0
+     ],
+     [
+      34.5,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h23-r4",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      16.0
+     ],
+     [
+      23.0,
+      16.0
+     ],
+     [
+      23.0,
+      29.0
+     ],
+     [
+      0.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h23-r5",
+    "label": "bathroom",
+    "polygon": [
+     [
+      23.0,
+      16.0
+     ],
+     [
+      38.0,
+      16.0
+     ],
+     [
+      38.0,
+      29.0
+     ],
+     [
+      23.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h23-r6",
+    "label": "closet",
+    "polygon": [
+     [
+      38.0,
+      16.0
+     ],
+     [
+      48.0,
+      16.0
+     ],
+     [
+      48.0,
+      29.0
+     ],
+     [
+      38.0,
+      29.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h24": {
+  "id": "h24",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h24-r0",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      11.0,
+      0.0
+     ],
+     [
+      11.0,
+      15.0
+     ],
+     [
+      0.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h24-r1",
+    "label": "closet",
+    "polygon": [
+     [
+      11.0,
+      0.0
+     ],
+     [
+      17.0,
+      0.0
+     ],
+     [
+      17.0,
+      15.0
+     ],
+     [
+      11.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h24-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      17.0,
+      0.0
+     ],
+     [
+      27.0,
+      0.0
+     ],
+     [
+      27.0,
+      15.0
+     ],
+     [
+      17.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h24-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      27.0,
+      0.0
+     ],
+     [
+      33.0,
+      0.0
+     ],
+     [
+      33.0,
+      15.0
+     ],
+     [
+      27.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h24-r4",
+    "label": "hallway",
+    "polygon": [
+     [
+      33.0,
+      0.0
+     ],
+     [
+      40.0,
+      0.0
+     ],
+     [
+      40.0,
+      15.0
+     ],
+     [
+      33.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     },
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h24-r5",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      15.0
+     ],
+     [
+      12.0,
+      15.0
+     ],
+     [
+      12.0,
+      31.0
+     ],
+     [
+      0.0,
+      31.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h24-r6",
+    "label": "stairwell",
+    "polygon": [
+     [
+      12.0,
+      15.0
+     ],
+     [
+      17.0,
+      15.0
+     ],
+     [
+      17.0,
+      31.0
+     ],
+     [
+      12.0,
+      31.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h24-r7",
+    "label": "kitchen",
+    "polygon": [
+     [
+      17.0,
+      15.0
+     ],
+     [
+      28.5,
+      15.0
+     ],
+     [
+      28.5,
+      31.0
+     ],
+     [
+      17.0,
+      31.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h24-r8",
+    "label": "bedroom",
+    "polygon": [
+     [
+      28.5,
+      15.0
+     ],
+     [
+      40.0,
+      15.0
+     ],
+     [
+      40.0,
+      31.0
+     ],
+     [
+      28.5,
+      31.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h25": {
+  "id": "h25",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h25-r0",
+    "label": "closet",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      9.0,
+      0.0
+     ],
+     [
+      9.0,
+      13.0
+     ],
+     [
+      0.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h25-r1",
+    "label": "kitchen",
+    "polygon": [
+     [
+      9.0,
+      0.0
+     ],
+     [
+      23.5,
+      0.0
+     ],
+     [
+      23.5,
+      13.0
+     ],
+     [
+      9.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h25-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      23.5,
+      0.0
+     ],
+     [
+      34.0,
+      0.0
+     ],
+     [
+      34.0,
+      13.0
+     ],
+     [
+      23.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     },
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h25-r3",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      13.0
+     ],
+     [
+      14.0,
+      13.0
+     ],
+     [
+      14.0,
+      29.0
+     ],
+     [
+      0.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h25-r4",
+    "label": "bathroom",
+    "polygon": [
+     [
+      14.0,
+      13.0
+     ],
+     [
+      22.7,
+      13.0
+     ],
+     [
+      22.7,
+      29.0
+     ],
+     [
+      14.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h25-r5",
+    "label": "bedroom",
+    "polygon": [
+     [
+      23.5,
+      13.0
+     ],
+     [
+      34.0,
+      13.0
+     ],
+     [
+      34.0,
+      29.0
+     ],
+     [
+      23.5,
+      29.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h26": {
+  "id": "h26",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     },
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h26-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      14.5,
+      0.0
+     ],
+     [
+      14.5,
+      15.0
+     ],
+     [
+      0.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h26-r1",
+    "label": "closet",
+    "polygon": [
+     [
+      14.5,
+      0.0
+     ],
+     [
+      21.0,
+      0.0
+     ],
+     [
+      21.0,
+      15.0
+     ],
+     [
+      14.5,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h26-r2",
+    "label": "kitchen",
+    "polygon": [
+     [
+      21.0,
+      0.0
+     ],
+     [
+      36.5,
+      0.0
+     ],
+     [
+      36.5,
+      15.0
+     ],
+     [
+      21.0,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h26-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      36.5,
+      0.0
+     ],
+     [
+      48.0,
+      0.0
+     ],
+     [
+      48.0,
+      15.0
+     ],
+     [
+      36.5,
+      15.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h26-r4",
+    "label": "stairwell",
+    "polygon": [
+     [
+      0.0,
+      15.0
+     ],
+     [
+      12.5,
+      15.0
+     ],
+     [
+      12.5,
+      27.0
+     ],
+     [
+      0.0,
+      27.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h26-r5",
+    "label": "hallway",
+    "polygon": [
+     [
+      12.5,
+      15.0
+     ],
+     [
+      18.5,
+      15.0
+     ],
+     [
+      18.5,
+      27.0
+     ],
+     [
+      12.5,
+      27.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 18.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "tall_ceiling",
+     "glass_wall"
+    ],
+    "id": "h26-r6",
+    "label": "living",
+    "polygon": [
+     [
+      18.5,
+      15.0
+     ],
+     [
+      48.0,
+      15.0
+     ],
+     [
+      48.0,
+      27.0
+     ],
+     [
+      18.5,
+      27.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h27": {
+  "id": "h27",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h27-r0",
+    "label": "stairwell",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      7.0,
+      0.0
+     ],
+     [
+      7.0,
+      10.0
+     ],
+     [
+      0.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h27-r1",
+    "label": "kitchen",
+    "polygon": [
+     [
+      7.0,
+      0.0
+     ],
+     [
+      18.0,
+      0.0
+     ],
+     [
+      18.0,
+      10.0
+     ],
+     [
+      7.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h27-r2",
+    "label": "bathroom",
+    "polygon": [
+     [
+      18.0,
+      0.0
+     ],
+     [
+      27.0,
+      0.0
+     ],
+     [
+      27.0,
+      10.0
+     ],
+     [
+      18.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h27-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      27.0,
+      0.0
+     ],
+     [
+      34.0,
+      0.0
+     ],
+     [
+      34.0,
+      10.0
+     ],
+     [
+      27.0,
+      10.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h27-r4",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      10.0
+     ],
+     [
+      21.5,
+      10.0
+     ],
+     [
+      21.5,
+      24.0
+     ],
+     [
+      0.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [],
+    "flags": [],
+    "id": "h27-r5",
+    "label": "closet",
+    "polygon": [
+     [
+      21.5,
+      10.0
+     ],
+     [
+      27.0,
+      10.0
+     ],
+     [
+      27.0,
+      24.0
+     ],
+     [
+      21.5,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h27-r6",
+    "label": "bedroom",
+    "polygon": [
+     [
+      27.0,
+      10.0
+     ],
+     [
+      34.0,
+      10.0
+     ],
+     [
+      34.0,
+      24.0
+     ],
+     [
+      27.0,
+      24.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h28": {
+  "id": "h28",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h28-r0",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      20.5,
+      0.0
+     ],
+     [
+      20.5,
+      13.0
+     ],
+     [
+      0.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h28-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      20.5,
+      0.0
+     ],
+     [
+      30.0,
+      0.0
+     ],
+     [
+      30.0,
+      13.0
+     ],
+     [
+      20.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h28-r2",
+    "label": "hallway",
+    "polygon": [
+     [
+      30.0,
+      0.0
+     ],
+     [
+      36.0,
+      0.0
+     ],
+     [
+      36.0,
+      13.0
+     ],
+     [
+      30.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h28-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      36.0,
+      0.0
+     ],
+     [
+      45.0,
+      0.0
+     ],
+     [
+      45.0,
+      13.0
+     ],
+     [
+      36.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     },
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h28-r4",
+    "label": "hallway",
+    "polygon": [
+     [
+      45.0,
+      0.0
+     ],
+     [
+      50.0,
+      0.0
+     ],
+     [
+      50.0,
+      13.0
+     ],
+     [
+      45.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h28-r5",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      13.0
+     ],
+     [
+      12.0,
+      13.0
+     ],
+     [
+      12.0,
+      25.0
+     ],
+     [
+      0.0,
+      25.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h28-r6",
+    "label": "bathroom",
+    "polygon": [
+     [
+      12.0,
+      13.0
+     ],
+     [
+      23.5,
+      13.0
+     ],
+     [
+      23.5,
+      25.0
+     ],
+     [
+      12.0,
+      25.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     },
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h28-r7",
+    "label": "bedroom",
+    "polygon": [
+     [
+      23.5,
+      13.0
+     ],
+     [
+      36.0,
+      13.0
+     ],
+     [
+      36.0,
+      25.0
+     ],
+     [
+      23.5,
+      25.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     },
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h28-r8",
+    "label": "kitchen",
+    "polygon": [
+     [
+      36.0,
+      13.0
+     ],
+     [
+      50.0,
+      13.0
+     ],
+     [
+      50.0,
+      25.0
+     ],
+     [
+      36.0,
+      25.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h29": {
+  "id": "h29",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h29-r0",
+    "label": "hallway",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      5.0,
+      0.0
+     ],
+     [
+      5.0,
+      14.0
+     ],
+     [
+      0.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h29-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      5.0,
+      0.0
+     ],
+     [
+      15.0,
+      0.0
+     ],
+     [
+      15.0,
+      14.0
+     ],
+     [
+      5.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h29-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      15.0,
+      0.0
+     ],
+     [
+      26.0,
+      0.0
+     ],
+     [
+      26.0,
+      14.0
+     ],
+     [
+      15.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h29-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      26.0,
+      0.0
+     ],
+     [
+      31.0,
+      0.0
+     ],
+     [
+      31.0,
+      14.0
+     ],
+     [
+      26.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h29-r4",
+    "label": "stairwell",
+    "polygon": [
+     [
+      31.0,
+      0.0
+     ],
+     [
+      36.0,
+      0.0
+     ],
+     [
+      36.0,
+      14.0
+     ],
+     [
+      31.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h29-r5",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      14.0
+     ],
+     [
+      10.5,
+      14.0
+     ],
+     [
+      10.5,
+      30.0
+     ],
+     [
+      0.0,
+      30.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     },
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h29-r6",
+    "label": "hallway",
+    "polygon": [
+     [
+      10.5,
+      14.0
+     ],
+     [
+      17.0,
+      14.0
+     ],
+     [
+      17.0,
+      30.0
+     ],
+     [
+      10.5,
+      30.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h29-r7",
+    "label": "closet",
+    "polygon": [
+     [
+      17.0,
+      14.0
+     ],
+     [
+      22.0,
+      14.0
+     ],
+     [
+      22.0,
+      30.0
+     ],
+     [
+      17.0,
+      30.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 14.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h29-r8",
+    "label": "living",
+    "polygon": [
+     [
+      22.0,
+      14.0
+     ],
+     [
+      36.0,
+      14.0
+     ],
+     [
+      36.0,
+      30.0
+     ],
+     [
+      22.0,
+      30.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h30": {
+  "id": "h30",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h30-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      8.5,
+      0.0
+     ],
+     [
+      8.5,
+      12.0
+     ],
+     [
+      0.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h30-r1",
+    "label": "bedroom",
+    "polygon": [
+     [
+      8.5,
+      0.0
+     ],
+     [
+      21.5,
+      0.0
+     ],
+     [
+      21.5,
+      12.0
+     ],
+     [
+      8.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h30-r2",
+    "label": "closet",
+    "polygon": [
+     [
+      21.5,
+      0.0
+     ],
+     [
+      30.0,
+      0.0
+     ],
+     [
+      30.0,
+      13.5
+     ],
+     [
+      21.5,
+      13.5
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h30-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      30.0,
+      0.0
+     ],
+     [
+      40.0,
+      0.0
+     ],
+     [
+      40.0,
+      12.0
+     ],
+     [
+      30.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h30-r4",
+    "label": "stairwell",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      8.5,
+      12.0
+     ],
+     [
+      8.5,
+      24.0
+     ],
+     [
+      0.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h30-r5",
+    "label": "kitchen",
+    "polygon": [
+     [
+      8.5,
+      12.0
+     ],
+     [
+      23.0,
+      12.0
+     ],
+     [
+      23.0,
+      24.0
+     ],
+     [
+      8.5,
+      24.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h31": {
+  "id": "h31",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h31-r0",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      21.5,
+      0.0
+     ],
+     [
+      21.5,
+      13.0
+     ],
+     [
+      0.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h31-r1",
+    "label": "hallway",
+    "polygon": [
+     [
+      21.5,
+      0.0
+     ],
+     [
+      27.5,
+      0.0
+     ],
+     [
+      27.5,
+      13.0
+     ],
+     [
+      21.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h31-r2",
+    "label": "bathroom",
+    "polygon": [
+     [
+      27.5,
+      0.0
+     ],
+     [
+      34.0,
+      0.0
+     ],
+     [
+      34.0,
+      13.0
+     ],
+     [
+      27.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h31-r3",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      13.0
+     ],
+     [
+      10.5,
+      13.0
+     ],
+     [
+      10.5,
+      23.0
+     ],
+     [
+      0.0,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h31-r4",
+    "label": "closet",
+    "polygon": [
+     [
+      10.5,
+      13.0
+     ],
+     [
+      16.0,
+      13.0
+     ],
+     [
+      16.0,
+      23.0
+     ],
+     [
+      10.5,
+      23.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h31-r5",
+    "label": "kitchen",
+    "polygon": [
+     [
+      16.0,
+      13.0
+     ],
+     [
+      34.0,
+      13.0
+     ],
+     [
+      34.0,
+      23.0
+     ],
+     [
+      16.0,
+      23.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h32": {
+  "id": "h32",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [],
+    "flags": [],
+    "id": "h32-r0",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      9.5,
+      0.0
+     ],
+     [
+      9.5,
+      13.0
+     ],
+     [
+      0.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h32-r1",
+    "label": "kitchen",
+    "polygon": [
+     [
+      9.5,
+      0.0
+     ],
+     [
+      23.0,
+      0.0
+     ],
+     [
+      23.0,
+      13.0
+     ],
+     [
+      9.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h32-r2",
+    "label": "bedroom",
+    "polygon": [
+     [
+      23.0,
+      0.0
+     ],
+     [
+      34.5,
+      0.0
+     ],
+     [
+      34.5,
+      13.0
+     ],
+     [
+      23.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h32-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      34.5,
+      0.0
+     ],
+     [
+      40.0,
+      0.0
+     ],
+     [
+      40.0,
+      13.0
+     ],
+     [
+      34.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 10.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h32-r4",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      13.0
+     ],
+     [
+      8.5,
+      13.0
+     ],
+     [
+      8.5,
+      26.0
+     ],
+     [
+      0.0,
+      26.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h32-r5",
+    "label": "closet",
+    "polygon": [
+     [
+      8.5,
+      13.0
+     ],
+     [
+      17.0,
+      13.0
+     ],
+     [
+      17.0,
+      26.0
+     ],
+     [
+      8.5,
+      26.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h32-r6",
+    "label": "living",
+    "polygon": [
+     [
+      17.0,
+      13.0
+     ],
+     [
+      40.0,
+      13.0
+     ],
+     [
+      40.0,
+      26.0
+     ],
+     [
+      17.0,
+      26.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h33": {
+  "id": "h33",
+  "rooms": [
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h33-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      12.0,
+      0.0
+     ],
+     [
+      12.0,
+      14.0
+     ],
+     [
+      0.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h33-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      12.0,
+      0.0
+     ],
+     [
+      23.0,
+      0.0
+     ],
+     [
+      23.0,
+      14.0
+     ],
+     [
+      12.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h33-r2",
+    "label": "bathroom",
+    "polygon": [
+     [
+      23.0,
+      0.0
+     ],
+     [
+      32.0,
+      0.0
+     ],
+     [
+      32.0,
+      14.0
+     ],
+     [
+      23.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h33-r3",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      14.0
+     ],
+     [
+      13.5,
+      14.0
+     ],
+     [
+      13.5,
+      29.0
+     ],
+     [
+      0.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h33-r4",
+    "label": "bathroom",
+    "polygon": [
+     [
+      13.5,
+      14.0
+     ],
+     [
+      20.5,
+      14.0
+     ],
+     [
+      20.5,
+      29.0
+     ],
+     [
+      13.5,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h33-r5",
+    "label": "kitchen",
+    "polygon": [
+     [
+      20.5,
+      14.0
+     ],
+     [
+      32.0,
+      14.0
+     ],
+     [
+      32.0,
+      29.0
+     ],
+     [
+      20.5,
+      29.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h34": {
+  "id": "h34",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     },
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h34-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      9.5,
+      0.0
+     ],
+     [
+      9.5,
+      14.0
+     ],
+     [
+      0.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h34-r1",
+    "label": "stairwell",
+    "polygon": [
+     [
+      9.5,
+      0.0
+     ],
+     [
+      17.0,
+      0.0
+     ],
+     [
+      17.0,
+      14.0
+     ],
+     [
+      9.5,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h34-r2",
+    "label": "living",
+    "polygon": [
+     [
+      15.0,
+      0.0
+     ],
+     [
+      30.0,
+      0.0
+     ],
+     [
+      30.0,
+      14.0
+     ],
+     [
+      15.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h34-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      14.0
+     ],
+     [
+      7.0,
+      14.0
+     ],
+     [
+      7.0,
+      26.0
+     ],
+     [
+      0.0,
+      26.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     },
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h34-r4",
+    "label": "kitchen",
+    "polygon": [
+     [
+      7.0,
+      14.0
+     ],
+     [
+      23.5,
+      14.0
+     ],
+     [
+      23.5,
+      26.0
+     ],
+     [
+      7.0,
+      26.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h34-r5",
+    "label": "closet",
+    "polygon": [
+     [
+      23.5,
+      14.0
+     ],
+     [
+      30.0,
+      14.0
+     ],
+     [
+      30.0,
+      26.0
+     ],
+     [
+      23.5,
+      26.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h35": {
+  "id": "h35",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 14.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h35-r1",
+    "label": "living",
+    "polygon": [
+     [
+      7.0,
+      0.0
+     ],
+     [
+      27.5,
+      0.0
+     ],
+     [
+      27.5,
+      12.0
+     ],
+     [
+      7.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h35-r2",
+    "label": "closet",
+    "polygon": [
+     [
+      27.5,
+      0.0
+     ],
+     [
+      32.5,
+      0.0
+     ],
+     [
+      32.5,
+      12.0
+     ],
+     [
+      27.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h35-r3",
+    "label": "stairwell",
+    "polygon": [
+     [
+      32.5,
+      0.0
+     ],
+     [
+      40.0,
+      0.0
+     ],
+     [
+      40.0,
+      12.0
+     ],
+     [
+      32.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h35-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      11.0,
+      12.0
+     ],
+     [
+      11.0,
+      24.0
+     ],
+     [
+      0.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h35-r5",
+    "label": "bathroom",
+    "polygon": [
+     [
+      11.0,
+      12.0
+     ],
+     [
+      19.5,
+      12.0
+     ],
+     [
+      19.5,
+      24.0
+     ],
+     [
+      11.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h35-r6",
+    "label": "kitchen",
+    "polygon": [
+     [
+      19.5,
+      12.0
+     ],
+     [
+      40.0,
+      12.0
+     ],
+     [
+      40.0,
+      24.0
+     ],
+     [
+      19.5,
+      24.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h36": {
+  "id": "h36",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     },
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h36-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      10.0,
+      0.0
+     ],
+     [
+      10.0,
+      12.0
+     ],
+     [
+      0.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h36-r1",
+    "label": "kitchen",
+    "polygon": [
+     [
+      10.0,
+      0.0
+     ],
+     [
+      34.0,
+      0.0
+     ],
+     [
+      34.0,
+      12.0
+     ],
+     [
+      10.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h36-r2",
+    "label": "stairwell",
+    "polygon": [
+     [
+      34.0,
+      0.0
+     ],
+     [
+      40.5,
+      0.0
+     ],
+     [
+      40.5,
+      12.0
+     ],
+     [
+      34.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h36-r3",
+    "label": "bathroom",
+    "polygon": [
+     [
+      40.5,
+      0.0
+     ],
+     [
+      50.0,
+      0.0
+     ],
+     [
+      50.0,
+      12.0
+     ],
+     [
+      40.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h36-r4",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      7.5,
+      12.0
+     ],
+     [
+      7.5,
+      22.0
+     ],
+     [
+      0.0,
+      22.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h36-r5",
+    "label": "living",
+    "polygon": [
+     [
+      7.5,
+      12.0
+     ],
+     [
+      43.0,
+      12.0
+     ],
+     [
+      43.0,
+      22.0
+     ],
+     [
+      7.5,
+      22.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h36-r6",
+    "label": "closet",
+    "polygon": [
+     [
+      43.0,
+      12.0
+     ],
+     [
+      50.0,
+      12.0
+     ],
+     [
+      50.0,
+      22.0
+     ],
+     [
+      43.0,
+      22.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h37": {
+  "id": "h37",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h37-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      13.0,
+      0.0
+     ],
+     [
+      13.0,
+      13.0
+     ],
+     [
+      0.0,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h37-r1",
+    "label": "hallway",
+    "polygon": [
+     [
+      13.0,
+      0.0
+     ],
+     [
+      19.5,
+      0.0
+     ],
+     [
+      19.5,
+      10.9
+     ],
+     [
+      13.0,
+      10.9
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h37-r2",
+    "label": "kitchen",
+    "polygon": [
+     [
+      19.5,
+      0.0
+     ],
+     [
+      36.5,
+      0.0
+     ],
+     [
+      36.5,
+      13.0
+     ],
+     [
+      19.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h37-r3",
+    "label": "bedroom",
+    "polygon": [
+     [
+      36.5,
+      0.0
+     ],
+     [
+      46.0,
+      0.0
+     ],
+     [
+      46.0,
+      13.0
+     ],
+     [
+      36.5,
+      13.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h37-r4",
+    "label": "bathroom",
+    "polygon": [
+     [
+      0.0,
+      13.0
+     ],
+     [
+      12.5,
+      13.0
+     ],
+     [
+      12.5,
+      28.0
+     ],
+     [
+      0.0,
+      28.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     },
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h37-r5",
+    "label": "living",
+    "polygon": [
+     [
+      12.5,
+      13.0
+     ],
+     [
+      33.0,
+      13.0
+     ],
+     [
+      33.0,
+      28.0
+     ],
+     [
+      12.5,
+      28.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     },
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h37-r6",
+    "label": "bedroom",
+    "polygon": [
+     [
+      33.0,
+      13.0
+     ],
+     [
+      46.0,
+      13.0
+     ],
+     [
+      46.0,
+      28.0
+     ],
+     [
+      33.0,
+      28.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h38": {
+  "id": "h38",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     },
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h38-r0",
+    "label": "bedroom",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      8.5,
+      0.0
+     ],
+     [
+      8.5,
+      16.0
+     ],
+     [
+      0.0,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h38-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      8.5,
+      0.0
+     ],
+     [
+      16.5,
+      0.0
+     ],
+     [
+      16.5,
+      16.0
+     ],
+     [
+      8.5,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h38-r2",
+    "label": "living",
+    "polygon": [
+     [
+      16.5,
+      0.0
+     ],
+     [
+      27.5,
+      0.0
+     ],
+     [
+      27.5,
+      16.0
+     ],
+     [
+      16.5,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h38-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      27.5,
+      0.0
+     ],
+     [
+      34.0,
+      0.0
+     ],
+     [
+      34.0,
+      16.0
+     ],
+     [
+      27.5,
+      16.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h38-r4",
+    "label": "stairwell",
+    "polygon": [
+     [
+      0.0,
+      16.0
+     ],
+     [
+      5.0,
+      16.0
+     ],
+     [
+      5.0,
+      29.0
+     ],
+     [
+      0.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h38-r5",
+    "label": "closet",
+    "polygon": [
+     [
+      5.0,
+      16.0
+     ],
+     [
+      12.5,
+      16.0
+     ],
+     [
+      12.5,
+      29.0
+     ],
+     [
+      5.0,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h38-r6",
+    "label": "closet",
+    "polygon": [
+     [
+      12.5,
+      16.0
+     ],
+     [
+      22.4,
+      16.0
+     ],
+     [
+      22.4,
+      29.0
+     ],
+     [
+      12.5,
+      29.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h38-r7",
+    "label": "kitchen",
+    "polygon": [
+     [
+      19.0,
+      16.0
+     ],
+     [
+      34.0,
+      16.0
+     ],
+     [
+      34.0,
+      29.0
+     ],
+     [
+      19.0,
+      29.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h39": {
+  "id": "h39",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h39-r0",
+    "label": "living",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      10.0,
+      0.0
+     ],
+     [
+      10.0,
+      12.0
+     ],
+     [
+      0.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h39-r1",
+    "label": "closet",
+    "polygon": [
+     [
+      10.0,
+      0.0
+     ],
+     [
+      15.0,
+      0.0
+     ],
+     [
+      15.0,
+      12.0
+     ],
+     [
+      10.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h39-r2",
+    "label": "closet",
+    "polygon": [
+     [
+      15.0,
+      0.0
+     ],
+     [
+      21.5,
+      0.0
+     ],
+     [
+      21.5,
+      12.0
+     ],
+     [
+      15.0,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h39-r3",
+    "label": "closet",
+    "polygon": [
+     [
+      21.5,
+      0.0
+     ],
+     [
+      27.0,
+      0.0
+     ],
+     [
+      27.0,
+      12.0
+     ],
+     [
+      21.5,
+      12.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h39-r4",
+    "label": "hallway",
+    "polygon": [
+     [
+      27.0,
+      0.0
+     ],
+     [
+      32.0,
+      0.0
+     ],
+     [
+      32.0,
+      13.7
+     ],
+     [
+      27.0,
+      13.7
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h39-r5",
+    "label": "kitchen",
+    "polygon": [
+     [
+      0.0,
+      12.0
+     ],
+     [
+      10.0,
+      12.0
+     ],
+     [
+      10.0,
+      24.0
+     ],
+     [
+      0.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h39-r7",
+    "label": "stairwell",
+    "polygon": [
+     [
+      18.0,
+      12.0
+     ],
+     [
+      23.5,
+      12.0
+     ],
+     [
+      23.5,
+      24.0
+     ],
+     [
+      18.0,
+      24.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h39-r8",
+    "label": "bedroom",
+    "polygon": [
+     [
+      23.5,
+      12.0
+     ],
+     [
+      32.0,
+      12.0
+     ],
+     [
+      32.0,
+      24.0
+     ],
+     [
+      23.5,
+      24.0
+     ]
+    ]
+   }
+  ]
+ },
+ "h40": {
+  "id": "h40",
+  "rooms": [
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h40-r0",
+    "label": "closet",
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      5.0,
+      0.0
+     ],
+     [
+      5.0,
+      14.0
+     ],
+     [
+      0.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h40-r1",
+    "label": "bathroom",
+    "polygon": [
+     [
+      5.0,
+      0.0
+     ],
+     [
+      11.0,
+      0.0
+     ],
+     [
+      11.0,
+      12.5
+     ],
+     [
+      5.0,
+      12.5
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h40-r2",
+    "label": "hallway",
+    "polygon": [
+     [
+      11.0,
+      0.0
+     ],
+     [
+      16.5,
+      0.0
+     ],
+     [
+      16.5,
+      14.0
+     ],
+     [
+      11.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 2,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "glass_wall"
+    ],
+    "id": "h40-r3",
+    "label": "kitchen",
+    "polygon": [
+     [
+      16.5,
+      0.0
+     ],
+     [
+      25.0,
+      0.0
+     ],
+     [
+      25.0,
+      14.0
+     ],
+     [
+      16.5,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 17.0,
+    "doors": [
+     {
+      "wall": 3,
+      "width": 2.5
+     }
+    ],
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "id": "h40-r4",
+    "label": "stairwell",
+    "polygon": [
+     [
+      25.0,
+      0.0
+     ],
+     [
+      30.0,
+      0.0
+     ],
+     [
+      30.0,
+      14.0
+     ],
+     [
+      25.0,
+      14.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 2.5
+     }
+    ],
+    "flags": [],
+    "id": "h40-r5",
+    "label": "hallway",
+    "polygon": [
+     [
+      0.0,
+      14.0
+     ],
+     [
+      5.5,
+      14.0
+     ],
+     [
+      5.5,
+      28.0
+     ],
+     [
+      0.0,
+      28.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 16.0,
+    "doors": [
+     {
+      "wall": 1,
+      "width": 2.5
+     },
+     {
+      "wall": 1,
+      "width": 3.0
+     }
+    ],
+    "flags": [
+     "tall_ceiling"
+    ],
+    "id": "h40-r6",
+    "label": "living",
+    "polygon": [
+     [
+      5.5,
+      14.0
+     ],
+     [
+      16.5,
+      14.0
+     ],
+     [
+      16.5,
+      28.0
+     ],
+     [
+      5.5,
+      28.0
+     ]
+    ]
+   },
+   {
+    "affected": false,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h40-r7",
+    "label": "hallway",
+    "polygon": [
+     [
+      16.5,
+      14.0
+     ],
+     [
+      22.5,
+      14.0
+     ],
+     [
+      22.5,
+      28.0
+     ],
+     [
+      16.5,
+      28.0
+     ]
+    ]
+   },
+   {
+    "affected": true,
+    "ceiling": 8.0,
+    "doors": [
+     {
+      "wall": 0,
+      "width": 3.0
+     }
+    ],
+    "flags": [],
+    "id": "h40-r8",
+    "label": "bedroom",
+    "polygon": [
+     [
+      22.5,
+      14.0
+     ],
+     [
+      30.0,
+      14.0
+     ],
+     [
+      30.0,
+      28.0
+     ],
+     [
+      22.5,
+      28.0
+     ]
+    ]
+   }
+  ]
+ }
+}

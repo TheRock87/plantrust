@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlanTrust</title>
+<meta name="description" content="A small review agent that says which rooms of an AI-drawn floor plan to trust, which to send to a drafter, and what an error would cost. Synthetic data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <p class="eyebrow">A small demo by Hossam El-Kharbotly</p>
+  <h1>PlanTrust: which rooms of an AI floor plan can you trust?</h1>
+  <p class="lede">Built for my application to the Senior Software Engineer, AI Agents role at DocuSketch. It uses only synthetic houses, so every number here comes from scripts you can rerun with one command.</p>
+  <nav class="links">
+    <a id="link-video" href="#" hidden>2-minute video</a>
+    <a href="https://github.com/TheRock87/plantrust">Code on GitHub</a>
+    <a href="https://therock87.github.io/">Portfolio and CV</a>
+    <a href="https://www.linkedin.com/in/hossam87">LinkedIn</a>
+  </nav>
+  <div class="headline-stats" id="headline-stats"></div>
+</header>
+
+<section>
+  <h2>Why I built this</h2>
+  <ul class="bullets">
+    <li><strong>The floor plan drives the estimate.</strong> Wall lengths, floor area and ceiling height become the quantities that are priced in Xactimate, so a wrong wall means a wrong price.</li>
+    <li><strong>Instant Sketch is fast, and its weak spots are known.</strong> DocuSketch's own material names stairwells, tall ceilings and glass walls, and notes that reflective surfaces can create objects that are not there.</li>
+    <li><strong>Drafters are the expensive, slow step.</strong> Sending every plan to a human throws away the speed; sending none puts wrong quantities into claims.</li>
+    <li><strong>So the useful question is narrower:</strong> which rooms of this plan can be trusted, which need a drafter, and what would an error cost?</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Try it</h2>
+  <p class="muted">Pick a house. Click a room to see the verdict, the reason, the numbers and, where the agent decided, every step it took.</p>
+  <div class="viewer">
+    <div class="viewer-plan">
+      <label class="select">House
+        <select id="house-select"></select>
+      </label>
+      <svg id="plan" role="group" aria-label="Floor plan"></svg>
+      <ul class="legend">
+        <li><span class="swatch accept">&#10003;</span> Accept</li>
+        <li><span class="swatch drafter">&#9888;</span> Send to drafter</li>
+        <li><span class="swatch missing"></span> In the tour, missing from the plan</li>
+      </ul>
+    </div>
+    <aside class="viewer-panel" id="panel" aria-live="polite"></aside>
+  </div>
+  <div id="house-table"></div>
+</section>
+
+<section>
+  <h2>Results on 40 houses</h2>
+  <p class="muted" id="results-intro"></p>
+  <div class="table-wrap"><table id="score-table"></table></div>
+  <h3>Catch rate per error type</h3>
+  <div class="table-wrap"><table id="type-table"></table></div>
+</section>
+
+<section id="failure-section" hidden>
+  <h2>One failure, one fix</h2>
+  <div id="failure-fix"></div>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <ol class="flow">
+    <li><span class="flow-n">1</span><div><strong>Plain-code checks</strong><p>Walls close, rooms do not overlap, the plan agrees with the tour measurements. Clear cases are decided here, exactly and for free.</p></div></li>
+    <li><span class="flow-n">2</span><div><strong>A small agent, only for unclear rooms</strong><p>One model with 4 tools (read the room, read the tour, read the check results, submit a verdict) decides: accept, or send to a drafter.</p></div></li>
+    <li><span class="flow-n">3</span><div><strong>Cost at risk per room</strong><p>How many dollars a wrong area or height would move, from two illustrative price items.</p></div></li>
+    <li><span class="flow-n">&#10003;</span><div><strong>Verdict per room</strong><p>Accept, or send to drafter with the reason and the dollars at risk.</p></div></li>
+  </ol>
+  <p>Code goes first because it is exact and free. The agent sees only the rooms code cannot settle. When the agent is unsure, fails, or runs out of steps, the room goes to a human; it can never accept a room by failing.</p>
+</section>
+
+<section>
+  <h2>Why I fit this role</h2>
+  <div class="table-wrap">
+  <table class="fit">
+    <thead><tr><th>What the role needs</th><th>What this demo shows</th><th>What I already do in production</th></tr></thead>
+    <tbody>
+      <tr><td>Build agents with tools</td><td>A small agent with 4 tools on a standard framework (LangChain <code>create_agent</code>)</td><td>A 20-tool AI ingestion agent in a no-network sandbox; a second, fresh model call checks its mapping before an engineer signs</td></tr>
+      <tr><td>Plain code where code is exact, a model only where needed</td><td>Code decides most rooms; the agent sees only the unclear ones</td><td>One ingestion agent, two pipelines: rule-based for known bill layouts, the 20-tool AI path only for bills no known layout fits</td></tr>
+      <tr><td>Measure the errors that matter</td><td>Catch rate and false alarms per error type, with counts</td><td>Errors that passed every arithmetic check became permanent rules (2,440 deleted rows that both gate and checker had accepted); an audit against raw data showed a failure rate reported as 0.07% was really 1.1%</td></tr>
+      <tr><td>Turn failures into fixes</td><td>One trace, one cause, one test, one fix</td><td>30+ production incidents, each written up with root cause, fix and measured result</td></tr>
+      <tr><td>Output a reviewer can check fast</td><td>Only flagged rooms, each with a reason and dollars at risk</td><td>Cost engineers sign each bill from a review dashboard; every row is traced to its source cell</td></tr>
+      <tr><td>Cost and reliability</td><td>Model cost per house; code first</td><td>Sole engineer of an on-premise large language model (LLM) platform with Langfuse traces and 35 alert rules</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>Honest limits, and what I would do with real data</h2>
+  <ul class="bullets">
+    <li><strong>Synthetic houses</strong> of rectangular rooms, with errors I planted myself. It shows the method, not real-world accuracy.</li>
+    <li><strong>Simulated tour measurements</strong> with simple noise (about 2% on walls, 0.3 ft on ceilings, door counts sometimes off by one). Real tours are messier.</li>
+    <li><strong>Illustrative prices</strong> for two items (wet drywall removal, drying fans by the IICRC (Institute of Inspection, Cleaning and Restoration Certification) rule of thumb). They are not real price lists.</li>
+    <li><strong>With real data</strong> I would build the test set from drafters' corrections, use the vision team's real outputs as input, add every miss as a test case, and let the agent decide alone only where the numbers prove it is safe.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Synthetic data only. Not affiliated with or endorsed by DocuSketch. Model: <span id="model-name"></span>.</p>
+</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

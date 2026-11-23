@@ -1,0 +1,3184 @@
+{
+ "h01": {
+  "h01-r0": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    14.6,
+    15.1,
+    14.4,
+    15.0
+   ]
+  },
+  "h01-r1": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    31.1,
+    15.0,
+    31.0,
+    14.9
+   ]
+  },
+  "h01-r2": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    32.1,
+    10.1,
+    32.4,
+    10.1
+   ]
+  },
+  "h01-r3": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    13.4,
+    10.2,
+    13.2,
+    10.0
+   ]
+  }
+ },
+ "h02": {
+  "h02-r0": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    26.7,
+    13.1,
+    26.5,
+    12.9
+   ]
+  },
+  "h02-r1": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    12.9,
+    12.9,
+    13.2,
+    13.0
+   ]
+  },
+  "h02-r2": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.9,
+    12.1,
+    9.1,
+    12.0
+   ]
+  },
+  "h02-r3": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    31.0,
+    12.0,
+    31.5,
+    12.0
+   ]
+  }
+ },
+ "h03": {
+  "h03-r0": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    10.3,
+    14.0,
+    10.4,
+    13.8
+   ]
+  },
+  "h03-r1": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    19.9,
+    14.1,
+    20.2,
+    13.8
+   ]
+  },
+  "h03-r2": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    15.8,
+    14.2,
+    15.6,
+    14.0
+   ]
+  },
+  "h03-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    26.3,
+    11.9,
+    25.5,
+    12.1
+   ]
+  },
+  "h03-r4": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    19.9,
+    11.8,
+    20.2,
+    12.0
+   ]
+  }
+ },
+ "h04": {
+  "h04-r0": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    6.9,
+    12.2,
+    7.1,
+    12.2
+   ]
+  },
+  "h04-r1": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.1,
+    11.9,
+    6.9,
+    12.0
+   ]
+  },
+  "h04-r2": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    9.8,
+    12.1,
+    9.9,
+    12.0
+   ]
+  },
+  "h04-r3": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    9.9,
+    11.9,
+    9.8,
+    12.2
+   ]
+  },
+  "h04-r4": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    5.5,
+    10.8,
+    5.6,
+    11.1
+   ]
+  },
+  "h04-r5": {
+   "ceiling": 8.1,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    7.1,
+    11.0,
+    6.9,
+    11.2
+   ]
+  },
+  "h04-r6": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.5,
+    11.0,
+    7.4,
+    10.8
+   ]
+  },
+  "h04-r7": {
+   "ceiling": 8.0,
+   "doors": 0,
+   "label": "kitchen",
+   "walls": [
+    14.2,
+    11.1,
+    14.1,
+    10.9
+   ]
+  }
+ },
+ "h05": {
+  "h05-r0": {
+   "ceiling": 8.1,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    25.4,
+    13.1,
+    25.6,
+    12.9
+   ]
+  },
+  "h05-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    19.3,
+    13.0,
+    19.1,
+    12.9
+   ]
+  },
+  "h05-r2": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    5.5,
+    13.0,
+    5.5,
+    13.1
+   ]
+  },
+  "h05-r3": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    30.8,
+    15.7,
+    31.3,
+    15.7
+   ]
+  },
+  "h05-r4": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    19.2,
+    16.1,
+    19.3,
+    16.0
+   ]
+  }
+ },
+ "h06": {
+  "h06-r0": {
+   "ceiling": 8.1,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    8.5,
+    10.9,
+    8.5,
+    11.1
+   ]
+  },
+  "h06-r1": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.4,
+    11.0,
+    5.4,
+    11.1
+   ]
+  },
+  "h06-r2": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.1,
+    10.8,
+    6.0,
+    11.1
+   ]
+  },
+  "h06-r3": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "closet",
+   "walls": [
+    5.0,
+    11.2,
+    4.9,
+    11.2
+   ]
+  },
+  "h06-r4": {
+   "ceiling": 8.1,
+   "doors": 2,
+   "label": "hallway",
+   "walls": [
+    4.9,
+    10.9,
+    5.1,
+    11.1
+   ]
+  },
+  "h06-r5": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    5.5,
+    15.0,
+    5.4,
+    15.1
+   ]
+  },
+  "h06-r6": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    11.0,
+    15.0,
+    11.0,
+    15.3
+   ]
+  },
+  "h06-r7": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    4.9,
+    14.8,
+    5.1,
+    15.3
+   ]
+  },
+  "h06-r8": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    8.4,
+    14.8,
+    8.6,
+    15.0
+   ]
+  }
+ },
+ "h07": {
+  "h07-r0": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    8.0,
+    10.1,
+    8.1,
+    10.0
+   ]
+  },
+  "h07-r1": {
+   "ceiling": 17.1,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    6.0,
+    10.1,
+    6.0,
+    10.2
+   ]
+  },
+  "h07-r2": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    10.7,
+    9.8,
+    10.6,
+    10.2
+   ]
+  },
+  "h07-r3": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    13.3,
+    9.9,
+    13.7,
+    9.9
+   ]
+  },
+  "h07-r4": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    6.5,
+    13.1,
+    6.5,
+    13.0
+   ]
+  },
+  "h07-r5": {
+   "ceiling": 16.0,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    18.7,
+    12.9,
+    18.2,
+    13.1
+   ]
+  },
+  "h07-r6": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.0,
+    12.9,
+    4.9,
+    13.0
+   ]
+  },
+  "h07-r7": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.1,
+    13.0,
+    8.0,
+    13.0
+   ]
+  }
+ },
+ "h08": {
+  "h08-r0": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    15.2,
+    12.0,
+    14.8,
+    12.0
+   ]
+  },
+  "h08-r1": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    8.0,
+    11.9,
+    8.2,
+    12.1
+   ]
+  },
+  "h08-r2": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    8.8,
+    12.2,
+    9.0,
+    12.1
+   ]
+  },
+  "h08-r3": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    10.1,
+    12.0,
+    10.2,
+    12.1
+   ]
+  },
+  "h08-r4": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    15.7,
+    11.0,
+    15.4,
+    11.1
+   ]
+  },
+  "h08-r5": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.5,
+    11.1,
+    7.5,
+    11.2
+   ]
+  },
+  "h08-r6": {
+   "ceiling": 14.2,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    18.8,
+    11.0,
+    19.1,
+    11.2
+   ]
+  }
+ },
+ "h09": {
+  "h09-r0": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.4,
+    14.1,
+    7.5,
+    14.1
+   ]
+  },
+  "h09-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.4,
+    14.2,
+    7.4,
+    14.1
+   ]
+  },
+  "h09-r2": {
+   "ceiling": 16.9,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    5.5,
+    13.9,
+    5.4,
+    13.8
+   ]
+  },
+  "h09-r3": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    9.4,
+    14.1,
+    9.5,
+    13.9
+   ]
+  },
+  "h09-r4": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    7.9,
+    14.1,
+    7.9,
+    13.8
+   ]
+  },
+  "h09-r5": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    8.1,
+    9.9,
+    8.1,
+    10.2
+   ]
+  },
+  "h09-r6": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.4,
+    9.8,
+    8.5,
+    10.0
+   ]
+  },
+  "h09-r7": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    11.0,
+    10.1,
+    11.0,
+    9.9
+   ]
+  },
+  "h09-r8": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    10.4,
+    10.2,
+    10.7,
+    10.2
+   ]
+  }
+ },
+ "h10": {
+  "h10-r0": {
+   "ceiling": 14.7,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    23.3,
+    15.7,
+    23.9,
+    15.8
+   ]
+  },
+  "h10-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    9.4,
+    15.7,
+    9.4,
+    15.7
+   ]
+  },
+  "h10-r2": {
+   "ceiling": 17.2,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    5.0,
+    16.2,
+    4.9,
+    16.0
+   ]
+  },
+  "h10-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.9,
+    12.8,
+    9.0,
+    13.0
+   ]
+  },
+  "h10-r4": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    22.3,
+    12.8,
+    21.8,
+    12.9
+   ]
+  },
+  "h10-r5": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    6.9,
+    13.0,
+    7.1,
+    13.1
+   ]
+  }
+ },
+ "h11": {
+  "h11-r0": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    10.1,
+    12.8,
+    10.1,
+    12.8
+   ]
+  },
+  "h11-r1": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    9.0,
+    12.8,
+    8.9,
+    13.1
+   ]
+  },
+  "h11-r2": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    10.6,
+    12.8,
+    10.6,
+    13.0
+   ]
+  },
+  "h11-r3": {
+   "ceiling": 17.0,
+   "doors": 0,
+   "label": "stairwell",
+   "walls": [
+    6.4,
+    12.9,
+    6.4,
+    12.8
+   ]
+  },
+  "h11-r4": {
+   "ceiling": 14.8,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    18.6,
+    12.2,
+    18.4,
+    12.2
+   ]
+  },
+  "h11-r5": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    5.5,
+    12.1,
+    5.5,
+    11.8
+   ]
+  },
+  "h11-r6": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    12.0,
+    11.8,
+    12.2,
+    12.2
+   ]
+  }
+ },
+ "h12": {
+  "h12-r0": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    4.9,
+    11.8,
+    5.1,
+    12.2
+   ]
+  },
+  "h12-r1": {
+   "ceiling": 17.0,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    10.4,
+    11.9,
+    10.4,
+    12.0
+   ]
+  },
+  "h12-r2": {
+   "ceiling": 8.1,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    14.2,
+    12.1,
+    13.9,
+    12.1
+   ]
+  },
+  "h12-r3": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    18.3,
+    12.1,
+    18.6,
+    12.0
+   ]
+  },
+  "h12-r4": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    20.3,
+    10.0,
+    19.6,
+    10.0
+   ]
+  },
+  "h12-r5": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    16.3,
+    9.9,
+    16.3,
+    9.8
+   ]
+  },
+  "h12-r6": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "hallway",
+   "walls": [
+    12.1,
+    10.0,
+    12.0,
+    10.1
+   ]
+  }
+ },
+ "h13": {
+  "h13-r0": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    9.9,
+    15.2,
+    10.0,
+    14.8
+   ]
+  },
+  "h13-r1": {
+   "ceiling": 8.2,
+   "doors": 0,
+   "label": "kitchen",
+   "walls": [
+    8.5,
+    14.9,
+    8.4,
+    15.2
+   ]
+  },
+  "h13-r2": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    4.9,
+    14.7,
+    5.1,
+    15.2
+   ]
+  },
+  "h13-r3": {
+   "ceiling": 16.8,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    6.6,
+    15.0,
+    6.6,
+    15.0
+   ]
+  },
+  "h13-r4": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.9,
+    14.8,
+    8.1,
+    15.2
+   ]
+  },
+  "h13-r5": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    8.5,
+    15.0,
+    8.5,
+    15.1
+   ]
+  },
+  "h13-r6": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.0,
+    14.8,
+    6.0,
+    15.1
+   ]
+  },
+  "h13-r7": {
+   "ceiling": 7.7,
+   "doors": 0,
+   "label": "bedroom",
+   "walls": [
+    7.4,
+    15.3,
+    7.6,
+    15.2
+   ]
+  }
+ },
+ "h14": {
+  "h14-r0": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.4,
+    11.1,
+    5.5,
+    10.9
+   ]
+  },
+  "h14-r1": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    10.6,
+    10.9,
+    10.4,
+    10.9
+   ]
+  },
+  "h14-r2": {
+   "ceiling": 7.9,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    17.4,
+    10.9,
+    17.7,
+    10.9
+   ]
+  },
+  "h14-r3": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.6,
+    11.1,
+    8.4,
+    11.1
+   ]
+  },
+  "h14-r4": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    11.5,
+    11.9,
+    11.7,
+    11.9
+   ]
+  },
+  "h14-r5": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    12.4,
+    12.2,
+    12.7,
+    11.8
+   ]
+  },
+  "h14-r6": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.4,
+    12.1,
+    8.6,
+    11.8
+   ]
+  },
+  "h14-r7": {
+   "ceiling": 7.9,
+   "doors": 2,
+   "label": "hallway",
+   "walls": [
+    9.7,
+    12.0,
+    9.5,
+    11.8
+   ]
+  }
+ },
+ "h15": {
+  "h15-r0": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    9.1,
+    14.0,
+    8.9,
+    14.0
+   ]
+  },
+  "h15-r1": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    11.5,
+    13.8,
+    11.5,
+    14.2
+   ]
+  },
+  "h15-r2": {
+   "ceiling": 7.9,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    9.6,
+    13.9,
+    9.7,
+    14.1
+   ]
+  },
+  "h15-r3": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.5,
+    13.9,
+    5.5,
+    14.1
+   ]
+  },
+  "h15-r4": {
+   "ceiling": 7.7,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    8.4,
+    14.1,
+    8.5,
+    14.2
+   ]
+  },
+  "h15-r5": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    10.1,
+    9.9,
+    10.0,
+    10.2
+   ]
+  },
+  "h15-r6": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    10.3,
+    10.1,
+    10.4,
+    10.0
+   ]
+  },
+  "h15-r7": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.0,
+    9.9,
+    7.8,
+    10.2
+   ]
+  },
+  "h15-r8": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    15.6,
+    9.9,
+    15.6,
+    9.8
+   ]
+  }
+ },
+ "h16": {
+  "h16-r0": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    12.5,
+    10.0,
+    12.4,
+    9.9
+   ]
+  },
+  "h16-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    12.6,
+    10.2,
+    12.7,
+    10.2
+   ]
+  },
+  "h16-r2": {
+   "ceiling": 8.1,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    13.7,
+    10.0,
+    13.6,
+    10.2
+   ]
+  },
+  "h16-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    7.4,
+    10.1,
+    7.4,
+    10.2
+   ]
+  },
+  "h16-r4": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.5,
+    11.1,
+    8.5,
+    11.1
+   ]
+  },
+  "h16-r5": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    6.9,
+    11.1,
+    6.9,
+    10.8
+   ]
+  },
+  "h16-r6": {
+   "ceiling": 14.9,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    18.1,
+    11.1,
+    18.3,
+    11.1
+   ]
+  },
+  "h16-r7": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    11.9,
+    10.8,
+    11.8,
+    10.8
+   ]
+  }
+ },
+ "h17": {
+  "h17-r0": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    7.1,
+    12.1,
+    7.0,
+    12.1
+   ]
+  },
+  "h17-r1": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    6.4,
+    12.1,
+    6.5,
+    11.9
+   ]
+  },
+  "h17-r2": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "hallway",
+   "walls": [
+    7.5,
+    11.8,
+    7.4,
+    12.0
+   ]
+  },
+  "h17-r3": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    5.0,
+    12.2,
+    5.0,
+    12.1
+   ]
+  },
+  "h17-r4": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.1,
+    12.2,
+    6.0,
+    12.0
+   ]
+  },
+  "h17-r5": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    6.4,
+    15.0,
+    6.6,
+    15.0
+   ]
+  },
+  "h17-r6": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    7.9,
+    15.2,
+    8.1,
+    14.8
+   ]
+  },
+  "h17-r7": {
+   "ceiling": 16.1,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    10.4,
+    14.9,
+    10.4,
+    15.0
+   ]
+  },
+  "h17-r8": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    6.9,
+    15.2,
+    7.0,
+    14.8
+   ]
+  }
+ },
+ "h18": {
+  "h18-r0": {
+   "ceiling": 16.7,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    4.9,
+    10.9,
+    5.1,
+    10.9
+   ]
+  },
+  "h18-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    10.6,
+    11.0,
+    10.4,
+    11.0
+   ]
+  },
+  "h18-r2": {
+   "ceiling": 7.9,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    22.1,
+    11.1,
+    22.6,
+    11.2
+   ]
+  },
+  "h18-r3": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.1,
+    11.2,
+    5.9,
+    11.1
+   ]
+  },
+  "h18-r4": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    19.7,
+    16.3,
+    20.4,
+    16.0
+   ]
+  },
+  "h18-r5": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.5,
+    16.2,
+    8.5,
+    15.9
+   ]
+  },
+  "h18-r6": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    15.5,
+    15.9,
+    15.5,
+    16.3
+   ]
+  }
+ },
+ "h19": {
+  "h19-r0": {
+   "ceiling": 8.3,
+   "doors": 2,
+   "label": "hallway",
+   "walls": [
+    8.1,
+    14.9,
+    8.1,
+    14.7
+   ]
+  },
+  "h19-r1": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.5,
+    14.8,
+    8.5,
+    14.8
+   ]
+  },
+  "h19-r2": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    25.3,
+    15.2,
+    25.4,
+    14.9
+   ]
+  },
+  "h19-r3": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.0,
+    16.3,
+    4.9,
+    16.1
+   ]
+  },
+  "h19-r4": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    26.3,
+    16.1,
+    26.1,
+    16.1
+   ]
+  },
+  "h19-r5": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    10.9,
+    15.7,
+    11.0,
+    15.8
+   ]
+  }
+ },
+ "h20": {
+  "h20-r0": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    9.0,
+    15.0,
+    9.1,
+    15.2
+   ]
+  },
+  "h20-r1": {
+   "ceiling": 17.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.4,
+    15.2,
+    8.6,
+    14.7
+   ]
+  },
+  "h20-r2": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    14.3,
+    14.8,
+    14.7,
+    14.9
+   ]
+  },
+  "h20-r3": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    13.0,
+    15.7,
+    13.1,
+    16.3
+   ]
+  },
+  "h20-r4": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    12.6,
+    16.3,
+    12.6,
+    15.8
+   ]
+  },
+  "h20-r5": {
+   "ceiling": 8.3,
+   "doors": 2,
+   "label": "closet",
+   "walls": [
+    6.5,
+    16.1,
+    6.4,
+    16.0
+   ]
+  }
+ },
+ "h21": {
+  "h21-r0": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    19.9,
+    14.1,
+    19.7,
+    13.9
+   ]
+  },
+  "h21-r1": {
+   "ceiling": 8.2,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    16.0,
+    14.0,
+    15.8,
+    14.1
+   ]
+  },
+  "h21-r2": {
+   "ceiling": 7.9,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    29.9,
+    14.1,
+    29.0,
+    14.0
+   ]
+  },
+  "h21-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    6.5,
+    14.1,
+    6.6,
+    13.7
+   ]
+  }
+ },
+ "h22": {
+  "h22-r0": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    7.4,
+    11.9,
+    7.6,
+    12.1
+   ]
+  },
+  "h22-r1": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    14.2,
+    11.9,
+    13.8,
+    12.0
+   ]
+  },
+  "h22-r2": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    16.7,
+    12.2,
+    16.7,
+    11.8
+   ]
+  },
+  "h22-r3": {
+   "ceiling": 17.7,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    20.6,
+    9.9,
+    20.7,
+    9.8
+   ]
+  },
+  "h22-r4": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    17.3,
+    9.9,
+    16.8,
+    10.0
+   ]
+  }
+ },
+ "h23": {
+  "h23-r0": {
+   "ceiling": 8.3,
+   "doors": 2,
+   "label": "hallway",
+   "walls": [
+    7.6,
+    16.0,
+    7.5,
+    15.8
+   ]
+  },
+  "h23-r1": {
+   "ceiling": 17.2,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    5.9,
+    16.2,
+    6.0,
+    15.9
+   ]
+  },
+  "h23-r2": {
+   "ceiling": 14.1,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    21.0,
+    16.3,
+    21.2,
+    16.2
+   ]
+  },
+  "h23-r3": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    13.3,
+    15.8,
+    13.6,
+    15.9
+   ]
+  },
+  "h23-r4": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    23.1,
+    13.1,
+    23.3,
+    13.1
+   ]
+  },
+  "h23-r5": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    15.0,
+    13.2,
+    15.1,
+    12.8
+   ]
+  },
+  "h23-r6": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    10.1,
+    12.8,
+    10.2,
+    13.1
+   ]
+  }
+ },
+ "h24": {
+  "h24-r0": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    11.2,
+    15.0,
+    10.9,
+    15.2
+   ]
+  },
+  "h24-r1": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.0,
+    15.2,
+    6.0,
+    15.1
+   ]
+  },
+  "h24-r2": {
+   "ceiling": 7.9,
+   "doors": 0,
+   "label": "bedroom",
+   "walls": [
+    10.1,
+    14.8,
+    10.0,
+    15.0
+   ]
+  },
+  "h24-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.0,
+    15.2,
+    6.1,
+    14.7
+   ]
+  },
+  "h24-r4": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    7.0,
+    15.2,
+    6.9,
+    15.1
+   ]
+  },
+  "h24-r5": {
+   "ceiling": 8.2,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    12.2,
+    15.9,
+    11.9,
+    15.9
+   ]
+  },
+  "h24-r6": {
+   "ceiling": 17.1,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    5.1,
+    16.2,
+    5.1,
+    16.0
+   ]
+  },
+  "h24-r7": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    11.5,
+    16.1,
+    11.3,
+    15.9
+   ]
+  },
+  "h24-r8": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    11.4,
+    15.9,
+    11.7,
+    16.1
+   ]
+  }
+ },
+ "h25": {
+  "h25-r0": {
+   "ceiling": 8.0,
+   "doors": 0,
+   "label": "closet",
+   "walls": [
+    9.1,
+    13.1,
+    9.2,
+    12.8
+   ]
+  },
+  "h25-r1": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    14.7,
+    13.0,
+    14.5,
+    13.2
+   ]
+  },
+  "h25-r2": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    10.6,
+    13.2,
+    10.7,
+    12.9
+   ]
+  },
+  "h25-r3": {
+   "ceiling": 8.3,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    14.1,
+    16.1,
+    13.8,
+    16.2
+   ]
+  },
+  "h25-r4": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    9.5,
+    16.2,
+    9.5,
+    15.8
+   ]
+  },
+  "h25-r5": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    10.4,
+    16.1,
+    10.4,
+    16.0
+   ]
+  }
+ },
+ "h26": {
+  "h26-r0": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    14.3,
+    15.0,
+    14.3,
+    15.0
+   ]
+  },
+  "h26-r1": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.5,
+    15.1,
+    6.5,
+    15.1
+   ]
+  },
+  "h26-r2": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    15.7,
+    14.8,
+    15.5,
+    14.8
+   ]
+  },
+  "h26-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    11.7,
+    15.1,
+    11.6,
+    14.8
+   ]
+  },
+  "h26-r4": {
+   "ceiling": 16.8,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    12.4,
+    12.0,
+    12.5,
+    11.9
+   ]
+  },
+  "h26-r5": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "hallway",
+   "walls": [
+    6.1,
+    12.1,
+    5.9,
+    11.9
+   ]
+  },
+  "h26-r6": {
+   "ceiling": 18.2,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    29.0,
+    12.2,
+    29.2,
+    12.1
+   ]
+  }
+ },
+ "h27": {
+  "h27-r0": {
+   "ceiling": 17.1,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    7.1,
+    10.0,
+    6.9,
+    9.8
+   ]
+  },
+  "h27-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    11.0,
+    10.2,
+    10.9,
+    9.9
+   ]
+  },
+  "h27-r2": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.9,
+    10.0,
+    8.9,
+    10.1
+   ]
+  },
+  "h27-r3": {
+   "ceiling": 8.2,
+   "doors": 2,
+   "label": "bathroom",
+   "walls": [
+    7.0,
+    9.9,
+    7.0,
+    10.1
+   ]
+  },
+  "h27-r4": {
+   "ceiling": 8.2,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    21.3,
+    13.9,
+    21.7,
+    14.0
+   ]
+  },
+  "h27-r5": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.5,
+    14.3,
+    5.4,
+    14.3
+   ]
+  },
+  "h27-r6": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    7.0,
+    14.3,
+    7.0,
+    14.2
+   ]
+  }
+ },
+ "h28": {
+  "h28-r0": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    20.7,
+    13.1,
+    20.6,
+    13.0
+   ]
+  },
+  "h28-r1": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    9.4,
+    12.9,
+    9.4,
+    12.9
+   ]
+  },
+  "h28-r2": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    6.0,
+    13.2,
+    6.0,
+    13.1
+   ]
+  },
+  "h28-r3": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    9.2,
+    12.9,
+    9.1,
+    13.0
+   ]
+  },
+  "h28-r4": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    5.0,
+    12.8,
+    5.1,
+    13.0
+   ]
+  },
+  "h28-r5": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    12.0,
+    12.1,
+    12.0,
+    11.8
+   ]
+  },
+  "h28-r6": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    11.4,
+    11.8,
+    11.5,
+    12.0
+   ]
+  },
+  "h28-r7": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    12.3,
+    12.0,
+    12.4,
+    11.9
+   ]
+  },
+  "h28-r8": {
+   "ceiling": 8.3,
+   "doors": 3,
+   "label": "kitchen",
+   "walls": [
+    14.1,
+    12.2,
+    13.9,
+    12.0
+   ]
+  }
+ },
+ "h29": {
+  "h29-r0": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    4.9,
+    14.2,
+    5.0,
+    13.9
+   ]
+  },
+  "h29-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    10.1,
+    14.2,
+    9.9,
+    14.0
+   ]
+  },
+  "h29-r2": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    11.0,
+    14.1,
+    11.1,
+    14.2
+   ]
+  },
+  "h29-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.0,
+    13.8,
+    5.1,
+    14.1
+   ]
+  },
+  "h29-r4": {
+   "ceiling": 17.1,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    5.0,
+    13.8,
+    4.9,
+    14.2
+   ]
+  },
+  "h29-r5": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    10.5,
+    15.9,
+    10.7,
+    15.9
+   ]
+  },
+  "h29-r6": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "hallway",
+   "walls": [
+    6.5,
+    16.0,
+    6.6,
+    15.9
+   ]
+  },
+  "h29-r7": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.0,
+    16.2,
+    5.0,
+    15.8
+   ]
+  },
+  "h29-r8": {
+   "ceiling": 13.9,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    13.8,
+    16.2,
+    13.8,
+    16.0
+   ]
+  }
+ },
+ "h30": {
+  "h30-r0": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    8.7,
+    11.8,
+    8.7,
+    12.1
+   ]
+  },
+  "h30-r1": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    13.2,
+    11.9,
+    12.9,
+    12.1
+   ]
+  },
+  "h30-r2": {
+   "ceiling": 8.3,
+   "doors": 2,
+   "label": "closet",
+   "walls": [
+    8.6,
+    12.1,
+    8.4,
+    12.1
+   ]
+  },
+  "h30-r3": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    9.9,
+    11.8,
+    10.1,
+    11.9
+   ]
+  },
+  "h30-r4": {
+   "ceiling": 16.8,
+   "doors": 0,
+   "label": "stairwell",
+   "walls": [
+    8.6,
+    11.9,
+    8.5,
+    11.8
+   ]
+  },
+  "h30-r5": {
+   "ceiling": 8.3,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    14.5,
+    12.0,
+    14.7,
+    12.1
+   ]
+  },
+  "h30-r6": {
+   "ceiling": 13.9,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    16.9,
+    12.2,
+    17.0,
+    12.0
+   ]
+  }
+ },
+ "h31": {
+  "h31-r0": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    21.6,
+    13.2,
+    21.6,
+    13.1
+   ]
+  },
+  "h31-r1": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    6.0,
+    12.9,
+    6.0,
+    13.0
+   ]
+  },
+  "h31-r2": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    6.6,
+    12.9,
+    6.6,
+    13.0
+   ]
+  },
+  "h31-r3": {
+   "ceiling": 8.2,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    10.6,
+    10.1,
+    10.4,
+    10.1
+   ]
+  },
+  "h31-r4": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.4,
+    10.1,
+    5.5,
+    10.2
+   ]
+  },
+  "h31-r5": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    18.3,
+    9.9,
+    18.0,
+    9.9
+   ]
+  }
+ },
+ "h32": {
+  "h32-r0": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    9.6,
+    13.1,
+    9.5,
+    12.8
+   ]
+  },
+  "h32-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    13.6,
+    13.1,
+    13.2,
+    12.8
+   ]
+  },
+  "h32-r2": {
+   "ceiling": 7.9,
+   "doors": 0,
+   "label": "bedroom",
+   "walls": [
+    11.3,
+    12.8,
+    11.5,
+    13.0
+   ]
+  },
+  "h32-r3": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    5.6,
+    12.8,
+    5.5,
+    12.8
+   ]
+  },
+  "h32-r4": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.3,
+    12.9,
+    8.4,
+    13.1
+   ]
+  },
+  "h32-r5": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    8.5,
+    12.8,
+    8.4,
+    12.8
+   ]
+  },
+  "h32-r6": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    22.9,
+    13.1,
+    23.2,
+    13.0
+   ]
+  }
+ },
+ "h33": {
+  "h33-r0": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    12.0,
+    14.2,
+    12.2,
+    14.2
+   ]
+  },
+  "h33-r1": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    10.9,
+    14.1,
+    10.9,
+    14.2
+   ]
+  },
+  "h33-r2": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    9.1,
+    13.9,
+    9.1,
+    13.9
+   ]
+  },
+  "h33-r3": {
+   "ceiling": 7.7,
+   "doors": 3,
+   "label": "living",
+   "walls": [
+    13.5,
+    15.0,
+    13.4,
+    15.0
+   ]
+  },
+  "h33-r4": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.1,
+    15.0,
+    7.0,
+    14.7
+   ]
+  },
+  "h33-r5": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    11.6,
+    15.0,
+    11.3,
+    14.9
+   ]
+  }
+ },
+ "h34": {
+  "h34-r0": {
+   "ceiling": 7.9,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    9.7,
+    14.2,
+    9.4,
+    13.8
+   ]
+  },
+  "h34-r1": {
+   "ceiling": 16.9,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    5.5,
+    13.9,
+    5.5,
+    13.8
+   ]
+  },
+  "h34-r2": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    14.7,
+    14.0,
+    15.1,
+    14.1
+   ]
+  },
+  "h34-r3": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.1,
+    12.2,
+    6.9,
+    11.8
+   ]
+  },
+  "h34-r4": {
+   "ceiling": 8.0,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    16.6,
+    12.0,
+    16.5,
+    11.9
+   ]
+  },
+  "h34-r5": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.4,
+    12.0,
+    6.5,
+    11.8
+   ]
+  }
+ },
+ "h35": {
+  "h35-r0": {
+   "ceiling": 8.2,
+   "doors": 2,
+   "label": "stairwell",
+   "walls": [
+    6.9,
+    12.0,
+    6.9,
+    12.1
+   ]
+  },
+  "h35-r1": {
+   "ceiling": 14.0,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    20.8,
+    11.8,
+    20.5,
+    12.1
+   ]
+  },
+  "h35-r2": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    4.9,
+    11.9,
+    5.0,
+    12.0
+   ]
+  },
+  "h35-r3": {
+   "ceiling": 17.0,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    7.6,
+    11.9,
+    7.5,
+    11.8
+   ]
+  },
+  "h35-r4": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    11.1,
+    12.0,
+    10.9,
+    11.8
+   ]
+  },
+  "h35-r5": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.4,
+    12.0,
+    8.6,
+    12.0
+   ]
+  },
+  "h35-r6": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    20.4,
+    12.1,
+    20.7,
+    12.0
+   ]
+  }
+ },
+ "h36": {
+  "h36-r0": {
+   "ceiling": 7.7,
+   "doors": 2,
+   "label": "closet",
+   "walls": [
+    10.2,
+    11.9,
+    9.8,
+    11.9
+   ]
+  },
+  "h36-r1": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    24.1,
+    11.8,
+    23.5,
+    11.8
+   ]
+  },
+  "h36-r2": {
+   "ceiling": 17.2,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    6.5,
+    12.1,
+    6.4,
+    12.0
+   ]
+  },
+  "h36-r3": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    9.4,
+    12.2,
+    9.4,
+    11.9
+   ]
+  },
+  "h36-r4": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    7.4,
+    9.9,
+    7.4,
+    10.1
+   ]
+  },
+  "h36-r5": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    34.9,
+    10.1,
+    35.6,
+    9.9
+   ]
+  },
+  "h36-r6": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    7.1,
+    10.1,
+    7.1,
+    10.1
+   ]
+  }
+ },
+ "h37": {
+  "h37-r0": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    12.9,
+    13.1,
+    12.9,
+    13.0
+   ]
+  },
+  "h37-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    6.4,
+    13.2,
+    6.4,
+    13.0
+   ]
+  },
+  "h37-r2": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "kitchen",
+   "walls": [
+    17.0,
+    13.2,
+    16.8,
+    13.1
+   ]
+  },
+  "h37-r3": {
+   "ceiling": 8.3,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    9.6,
+    13.0,
+    9.7,
+    12.9
+   ]
+  },
+  "h37-r4": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    12.4,
+    14.8,
+    12.6,
+    15.2
+   ]
+  },
+  "h37-r5": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    20.1,
+    14.8,
+    20.9,
+    15.0
+   ]
+  },
+  "h37-r6": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    13.0,
+    15.2,
+    13.2,
+    15.1
+   ]
+  }
+ },
+ "h38": {
+  "h38-r0": {
+   "ceiling": 7.8,
+   "doors": 2,
+   "label": "bedroom",
+   "walls": [
+    8.4,
+    16.2,
+    8.4,
+    16.1
+   ]
+  },
+  "h38-r1": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    8.0,
+    15.7,
+    8.0,
+    16.2
+   ]
+  },
+  "h38-r2": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    11.1,
+    16.0,
+    11.1,
+    15.8
+   ]
+  },
+  "h38-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.6,
+    16.2,
+    6.6,
+    15.9
+   ]
+  },
+  "h38-r4": {
+   "ceiling": 17.2,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    5.0,
+    13.2,
+    5.0,
+    13.0
+   ]
+  },
+  "h38-r5": {
+   "ceiling": 7.8,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    7.5,
+    13.0,
+    7.4,
+    12.9
+   ]
+  },
+  "h38-r6": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    8.5,
+    13.0,
+    8.5,
+    13.3
+   ]
+  },
+  "h38-r7": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    12.9,
+    13.1,
+    13.2,
+    12.9
+   ]
+  }
+ },
+ "h39": {
+  "h39-r0": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    10.1,
+    12.2,
+    9.8,
+    12.0
+   ]
+  },
+  "h39-r1": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.0,
+    11.9,
+    5.0,
+    12.0
+   ]
+  },
+  "h39-r2": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    6.4,
+    11.8,
+    6.5,
+    12.0
+   ]
+  },
+  "h39-r3": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.5,
+    11.8,
+    5.4,
+    11.9
+   ]
+  },
+  "h39-r4": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    5.0,
+    12.0,
+    5.1,
+    11.9
+   ]
+  },
+  "h39-r5": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    9.9,
+    11.8,
+    10.0,
+    11.9
+   ]
+  },
+  "h39-r6": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    7.9,
+    12.0,
+    8.0,
+    11.8
+   ]
+  },
+  "h39-r7": {
+   "ceiling": 17.0,
+   "doors": 1,
+   "label": "stairwell",
+   "walls": [
+    5.5,
+    11.8,
+    5.4,
+    11.8
+   ]
+  },
+  "h39-r8": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    8.5,
+    12.1,
+    8.5,
+    12.0
+   ]
+  }
+ },
+ "h40": {
+  "h40-r0": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.1,
+    14.2,
+    5.1,
+    13.7
+   ]
+  },
+  "h40-r1": {
+   "ceiling": 8.1,
+   "doors": 1,
+   "label": "bathroom",
+   "walls": [
+    6.1,
+    14.0,
+    6.0,
+    13.7
+   ]
+  },
+  "h40-r2": {
+   "ceiling": 8.2,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    5.6,
+    13.8,
+    5.6,
+    14.0
+   ]
+  },
+  "h40-r3": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "kitchen",
+   "walls": [
+    8.5,
+    14.1,
+    8.6,
+    14.0
+   ]
+  },
+  "h40-r4": {
+   "ceiling": 17.1,
+   "doors": 1,
+   "label": "living",
+   "walls": [
+    5.1,
+    14.2,
+    4.9,
+    14.2
+   ]
+  },
+  "h40-r5": {
+   "ceiling": 8.0,
+   "doors": 1,
+   "label": "closet",
+   "walls": [
+    5.5,
+    14.1,
+    5.6,
+    13.9
+   ]
+  },
+  "h40-r6": {
+   "ceiling": 15.9,
+   "doors": 2,
+   "label": "living",
+   "walls": [
+    10.8,
+    13.9,
+    10.9,
+    13.7
+   ]
+  },
+  "h40-r7": {
+   "ceiling": 7.9,
+   "doors": 1,
+   "label": "hallway",
+   "walls": [
+    6.0,
+    14.1,
+    6.0,
+    13.7
+   ]
+  },
+  "h40-r8": {
+   "ceiling": 7.7,
+   "doors": 1,
+   "label": "bedroom",
+   "walls": [
+    7.4,
+    14.3,
+    7.6,
+    14.2
+   ]
+  }
+ }
+}

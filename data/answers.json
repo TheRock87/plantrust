@@ -1,0 +1,223 @@
+{
+ "h01": [
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h01-r3"
+  }
+ ],
+ "h02": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h02-r3"
+  },
+  {
+   "code": "E5",
+   "detail": "extended 1.5 ft into h02-r1",
+   "room_id": "h02-r0"
+  }
+ ],
+ "h03": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h03-r0"
+  },
+  {
+   "code": "E5",
+   "detail": "extended 1 ft into h03-r3",
+   "room_id": "h03-r4"
+  }
+ ],
+ "h04": [],
+ "h05": [
+  {
+   "code": "E1",
+   "detail": "shrunk by 10%",
+   "room_id": "h05-r0"
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h05-r3"
+  }
+ ],
+ "h06": [
+  {
+   "code": "E5",
+   "detail": "extended 2 ft into h06-r5",
+   "room_id": "h06-r6"
+  }
+ ],
+ "h07": [],
+ "h08": [
+  {
+   "code": "E5",
+   "detail": "extended 2 ft into h08-r3",
+   "room_id": "h08-r2"
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h08-r5"
+  }
+ ],
+ "h09": [
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h09-r5"
+  },
+  {
+   "code": "E2",
+   "detail": "ceiling 17 ft drawn as 8 ft",
+   "room_id": "h09-r2"
+  }
+ ],
+ "h10": [],
+ "h11": [],
+ "h12": [],
+ "h13": [],
+ "h14": [
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h14-r2"
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h14-r6"
+  }
+ ],
+ "h15": [
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h15-r2"
+  }
+ ],
+ "h16": [],
+ "h17": [],
+ "h18": [],
+ "h19": [
+  {
+   "code": "E1",
+   "detail": "stretched by 9%",
+   "room_id": "h19-r3"
+  }
+ ],
+ "h20": [],
+ "h21": [
+  {
+   "code": "E5",
+   "detail": "extended 1 ft into h21-r1",
+   "room_id": "h21-r0"
+  }
+ ],
+ "h22": [],
+ "h23": [],
+ "h24": [],
+ "h25": [
+  {
+   "code": "E1",
+   "detail": "shrunk by 8%",
+   "room_id": "h25-r4"
+  }
+ ],
+ "h26": [],
+ "h27": [
+  {
+   "code": "E2",
+   "detail": "ceiling 17 ft drawn as 8 ft",
+   "room_id": "h27-r0"
+  },
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h27-r5"
+  }
+ ],
+ "h28": [],
+ "h29": [],
+ "h30": [
+  {
+   "code": "E1",
+   "detail": "stretched by 13%",
+   "room_id": "h30-r2"
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h30-r6"
+  }
+ ],
+ "h31": [],
+ "h32": [
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h32-r4"
+  },
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h32-r0"
+  }
+ ],
+ "h33": [],
+ "h34": [
+  {
+   "code": "E5",
+   "detail": "extended 2 ft into h34-r2",
+   "room_id": "h34-r1"
+  }
+ ],
+ "h35": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h35-r0"
+  }
+ ],
+ "h36": [],
+ "h37": [
+  {
+   "code": "E1",
+   "detail": "shrunk by 16%",
+   "room_id": "h37-r1"
+  }
+ ],
+ "h38": [
+  {
+   "code": "E5",
+   "detail": "extended 2 ft into h38-r6",
+   "room_id": "h38-r7"
+  },
+  {
+   "code": "E1",
+   "detail": "stretched by 17%",
+   "room_id": "h38-r6"
+  }
+ ],
+ "h39": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h39-r6"
+  },
+  {
+   "code": "E1",
+   "detail": "stretched by 15%",
+   "room_id": "h39-r4"
+  }
+ ],
+ "h40": [
+  {
+   "code": "E1",
+   "detail": "shrunk by 11%",
+   "room_id": "h40-r1"
+  }
+ ]
+}

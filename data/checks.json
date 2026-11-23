@@ -1,0 +1,8942 @@
+{
+ "h01": {
+  "h01-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     14.5,
+     15.0,
+     14.5,
+     15.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     14.6,
+     15.1,
+     14.4,
+     15.0
+    ],
+    "worst_wall_diff_pct": 0.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h01-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     31.5,
+     15.0,
+     31.5,
+     15.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     31.1,
+     15.0,
+     31.0,
+     14.9
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h01-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     32.5,
+     10.0,
+     32.5,
+     10.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     32.1,
+     10.1,
+     32.4,
+     10.1
+    ],
+    "worst_wall_diff_pct": 1.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h01-r3": {
+   "est_cost_at_risk_usd": 29.48,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 0,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     13.5,
+     10.0,
+     13.5,
+     10.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     13.4,
+     10.2,
+     13.2,
+     10.0
+    ],
+    "worst_wall_diff_pct": 2.3
+   },
+   "reasons": [
+    "Doors: 0 in the plan, 1 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h02": {
+  "h02-r0": {
+   "est_cost_at_risk_usd": 101.15,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h02-r1",
+      "sqft": 19.5
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     28.5,
+     13.0,
+     28.5,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     26.7,
+     13.1,
+     26.5,
+     12.9
+    ],
+    "worst_wall_diff_pct": 7.5
+   },
+   "reasons": [
+    "Wall length: wall 3 is 28.5 ft in the plan, 26.5 ft in the tour (+7.5%)",
+    "Overlaps h02-r1 by 19.5 sq ft"
+   ],
+   "status": "fail"
+  },
+  "h02-r1": {
+   "est_cost_at_risk_usd": 3.44,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h02-r0",
+      "sqft": 19.5
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     13.0,
+     13.0,
+     13.0,
+     13.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     12.9,
+     12.9,
+     13.2,
+     13.0
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "Overlaps h02-r0 by 19.5 sq ft"
+   ],
+   "status": "unclear"
+  },
+  "h02-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.0,
+     12.0,
+     9.0,
+     12.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.9,
+     12.1,
+     9.1,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h02-r3": {
+   "est_cost_at_risk_usd": 1987.13,
+   "missing": true,
+   "numbers": {
+    "tour_ceiling": 8.3,
+    "tour_label": "living",
+    "tour_walls": [
+     31.0,
+     12.0,
+     31.5,
+     12.0
+    ]
+   },
+   "reasons": [
+    "Tour captured a living (31.2 x 12.0 ft) that is missing from the plan"
+   ],
+   "status": "fail"
+  }
+ },
+ "h03": {
+  "h03-r0": {
+   "est_cost_at_risk_usd": 968.21,
+   "missing": true,
+   "numbers": {
+    "tour_ceiling": 8.1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     10.3,
+     14.0,
+     10.4,
+     13.8
+    ]
+   },
+   "reasons": [
+    "Tour captured a hallway (10.4 x 13.9 ft) that is missing from the plan"
+   ],
+   "status": "fail"
+  },
+  "h03-r1": {
+   "est_cost_at_risk_usd": 106.32,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     20.0,
+     14.0,
+     20.0,
+     14.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     19.9,
+     14.1,
+     20.2,
+     13.8
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h03-r2": {
+   "est_cost_at_risk_usd": 2.83,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     15.5,
+     14.0,
+     15.5,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     15.8,
+     14.2,
+     15.6,
+     14.0
+    ],
+    "worst_wall_diff_pct": -1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h03-r3": {
+   "est_cost_at_risk_usd": 1.44,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h03-r4",
+      "sqft": 12.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     26.0,
+     12.0,
+     26.0,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     26.3,
+     11.9,
+     25.5,
+     12.1
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Label: 'living' in the plan, 'bedroom' in the tour",
+    "Overlaps h03-r4 by 12 sq ft"
+   ],
+   "status": "unclear"
+  },
+  "h03-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h03-r3",
+      "sqft": 12.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     21.0,
+     12.0,
+     21.0,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     19.9,
+     11.8,
+     20.2,
+     12.0
+    ],
+    "worst_wall_diff_pct": 5.5
+   },
+   "reasons": [
+    "Wall length: wall 1 is 21.0 ft in the plan, 19.9 ft in the tour (+5.5%)",
+    "Overlaps h03-r3 by 12 sq ft"
+   ],
+   "status": "fail"
+  }
+ },
+ "h04": {
+  "h04-r0": {
+   "est_cost_at_risk_usd": 12.09,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     7.0,
+     12.0,
+     7.0,
+     12.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     6.9,
+     12.2,
+     7.1,
+     12.2
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h04-r1": {
+   "est_cost_at_risk_usd": 3.83,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     7.0,
+     12.0,
+     7.0,
+     12.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.1,
+     11.9,
+     6.9,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h04-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     10.0,
+     12.0,
+     10.0,
+     12.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     9.8,
+     12.1,
+     9.9,
+     12.0
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h04-r3": {
+   "est_cost_at_risk_usd": 14.75,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     10.0,
+     12.0,
+     10.0,
+     12.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     9.9,
+     11.9,
+     9.8,
+     12.2
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h04-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.5,
+     11.0,
+     5.5,
+     11.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     5.5,
+     10.8,
+     5.6,
+     11.1
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h04-r5": {
+   "est_cost_at_risk_usd": 2.98,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     7.0,
+     11.0,
+     7.0,
+     11.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     7.1,
+     11.0,
+     6.9,
+     11.2
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h04-r6": {
+   "est_cost_at_risk_usd": 2.16,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     7.5,
+     11.0,
+     7.5,
+     11.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.5,
+     11.0,
+     7.4,
+     10.8
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h04-r7": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     14.0,
+     11.0,
+     14.0,
+     11.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 0,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     14.2,
+     11.1,
+     14.1,
+     10.9
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)",
+    "Label: 'living' in the plan, 'kitchen' in the tour"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h05": {
+  "h05-r0": {
+   "est_cost_at_risk_usd": 41.0,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     23.1,
+     13.0,
+     23.1,
+     13.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     25.4,
+     13.1,
+     25.6,
+     12.9
+    ],
+    "worst_wall_diff_pct": -9.8
+   },
+   "reasons": [
+    "Wall length: wall 3 is 23.1 ft in the plan, 25.6 ft in the tour (-9.8%)"
+   ],
+   "status": "fail"
+  },
+  "h05-r1": {
+   "est_cost_at_risk_usd": 8.36,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     19.0,
+     13.0,
+     19.0,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     19.3,
+     13.0,
+     19.1,
+     12.9
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h05-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.5,
+     13.0,
+     5.5,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     5.5,
+     13.0,
+     5.5,
+     13.1
+    ],
+    "worst_wall_diff_pct": -0.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h05-r3": {
+   "est_cost_at_risk_usd": 2163.95,
+   "missing": true,
+   "numbers": {
+    "tour_ceiling": 7.8,
+    "tour_label": "living",
+    "tour_walls": [
+     30.8,
+     15.7,
+     31.3,
+     15.7
+    ]
+   },
+   "reasons": [
+    "Tour captured a living (31.1 x 15.7 ft) that is missing from the plan"
+   ],
+   "status": "fail"
+  },
+  "h05-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     19.0,
+     16.0,
+     19.0,
+     16.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     19.2,
+     16.1,
+     19.3,
+     16.0
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h06": {
+  "h06-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     8.5,
+     11.0,
+     8.5,
+     11.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     8.5,
+     10.9,
+     8.5,
+     11.1
+    ],
+    "worst_wall_diff_pct": 0.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h06-r1": {
+   "est_cost_at_risk_usd": 7.17,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.5,
+     11.0,
+     5.5,
+     11.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.4,
+     11.0,
+     5.4,
+     11.1
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h06-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.0,
+     11.0,
+     6.0,
+     11.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.1,
+     10.8,
+     6.0,
+     11.1
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h06-r3": {
+   "est_cost_at_risk_usd": 14.65,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     11.0,
+     5.0,
+     11.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.0,
+     11.2,
+     4.9,
+     11.2
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 2 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h06-r4": {
+   "est_cost_at_risk_usd": 1.76,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.0,
+     11.0,
+     5.0,
+     11.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 2,
+    "tour_label": "hallway",
+    "tour_walls": [
+     4.9,
+     10.9,
+     5.1,
+     11.1
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h06-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h06-r6",
+      "sqft": 30.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     5.5,
+     15.0,
+     5.5,
+     15.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     5.5,
+     15.0,
+     5.4,
+     15.1
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "Overlaps h06-r6 by 30 sq ft"
+   ],
+   "status": "unclear"
+  },
+  "h06-r6": {
+   "est_cost_at_risk_usd": 122.92,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h06-r5",
+      "sqft": 30.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     13.0,
+     15.0,
+     13.0,
+     15.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     11.0,
+     15.0,
+     11.0,
+     15.3
+    ],
+    "worst_wall_diff_pct": 18.2
+   },
+   "reasons": [
+    "Wall length: wall 1 is 13.0 ft in the plan, 11.0 ft in the tour (+18.2%)",
+    "Overlaps h06-r5 by 30 sq ft"
+   ],
+   "status": "fail"
+  },
+  "h06-r7": {
+   "est_cost_at_risk_usd": 6.89,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     15.0,
+     5.0,
+     15.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     4.9,
+     14.8,
+     5.1,
+     15.3
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h06-r8": {
+   "est_cost_at_risk_usd": 15.47,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     8.5,
+     15.0,
+     8.5,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     8.4,
+     14.8,
+     8.6,
+     15.0
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h07": {
+  "h07-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     8.0,
+     10.0,
+     8.0,
+     10.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     8.0,
+     10.1,
+     8.1,
+     10.0
+    ],
+    "worst_wall_diff_pct": -1.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h07-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     6.0,
+     10.0,
+     6.0,
+     10.0
+    ],
+    "tour_ceiling": 17.1,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     6.0,
+     10.1,
+     6.0,
+     10.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h07-r2": {
+   "est_cost_at_risk_usd": 7.11,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     10.5,
+     10.0,
+     10.5,
+     10.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     10.7,
+     9.8,
+     10.6,
+     10.2
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h07-r3": {
+   "est_cost_at_risk_usd": 4.17,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     13.5,
+     10.0,
+     13.5,
+     10.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     13.3,
+     9.9,
+     13.7,
+     9.9
+    ],
+    "worst_wall_diff_pct": 1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h07-r4": {
+   "est_cost_at_risk_usd": 5.41,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     6.5,
+     13.0,
+     6.5,
+     13.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     6.5,
+     13.1,
+     6.5,
+     13.0
+    ],
+    "worst_wall_diff_pct": -0.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h07-r5": {
+   "est_cost_at_risk_usd": 4.48,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "tall_ceiling",
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 16.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     18.5,
+     13.0,
+     18.5,
+     13.0
+    ],
+    "tour_ceiling": 16.0,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     18.7,
+     12.9,
+     18.2,
+     13.1
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling, glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h07-r6": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     13.0,
+     5.0,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.0,
+     12.9,
+     4.9,
+     13.0
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h07-r7": {
+   "est_cost_at_risk_usd": 4.33,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.0,
+     13.0,
+     8.0,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.1,
+     13.0,
+     8.0,
+     13.0
+    ],
+    "worst_wall_diff_pct": -1.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h08": {
+  "h08-r0": {
+   "est_cost_at_risk_usd": 10.16,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     15.0,
+     12.0,
+     15.0,
+     12.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     15.2,
+     12.0,
+     14.8,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h08-r1": {
+   "est_cost_at_risk_usd": 1.36,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     8.0,
+     12.0,
+     8.0,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     8.0,
+     11.9,
+     8.2,
+     12.1
+    ],
+    "worst_wall_diff_pct": -2.4
+   },
+   "reasons": [
+    "Label: 'hallway' in the plan, 'kitchen' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h08-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h08-r3",
+      "sqft": 24.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     11.0,
+     12.0,
+     11.0,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     8.8,
+     12.2,
+     9.0,
+     12.1
+    ],
+    "worst_wall_diff_pct": 25.0
+   },
+   "reasons": [
+    "Wall length: wall 1 is 11.0 ft in the plan, 8.8 ft in the tour (+25.0%)",
+    "Overlaps h08-r3 by 24 sq ft"
+   ],
+   "status": "fail"
+  },
+  "h08-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h08-r2",
+      "sqft": 24.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     10.0,
+     12.0,
+     10.0,
+     12.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     10.1,
+     12.0,
+     10.2,
+     12.1
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "Overlaps h08-r2 by 24 sq ft"
+   ],
+   "status": "unclear"
+  },
+  "h08-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     15.5,
+     11.0,
+     15.5,
+     11.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     15.7,
+     11.0,
+     15.4,
+     11.1
+    ],
+    "worst_wall_diff_pct": -1.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h08-r5": {
+   "est_cost_at_risk_usd": 791.75,
+   "missing": true,
+   "numbers": {
+    "tour_ceiling": 8.0,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.5,
+     11.1,
+     7.5,
+     11.2
+    ]
+   },
+   "reasons": [
+    "Tour captured a bathroom (7.5 x 11.1 ft) that is missing from the plan"
+   ],
+   "status": "fail"
+  },
+  "h08-r6": {
+   "est_cost_at_risk_usd": 13.06,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 14.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     19.0,
+     11.0,
+     19.0,
+     11.0
+    ],
+    "tour_ceiling": 14.2,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     18.8,
+     11.0,
+     19.1,
+     11.2
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h09": {
+  "h09-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     7.5,
+     14.0,
+     7.5,
+     14.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.4,
+     14.1,
+     7.5,
+     14.1
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h09-r1": {
+   "est_cost_at_risk_usd": 4.45,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     7.5,
+     14.0,
+     7.5,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.4,
+     14.2,
+     7.4,
+     14.1
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h09-r2": {
+   "est_cost_at_risk_usd": 676.57,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     5.5,
+     14.0,
+     5.5,
+     14.0
+    ],
+    "tour_ceiling": 16.9,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     5.5,
+     13.9,
+     5.4,
+     13.8
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "Ceiling: ceiling 8 ft in the plan, 16.9 ft in the tour",
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "fail"
+  },
+  "h09-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     9.5,
+     14.0,
+     9.5,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     9.4,
+     14.1,
+     9.5,
+     13.9
+    ],
+    "worst_wall_diff_pct": 1.1
+   },
+   "reasons": [
+    "Label: 'living' in the plan, 'bathroom' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h09-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     8.0,
+     14.0,
+     8.0,
+     14.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     7.9,
+     14.1,
+     7.9,
+     13.8
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h09-r5": {
+   "est_cost_at_risk_usd": 1.58,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 0,
+    "plan_label": "closet",
+    "plan_walls": [
+     8.0,
+     10.0,
+     8.0,
+     10.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     8.1,
+     9.9,
+     8.1,
+     10.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "Doors: 0 in the plan, 1 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h09-r6": {
+   "est_cost_at_risk_usd": 4.96,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.5,
+     10.0,
+     8.5,
+     10.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.4,
+     9.8,
+     8.5,
+     10.0
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h09-r7": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     11.0,
+     10.0,
+     11.0,
+     10.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     11.0,
+     10.1,
+     11.0,
+     9.9
+    ],
+    "worst_wall_diff_pct": 1.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h09-r8": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     10.5,
+     10.0,
+     10.5,
+     10.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     10.4,
+     10.2,
+     10.7,
+     10.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h10": {
+  "h10-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 15.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     23.5,
+     16.0,
+     23.5,
+     16.0
+    ],
+    "tour_ceiling": 14.7,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     23.3,
+     15.7,
+     23.9,
+     15.8
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h10-r1": {
+   "est_cost_at_risk_usd": 101.79,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     9.5,
+     16.0,
+     9.5,
+     16.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     9.4,
+     15.7,
+     9.4,
+     15.7
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h10-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     5.0,
+     16.0,
+     5.0,
+     16.0
+    ],
+    "tour_ceiling": 17.2,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     5.0,
+     16.2,
+     4.9,
+     16.0
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h10-r3": {
+   "est_cost_at_risk_usd": 2.16,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.0,
+     13.0,
+     9.0,
+     13.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.9,
+     12.8,
+     9.0,
+     13.0
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h10-r4": {
+   "est_cost_at_risk_usd": 102.62,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     22.0,
+     13.0,
+     22.0,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     22.3,
+     12.8,
+     21.8,
+     12.9
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h10-r5": {
+   "est_cost_at_risk_usd": 4.09,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     7.0,
+     13.0,
+     7.0,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     6.9,
+     13.0,
+     7.1,
+     13.1
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h11": {
+  "h11-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     10.0,
+     13.0,
+     10.0,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     10.1,
+     12.8,
+     10.1,
+     12.8
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h11-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     9.0,
+     13.0,
+     9.0,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     9.0,
+     12.8,
+     8.9,
+     13.1
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h11-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     10.5,
+     13.0,
+     10.5,
+     13.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     10.6,
+     12.8,
+     10.6,
+     13.0
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h11-r3": {
+   "est_cost_at_risk_usd": 7.81,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     6.5,
+     13.0,
+     6.5,
+     13.0
+    ],
+    "tour_ceiling": 17.0,
+    "tour_doors": 0,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     6.4,
+     12.9,
+     6.4,
+     12.8
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)",
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h11-r4": {
+   "est_cost_at_risk_usd": 8.5,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 15.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     18.5,
+     12.0,
+     18.5,
+     12.0
+    ],
+    "tour_ceiling": 14.8,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     18.6,
+     12.2,
+     18.4,
+     12.2
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h11-r5": {
+   "est_cost_at_risk_usd": 3.52,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.5,
+     12.0,
+     5.5,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     5.5,
+     12.1,
+     5.5,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h11-r6": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     12.0,
+     12.0,
+     12.0,
+     12.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     12.0,
+     11.8,
+     12.2,
+     12.2
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h12": {
+  "h12-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.0,
+     12.0,
+     5.0,
+     12.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     4.9,
+     11.8,
+     5.1,
+     12.2
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h12-r1": {
+   "est_cost_at_risk_usd": 5.4,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     10.5,
+     12.0,
+     10.5,
+     12.0
+    ],
+    "tour_ceiling": 17.0,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     10.4,
+     11.9,
+     10.4,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h12-r2": {
+   "est_cost_at_risk_usd": 8.43,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     14.0,
+     12.0,
+     14.0,
+     12.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     14.2,
+     12.1,
+     13.9,
+     12.1
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h12-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     18.5,
+     12.0,
+     18.5,
+     12.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     18.3,
+     12.1,
+     18.6,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h12-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     20.0,
+     10.0,
+     20.0,
+     10.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     20.3,
+     10.0,
+     19.6,
+     10.0
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h12-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     16.0,
+     10.0,
+     16.0,
+     10.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     16.3,
+     9.9,
+     16.3,
+     9.8
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h12-r6": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     12.0,
+     10.0,
+     12.0,
+     10.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "hallway",
+    "tour_walls": [
+     12.1,
+     10.0,
+     12.0,
+     10.1
+    ],
+    "worst_wall_diff_pct": -1.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h13": {
+  "h13-r0": {
+   "est_cost_at_risk_usd": 2.47,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     10.0,
+     15.0,
+     10.0,
+     15.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     9.9,
+     15.2,
+     10.0,
+     14.8
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h13-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     8.5,
+     15.0,
+     8.5,
+     15.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 0,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     8.5,
+     14.9,
+     8.4,
+     15.2
+    ],
+    "worst_wall_diff_pct": -1.3
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h13-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.0,
+     15.0,
+     5.0,
+     15.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     4.9,
+     14.7,
+     5.1,
+     15.2
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h13-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     6.5,
+     15.0,
+     6.5,
+     15.0
+    ],
+    "tour_ceiling": 16.8,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     6.6,
+     15.0,
+     6.6,
+     15.0
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h13-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.0,
+     15.0,
+     8.0,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.9,
+     14.8,
+     8.1,
+     15.2
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h13-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     8.5,
+     15.0,
+     8.5,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     8.5,
+     15.0,
+     8.5,
+     15.1
+    ],
+    "worst_wall_diff_pct": -0.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h13-r6": {
+   "est_cost_at_risk_usd": 18.61,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.0,
+     15.0,
+     6.0,
+     15.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.0,
+     14.8,
+     6.0,
+     15.1
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h13-r7": {
+   "est_cost_at_risk_usd": 1.23,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     7.5,
+     15.0,
+     7.5,
+     15.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 0,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     7.4,
+     15.3,
+     7.6,
+     15.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h14": {
+  "h14-r0": {
+   "est_cost_at_risk_usd": 4.67,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.5,
+     11.0,
+     5.5,
+     11.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.4,
+     11.1,
+     5.5,
+     10.9
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h14-r1": {
+   "est_cost_at_risk_usd": 1.44,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     10.5,
+     11.0,
+     10.5,
+     11.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     10.6,
+     10.9,
+     10.4,
+     10.9
+    ],
+    "worst_wall_diff_pct": 1.0
+   },
+   "reasons": [
+    "Label: 'bathroom' in the plan, 'bedroom' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h14-r2": {
+   "est_cost_at_risk_usd": 27.16,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     17.5,
+     11.0,
+     17.5,
+     11.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     17.4,
+     10.9,
+     17.7,
+     10.9
+    ],
+    "worst_wall_diff_pct": -1.1
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 2 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h14-r3": {
+   "est_cost_at_risk_usd": 12.75,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.5,
+     11.0,
+     8.5,
+     11.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.6,
+     11.1,
+     8.4,
+     11.1
+    ],
+    "worst_wall_diff_pct": 1.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h14-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     11.5,
+     12.0,
+     11.5,
+     12.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     11.5,
+     11.9,
+     11.7,
+     11.9
+    ],
+    "worst_wall_diff_pct": -1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h14-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     12.5,
+     12.0,
+     12.5,
+     12.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     12.4,
+     12.2,
+     12.7,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h14-r6": {
+   "est_cost_at_risk_usd": 912.58,
+   "missing": true,
+   "numbers": {
+    "tour_ceiling": 8.1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.4,
+     12.1,
+     8.6,
+     11.8
+    ]
+   },
+   "reasons": [
+    "Tour captured a bathroom (8.5 x 11.9 ft) that is missing from the plan"
+   ],
+   "status": "fail"
+  },
+  "h14-r7": {
+   "est_cost_at_risk_usd": 7.96,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     9.5,
+     12.0,
+     9.5,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 2,
+    "tour_label": "hallway",
+    "tour_walls": [
+     9.7,
+     12.0,
+     9.5,
+     11.8
+    ],
+    "worst_wall_diff_pct": -2.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h15": {
+  "h15-r0": {
+   "est_cost_at_risk_usd": 5.52,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.0,
+     14.0,
+     9.0,
+     14.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     9.1,
+     14.0,
+     8.9,
+     14.0
+    ],
+    "worst_wall_diff_pct": 1.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h15-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     11.5,
+     14.0,
+     11.5,
+     14.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     11.5,
+     13.8,
+     11.5,
+     14.2
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h15-r2": {
+   "est_cost_at_risk_usd": 206.32,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 10.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     9.5,
+     14.0,
+     9.5,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     9.6,
+     13.9,
+     9.7,
+     14.1
+    ],
+    "worst_wall_diff_pct": -2.1
+   },
+   "reasons": [
+    "Ceiling: ceiling 10 ft in the plan, 7.9 ft in the tour"
+   ],
+   "status": "fail"
+  },
+  "h15-r3": {
+   "est_cost_at_risk_usd": 4.68,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.5,
+     14.0,
+     5.5,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.5,
+     13.9,
+     5.5,
+     14.1
+    ],
+    "worst_wall_diff_pct": 0.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h15-r4": {
+   "est_cost_at_risk_usd": 17.64,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     8.5,
+     14.0,
+     8.5,
+     14.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     8.4,
+     14.1,
+     8.5,
+     14.2
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h15-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     10.1,
+     9.9,
+     10.0,
+     10.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h15-r6": {
+   "est_cost_at_risk_usd": 1.44,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     10.5,
+     10.0,
+     10.5,
+     10.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     10.3,
+     10.1,
+     10.4,
+     10.0
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h15-r7": {
+   "est_cost_at_risk_usd": 97.83,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.0,
+     10.0,
+     8.0,
+     10.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.0,
+     9.9,
+     7.8,
+     10.2
+    ],
+    "worst_wall_diff_pct": 2.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h15-r8": {
+   "est_cost_at_risk_usd": 104.8,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     15.5,
+     10.0,
+     15.5,
+     10.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     15.6,
+     9.9,
+     15.6,
+     9.8
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h16": {
+  "h16-r0": {
+   "est_cost_at_risk_usd": 17.57,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     12.5,
+     10.0,
+     12.5,
+     10.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     12.5,
+     10.0,
+     12.4,
+     9.9
+    ],
+    "worst_wall_diff_pct": 1.0
+   },
+   "reasons": [
+    "Label: 'bathroom' in the plan, 'living' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h16-r1": {
+   "est_cost_at_risk_usd": 0.45,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     12.5,
+     10.0,
+     12.5,
+     10.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     12.6,
+     10.2,
+     12.7,
+     10.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h16-r2": {
+   "est_cost_at_risk_usd": 6.5,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     13.5,
+     10.0,
+     13.5,
+     10.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     13.7,
+     10.0,
+     13.6,
+     10.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h16-r3": {
+   "est_cost_at_risk_usd": 0.72,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     7.5,
+     10.0,
+     7.5,
+     10.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     7.4,
+     10.1,
+     7.4,
+     10.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h16-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.5,
+     11.0,
+     8.5,
+     11.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.5,
+     11.1,
+     8.5,
+     11.1
+    ],
+    "worst_wall_diff_pct": -0.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h16-r5": {
+   "est_cost_at_risk_usd": 96.45,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     7.0,
+     11.0,
+     7.0,
+     11.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     6.9,
+     11.1,
+     6.9,
+     10.8
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h16-r6": {
+   "est_cost_at_risk_usd": 16.07,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 15.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     18.5,
+     11.0,
+     18.5,
+     11.0
+    ],
+    "tour_ceiling": 14.9,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     18.1,
+     11.1,
+     18.3,
+     11.1
+    ],
+    "worst_wall_diff_pct": 2.2
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h16-r7": {
+   "est_cost_at_risk_usd": 15.91,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     12.0,
+     11.0,
+     12.0,
+     11.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     11.9,
+     10.8,
+     11.8,
+     10.8
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h17": {
+  "h17-r0": {
+   "est_cost_at_risk_usd": 6.75,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     7.0,
+     12.0,
+     7.0,
+     12.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     7.1,
+     12.1,
+     7.0,
+     12.1
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h17-r1": {
+   "est_cost_at_risk_usd": 6.32,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     6.5,
+     12.0,
+     6.5,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     6.4,
+     12.1,
+     6.5,
+     11.9
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "Label: 'hallway' in the plan, 'bedroom' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h17-r2": {
+   "est_cost_at_risk_usd": 121.06,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     7.5,
+     12.0,
+     7.5,
+     12.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "hallway",
+    "tour_walls": [
+     7.5,
+     11.8,
+     7.4,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 2 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h17-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.0,
+     12.0,
+     5.0,
+     12.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     5.0,
+     12.2,
+     5.0,
+     12.1
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h17-r4": {
+   "est_cost_at_risk_usd": 103.71,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.0,
+     12.0,
+     6.0,
+     12.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.1,
+     12.2,
+     6.0,
+     12.0
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h17-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     6.5,
+     15.0,
+     6.5,
+     15.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     6.4,
+     15.0,
+     6.6,
+     15.0
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h17-r6": {
+   "est_cost_at_risk_usd": 16.64,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     8.0,
+     15.0,
+     8.0,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     7.9,
+     15.2,
+     8.1,
+     14.8
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h17-r7": {
+   "est_cost_at_risk_usd": 4.56,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 16.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     10.5,
+     15.0,
+     10.5,
+     15.0
+    ],
+    "tour_ceiling": 16.1,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     10.4,
+     14.9,
+     10.4,
+     15.0
+    ],
+    "worst_wall_diff_pct": 1.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h17-r8": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     7.0,
+     15.0,
+     7.0,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     6.9,
+     15.2,
+     7.0,
+     14.8
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h18": {
+  "h18-r0": {
+   "est_cost_at_risk_usd": 15.05,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     5.0,
+     11.0,
+     5.0,
+     11.0
+    ],
+    "tour_ceiling": 16.7,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     4.9,
+     10.9,
+     5.1,
+     10.9
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Label: 'stairwell' in the plan, 'bathroom' in the tour",
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h18-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     10.5,
+     11.0,
+     10.5,
+     11.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     10.6,
+     11.0,
+     10.4,
+     11.0
+    ],
+    "worst_wall_diff_pct": 1.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h18-r2": {
+   "est_cost_at_risk_usd": 8.04,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     22.5,
+     11.0,
+     22.5,
+     11.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     22.1,
+     11.1,
+     22.6,
+     11.2
+    ],
+    "worst_wall_diff_pct": 1.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h18-r3": {
+   "est_cost_at_risk_usd": 1.96,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.0,
+     11.0,
+     6.0,
+     11.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.1,
+     11.2,
+     5.9,
+     11.1
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h18-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     20.0,
+     16.0,
+     20.0,
+     16.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     19.7,
+     16.3,
+     20.4,
+     16.0
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h18-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.5,
+     16.0,
+     8.5,
+     16.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.5,
+     16.2,
+     8.5,
+     15.9
+    ],
+    "worst_wall_diff_pct": -1.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h18-r6": {
+   "est_cost_at_risk_usd": 24.11,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     15.5,
+     16.0,
+     15.5,
+     16.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     15.5,
+     15.9,
+     15.5,
+     16.3
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h19": {
+  "h19-r0": {
+   "est_cost_at_risk_usd": 15.04,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     8.0,
+     15.0,
+     8.0,
+     15.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 2,
+    "tour_label": "hallway",
+    "tour_walls": [
+     8.1,
+     14.9,
+     8.1,
+     14.7
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h19-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.5,
+     15.0,
+     8.5,
+     15.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.5,
+     14.8,
+     8.5,
+     14.8
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h19-r2": {
+   "est_cost_at_risk_usd": 23.63,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     25.5,
+     15.0,
+     25.5,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     25.3,
+     15.2,
+     25.4,
+     14.9
+    ],
+    "worst_wall_diff_pct": -1.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h19-r3": {
+   "est_cost_at_risk_usd": 12.93,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     17.4,
+     5.0,
+     17.4
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.0,
+     16.3,
+     4.9,
+     16.1
+    ],
+    "worst_wall_diff_pct": 8.1
+   },
+   "reasons": [
+    "Wall length: wall 4 is 17.4 ft in the plan, 16.1 ft in the tour (+8.1%)"
+   ],
+   "status": "fail"
+  },
+  "h19-r4": {
+   "est_cost_at_risk_usd": 5.83,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     26.0,
+     16.0,
+     26.0,
+     16.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     26.3,
+     16.1,
+     26.1,
+     16.1
+    ],
+    "worst_wall_diff_pct": -1.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h19-r5": {
+   "est_cost_at_risk_usd": 0.71,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     11.0,
+     16.0,
+     11.0,
+     16.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     10.9,
+     15.7,
+     11.0,
+     15.8
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "Label: 'bedroom' in the plan, 'kitchen' in the tour"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h20": {
+  "h20-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.0,
+     15.0,
+     9.0,
+     15.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     9.0,
+     15.0,
+     9.1,
+     15.2
+    ],
+    "worst_wall_diff_pct": -1.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h20-r1": {
+   "est_cost_at_risk_usd": 1.8,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     8.5,
+     15.0,
+     8.5,
+     15.0
+    ],
+    "tour_ceiling": 17.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.4,
+     15.2,
+     8.6,
+     14.7
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Label: 'stairwell' in the plan, 'bathroom' in the tour",
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h20-r2": {
+   "est_cost_at_risk_usd": 19.05,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     14.5,
+     15.0,
+     14.5,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     14.3,
+     14.8,
+     14.7,
+     14.9
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h20-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     13.0,
+     16.0,
+     13.0,
+     16.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     13.0,
+     15.7,
+     13.1,
+     16.3
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h20-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     12.5,
+     16.0,
+     12.5,
+     16.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     12.6,
+     16.3,
+     12.6,
+     15.8
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h20-r5": {
+   "est_cost_at_risk_usd": 3.41,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.5,
+     16.0,
+     6.5,
+     16.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 2,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.5,
+     16.1,
+     6.4,
+     16.0
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 2 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h21": {
+  "h21-r0": {
+   "est_cost_at_risk_usd": 126.31,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h21-r1",
+      "sqft": 14.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     21.0,
+     14.0,
+     21.0,
+     14.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     19.9,
+     14.1,
+     19.7,
+     13.9
+    ],
+    "worst_wall_diff_pct": 6.6
+   },
+   "reasons": [
+    "Wall length: wall 3 is 21.0 ft in the plan, 19.7 ft in the tour (+6.6%)",
+    "Overlaps h21-r1 by 14 sq ft"
+   ],
+   "status": "fail"
+  },
+  "h21-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h21-r0",
+      "sqft": 14.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     16.0,
+     14.0,
+     16.0,
+     14.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     16.0,
+     14.0,
+     15.8,
+     14.1
+    ],
+    "worst_wall_diff_pct": 1.3
+   },
+   "reasons": [
+    "Overlaps h21-r0 by 14 sq ft"
+   ],
+   "status": "unclear"
+  },
+  "h21-r2": {
+   "est_cost_at_risk_usd": 13.24,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     29.5,
+     14.0,
+     29.5,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     29.9,
+     14.1,
+     29.0,
+     14.0
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h21-r3": {
+   "est_cost_at_risk_usd": 0.72,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     6.5,
+     14.0,
+     6.5,
+     14.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     6.5,
+     14.1,
+     6.6,
+     13.7
+    ],
+    "worst_wall_diff_pct": 2.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h22": {
+  "h22-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     7.5,
+     12.0,
+     7.5,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     7.4,
+     11.9,
+     7.6,
+     12.1
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h22-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     14.0,
+     12.0,
+     14.0,
+     12.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     14.2,
+     11.9,
+     13.8,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h22-r2": {
+   "est_cost_at_risk_usd": 90.08,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     16.5,
+     12.0,
+     16.5,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     16.7,
+     12.2,
+     16.7,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h22-r3": {
+   "est_cost_at_risk_usd": 41.16,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 18.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     21.0,
+     10.0,
+     21.0,
+     10.0
+    ],
+    "tour_ceiling": 17.7,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     20.6,
+     9.9,
+     20.7,
+     9.8
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h22-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     17.0,
+     10.0,
+     17.0,
+     10.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     17.3,
+     9.9,
+     16.8,
+     10.0
+    ],
+    "worst_wall_diff_pct": -1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h23": {
+  "h23-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     7.5,
+     16.0,
+     7.5,
+     16.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 2,
+    "tour_label": "hallway",
+    "tour_walls": [
+     7.6,
+     16.0,
+     7.5,
+     15.8
+    ],
+    "worst_wall_diff_pct": -1.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h23-r1": {
+   "est_cost_at_risk_usd": 7.76,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     6.0,
+     16.0,
+     6.0,
+     16.0
+    ],
+    "tour_ceiling": 17.2,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     5.9,
+     16.2,
+     6.0,
+     15.9
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h23-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 14.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     21.0,
+     16.0,
+     21.0,
+     16.0
+    ],
+    "tour_ceiling": 14.1,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     21.0,
+     16.3,
+     21.2,
+     16.2
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h23-r3": {
+   "est_cost_at_risk_usd": 8.38,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     13.5,
+     16.0,
+     13.5,
+     16.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     13.3,
+     15.8,
+     13.6,
+     15.9
+    ],
+    "worst_wall_diff_pct": 1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h23-r4": {
+   "est_cost_at_risk_usd": 108.94,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     23.0,
+     13.0,
+     23.0,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     23.1,
+     13.1,
+     23.3,
+     13.1
+    ],
+    "worst_wall_diff_pct": -1.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h23-r5": {
+   "est_cost_at_risk_usd": 6.01,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     15.0,
+     13.0,
+     15.0,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     15.0,
+     13.2,
+     15.1,
+     12.8
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h23-r6": {
+   "est_cost_at_risk_usd": 1.36,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     10.0,
+     13.0,
+     10.0,
+     13.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     10.1,
+     12.8,
+     10.2,
+     13.1
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h24": {
+  "h24-r0": {
+   "est_cost_at_risk_usd": 4.12,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     11.0,
+     15.0,
+     11.0,
+     15.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     11.2,
+     15.0,
+     10.9,
+     15.2
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h24-r1": {
+   "est_cost_at_risk_usd": 14.59,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.0,
+     15.0,
+     6.0,
+     15.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.0,
+     15.2,
+     6.0,
+     15.1
+    ],
+    "worst_wall_diff_pct": -1.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h24-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     10.0,
+     15.0,
+     10.0,
+     15.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 0,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     10.1,
+     14.8,
+     10.0,
+     15.0
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h24-r3": {
+   "est_cost_at_risk_usd": 2.8,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.0,
+     15.0,
+     6.0,
+     15.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.0,
+     15.2,
+     6.1,
+     14.7
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h24-r4": {
+   "est_cost_at_risk_usd": 12.05,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     7.0,
+     15.0,
+     7.0,
+     15.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     7.0,
+     15.2,
+     6.9,
+     15.1
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h24-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     12.0,
+     16.0,
+     12.0,
+     16.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     12.2,
+     15.9,
+     11.9,
+     15.9
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h24-r6": {
+   "est_cost_at_risk_usd": 9.49,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     5.0,
+     16.0,
+     5.0,
+     16.0
+    ],
+    "tour_ceiling": 17.1,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     5.1,
+     16.2,
+     5.1,
+     16.0
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h24-r7": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     11.5,
+     16.0,
+     11.5,
+     16.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     11.5,
+     16.1,
+     11.3,
+     15.9
+    ],
+    "worst_wall_diff_pct": 1.8
+   },
+   "reasons": [
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h24-r8": {
+   "est_cost_at_risk_usd": 20.55,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     11.5,
+     16.0,
+     11.5,
+     16.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     11.4,
+     15.9,
+     11.7,
+     16.1
+    ],
+    "worst_wall_diff_pct": -1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h25": {
+  "h25-r0": {
+   "est_cost_at_risk_usd": 18.25,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     9.0,
+     13.0,
+     9.0,
+     13.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 0,
+    "tour_label": "closet",
+    "tour_walls": [
+     9.1,
+     13.1,
+     9.2,
+     12.8
+    ],
+    "worst_wall_diff_pct": -2.2
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h25-r1": {
+   "est_cost_at_risk_usd": 13.37,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     14.5,
+     13.0,
+     14.5,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     14.7,
+     13.0,
+     14.5,
+     13.2
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h25-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     10.5,
+     13.0,
+     10.5,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     10.6,
+     13.2,
+     10.7,
+     12.9
+    ],
+    "worst_wall_diff_pct": -1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h25-r3": {
+   "est_cost_at_risk_usd": 20.31,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     14.0,
+     16.0,
+     14.0,
+     16.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     14.1,
+     16.1,
+     13.8,
+     16.2
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h25-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.7,
+     16.0,
+     8.7,
+     16.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     9.5,
+     16.2,
+     9.5,
+     15.8
+    ],
+    "worst_wall_diff_pct": -8.4
+   },
+   "reasons": [
+    "Wall length: wall 1 is 8.7 ft in the plan, 9.5 ft in the tour (-8.4%)"
+   ],
+   "status": "fail"
+  },
+  "h25-r5": {
+   "est_cost_at_risk_usd": 109.77,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     10.5,
+     16.0,
+     10.5,
+     16.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     10.4,
+     16.1,
+     10.4,
+     16.0
+    ],
+    "worst_wall_diff_pct": 1.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h26": {
+  "h26-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     14.5,
+     15.0,
+     14.5,
+     15.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     14.3,
+     15.0,
+     14.3,
+     15.0
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h26-r1": {
+   "est_cost_at_risk_usd": 3.82,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.5,
+     15.0,
+     6.5,
+     15.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.5,
+     15.1,
+     6.5,
+     15.1
+    ],
+    "worst_wall_diff_pct": -0.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h26-r2": {
+   "est_cost_at_risk_usd": 1.44,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     15.5,
+     15.0,
+     15.5,
+     15.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     15.7,
+     14.8,
+     15.5,
+     14.8
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "Label: 'kitchen' in the plan, 'bedroom' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h26-r3": {
+   "est_cost_at_risk_usd": 1.36,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     11.5,
+     15.0,
+     11.5,
+     15.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     11.7,
+     15.1,
+     11.6,
+     14.8
+    ],
+    "worst_wall_diff_pct": -1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h26-r4": {
+   "est_cost_at_risk_usd": 15.31,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     12.5,
+     12.0,
+     12.5,
+     12.0
+    ],
+    "tour_ceiling": 16.8,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     12.4,
+     12.0,
+     12.5,
+     11.9
+    ],
+    "worst_wall_diff_pct": 0.8
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h26-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     6.0,
+     12.0,
+     6.0,
+     12.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "hallway",
+    "tour_walls": [
+     6.1,
+     12.1,
+     5.9,
+     11.9
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h26-r6": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "tall_ceiling",
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 18.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     29.5,
+     12.0,
+     29.5,
+     12.0
+    ],
+    "tour_ceiling": 18.2,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     29.0,
+     12.2,
+     29.2,
+     12.1
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling, glass wall"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h27": {
+  "h27-r0": {
+   "est_cost_at_risk_usd": 634.85,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     7.0,
+     10.0,
+     7.0,
+     10.0
+    ],
+    "tour_ceiling": 17.1,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     7.1,
+     10.0,
+     6.9,
+     9.8
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Ceiling: ceiling 8 ft in the plan, 17.1 ft in the tour",
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "fail"
+  },
+  "h27-r1": {
+   "est_cost_at_risk_usd": 5.04,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     11.0,
+     10.0,
+     11.0,
+     10.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     11.0,
+     10.2,
+     10.9,
+     9.9
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h27-r2": {
+   "est_cost_at_risk_usd": 9.82,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.0,
+     10.0,
+     9.0,
+     10.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.9,
+     10.0,
+     8.9,
+     10.1
+    ],
+    "worst_wall_diff_pct": 1.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h27-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     7.0,
+     10.0,
+     7.0,
+     10.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 2,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.0,
+     9.9,
+     7.0,
+     10.1
+    ],
+    "worst_wall_diff_pct": 1.0
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 2 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h27-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     21.5,
+     14.0,
+     21.5,
+     14.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     21.3,
+     13.9,
+     21.7,
+     14.0
+    ],
+    "worst_wall_diff_pct": 0.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h27-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 0,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.5,
+     14.0,
+     5.5,
+     14.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.5,
+     14.3,
+     5.4,
+     14.3
+    ],
+    "worst_wall_diff_pct": -2.1
+   },
+   "reasons": [
+    "Doors: 0 in the plan, 1 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h27-r6": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     7.0,
+     14.0,
+     7.0,
+     14.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     7.0,
+     14.3,
+     7.0,
+     14.2
+    ],
+    "worst_wall_diff_pct": -2.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h28": {
+  "h28-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     20.5,
+     13.0,
+     20.5,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     20.7,
+     13.1,
+     20.6,
+     13.0
+    ],
+    "worst_wall_diff_pct": -1.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h28-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.5,
+     13.0,
+     9.5,
+     13.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     9.4,
+     12.9,
+     9.4,
+     12.9
+    ],
+    "worst_wall_diff_pct": 1.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h28-r2": {
+   "est_cost_at_risk_usd": 11.35,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     6.0,
+     13.0,
+     6.0,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     6.0,
+     13.2,
+     6.0,
+     13.1
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h28-r3": {
+   "est_cost_at_risk_usd": 9.25,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     9.0,
+     13.0,
+     9.0,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     9.2,
+     12.9,
+     9.1,
+     13.0
+    ],
+    "worst_wall_diff_pct": -2.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h28-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.0,
+     13.0,
+     5.0,
+     13.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     5.0,
+     12.8,
+     5.1,
+     13.0
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "Doors: 2 in the plan, 1 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h28-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     12.0,
+     12.0,
+     12.0,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     12.0,
+     12.1,
+     12.0,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h28-r6": {
+   "est_cost_at_risk_usd": 6.25,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     11.5,
+     12.0,
+     11.5,
+     12.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     11.4,
+     11.8,
+     11.5,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "Label: 'bathroom' in the plan, 'hallway' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h28-r7": {
+   "est_cost_at_risk_usd": 2.88,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     12.5,
+     12.0,
+     12.5,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     12.3,
+     12.0,
+     12.4,
+     11.9
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h28-r8": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     14.0,
+     12.0,
+     14.0,
+     12.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 3,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     14.1,
+     12.2,
+     13.9,
+     12.0
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "Doors: 2 in the plan, 3 in the tour (tour door counts are sometimes off by one)",
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h29": {
+  "h29-r0": {
+   "est_cost_at_risk_usd": 10.88,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.0,
+     14.0,
+     5.0,
+     14.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     4.9,
+     14.2,
+     5.0,
+     13.9
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h29-r1": {
+   "est_cost_at_risk_usd": 7.15,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     10.0,
+     14.0,
+     10.0,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     10.1,
+     14.2,
+     9.9,
+     14.0
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h29-r2": {
+   "est_cost_at_risk_usd": 0.08,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     11.0,
+     14.0,
+     11.0,
+     14.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     11.0,
+     14.1,
+     11.1,
+     14.2
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "Label: 'bedroom' in the plan, 'hallway' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h29-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     14.0,
+     5.0,
+     14.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.0,
+     13.8,
+     5.1,
+     14.1
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h29-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     5.0,
+     14.0,
+     5.0,
+     14.0
+    ],
+    "tour_ceiling": 17.1,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     5.0,
+     13.8,
+     4.9,
+     14.2
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h29-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     10.5,
+     16.0,
+     10.5,
+     16.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     10.5,
+     15.9,
+     10.7,
+     15.9
+    ],
+    "worst_wall_diff_pct": -1.9
+   },
+   "reasons": [
+    "Label: 'kitchen' in the plan, 'bathroom' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h29-r6": {
+   "est_cost_at_risk_usd": 5.6,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "hallway",
+    "plan_walls": [
+     6.5,
+     16.0,
+     6.5,
+     16.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "hallway",
+    "tour_walls": [
+     6.5,
+     16.0,
+     6.6,
+     15.9
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h29-r7": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     16.0,
+     5.0,
+     16.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.0,
+     16.2,
+     5.0,
+     15.8
+    ],
+    "worst_wall_diff_pct": 1.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h29-r8": {
+   "est_cost_at_risk_usd": 100.06,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 14.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     14.0,
+     16.0,
+     14.0,
+     16.0
+    ],
+    "tour_ceiling": 13.9,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     13.8,
+     16.2,
+     13.8,
+     16.0
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h30": {
+  "h30-r0": {
+   "est_cost_at_risk_usd": 10.55,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     8.5,
+     12.0,
+     8.5,
+     12.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     8.7,
+     11.8,
+     8.7,
+     12.1
+    ],
+    "worst_wall_diff_pct": -2.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h30-r1": {
+   "est_cost_at_risk_usd": 12.74,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     13.0,
+     12.0,
+     13.0,
+     12.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     13.2,
+     11.9,
+     12.9,
+     12.1
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h30-r2": {
+   "est_cost_at_risk_usd": 24.94,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h30-r5",
+      "sqft": 2.2
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     8.5,
+     13.5,
+     8.5,
+     13.5
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 2,
+    "tour_label": "closet",
+    "tour_walls": [
+     8.6,
+     12.1,
+     8.4,
+     12.1
+    ],
+    "worst_wall_diff_pct": 11.6
+   },
+   "reasons": [
+    "Wall length: wall 2 is 13.5 ft in the plan, 12.1 ft in the tour (+11.6%)",
+    "Doors: 1 in the plan, 2 in the tour (tour door counts are sometimes off by one)",
+    "Overlaps h30-r5 by 2.2 sq ft"
+   ],
+   "status": "fail"
+  },
+  "h30-r3": {
+   "est_cost_at_risk_usd": 17.89,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     10.0,
+     12.0,
+     10.0,
+     12.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     9.9,
+     11.8,
+     10.1,
+     11.9
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h30-r4": {
+   "est_cost_at_risk_usd": 3.42,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     8.5,
+     12.0,
+     8.5,
+     12.0
+    ],
+    "tour_ceiling": 16.8,
+    "tour_doors": 0,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     8.6,
+     11.9,
+     8.5,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)",
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h30-r5": {
+   "est_cost_at_risk_usd": 108.54,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h30-r2",
+      "sqft": 2.2
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     14.5,
+     12.0,
+     14.5,
+     12.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     14.5,
+     12.0,
+     14.7,
+     12.1
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "Overlaps h30-r2 by 2.2 sq ft"
+   ],
+   "status": "unclear"
+  },
+  "h30-r6": {
+   "est_cost_at_risk_usd": 1982.86,
+   "missing": true,
+   "numbers": {
+    "tour_ceiling": 13.9,
+    "tour_label": "living",
+    "tour_walls": [
+     16.9,
+     12.2,
+     17.0,
+     12.0
+    ]
+   },
+   "reasons": [
+    "Tour captured a living (16.9 x 12.1 ft) that is missing from the plan"
+   ],
+   "status": "fail"
+  }
+ },
+ "h31": {
+  "h31-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     21.5,
+     13.0,
+     21.5,
+     13.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     21.6,
+     13.2,
+     21.6,
+     13.1
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h31-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     6.0,
+     13.0,
+     6.0,
+     13.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     6.0,
+     12.9,
+     6.0,
+     13.0
+    ],
+    "worst_wall_diff_pct": 0.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h31-r2": {
+   "est_cost_at_risk_usd": 5.41,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     6.5,
+     13.0,
+     6.5,
+     13.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     6.6,
+     12.9,
+     6.6,
+     13.0
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h31-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     10.5,
+     10.0,
+     10.5,
+     10.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     10.6,
+     10.1,
+     10.4,
+     10.1
+    ],
+    "worst_wall_diff_pct": -1.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h31-r4": {
+   "est_cost_at_risk_usd": 5.11,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.5,
+     10.0,
+     5.5,
+     10.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.4,
+     10.1,
+     5.5,
+     10.2
+    ],
+    "worst_wall_diff_pct": -2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h31-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     18.0,
+     10.0,
+     18.0,
+     10.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     18.3,
+     9.9,
+     18.0,
+     9.9
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h32": {
+  "h32-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 0,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.5,
+     13.0,
+     9.5,
+     13.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     9.6,
+     13.1,
+     9.5,
+     12.8
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "Doors: 0 in the plan, 1 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h32-r1": {
+   "est_cost_at_risk_usd": 98.49,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     13.5,
+     13.0,
+     13.5,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     13.6,
+     13.1,
+     13.2,
+     12.8
+    ],
+    "worst_wall_diff_pct": 2.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h32-r2": {
+   "est_cost_at_risk_usd": 8.1,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     11.5,
+     13.0,
+     11.5,
+     13.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 0,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     11.3,
+     12.8,
+     11.5,
+     13.0
+    ],
+    "worst_wall_diff_pct": 1.8
+   },
+   "reasons": [
+    "Doors: 1 in the plan, 0 in the tour (tour door counts are sometimes off by one)"
+   ],
+   "status": "unclear"
+  },
+  "h32-r3": {
+   "est_cost_at_risk_usd": 6.65,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.5,
+     13.0,
+     5.5,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     5.6,
+     12.8,
+     5.5,
+     12.8
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "Label: 'closet' in the plan, 'stairwell' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h32-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 10.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.5,
+     13.0,
+     8.5,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.3,
+     12.9,
+     8.4,
+     13.1
+    ],
+    "worst_wall_diff_pct": 2.4
+   },
+   "reasons": [
+    "Ceiling: ceiling 10 ft in the plan, 8.2 ft in the tour"
+   ],
+   "status": "fail"
+  },
+  "h32-r5": {
+   "est_cost_at_risk_usd": 3.6,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     8.5,
+     13.0,
+     8.5,
+     13.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     8.5,
+     12.8,
+     8.4,
+     12.8
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h32-r6": {
+   "est_cost_at_risk_usd": 97.3,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     23.0,
+     13.0,
+     23.0,
+     13.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     22.9,
+     13.1,
+     23.2,
+     13.0
+    ],
+    "worst_wall_diff_pct": -0.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h33": {
+  "h33-r0": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     12.0,
+     14.0,
+     12.0,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     12.0,
+     14.2,
+     12.2,
+     14.2
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h33-r1": {
+   "est_cost_at_risk_usd": 9.94,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     11.0,
+     14.0,
+     11.0,
+     14.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     10.9,
+     14.1,
+     10.9,
+     14.2
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h33-r2": {
+   "est_cost_at_risk_usd": 13.84,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.0,
+     14.0,
+     9.0,
+     14.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     9.1,
+     13.9,
+     9.1,
+     13.9
+    ],
+    "worst_wall_diff_pct": -1.1
+   },
+   "reasons": [
+    "Label: 'bathroom' in the plan, 'kitchen' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h33-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     13.5,
+     15.0,
+     13.5,
+     15.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 3,
+    "tour_label": "living",
+    "tour_walls": [
+     13.5,
+     15.0,
+     13.4,
+     15.0
+    ],
+    "worst_wall_diff_pct": 0.7
+   },
+   "reasons": [
+    "Doors: 2 in the plan, 3 in the tour (tour door counts are sometimes off by one)",
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h33-r4": {
+   "est_cost_at_risk_usd": 3.81,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     7.0,
+     15.0,
+     7.0,
+     15.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.1,
+     15.0,
+     7.0,
+     14.7
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h33-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     11.5,
+     15.0,
+     11.5,
+     15.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     11.6,
+     15.0,
+     11.3,
+     14.9
+    ],
+    "worst_wall_diff_pct": 1.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h34": {
+  "h34-r0": {
+   "est_cost_at_risk_usd": 7.74,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     9.5,
+     14.0,
+     9.5,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     9.7,
+     14.2,
+     9.4,
+     13.8
+    ],
+    "worst_wall_diff_pct": -2.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h34-r1": {
+   "est_cost_at_risk_usd": 264.85,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [
+     {
+      "other": "h34-r2",
+      "sqft": 28.0
+     }
+    ],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     7.5,
+     14.0,
+     7.5,
+     14.0
+    ],
+    "tour_ceiling": 16.9,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     5.5,
+     13.9,
+     5.5,
+     13.8
+    ],
+    "worst_wall_diff_pct": 36.4
+   },
+   "reasons": [
+    "Wall length: wall 1 is 7.5 ft in the plan, 5.5 ft in the tour (+36.4%)",
+    "Label: 'stairwell' in the plan, 'kitchen' in the tour",
+    "Overlaps h34-r2 by 28 sq ft",
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "fail"
+  },
+  "h34-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [
+     {
+      "other": "h34-r1",
+      "sqft": 28.0
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     15.0,
+     14.0,
+     15.0,
+     14.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     14.7,
+     14.0,
+     15.1,
+     14.1
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Overlaps h34-r1 by 28 sq ft",
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h34-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     7.0,
+     12.0,
+     7.0,
+     12.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.1,
+     12.2,
+     6.9,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h34-r4": {
+   "est_cost_at_risk_usd": 2.8,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     16.5,
+     12.0,
+     16.5,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     16.6,
+     12.0,
+     16.5,
+     11.9
+    ],
+    "worst_wall_diff_pct": 0.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h34-r5": {
+   "est_cost_at_risk_usd": 6.57,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.5,
+     12.0,
+     6.5,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.4,
+     12.0,
+     6.5,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h35": {
+  "h35-r0": {
+   "est_cost_at_risk_usd": 788.35,
+   "missing": true,
+   "numbers": {
+    "tour_ceiling": 8.2,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     6.9,
+     12.0,
+     6.9,
+     12.1
+    ]
+   },
+   "reasons": [
+    "Tour captured a stairwell (6.9 x 12.1 ft) that is missing from the plan"
+   ],
+   "status": "fail"
+  },
+  "h35-r1": {
+   "est_cost_at_risk_usd": 2.88,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 14.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     20.5,
+     12.0,
+     20.5,
+     12.0
+    ],
+    "tour_ceiling": 14.0,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     20.8,
+     11.8,
+     20.5,
+     12.1
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h35-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     12.0,
+     5.0,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     4.9,
+     11.9,
+     5.0,
+     12.0
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h35-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     7.5,
+     12.0,
+     7.5,
+     12.0
+    ],
+    "tour_ceiling": 17.0,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     7.6,
+     11.9,
+     7.5,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h35-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     11.0,
+     12.0,
+     11.0,
+     12.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     11.1,
+     12.0,
+     10.9,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h35-r5": {
+   "est_cost_at_risk_usd": 4.92,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.5,
+     12.0,
+     8.5,
+     12.0
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.4,
+     12.0,
+     8.6,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h35-r6": {
+   "est_cost_at_risk_usd": 6.39,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     20.5,
+     12.0,
+     20.5,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     20.4,
+     12.1,
+     20.7,
+     12.0
+    ],
+    "worst_wall_diff_pct": -1.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h36": {
+  "h36-r0": {
+   "est_cost_at_risk_usd": 17.21,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     10.0,
+     12.0,
+     10.0,
+     12.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 2,
+    "tour_label": "closet",
+    "tour_walls": [
+     10.2,
+     11.9,
+     9.8,
+     11.9
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Label: 'bedroom' in the plan, 'closet' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h36-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     24.0,
+     12.0,
+     24.0,
+     12.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     24.1,
+     11.8,
+     23.5,
+     11.8
+    ],
+    "worst_wall_diff_pct": 2.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h36-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     6.5,
+     12.0,
+     6.5,
+     12.0
+    ],
+    "tour_ceiling": 17.2,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     6.5,
+     12.1,
+     6.4,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.6
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h36-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     9.5,
+     12.0,
+     9.5,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     9.4,
+     12.2,
+     9.4,
+     11.9
+    ],
+    "worst_wall_diff_pct": -1.6
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h36-r4": {
+   "est_cost_at_risk_usd": 1.44,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     7.5,
+     10.0,
+     7.5,
+     10.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     7.4,
+     9.9,
+     7.4,
+     10.1
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h36-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     35.5,
+     10.0,
+     35.5,
+     10.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     34.9,
+     10.1,
+     35.6,
+     9.9
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h36-r6": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     7.0,
+     10.0,
+     7.0,
+     10.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     7.1,
+     10.1,
+     7.1,
+     10.1
+    ],
+    "worst_wall_diff_pct": -1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h37": {
+  "h37-r0": {
+   "est_cost_at_risk_usd": 105.98,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     13.0,
+     13.0,
+     13.0,
+     13.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     12.9,
+     13.1,
+     12.9,
+     13.0
+    ],
+    "worst_wall_diff_pct": 0.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h37-r1": {
+   "est_cost_at_risk_usd": 115.56,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     6.5,
+     10.9,
+     6.5,
+     10.9
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     6.4,
+     13.2,
+     6.4,
+     13.0
+    ],
+    "worst_wall_diff_pct": -17.4
+   },
+   "reasons": [
+    "Wall length: wall 2 is 10.9 ft in the plan, 13.2 ft in the tour (-17.4%)",
+    "Label: 'hallway' in the plan, 'bedroom' in the tour"
+   ],
+   "status": "fail"
+  },
+  "h37-r2": {
+   "est_cost_at_risk_usd": 19.31,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     17.0,
+     13.0,
+     17.0,
+     13.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     17.0,
+     13.2,
+     16.8,
+     13.1
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h37-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     9.5,
+     13.0,
+     9.5,
+     13.0
+    ],
+    "tour_ceiling": 8.3,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     9.6,
+     13.0,
+     9.7,
+     12.9
+    ],
+    "worst_wall_diff_pct": -2.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h37-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     12.5,
+     15.0,
+     12.5,
+     15.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     12.4,
+     14.8,
+     12.6,
+     15.2
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h37-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     20.5,
+     15.0,
+     20.5,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     20.1,
+     14.8,
+     20.9,
+     15.0
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h37-r6": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     13.0,
+     15.0,
+     13.0,
+     15.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     13.0,
+     15.2,
+     13.2,
+     15.1
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ },
+ "h38": {
+  "h38-r0": {
+   "est_cost_at_risk_usd": 13.87,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 2,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     8.5,
+     16.0,
+     8.5,
+     16.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 2,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     8.4,
+     16.2,
+     8.4,
+     16.1
+    ],
+    "worst_wall_diff_pct": -1.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h38-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     8.0,
+     16.0,
+     8.0,
+     16.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     8.0,
+     15.7,
+     8.0,
+     16.2
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h38-r2": {
+   "est_cost_at_risk_usd": 10.16,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     11.0,
+     16.0,
+     11.0,
+     16.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     11.1,
+     16.0,
+     11.1,
+     15.8
+    ],
+    "worst_wall_diff_pct": 1.3
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h38-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.5,
+     16.0,
+     6.5,
+     16.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.6,
+     16.2,
+     6.6,
+     15.9
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h38-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     5.0,
+     13.0,
+     5.0,
+     13.0
+    ],
+    "tour_ceiling": 17.2,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     5.0,
+     13.2,
+     5.0,
+     13.0
+    ],
+    "worst_wall_diff_pct": -1.5
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h38-r5": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     7.5,
+     13.0,
+     7.5,
+     13.0
+    ],
+    "tour_ceiling": 7.8,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     7.5,
+     13.0,
+     7.4,
+     12.9
+    ],
+    "worst_wall_diff_pct": 1.4
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h38-r6": {
+   "est_cost_at_risk_usd": 10.41,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h38-r7",
+      "sqft": 44.2
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     9.9,
+     13.0,
+     9.9,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     8.5,
+     13.0,
+     8.5,
+     13.3
+    ],
+    "worst_wall_diff_pct": 16.5
+   },
+   "reasons": [
+    "Wall length: wall 1 is 9.9 ft in the plan, 8.5 ft in the tour (+16.5%)",
+    "Overlaps h38-r7 by 44.2 sq ft"
+   ],
+   "status": "fail"
+  },
+  "h38-r7": {
+   "est_cost_at_risk_usd": 15.58,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h38-r6",
+      "sqft": 44.2
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     15.0,
+     13.0,
+     15.0,
+     13.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     12.9,
+     13.1,
+     13.2,
+     12.9
+    ],
+    "worst_wall_diff_pct": 16.3
+   },
+   "reasons": [
+    "Wall length: wall 1 is 15.0 ft in the plan, 12.9 ft in the tour (+16.3%)",
+    "Overlaps h38-r6 by 44.2 sq ft"
+   ],
+   "status": "fail"
+  }
+ },
+ "h39": {
+  "h39-r0": {
+   "est_cost_at_risk_usd": 7.37,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "living",
+    "plan_walls": [
+     10.0,
+     12.0,
+     10.0,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     10.1,
+     12.2,
+     9.8,
+     12.0
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h39-r1": {
+   "est_cost_at_risk_usd": 4.79,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     12.0,
+     5.0,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.0,
+     11.9,
+     5.0,
+     12.0
+    ],
+    "worst_wall_diff_pct": 0.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h39-r2": {
+   "est_cost_at_risk_usd": 4.96,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     6.5,
+     12.0,
+     6.5,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     6.4,
+     11.8,
+     6.5,
+     12.0
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h39-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.5,
+     12.0,
+     5.5,
+     12.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.5,
+     11.8,
+     5.4,
+     11.9
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h39-r4": {
+   "est_cost_at_risk_usd": 113.2,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h39-r8",
+      "sqft": 8.5
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.0,
+     13.7,
+     5.0,
+     13.7
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     5.0,
+     12.0,
+     5.1,
+     11.9
+    ],
+    "worst_wall_diff_pct": 15.1
+   },
+   "reasons": [
+    "Wall length: wall 4 is 13.7 ft in the plan, 11.9 ft in the tour (+15.1%)",
+    "Overlaps h39-r8 by 8.5 sq ft"
+   ],
+   "status": "fail"
+  },
+  "h39-r5": {
+   "est_cost_at_risk_usd": 2.88,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     10.0,
+     12.0,
+     10.0,
+     12.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     9.9,
+     11.8,
+     10.0,
+     11.9
+    ],
+    "worst_wall_diff_pct": 1.7
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h39-r6": {
+   "est_cost_at_risk_usd": 818.56,
+   "missing": true,
+   "numbers": {
+    "tour_ceiling": 8.2,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     7.9,
+     12.0,
+     8.0,
+     11.8
+    ]
+   },
+   "reasons": [
+    "Tour captured a bathroom (8.0 x 11.9 ft) that is missing from the plan"
+   ],
+   "status": "fail"
+  },
+  "h39-r7": {
+   "est_cost_at_risk_usd": 11.8,
+   "numbers": {
+    "affected": true,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     5.5,
+     12.0,
+     5.5,
+     12.0
+    ],
+    "tour_ceiling": 17.0,
+    "tour_doors": 1,
+    "tour_label": "stairwell",
+    "tour_walls": [
+     5.5,
+     11.8,
+     5.4,
+     11.8
+    ],
+    "worst_wall_diff_pct": 1.9
+   },
+   "reasons": [
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h39-r8": {
+   "est_cost_at_risk_usd": 7.01,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [
+     {
+      "other": "h39-r4",
+      "sqft": 8.5
+     }
+    ],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     8.5,
+     12.0,
+     8.5,
+     12.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     8.5,
+     12.1,
+     8.5,
+     12.0
+    ],
+    "worst_wall_diff_pct": -0.8
+   },
+   "reasons": [
+    "Overlaps h39-r4 by 8.5 sq ft"
+   ],
+   "status": "unclear"
+  }
+ },
+ "h40": {
+  "h40-r0": {
+   "est_cost_at_risk_usd": 7.06,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "closet",
+    "plan_walls": [
+     5.0,
+     14.0,
+     5.0,
+     14.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.1,
+     14.2,
+     5.1,
+     13.7
+    ],
+    "worst_wall_diff_pct": 2.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h40-r1": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bathroom",
+    "plan_walls": [
+     6.0,
+     12.5,
+     6.0,
+     12.5
+    ],
+    "tour_ceiling": 8.1,
+    "tour_doors": 1,
+    "tour_label": "bathroom",
+    "tour_walls": [
+     6.1,
+     14.0,
+     6.0,
+     13.7
+    ],
+    "worst_wall_diff_pct": -10.7
+   },
+   "reasons": [
+    "Wall length: wall 2 is 12.5 ft in the plan, 14.0 ft in the tour (-10.7%)"
+   ],
+   "status": "fail"
+  },
+  "h40-r2": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.5,
+     14.0,
+     5.5,
+     14.0
+    ],
+    "tour_ceiling": 8.2,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     5.6,
+     13.8,
+     5.6,
+     14.0
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h40-r3": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "glass_wall"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "kitchen",
+    "plan_walls": [
+     8.5,
+     14.0,
+     8.5,
+     14.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "kitchen",
+    "tour_walls": [
+     8.5,
+     14.1,
+     8.6,
+     14.0
+    ],
+    "worst_wall_diff_pct": -1.2
+   },
+   "reasons": [
+    "Known weak spot for scanners: glass wall"
+   ],
+   "status": "unclear"
+  },
+  "h40-r4": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "stairs",
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 17.0,
+    "plan_doors": 1,
+    "plan_label": "stairwell",
+    "plan_walls": [
+     5.0,
+     14.0,
+     5.0,
+     14.0
+    ],
+    "tour_ceiling": 17.1,
+    "tour_doors": 1,
+    "tour_label": "living",
+    "tour_walls": [
+     5.1,
+     14.2,
+     4.9,
+     14.2
+    ],
+    "worst_wall_diff_pct": 2.0
+   },
+   "reasons": [
+    "Label: 'stairwell' in the plan, 'living' in the tour",
+    "Known weak spot for scanners: stairwell, tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h40-r5": {
+   "est_cost_at_risk_usd": 2.08,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     5.5,
+     14.0,
+     5.5,
+     14.0
+    ],
+    "tour_ceiling": 8.0,
+    "tour_doors": 1,
+    "tour_label": "closet",
+    "tour_walls": [
+     5.5,
+     14.1,
+     5.6,
+     13.9
+    ],
+    "worst_wall_diff_pct": -1.8
+   },
+   "reasons": [
+    "Label: 'hallway' in the plan, 'closet' in the tour"
+   ],
+   "status": "unclear"
+  },
+  "h40-r6": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [
+     "tall_ceiling"
+    ],
+    "overlaps": [],
+    "plan_ceiling": 16.0,
+    "plan_doors": 2,
+    "plan_label": "living",
+    "plan_walls": [
+     11.0,
+     14.0,
+     11.0,
+     14.0
+    ],
+    "tour_ceiling": 15.9,
+    "tour_doors": 2,
+    "tour_label": "living",
+    "tour_walls": [
+     10.8,
+     13.9,
+     10.9,
+     13.7
+    ],
+    "worst_wall_diff_pct": 2.2
+   },
+   "reasons": [
+    "Known weak spot for scanners: tall ceiling"
+   ],
+   "status": "unclear"
+  },
+  "h40-r7": {
+   "est_cost_at_risk_usd": 0.0,
+   "numbers": {
+    "affected": false,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "hallway",
+    "plan_walls": [
+     6.0,
+     14.0,
+     6.0,
+     14.0
+    ],
+    "tour_ceiling": 7.9,
+    "tour_doors": 1,
+    "tour_label": "hallway",
+    "tour_walls": [
+     6.0,
+     14.1,
+     6.0,
+     13.7
+    ],
+    "worst_wall_diff_pct": 2.2
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  },
+  "h40-r8": {
+   "est_cost_at_risk_usd": 12.06,
+   "numbers": {
+    "affected": true,
+    "flags": [],
+    "overlaps": [],
+    "plan_ceiling": 8.0,
+    "plan_doors": 1,
+    "plan_label": "bedroom",
+    "plan_walls": [
+     7.5,
+     14.0,
+     7.5,
+     14.0
+    ],
+    "tour_ceiling": 7.7,
+    "tour_doors": 1,
+    "tour_label": "bedroom",
+    "tour_walls": [
+     7.4,
+     14.3,
+     7.6,
+     14.2
+    ],
+    "worst_wall_diff_pct": -2.1
+   },
+   "reasons": [
+    "All checks pass"
+   ],
+   "status": "pass"
+  }
+ }
+}

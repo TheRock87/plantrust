@@ -1,0 +1,72 @@
+{
+ "agent_complete": false,
+ "code_only": {
+  "caught": 32,
+  "clean_rooms": 250,
+  "errors": 32,
+  "false_alarms": 71,
+  "llm_usd_per_house": 0.0,
+  "per_type": {
+   "E1": {
+    "caught": 8,
+    "total": 8
+   },
+   "E2": {
+    "caught": 4,
+    "total": 4
+   },
+   "E3": {
+    "caught": 5,
+    "total": 5
+   },
+   "E4": {
+    "caught": 8,
+    "total": 8
+   },
+   "E5": {
+    "caught": 7,
+    "total": 7
+   }
+  },
+  "rooms": 282,
+  "sent_to_drafter": 103,
+  "usd_at_risk_caught": 9228.78,
+  "usd_at_risk_total": 9228.78
+ },
+ "code_plus_agent": {
+  "agent_rooms_needed": 76,
+  "agent_rooms_run": 0,
+  "caught": 32,
+  "clean_rooms": 250,
+  "errors": 32,
+  "false_alarms": 71,
+  "llm_usd_per_house": 0.0,
+  "per_type": {
+   "E1": {
+    "caught": 8,
+    "total": 8
+   },
+   "E2": {
+    "caught": 4,
+    "total": 4
+   },
+   "E3": {
+    "caught": 5,
+    "total": 5
+   },
+   "E4": {
+    "caught": 8,
+    "total": 8
+   },
+   "E5": {
+    "caught": 7,
+    "total": 7
+   }
+  },
+  "rooms": 282,
+  "sent_to_drafter": 103,
+  "usd_at_risk_caught": 9228.78,
+  "usd_at_risk_total": 9228.78
+ },
+ "llm_usd_total": 0
+}
