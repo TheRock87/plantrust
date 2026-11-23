@@ -8,30 +8,42 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%231a1905'/%3E%3Cpath d='M3 3h10v10H3zM8 3v6h5' fill='none' stroke='%23fff' stroke-width='1.4'/%3E%3Crect x='8.7' y='9.7' width='3.6' height='2.6' fill='%23e5df00'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="top">
-  <span class="brand">PlanTrust</span>
-  <nav>
-    <a id="link-video" href="#" hidden>2-minute video</a>
-    <a href="https://github.com/TheRock87/plantrust">Code on GitHub</a>
-    <a href="https://therock87.github.io/">Portfolio and CV</a>
-    <a href="https://www.linkedin.com/in/hossam87">LinkedIn</a>
-  </nav>
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Page">
+      <span class="brand">PlanTrust</span>
+      <div class="nav-links">
+        <a href="#results">Results</a>
+        <a href="#part2">Draft estimate</a>
+        <a href="#fit">Why I fit</a>
+        <a id="link-video" href="#" hidden>2-minute video</a>
+      </div>
+      <div class="nav-end">
+        <a class="nav-plain" href="https://therock87.github.io/">Portfolio and CV</a>
+        <a class="button button-small" href="https://github.com/TheRock87/plantrust">Code on GitHub</a>
+      </div>
+    </nav>
+
+    <h1>Which rooms of an AI-drawn floor plan can you trust?</h1>
+    <p class="lede">PlanTrust compares every room of the plan with the 360-degree tour of the same house. Rooms that agree are accepted. Rooms that do not agree go to a human drafter, with the reason and the dollars at risk.</p>
+    <p class="hero-action"><a class="button" href="#try">Try it on a house</a></p>
+
+    <ol class="flow">
+      <li><strong>Plain-code checks</strong><p>Walls close, rooms do not overlap, the plan agrees with the tour measurements. Clear cases are decided here, exactly and for free.</p></li>
+      <li><strong>A small agent, only for unclear rooms</strong><p>One model with 4 tools (read the room, read the tour, read the check results, submit a verdict) decides: accept, or send to a drafter.</p></li>
+      <li><strong>Cost at risk per room</strong><p>How many dollars a wrong area or height would move, from two illustrative price items.</p></li>
+    </ol>
+  </div>
 </header>
 
 <main>
 
-<section class="intro">
-  <h1>Which rooms of an AI-drawn floor plan can you trust?</h1>
-  <p class="lede">PlanTrust compares every room of the plan with the 360-degree tour of the same house. Rooms that agree are accepted. Rooms that do not agree go to a human drafter, with the reason and the dollars at risk.</p>
-  <p class="byline">A demo by Hossam El-Kharbotly, built for my application to the Senior Software Engineer, AI Agents role at DocuSketch. It uses only synthetic houses, so every number here comes from scripts you can rerun with one command.</p>
-</section>
-
-<section class="try" aria-label="Try it">
+<section class="try" id="try" aria-label="Try it">
   <div class="viewer">
     <div class="blueprint">
       <div class="blueprint-head">
@@ -49,6 +61,7 @@
     <aside class="sheet" id="panel" aria-live="polite"></aside>
   </div>
   <p class="tally" id="tally"></p>
+  <p class="byline">A demo by Hossam El-Kharbotly, built for my application to the Senior Software Engineer, AI Agents role at DocuSketch. It uses only synthetic houses, so every number here comes from scripts you can rerun with one command.</p>
 </section>
 
 <section>
@@ -61,7 +74,7 @@
   </ul>
 </section>
 
-<section>
+<section id="results">
   <h2 id="results-title">Results</h2>
   <p class="soft measure" id="results-intro"></p>
   <div id="unit-charts"></div>
@@ -71,12 +84,7 @@
 </section>
 
 <section>
-  <h2>How it works</h2>
-  <ol class="flow">
-    <li><strong>Plain-code checks</strong><p>Walls close, rooms do not overlap, the plan agrees with the tour measurements. Clear cases are decided here, exactly and for free.</p></li>
-    <li><strong>A small agent, only for unclear rooms</strong><p>One model with 4 tools (read the room, read the tour, read the check results, submit a verdict) decides: accept, or send to a drafter.</p></li>
-    <li><strong>Cost at risk per room</strong><p>How many dollars a wrong area or height would move, from two illustrative price items.</p></li>
-  </ol>
+  <h2>Why code goes first</h2>
   <p class="measure">The result is one verdict per room: accept, or send to a drafter with the reason and the dollars at risk. Code goes first because it is exact and free. The agent sees only the rooms code cannot settle. When the agent is unsure, fails, or runs out of steps, the room goes to a human; it can never accept a room by failing.</p>
 </section>
 
@@ -107,7 +115,7 @@
   <p class="measure after-table">This is the same pattern I built in production for bills of quantities: code first, model last, every number with a source.</p>
 </section>
 
-<section>
+<section id="fit">
   <h2>Why I fit this role</h2>
   <div class="table-wrap">
   <table class="fit">
@@ -135,6 +143,20 @@
     <li><strong>Model:</strong> Mistral <code>voxtral-small-latest</code> on Mistral's free mode, chosen because it was the one model with a usable free allowance on this account. A stronger model would likely do better; the harness, the tests and the scoring stay the same.</li>
     <li><strong>With real data</strong> I would build the test set from drafters' corrections, use the vision team's real outputs as input, add every miss as a test case, and let the agent decide alone only where the numbers prove it is safe.</li>
   </ul>
+</section>
+
+<section class="closing">
+  <div class="closing-note">
+    <p>Built by Hossam El-Kharbotly for the Senior Software Engineer, AI Agents role at DocuSketch.</p>
+  </div>
+  <div class="closing-card">
+    <p>The code, the tests and every trace are in the repository.</p>
+    <div class="button-row">
+      <a class="button button-outline" href="https://github.com/TheRock87/plantrust">Code on GitHub</a>
+      <a class="button button-outline" href="https://therock87.github.io/">Portfolio and CV</a>
+      <a class="button button-outline" href="https://www.linkedin.com/in/hossam87">LinkedIn</a>
+    </div>
+  </div>
 </section>
 
 </main>
