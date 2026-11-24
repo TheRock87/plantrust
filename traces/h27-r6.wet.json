@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "b12f18d8cec45872",
+ "from_text": false,
+ "input_hash": "04077d08a5964200",
  "key": "h27-r6.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No moisture in the bedroom walls.",
  "reason": null,
- "seconds": 4.2,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2711,
+  "input_tokens": 2715,
   "models": [
    "voxtral-small-latest"
   ],

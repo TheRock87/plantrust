@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "ca7381ac06cafb67",
+ "from_text": false,
+ "input_hash": "6b171d6398d183bd",
  "key": "h11-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the bathroom wet?",
- "seconds": 4.5,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -75,7 +76,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2718,
+  "input_tokens": 2722,
   "models": [
    "voxtral-small-latest"
   ],

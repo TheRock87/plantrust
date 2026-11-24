@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "d594f7e53b9b962e",
+ "from_text": false,
+ "input_hash": "7d8654ad67f83104",
  "key": "h40-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the hallway wet?",
- "seconds": 5.0,
+ "seconds": 5.5,
  "steps": [
   {
    "args": {
@@ -70,12 +71,12 @@
    "type": "tool_result"
   },
   {
-   "text": "A drafter will check if the hallway is wet.",
+   "text": "The note does not say whether the hallway is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2720,
+  "input_tokens": 2722,
   "models": [
    "voxtral-small-latest"
   ],

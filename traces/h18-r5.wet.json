@@ -34,7 +34,8 @@
   ]
  },
  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
- "input_hash": "b57104d15f43ce9e",
+ "from_text": false,
+ "input_hash": "5e7e5d349abd9f71",
  "key": "h18-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 6,
@@ -102,43 +103,17 @@
    "type": "tool_call"
   },
   {
-   "args": {
-    "quote": "nothing wet",
-    "room_id": "h18-r5"
-   },
-   "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "name": "no_change",
-   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
-   "type": "tool_result"
-  },
-  {
    "name": "no_change",
    "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
    "type": "tool_result"
   },
   {
    "args": {
-    "quote": "nothing wet in the bathroom",
+    "quote": "nothing wet in the bathroom.",
     "room_id": "h18-r5"
    },
    "name": "no_change",
    "type": "tool_call"
-  },
-  {
-   "args": {
-    "quote": "nothing wet",
-    "room_id": "h18-r5"
-   },
-   "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "name": "no_change",
-   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
-   "type": "tool_result"
   },
   {
    "name": "no_change",
@@ -147,11 +122,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 6227,
+  "input_tokens": 6138,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 253,
+  "output_tokens": 196,
   "usd": 0.0
  }
 }

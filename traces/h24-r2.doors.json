@@ -34,7 +34,8 @@
   ]
  },
  "error": null,
- "input_hash": "320e89139c4476a0",
+ "from_text": false,
+ "input_hash": "d7220c3874a588e8",
  "key": "h24-r2.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -58,7 +59,7 @@
    "args": {
     "quote": "There is a pocket door hidden in the bedroom wall.",
     "room_id": "h24-r2",
-    "wall": 1
+    "wall": 0
    },
    "name": "add_door",
    "type": "tool_call"
@@ -69,16 +70,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The plan is right.",
+   "text": "The plan has no missing door.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3004,
+  "input_tokens": 3000,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 79,
+  "output_tokens": 81,
   "usd": 0.0
  }
 }

@@ -1,12 +1,12 @@
 {
  "agent_vs_baseline": {
   "false_alarm_rooms": {
-   "agent": 100,
+   "agent": 97,
    "agent_better": false,
    "baseline": 57
   },
   "fixed": {
-   "agent": 63,
+   "agent": 64,
    "agent_better": true,
    "baseline": 55
   },
@@ -16,7 +16,7 @@
    "baseline": 53
   },
   "manual_items": {
-   "agent": 147,
+   "agent": 144,
    "agent_better": false,
    "baseline": 101
   },
@@ -26,7 +26,7 @@
    "baseline": 8
   },
   "usd_open": {
-   "agent": 0.0,
+   "agent": 16.81,
    "agent_better": true,
    "baseline": 8789.52
   }
@@ -66,21 +66,20 @@
     "title": "Change the code, not the prompt"
    },
    {
-    "text": "The first rerun showed another weak-model habit: the model sometimes wrote its tool call as text instead of calling the tool, so the run ended with no valid answer. The runner now reminds it once. Runs with no valid answer: 13 before both fixes, 21 after. Regression case h27-r5.doors: still fails (ask drafter).",
+    "text": "The first rerun showed another weak-model habit: the model sometimes wrote its tool call as text instead of calling the tool, so the run ended with no valid answer. A reminder to call the tool made it worse (the model then said it had no tools), so it was dropped. Now code reads a call written as text and sends it through the same guard and the same drafter: 12 answers were read this way. Runs with no valid answer: 13 before both fixes, 10 after. Regression case h27-r5.doors: holds (add door).",
     "title": "A second habit, a second code fix"
    },
    {
-    "text": "Off-question answers 3 to 0; harmful edits 9 to 3; errors fixed 66 to 63 and missed 1 to 1 of 95; drafter items 138 to 147. h42-r1.doors now: ask drafter. The rerun repeats every model call: 30 of 191 answers that no fix targets also changed, which is the model's own variance.",
+    "text": "Off-question answers 3 to 0; harmful edits 9 to 3; errors fixed 66 to 64 and missed 1 to 1 of 95; drafter items 138 to 144. h42-r1.doors now: ask drafter. The rerun repeats every model call: 28 of 191 answers that no fix targets also changed, which is the model's own variance.",
     "title": "Before, after"
    }
   ],
   "summary": "In the first full run, the agent answered 3 door questions with mark_wet: an edit for a different question. The drafter rejected each one, but each cost a review.",
   "variance": {
-   "changed": 30,
+   "changed": 28,
    "of": 191
   }
  },
- "harmful_goal_met": false,
  "houses": [
   {
    "id": "h01",
@@ -126,7 +125,7 @@
          "type": "tool_result"
         },
         {
-         "text": "The note does not say whether the bedroom is wet.",
+         "text": "A drafter will check if the bedroom is wet.",
          "type": "model_text"
         }
        ],
@@ -254,20 +253,7 @@
          "type": "tool_result"
         },
         {
-         "args": {
-          "question": "Is the living room wet?",
-          "room_id": "h01-r1"
-         },
-         "name": "ask_drafter",
-         "type": "tool_call"
-        },
-        {
-         "name": "ask_drafter",
-         "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
-         "type": "tool_result"
-        },
-        {
-         "text": "The drafter will check if the living room is wet.",
+         "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h01-r1\", \"question\": \"Is the living room wet?\"}}]",
          "type": "model_text"
         }
        ],
@@ -541,7 +527,7 @@
          "type": "tool_result"
         },
         {
-         "text": "A drafter will check if the bedroom is wet.",
+         "text": "The note does not say whether the bedroom is wet.",
          "type": "model_text"
         }
        ],
@@ -1340,7 +1326,7 @@
          "type": "tool_result"
         },
         {
-         "text": "A drafter will check if the kitchen is wet.",
+         "text": "The note does not say whether the kitchen is wet.",
          "type": "model_text"
         }
        ],
@@ -1685,7 +1671,7 @@
          "type": "tool_result"
         },
         {
-         "text": "The plan is right.",
+         "text": "The plan has no missing door.",
          "type": "model_text"
         }
        ],
@@ -1693,11 +1679,11 @@
       },
       {
        "action": "ask_drafter",
-       "after": "Is the living room wet?",
+       "after": "Is there water in the living room?",
        "before": "",
        "by": "agent",
        "decision": null,
-       "evidence": "Is the living room wet?",
+       "evidence": "Is there water in the living room?",
        "kind": "wet",
        "steps": [
         {
@@ -1714,7 +1700,7 @@
         },
         {
          "args": {
-          "question": "Is the living room wet?",
+          "question": "Is there water in the living room?",
           "room_id": "h04-r7"
          },
          "name": "ask_drafter",
@@ -1726,7 +1712,7 @@
          "type": "tool_result"
         },
         {
-         "text": "The note does not say whether the living room is wet.",
+         "text": "A drafter will check if the living room is wet.",
          "type": "model_text"
         }
        ],
@@ -2001,7 +1987,7 @@
          "type": "tool_result"
         },
         {
-         "text": "The note does not say whether the hallway is wet.",
+         "text": "The drafter will check if the hallway is wet.",
          "type": "model_text"
         }
        ],
@@ -2217,7 +2203,7 @@
          "type": "tool_result"
         },
         {
-         "text": "The note does not say whether the bedroom is wet.",
+         "text": "A drafter will check if the bedroom is wet.",
          "type": "model_text"
         }
        ],
@@ -2586,11 +2572,11 @@
       },
       {
        "action": "ask_drafter",
-       "after": "Is there water in the bathroom?",
+       "after": "Is the bathroom wet?",
        "before": "",
        "by": "agent",
        "decision": null,
-       "evidence": "Is there water in the bathroom?",
+       "evidence": "Is the bathroom wet?",
        "kind": "wet",
        "steps": [
         {
@@ -2606,20 +2592,7 @@
          "type": "tool_result"
         },
         {
-         "args": {
-          "question": "Is there water in the bathroom?",
-          "room_id": "h06-r5"
-         },
-         "name": "ask_drafter",
-         "type": "tool_call"
-        },
-        {
-         "name": "ask_drafter",
-         "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
-         "type": "tool_result"
-        },
-        {
-         "text": "The drafter will check if the bathroom is wet.",
+         "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h06-r5\", \"question\": \"Is the bathroom wet?\"}}]",
          "type": "model_text"
         }
        ],
@@ -2832,7 +2805,7 @@
          "type": "tool_result"
         },
         {
-         "text": "The note does not settle it; a drafter will check.",
+         "text": "The note does not say whether the kitchen is wet.",
          "type": "model_text"
         }
        ],
@@ -2921,12 +2894,12 @@
        "usd": 0.0
       },
       {
-       "action": "no_change",
-       "after": "keep the plan",
-       "before": "keep the plan",
+       "action": "ask_drafter",
+       "after": "Is the bedroom wet?",
+       "before": "",
        "by": "agent",
        "decision": null,
-       "evidence": "The bedroom has one door, I checked.",
+       "evidence": "Is the bedroom wet?",
        "kind": "wet",
        "steps": [
         {
@@ -2943,23 +2916,23 @@
         },
         {
          "args": {
-          "quote": "The bedroom has one door, I checked.",
+          "question": "Is the bedroom wet?",
           "room_id": "h07-r0"
          },
-         "name": "no_change",
+         "name": "ask_drafter",
          "type": "tool_call"
         },
         {
-         "name": "no_change",
-         "text": "Answer recorded: no change. Reply with one short sentence.",
+         "name": "ask_drafter",
+         "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
          "type": "tool_result"
         },
         {
-         "text": "The bedroom is not wet.",
+         "text": "A drafter will check if the bedroom is wet.",
          "type": "model_text"
         }
        ],
-       "usd": 0.0
+       "usd": 669.35
       }
      ],
      "label": "bedroom",
@@ -3049,7 +3022,7 @@
          "type": "tool_result"
         },
         {
-         "text": "A drafter will check if the stairwell is wet.",
+         "text": "The drafter will check if the stairwell is wet.",
          "type": "model_text"
         }
        ],
@@ -3467,9 +3440,9 @@
    "triage": {
     "edits": 1,
     "house": "h07",
-    "manual": 1,
+    "manual": 2,
     "status": "full review",
-    "usd_at_risk": 1281.99
+    "usd_at_risk": 1951.34
    }
   },
   {
@@ -3626,20 +3599,7 @@
          "type": "tool_result"
         },
         {
-         "args": {
-          "quote": "Counted 1 door in the closet.",
-          "room_id": "h08-r2"
-         },
-         "name": "no_change",
-         "type": "tool_call"
-        },
-        {
-         "name": "no_change",
-         "text": "Answer recorded: no change. Reply with one short sentence.",
-         "type": "tool_result"
-        },
-        {
-         "text": "The closet is not wet.",
+         "text": "[{\"name\": \"no_change\", \"arguments\": {\"room_id\": \"h08-r2\", \"quote\": \"Counted 1 door in the closet.\"}}]",
          "type": "model_text"
         }
        ],
@@ -4327,20 +4287,7 @@
          "type": "tool_result"
         },
         {
-         "args": {
-          "question": "Is the living room wet?",
-          "room_id": "h09-r3"
-         },
-         "name": "ask_drafter",
-         "type": "tool_call"
-        },
-        {
-         "name": "ask_drafter",
-         "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
-         "type": "tool_result"
-        },
-        {
-         "text": "The drafter will check if the living room is wet.",
+         "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h09-r3\", \"question\": \"Is the living room wet?\"}}]",
          "type": "model_text"
         }
        ],
@@ -4664,11 +4611,11 @@
      "items": [
       {
        "action": "ask_drafter",
-       "after": "Is the bedroom wet?",
+       "after": "Is there water in the bedroom?",
        "before": "",
        "by": "agent",
        "decision": null,
-       "evidence": "Is the bedroom wet?",
+       "evidence": "Is there water in the bedroom?",
        "kind": "wet",
        "steps": [
         {
@@ -4685,7 +4632,7 @@
         },
         {
          "args": {
-          "question": "Is the bedroom wet?",
+          "question": "Is there water in the bedroom?",
           "room_id": "h09-r7"
          },
          "name": "ask_drafter",
@@ -4758,11 +4705,11 @@
      "items": [
       {
        "action": "ask_drafter",
-       "after": "no valid answer; a drafter checks",
+       "after": "Is the bathroom wet?",
        "before": "",
        "by": "agent",
        "decision": null,
-       "evidence": "no valid answer; a drafter checks",
+       "evidence": "Is the bathroom wet?",
        "kind": "wet",
        "steps": [
         {
@@ -4778,11 +4725,20 @@
          "type": "tool_result"
         },
         {
-         "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h09-r8\", \"question\": \"Is the bathroom wet?\"}}]",
-         "type": "model_text"
+         "args": {
+          "question": "Is the bathroom wet?",
+          "room_id": "h09-r8"
+         },
+         "name": "ask_drafter",
+         "type": "tool_call"
         },
         {
-         "text": "I'm here to help, but I currently don't have the tools needed to fulfill your request. Is there something else I can assist you with?",
+         "name": "ask_drafter",
+         "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+         "type": "tool_result"
+        },
+        {
+         "text": "A drafter will check if the bathroom is wet.",
          "type": "model_text"
         }
        ],
@@ -4949,12 +4905,12 @@
      "id": "h11-r1",
      "items": [
       {
-       "action": "ask_drafter",
-       "after": "Is the closet wet?",
-       "before": "",
+       "action": "no_change",
+       "after": "keep the plan",
+       "before": "keep the plan",
        "by": "agent",
        "decision": null,
-       "evidence": "Is the closet wet?",
+       "evidence": "Closet has one door.",
        "kind": "wet",
        "steps": [
         {
@@ -4971,23 +4927,23 @@
         },
         {
          "args": {
-          "question": "Is the closet wet?",
+          "quote": "Closet has one door.",
           "room_id": "h11-r1"
          },
-         "name": "ask_drafter",
+         "name": "no_change",
          "type": "tool_call"
         },
         {
-         "name": "ask_drafter",
-         "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+         "name": "no_change",
+         "text": "Answer recorded: no change. Reply with one short sentence.",
          "type": "tool_result"
         },
         {
-         "text": "A drafter will check if the closet is wet.",
+         "text": "The closet is not wet.",
          "type": "model_text"
         }
        ],
-       "usd": 929.99
+       "usd": 0.0
       }
      ],
      "label": "closet",
@@ -5035,7 +4991,7 @@
        13.0
       ]
      ],
-     "status": "drafter"
+     "status": "clear"
     },
     {
      "affected": false,
@@ -5044,11 +5000,11 @@
      "items": [
       {
        "action": "ask_drafter",
-       "after": "Are there any signs of water damage in the bedroom?",
+       "after": "Is the bedroom wet?",
        "before": "",
        "by": "agent",
        "decision": null,
-       "evidence": "Are there any signs of water damage in the bedroom?",
+       "evidence": "Is the bedroom wet?",
        "kind": "wet",
        "steps": [
         {
@@ -5065,7 +5021,7 @@
         },
         {
          "args": {
-          "question": "Are there any signs of water damage in the bedroom?",
+          "question": "Is the bedroom wet?",
           "room_id": "h11-r2"
          },
          "name": "ask_drafter",
@@ -5077,7 +5033,7 @@
          "type": "tool_result"
         },
         {
-         "text": "A drafter will check for water damage in the bedroom.",
+         "text": "The note does not say whether the bedroom is wet.",
          "type": "model_text"
         }
        ],
@@ -5138,11 +5094,11 @@
      "items": [
       {
        "action": "ask_drafter",
-       "after": "Is there a door the plan misses?",
+       "after": "Is the plan missing a door?",
        "before": "",
        "by": "agent",
        "decision": null,
-       "evidence": "Is there a door the plan misses?",
+       "evidence": "Is the plan missing a door?",
        "kind": "doors",
        "steps": [
         {
@@ -5159,7 +5115,7 @@
         },
         {
          "args": {
-          "question": "Is there a door the plan misses?",
+          "question": "Is the plan missing a door?",
           "room_id": "h11-r3"
          },
          "name": "ask_drafter",
@@ -5401,7 +5357,7 @@
          "type": "tool_result"
         },
         {
-         "text": "The drafter will check if the kitchen is wet.",
+         "text": "A drafter will check if the kitchen is wet.",
          "type": "model_text"
         }
        ],
@@ -5459,9 +5415,9 @@
    "triage": {
     "edits": 1,
     "house": "h11",
-    "manual": 5,
+    "manual": 4,
     "status": "full review",
-    "usd_at_risk": 3927.16
+    "usd_at_risk": 2997.17
    }
   }
  ],
@@ -7381,9 +7337,9 @@
    },
    {
     "action": "mark_wet",
-    "approved": 14,
+    "approved": 15,
     "by": "agent",
-    "n": 17,
+    "n": 18,
     "status": "not enough cases yet"
    }
   ],
@@ -7503,13 +7459,13 @@
     "usd_total": 38094.56
    },
    "D": {
-    "approved_edits": 63,
+    "approved_edits": 64,
     "clean_rooms": 313,
     "errors": 95,
-    "false_alarm_rooms": 100,
-    "fixed": 63,
+    "false_alarm_rooms": 97,
+    "fixed": 64,
     "harmful_edits": 3,
-    "manual_items": 147,
+    "manual_items": 144,
     "missed": 1,
     "per_type": {
      "E1": {
@@ -7543,15 +7499,15 @@
       "total": 14
      },
      "E6": {
-      "fixed": 14,
+      "fixed": 15,
       "missed": 0,
-      "to_drafter": 5,
+      "to_drafter": 4,
       "total": 19
      }
     },
     "rejected_edits": 3,
-    "to_drafter": 31,
-    "usd_open": 0.0,
+    "to_drafter": 30,
+    "usd_open": 16.81,
     "usd_total": 38094.56
    },
    "v1": {
@@ -7609,19 +7565,20 @@
   },
   "run_report": {
    "answered": 207,
+   "answers_read_from_text": 12,
    "ask_drafter_by_reason": {
-    "agent chose it": 96,
-    "error": 6,
-    "no valid answer": 21
+    "agent chose it": 105,
+    "error": 5,
+    "no valid answer": 10
    },
    "avg_seconds": 4.8,
-   "failures": 6,
+   "failures": 5,
    "fallback_uses": 0,
    "model_called": 207,
    "not_run": 0,
    "off_question": 0,
    "questions": 207,
-   "tokens": 615783,
+   "tokens": 602893,
    "usd": 0.0
   },
   "triage": [
@@ -7647,18 +7604,11 @@
     "usd_at_risk": 5366.94
    },
    {
-    "edits": 0,
-    "house": "h12",
-    "manual": 5,
-    "status": "full review",
-    "usd_at_risk": 5317.54
-   },
-   {
-    "edits": 2,
+    "edits": 1,
     "house": "h58",
     "manual": 4,
     "status": "full review",
-    "usd_at_risk": 4816.41
+    "usd_at_risk": 4799.6
    },
    {
     "edits": 3,
@@ -7710,11 +7660,11 @@
     "usd_at_risk": 4095.55
    },
    {
-    "edits": 1,
-    "house": "h11",
-    "manual": 5,
+    "edits": 0,
+    "house": "h12",
+    "manual": 4,
     "status": "full review",
-    "usd_at_risk": 3927.16
+    "usd_at_risk": 4092.35
    },
    {
     "edits": 1,
@@ -7794,6 +7744,13 @@
     "usd_at_risk": 3045.77
    },
    {
+    "edits": 1,
+    "house": "h11",
+    "manual": 4,
+    "status": "full review",
+    "usd_at_risk": 2997.17
+   },
+   {
     "edits": 2,
     "house": "h41",
     "manual": 1,
@@ -7801,9 +7758,9 @@
     "usd_at_risk": 2986.78
    },
    {
-    "edits": 1,
+    "edits": 2,
     "house": "h44",
-    "manual": 3,
+    "manual": 2,
     "status": "full review",
     "usd_at_risk": 2958.51
    },
@@ -7813,6 +7770,13 @@
     "manual": 3,
     "status": "full review",
     "usd_at_risk": 2805.57
+   },
+   {
+    "edits": 0,
+    "house": "h13",
+    "manual": 4,
+    "status": "full review",
+    "usd_at_risk": 2750.79
    },
    {
     "edits": 1,
@@ -7857,13 +7821,6 @@
     "usd_at_risk": 2143.58
    },
    {
-    "edits": 3,
-    "house": "h47",
-    "manual": 1,
-    "status": "full review",
-    "usd_at_risk": 2141.43
-   },
-   {
     "edits": 2,
     "house": "h32",
     "manual": 4,
@@ -7906,6 +7863,13 @@
     "usd_at_risk": 1988.78
    },
    {
+    "edits": 1,
+    "house": "h07",
+    "manual": 2,
+    "status": "full review",
+    "usd_at_risk": 1951.34
+   },
+   {
     "edits": 0,
     "house": "h60",
     "manual": 1,
@@ -7934,13 +7898,6 @@
     "usd_at_risk": 1881.58
    },
    {
-    "edits": 0,
-    "house": "h13",
-    "manual": 3,
-    "status": "full review",
-    "usd_at_risk": 1782.39
-   },
-   {
     "edits": 1,
     "house": "h24",
     "manual": 2,
@@ -7960,13 +7917,6 @@
     "manual": 1,
     "status": "full review",
     "usd_at_risk": 1302.23
-   },
-   {
-    "edits": 1,
-    "house": "h07",
-    "manual": 1,
-    "status": "full review",
-    "usd_at_risk": 1281.99
    },
    {
     "edits": 1,
@@ -7990,9 +7940,9 @@
     "usd_at_risk": 845.2
    },
    {
-    "edits": 2,
+    "edits": 3,
     "house": "h27",
-    "manual": 3,
+    "manual": 2,
     "status": "full review",
     "usd_at_risk": 830.88
    },
@@ -8009,6 +7959,13 @@
     "manual": 0,
     "status": "quick review",
     "usd_at_risk": 347.16
+   },
+   {
+    "edits": 3,
+    "house": "h47",
+    "manual": 0,
+    "status": "quick review",
+    "usd_at_risk": 233.04
    },
    {
     "edits": 1,
@@ -8110,10 +8067,10 @@
    "why": "The room whose walls disagree with its tour gets the wall fix, which removes the overlap."
   },
   {
-   "approved": 14,
+   "approved": 15,
    "code": "E6",
    "count": 19,
-   "edits": 14,
+   "edits": 15,
    "name": "Wet room left out",
    "usd_at_risk": 21603.78,
    "who": "agent",

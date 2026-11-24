@@ -42,13 +42,14 @@
   ]
  },
  "error": null,
- "input_hash": "66c16a33fdbae5ab",
+ "from_text": false,
+ "input_hash": "c1a7816d327e4c5f",
  "key": "h33-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Are there any signs of water damage on the walls?",
- "seconds": 4.4,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -81,7 +82,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2726,
+  "input_tokens": 2724,
   "models": [
    "voxtral-small-latest"
   ],

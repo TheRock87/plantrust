@@ -42,13 +42,14 @@
   ]
  },
  "error": null,
- "input_hash": "9bede67f288ff384",
+ "from_text": false,
+ "input_hash": "c4941b9b52123010",
  "key": "h28-r8.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the plan missing a door?",
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -81,7 +82,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2973,
+  "input_tokens": 2979,
   "models": [
    "voxtral-small-latest"
   ],

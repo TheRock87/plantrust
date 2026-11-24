@@ -20,6 +20,7 @@
       <div class="nav-links">
         <a href="#try">Try it</a>
         <a href="#results">Results</a>
+        <a href="#dashboard">Dashboard</a>
         <a href="#part2">Draft estimate</a>
         <a href="#fit">Why I fit</a>
         <a id="link-video" href="#" hidden>2-minute video</a>
@@ -31,12 +32,13 @@
     </nav>
 
     <h1>An agent drafts fixes to an AI floor plan. A drafter approves each one.</h1>
-    <p class="lede">PlanTrust checks every room of the AI plan against the 360-degree tour and the technician's notes. Code fixes what a rule can fix. A small agent proposes an edit only where the words in the notes decide. Nothing changes the plan until a drafter approves it.</p>
-    <p class="hero-action"><a class="button" href="#try">Try it on a house</a></p>
+    <p class="lede">Code fixes what a rule can fix. A small agent proposes an edit only where the technician's notes decide. Nothing changes the plan until a drafter approves it.</p>
+    <p class="hero-action"><a class="button" href="#try">Try it on a house</a> <a class="button button-outline-light" href="#dashboard">Open the dashboard</a></p>
 
-    <figure class="design">
+    <details class="design">
+      <summary>How it works (one picture)</summary>
       <img src="design.svg" alt="How PlanTrust v2 works. Layer 0: three witnesses per room, the AI plan, the tour and the technician's notes. Layer 1: code finds problems and fixes walls and ceilings from the tour. Layer 2: the agent answers door and wet questions from the notes, with read tools and draft-only edit tools, and must quote the note. Layer 3: every edit pauses for a drafter who approves or rejects it. Layer 4: scripts measure approved, rejected, missed and harmful edits against a keyword baseline, and an autonomy ladder decides which fix types may skip the drafter.">
-    </figure>
+    </details>
   </div>
 </header>
 
@@ -48,29 +50,20 @@
       <div class="blueprint-head">
         <label for="house-select">House</label>
         <select id="house-select"></select>
-        <span class="hint">Click a room to see what was proposed and decided.</span>
+        <span class="hint">Click a room.</span>
       </div>
       <svg id="plan" role="group" aria-label="Floor plan"></svg>
       <ul class="legend">
         <li><span class="key"></span>Nothing to do</li>
-        <li><span class="key key-fixed"></span>Edit approved by the drafter</li>
+        <li><span class="key key-fixed"></span>Edit approved</li>
         <li><span class="key key-drafter"></span>Drafter must look</li>
-        <li><span class="key key-missing"></span>In the tour, missing from the plan</li>
+        <li><span class="key key-missing"></span>Missing from the plan</li>
       </ul>
     </div>
     <aside class="sheet" id="panel" aria-live="polite"></aside>
   </div>
   <p class="tally" id="tally"></p>
-  <p class="byline">A demo by Hossam El-Kharbotly, built for my application to the Senior Software Engineer, AI Agents role at DocuSketch. It uses only synthetic houses, so every number here comes from scripts you can rerun with one command.</p>
-</section>
-
-<section>
-  <h2>Why I built this</h2>
-  <ul class="points">
-    <li><strong>The floor plan drives the estimate.</strong> Wall lengths, floor area, ceiling height, doors and which rooms are wet become the quantities that are priced, so a wrong plan means a wrong price.</li>
-    <li><strong>Drafters are the expensive, slow step.</strong> Sending every plan to a human throws away the speed; trusting every plan puts wrong quantities into claims.</li>
-    <li><strong>So the useful questions are:</strong> where is plain code the right answer, where does a model earn its place, how should its output look so a drafter can check it fast, and how do we know it works before a drafter relies on it?</li>
-  </ul>
+  <p class="byline">A demo by Hossam El-Kharbotly for the Senior Software Engineer, AI Agents role at DocuSketch. Synthetic houses only; every number comes from scripts you can rerun with one command.</p>
 </section>
 
 <section id="results">
@@ -80,15 +73,47 @@
   <div class="verdict" id="verdict"></div>
   <p class="soft measure" id="run-report"></p>
 
-  <h3>Per error type: fixed / sent to a drafter / missed</h3>
-  <div class="table-wrap"><table id="type-table"></table></div>
-
   <h3>Who does what</h3>
   <div class="table-wrap"><table id="who-table"></table></div>
 
-  <h3>Autonomy ladder: which fix types could skip the drafter</h3>
+  <h3>Autonomy ladder</h3>
   <p class="soft measure" id="ladder-intro"></p>
   <div class="table-wrap"><table id="ladder-table"></table></div>
+</section>
+
+<section id="dashboard">
+  <h2>Dashboard</h2>
+  <p class="soft measure">The same numbers, to play with. Nothing is saved: a reload starts again.</p>
+
+  <h3>1. Which approach?</h3>
+  <div class="switch" id="dash-approach" role="group" aria-label="Approach">
+    <button type="button" data-row="v1" aria-pressed="false">v1</button>
+    <button type="button" data-row="B" aria-pressed="false">Code fixes</button>
+    <button type="button" data-row="C" aria-pressed="false">Keyword baseline</button>
+    <button type="button" data-row="D" aria-pressed="false">Agent</button>
+  </div>
+  <div class="tiles" aria-live="polite">
+    <div class="tile"><p class="tile-label">Errors fixed and approved</p><p class="tile-value" id="tile-fixed"></p></div>
+    <div class="tile"><p class="tile-label">Harmful edits proposed</p><p class="tile-value" id="tile-harmful"></p></div>
+    <div class="tile"><p class="tile-label">Drafter work items</p><p class="tile-value" id="tile-manual"></p></div>
+    <div class="tile"><p class="tile-label">Dollars still at risk</p><p class="tile-value" id="tile-usd"></p></div>
+  </div>
+  <ul class="bars" id="dash-bars" aria-label="Per error type: fixed, sent to a drafter, missed"></ul>
+
+  <h3>2. A drafter's day: how many houses can you review?</h3>
+  <p class="soft measure">With the agent, houses are sorted by the dollars in their open items (what each item would move in the estimate if it is right; many are false alarms). Move the slider to see how much one day of review covers.</p>
+  <div class="budget">
+    <label for="dash-budget">Houses reviewed today</label>
+    <input type="range" id="dash-budget" min="0" max="60" step="1" value="10">
+    <output id="dash-budget-out" for="dash-budget" aria-live="polite"></output>
+  </div>
+
+  <h3>3. Try the drafter's job</h3>
+  <p class="soft measure">Approve or reject each proposed edit for one house. The simulated drafter's answer shows when you have decided every edit.</p>
+  <div class="estimate-head"><label for="dash-house">House</label><select id="dash-house"></select></div>
+  <p class="dash-counter" id="dash-counter" aria-live="polite"></p>
+  <ul class="dash-items" id="dash-items"></ul>
+  <p class="dash-result" id="dash-result" aria-live="polite"></p>
 </section>
 
 <section id="failure-section" hidden>
@@ -99,17 +124,15 @@
 <section>
   <h2>What this shows, and what it does not</h2>
   <div class="box">
-    <p><strong>It shows</strong> the method on synthetic data: code first, a model only where words decide, a drafter check on every edit, a keyword baseline to beat, guards in code, and numbers written by scripts.</p>
-    <p><strong>It does not show</strong> real accuracy, real drafters (the drafter here is simulated and knows the true house), images (voxtral reads text, not pictures) or production scale. <span id="variance-note"></span></p>
-    <p><strong>Next, with real data:</strong> run in shadow mode next to the drafters, let drafters approve, auto-apply only where the ladder allows, and turn every drafter correction into a test case.</p>
-    <p><strong>Three questions I would ask your drafters:</strong> which plan mistakes cost you the most; what tolerance on walls and ceilings you accept; and how you count an archway or an opening with no door.</p>
+    <p><strong>It shows</strong> the method: code first, a model only where words decide, a drafter check on every edit, a keyword baseline to beat, guards in code, numbers from scripts.</p>
+    <p><strong>It does not show</strong> real accuracy, real drafters (the simulated one knows the true house), images or production scale. The data, notes and prices are synthetic, and the free model is weak. <span id="variance-note"></span></p>
+    <p><strong>Next, with real data:</strong> shadow mode next to the drafters, then drafter approval, then auto-apply only where the ladder allows; every drafter correction becomes a test case. Three questions for your drafters: which plan mistakes cost the most, what tolerance you accept on walls and ceilings, and how you count an archway.</p>
   </div>
 </section>
 
 <section id="part2" hidden>
   <h2>From trusted plan to draft estimate</h2>
-  <p class="measure">Part 2 takes a room the plan check left with nothing open and drafts its mitigation line items. The quantities come from the floor plan, the choice of items comes from past jobs and the technician's scope notes, and every item shows its evidence.</p>
-  <p class="soft measure">In production, prices come from Xactimate through the existing Verisk integration. This demo uses a mock price source with example prices, because real Xactimate price lists are licensed. The agents do not change; only the price source does.</p>
+  <p class="measure">Part 2 drafts mitigation line items for a room the plan check left with nothing open: quantities from the plan, items from past jobs and scope notes, prices from a mock source (real Xactimate price lists are licensed).</p>
   <div class="estimate">
     <div class="estimate-head">
       <label for="estimate-select">Trusted room</label>
@@ -125,7 +148,6 @@
   <h3>Step 2: drafting items, scored on held-out past jobs</h3>
   <p class="soft measure" id="estimate-intro"></p>
   <div class="table-wrap"><table id="estimate-table"></table></div>
-  <p class="measure after-table">This is the same pattern I built in production for bills of quantities: code first, model last, every number with a source.</p>
 </section>
 
 <section id="fit">
@@ -134,25 +156,15 @@
   <table class="fit">
     <thead><tr><th>What the role needs</th><th>What this demo shows</th><th>What I already do in production</th></tr></thead>
     <tbody>
-      <tr><td>Agents that take on drafting work</td><td>A small drafting agent on LangChain <code>create_agent</code>: read tools, edit tools that act on a draft copy, and every edit paused for a drafter with the built-in human-in-the-loop middleware</td><td>A 20-tool AI ingestion agent in a no-network sandbox; a second, fresh model call checks its mapping before an engineer signs</td></tr>
-      <tr><td>Plain code where code is exact, a model only where needed</td><td>Code fixes walls and ceilings and routes every room; the agent answers only the door and wet questions that need the notes</td><td>One ingestion agent, two pipelines: rule-based for known bill layouts, the 20-tool AI path only for bills no known layout fits</td></tr>
-      <tr><td>Know it works before a drafter relies on it</td><td>Fixed, missed and harmful edits per error type, against a keyword baseline and on hand-written hard notes, with counts</td><td>Errors that passed every arithmetic check became permanent rules (2,440 deleted rows that both gate and checker had accepted); an audit against raw data showed a failure rate reported as 0.07% was really 1.1%</td></tr>
-      <tr><td>Turn failures into fixes</td><td>One real trace, one cause, regression cases, a fix in code rather than a longer prompt; before and after written by script</td><td>30+ production incidents, each written up with root cause, fix and measured result</td></tr>
-      <tr><td>Output a drafter can check fast</td><td>Each proposal shows the change, who proposed it, the quoted evidence and the dollars at risk; each house is triaged as ready, quick review or full review</td><td>Cost engineers sign each bill from a review dashboard; every row is traced to its source cell</td></tr>
-      <tr><td>Cost and reliability</td><td>A free model; a run report with model calls, failures, tokens and seconds per question; cached traces make reruns free</td><td>Sole engineer of an on-premise large language model (LLM) platform with Langfuse traces and 35 alert rules</td></tr>
+      <tr><td>Agents that take on drafting work</td><td>A drafting agent on LangChain <code>create_agent</code>; every edit pauses for a drafter (human-in-the-loop middleware)</td><td>A 20-tool AI ingestion agent in a no-network sandbox; a second, fresh model call checks its mapping before an engineer signs</td></tr>
+      <tr><td>Code where code is exact, a model only where needed</td><td>Code fixes walls and ceilings and routes every room; the agent answers only the door and wet questions</td><td>Rule-based pipeline for known bill layouts; the AI path only for bills no known layout fits</td></tr>
+      <tr><td>Know it works before a drafter relies on it</td><td>Fixed, missed and harmful edits per error type, against a keyword baseline and hand-written hard notes</td><td>Errors that passed every check became permanent rules; an audit showed a failure rate reported as 0.07% was really 1.1%</td></tr>
+      <tr><td>Turn failures into fixes</td><td>A real trace, its cause, regression cases, and a fix in code rather than a longer prompt</td><td>30+ production incidents, each written up with root cause, fix and measured result</td></tr>
+      <tr><td>Output a drafter can check fast</td><td>Each edit shows the change, who proposed it, the quote and the dollars; houses are triaged</td><td>Cost engineers sign each bill from a review dashboard; every row is traced to its source cell</td></tr>
+      <tr><td>Cost and reliability</td><td>A free model, a run report, and cached traces that make reruns free</td><td>Sole engineer of an on-premise LLM platform with Langfuse traces and 35 alert rules</td></tr>
     </tbody>
   </table>
   </div>
-</section>
-
-<section>
-  <h2>Limits</h2>
-  <ul class="points">
-    <li><strong>Synthetic houses</strong> of rectangular rooms, with errors and notes I generated myself, and simulated tour measurements with simple noise. Real tours and real notes are messier.</li>
-    <li><strong>Illustrative prices</strong> for two items (wet drywall removal, drying fans by the IICRC (Institute of Inspection, Cleaning and Restoration Certification) rule of thumb). They are not real price lists.</li>
-    <li><strong>A weak, free model:</strong> Mistral <code>voxtral-small-latest</code>, the one model with a usable free allowance on this account. It sometimes answers the wrong question or writes a tool call as text, and it does not give the same answer every time. The guards are in code for that reason; a stronger model would likely do better, and the harness, tests and scoring stay the same.</li>
-    <li><strong>The estimation agent over-includes.</strong> It finds more of the real items than the frequency rule, but it also adds extra items a human must strike out; see the precision column.</li>
-  </ul>
 </section>
 
 <section class="closing">

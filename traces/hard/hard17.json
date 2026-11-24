@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "c2dbd34dcf5edfe0",
+ "from_text": false,
+ "input_hash": "d70daaa27f79e586",
  "key": "hard/hard17",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "The door to the closet was taken off, it is just an opening now.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2977,
+  "input_tokens": 2969,
   "models": [
    "voxtral-small-latest"
   ],

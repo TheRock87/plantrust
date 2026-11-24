@@ -1,6 +1,8 @@
 {
  "action": "ask_drafter",
- "args": {},
+ "args": {
+  "question": "Is there a door on any wall?"
+ },
  "decision": null,
  "draft": {
   "affected": true,
@@ -29,13 +31,14 @@
   ]
  },
  "error": null,
- "input_hash": "d9afb97609d944ed",
+ "from_text": true,
+ "input_hash": "4ecacdd32d1d9426",
  "key": "h45-r2.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 3,
+ "model_calls": 2,
  "quote": "",
- "reason": "no valid answer; a drafter checks",
- "seconds": 4.5,
+ "reason": "Is there a door on any wall?",
+ "seconds": 3.2,
  "steps": [
   {
    "args": {
@@ -76,18 +79,14 @@
   {
    "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h45-r2\", \"question\": \"Is there a door on any wall?\"}}]",
    "type": "model_text"
-  },
-  {
-   "text": "I'm here to help, but I currently don't have the tools needed to fulfill your request. Is there something else I can assist you with?",
-   "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3396,
+  "input_tokens": 2136,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 141,
+  "output_tokens": 110,
   "usd": 0.0
  }
 }

@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "8e8b1051fb9991b9",
+ "from_text": false,
+ "input_hash": "d4f90c58241e83df",
  "key": "h04-r7.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "no valid answer; a drafter checks",
- "seconds": 4.2,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -69,16 +70,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The plan is right.",
+   "text": "The plan has no missing door.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2999,
+  "input_tokens": 3007,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 80,
+  "output_tokens": 82,
   "usd": 0.0
  }
 }

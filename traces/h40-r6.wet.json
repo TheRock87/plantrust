@@ -40,13 +40,14 @@
   ]
  },
  "error": null,
- "input_hash": "e5443fc891a1ba4f",
+ "from_text": false,
+ "input_hash": "9f4c06495a1292e7",
  "key": "h40-r6.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No water in the living room.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -79,7 +80,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2743,
+  "input_tokens": 2741,
   "models": [
    "voxtral-small-latest"
   ],

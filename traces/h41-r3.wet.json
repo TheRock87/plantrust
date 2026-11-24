@@ -38,13 +38,14 @@
   ]
  },
  "error": null,
- "input_hash": "31623a47b566e8ea",
+ "from_text": false,
+ "input_hash": "04bb1ccb1632c29e",
  "key": "h41-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Water ran under the living room carpet, the pad is soaked.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.1,
  "steps": [
   {
    "args": {
@@ -77,7 +78,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2757,
+  "input_tokens": 2759,
   "models": [
    "voxtral-small-latest"
   ],

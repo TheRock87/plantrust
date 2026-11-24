@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "b9378e5c88d0b9bf",
+ "from_text": false,
+ "input_hash": "b1a2a82155924192",
  "key": "h17-r8.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Bedroom is fine",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2726,
+  "input_tokens": 2730,
   "models": [
    "voxtral-small-latest"
   ],

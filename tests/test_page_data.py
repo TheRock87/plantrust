@@ -15,7 +15,6 @@ def test_honest_comparisons_come_from_the_numbers():
     cmp = R["agent_vs_baseline"]
     for m in ("fixed", "missed", "harmful_edits", "manual_items", "false_alarm_rooms", "usd_open"):
         assert cmp[m] == {"agent": d[m], "baseline": c[m], "agent_better": d[m] > c[m] if m == "fixed" else d[m] < c[m]}
-    assert R["harmful_goal_met"] == (d["harmful_edits"] == 0)
 
 
 def test_who_does_what_covers_every_error():
@@ -39,6 +38,22 @@ def test_viewer_shows_failures_too():
     assert any(i["by"] == "agent" and i.get("decision") == "reject" for i in items)
     assert any(i["action"] == "ask_drafter" for i in items)
     assert all(h["triage"]["status"] in ("ready", "quick review", "full review") for h in R["houses"])
+
+
+def test_dashboard_is_plain_and_stateless():
+    # Brief 7.1: no chart library, no build step, no browser storage; state lives in memory and resets on reload.
+    from src.common import ROOT
+    js, html = (ROOT / "site" / "app.js").read_text(encoding="utf-8"), (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+    assert 'id="dashboard"' in html and html.count("<script") == 1 and 'type="range"' in html
+    assert not any(w in js for w in ("localStorage", "sessionStorage", "indexedDB", "document.cookie"))
+    assert "Goal not met" not in js and "harmful_goal_met" not in js  # removed at the author's request
+
+
+def test_triage_is_sorted_for_the_review_budget_slider():
+    # The slider walks the houses in triage order; the dollars must fall, and every house must be there.
+    tri = R["scores"]["triage"]
+    assert len(tri) == R["totals"]["houses"]
+    assert [h["usd_at_risk"] for h in tri] == sorted((h["usd_at_risk"] for h in tri), reverse=True)
 
 
 def test_part2_precision_column():

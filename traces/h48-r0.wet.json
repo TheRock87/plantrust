@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "6c8932154954c97b",
+ "from_text": false,
+ "input_hash": "df598c5ffda41350",
  "key": "h48-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No moisture in the kitchen walls.",
  "reason": null,
- "seconds": 4.3,
+ "seconds": 5.6,
  "steps": [
   {
    "args": {

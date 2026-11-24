@@ -34,7 +34,8 @@
   ]
  },
  "error": null,
- "input_hash": "be8a65aca7fddb30",
+ "from_text": false,
+ "input_hash": "d05950d6971a5e34",
  "key": "h50-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -68,16 +69,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The hall is dry.",
+   "text": "The hall is not wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2729,
+  "input_tokens": 2735,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 69,
+  "output_tokens": 70,
   "usd": 0.0
  }
 }

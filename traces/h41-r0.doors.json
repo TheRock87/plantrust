@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "c014259ee6cb7634",
+ "from_text": false,
+ "input_hash": "d41d5ee29c8aa7e8",
  "key": "h41-r0.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Bathroom has one door.",
  "reason": null,
- "seconds": 5.0,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {

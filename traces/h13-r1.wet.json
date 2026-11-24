@@ -1,6 +1,8 @@
 {
- "action": "no_change",
- "args": {},
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the wall to the living room wet on this side?"
+ },
  "decision": null,
  "draft": {
   "affected": false,
@@ -29,13 +31,14 @@
   ]
  },
  "error": null,
- "input_hash": "4511d6ea18043f1b",
+ "from_text": false,
+ "input_hash": "ad58437b8cfa0038",
  "key": "h13-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 4,
- "quote": "nothing wet. The wall to the living room is wet on that side.",
- "reason": null,
- "seconds": 6.1,
+ "model_calls": 5,
+ "quote": "",
+ "reason": "Is the wall to the living room wet on this side?",
+ "seconds": 7.6,
  "steps": [
   {
    "args": {
@@ -64,7 +67,7 @@
   },
   {
    "args": {
-    "quote": "nothing wet. The wall to the living room is wet on that side.",
+    "quote": "nothing wet",
     "room_id": "h13-r1"
    },
    "name": "no_change",
@@ -72,7 +75,33 @@
   },
   {
    "name": "no_change",
-   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "nothing wet",
+    "room_id": "h13-r1"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "question": "Is the wall to the living room wet on this side?",
+    "room_id": "h13-r1"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
+   "type": "tool_result"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
@@ -81,11 +110,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3845,
+  "input_tokens": 5041,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 110,
+  "output_tokens": 170,
   "usd": 0.0
  }
 }

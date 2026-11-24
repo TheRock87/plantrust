@@ -38,13 +38,14 @@
   ]
  },
  "error": null,
- "input_hash": "97a33b68cfd324c8",
+ "from_text": false,
+ "input_hash": "61c3e4303d509a99",
  "key": "hard/hard02",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "the hall next to it is soaked",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.9,
  "steps": [
   {
    "args": {
@@ -77,7 +78,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2721,
+  "input_tokens": 2725,
   "models": [
    "voxtral-small-latest"
   ],

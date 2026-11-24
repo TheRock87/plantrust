@@ -11,8 +11,9 @@ What `create_agent` does under the hood (the whole loop, nothing hidden):
     An invalid call (quote not in the note, wrong room, bad wall) does not pause: the tool returns
     the error to the model, which may try again. The drafter never sees an invalid edit.
  4. Other tool results go back to the model as new messages; steps 2 to 4 repeat.
- 5. The run ends when the model replies with text. If that text is a tool call written out (a weak-model habit),
-    the runner sends one reminder to call the tool. ModelCallLimitMiddleware stops it after 6 model calls.
+ 5. The run ends when the model replies with text. ModelCallLimitMiddleware stops it after 6 model calls.
+    If the final text is a tool call written out as JSON (a weak-model habit), code reads it and sends it
+    through the same guard and the same drafter, as if the model had called the tool.
  6. Our wrapper reads the answer. Exactly one valid answer counts. No answer, two answers, an error or
     the step limit all mean ask_drafter: the agent can never change the final plan by failing.
  Every message is saved to traces/<room id>.<question>.json and reused on the next run.
@@ -32,9 +33,10 @@ MODEL = llm.MODEL
 MAX_MODEL_STEPS = 6
 RECURSION_LIMIT = 60  # graph steps; a backstop only, the model-call limit stops the loop first
 # v5: each question gets only its own tools and prompt (step 7 fix).
-# v6: one reminder when the model writes a tool call as text. Part of the cache key, so the next live run uses it.
-PROMPT_VERSION = "v6"
-REMINDER = "You wrote the tool call as text. Call the tool itself; do not write it."
+# v6: one reminder when the model wrote a tool call as text (did not work: the model then said it had no tools).
+# v7: no reminder; code reads a tool call written as text and sends it through the same guard and drafter.
+# Part of the cache key, so a live run always uses the current runner.
+PROMPT_VERSION = "v7"
 EDIT_TOOLS = ("add_door", "mark_wet")
 ANSWER_TOOLS = EDIT_TOOLS + ("no_change", "ask_drafter")
 ALLOWED = {"doors": ("add_door", "no_change", "ask_drafter"), "wet": ("mark_wet", "no_change", "ask_drafter")}
@@ -191,6 +193,29 @@ def _text(m):
         b.get("text", "") for b in m.content if isinstance(b, dict) and b.get("type") == "text")
 
 
+def calls_in_text(message):
+    """[(name, args)] if a model message with no real tool call is a tool call written as JSON text, else None."""
+    if message.__class__.__name__ != "AIMessage" or message.tool_calls:
+        return None
+    text = _text(message).strip()
+    if text.startswith("```"):  # a fenced block: ```json ... ```
+        text = text.strip("`").removeprefix("json").strip()
+    try:
+        data = json.loads(text)
+    except ValueError:
+        return None
+    out = []
+    for c in data if isinstance(data, list) else [data]:
+        if not isinstance(c, dict) or not isinstance(c.get("name"), str):
+            return None
+        args = c.get("arguments", c.get("args", {}))
+        args = json.loads(args) if isinstance(args, str) else args
+        if not isinstance(args, dict):
+            return None
+        out.append((c["name"], args))
+    return out
+
+
 def trace_steps(messages):
     """The conversation as a short list of steps for the page: model text, tool calls, tool results."""
     steps = []
@@ -247,40 +272,55 @@ def answer_question(room_id, kind, plan_room, tour_room, note, model, decide, fa
             error = f"{type(e).__name__}: {str(e)[:200]}"
             return {}
 
-    def wrote_call_as_text():
-        """True if the run ended with a tool call written as text (a weak-model habit), not a real call."""
-        msgs = agent.get_state(config).values.get("messages", [])
-        last = msgs[-1] if msgs else None
-        return (last is not None and last.__class__.__name__ == "AIMessage" and not last.tool_calls
-                and _text(last).lstrip().startswith(("[{", '{"name"')))
+    def make_proposal(name, args):
+        edit_args = {"wall": int(args["wall"])} if name == "add_door" else {}
+        p = {"room_id": room_id, "kind": kind, "action": name, "args": edit_args, "by": "agent",
+             "quote_or_evidence": args["quote"]}
+        p["est_cost_at_risk_usd"] = round(abs(room_cost(apply(plan_room, p))["usd"] - room_cost(plan_room)["usd"]), 2)
+        return p
 
     out = run({"messages": [{"role": "user", "content": question_text(room_id, kind, plan_room, tour_room)}]})
-    for reminded in (False, True):
-        while out.get("__interrupt__"):
-            last = [m for m in agent.get_state(config).values["messages"] if m.__class__.__name__ == "AIMessage"][-1]
-            answers_in_turn = [c for c in last.tool_calls if c["name"] in ANSWER_TOOLS]
-            requests = out["__interrupt__"][0].value["action_requests"]
-            if proposal is not None:
-                stop = "more than one answer (a second edit after the drafter's decision)"
-                break
-            if len(requests) != 1 or len(answers_in_turn) != 1:
-                stop = "more than one answer in one turn"
-                break
-            name, args = requests[0]["name"], requests[0]["args"]
-            edit_args = {"wall": int(args["wall"])} if name == "add_door" else {}
-            proposal = {"room_id": room_id, "kind": kind, "action": name, "args": edit_args, "by": "agent",
-                        "quote_or_evidence": args["quote"]}
-            proposal["est_cost_at_risk_usd"] = round(
-                abs(room_cost(apply(plan_room, proposal))["usd"] - room_cost(plan_room)["usd"]), 2)
-            decision = decide(proposal)
-            if decision != "approve":
-                break  # no retry after a reject
-            box["approved"] = True
-            out = run(Command(resume={"decisions": [{"type": "approve"}]}))
-        if reminded or error or stop or proposal or box["answers"] or not wrote_call_as_text():
+    while out.get("__interrupt__"):
+        last = [m for m in agent.get_state(config).values["messages"] if m.__class__.__name__ == "AIMessage"][-1]
+        answers_in_turn = [c for c in last.tool_calls if c["name"] in ANSWER_TOOLS]
+        requests = out["__interrupt__"][0].value["action_requests"]
+        if proposal is not None:
+            stop = "more than one answer (a second edit after the drafter's decision)"
             break
-        out = run({"messages": [{"role": "user", "content": REMINDER}]})  # one reminder, same 6-call limit
+        if len(requests) != 1 or len(answers_in_turn) != 1:
+            stop = "more than one answer in one turn"
+            break
+        proposal = make_proposal(requests[0]["name"], requests[0]["args"])
+        decision = decide(proposal)
+        if decision != "approve":
+            break  # no retry after a reject
+        box["approved"] = True
+        out = run(Command(resume={"decisions": [{"type": "approve"}]}))
     messages = agent.get_state(config).values.get("messages", [])
+
+    # A weak-model habit: the answer written as text ('[{"name": "add_door", "arguments": {...}}]') instead of a
+    # tool call. Code reads it and sends it through the same guard and the same drafter as a real call.
+    from_text = False
+    calls = calls_in_text(messages[-1]) if messages and not (error or stop or proposal or box["answers"]) else None
+    if calls is not None:
+        from_text = True
+        answers = [(n, a) for n, a in calls if n in ANSWER_TOOLS]
+        more = tour_room["doors"] > len(plan_room["doors"])
+        if len(answers) != 1:
+            stop = ("more than one answer" if answers else "no valid answer") + " in a tool call written as text"
+        elif err := invalid(*answers[0], room_id, note, more, kind):
+            stop = f"tool call written as text was not valid ({err})"
+        elif answers[0][0] in EDIT_TOOLS:
+            proposal = make_proposal(*answers[0])
+            decision = decide(proposal)
+            if decision == "approve":
+                box["draft"] = apply(box["draft"], proposal)
+                box["answers"].append({"action": proposal["action"], "args": proposal["args"],
+                                       "quote": proposal["quote_or_evidence"]})
+        else:
+            name, args = answers[0]
+            box["answers"].append({"action": name, "args": {"question": args["question"]} if name == "ask_drafter"
+                                   else {}, "quote": args.get("quote", "")})
 
     res = {"action": "ask_drafter", "args": {}, "quote": "", "decision": None, "reason": None}
     if error:
@@ -298,7 +338,7 @@ def answer_question(room_id, kind, plan_room, tour_room, note, model, decide, fa
     else:
         res["reason"] = ("no valid answer" if not box["answers"] else "more than one answer") + "; a drafter checks"
     edited = res["action"] in EDIT_TOOLS and res["decision"] == "approve"
-    res.update(error=error, draft=box["draft"] if edited else json.loads(json.dumps(plan_room)),
+    res.update(error=error, from_text=from_text, draft=box["draft"] if edited else json.loads(json.dumps(plan_room)),
                steps=trace_steps(messages), usage=llm.usage(messages),
                model_calls=sum(m.__class__.__name__ == "AIMessage" for m in messages))
     return res
@@ -371,7 +411,8 @@ def main():
             new += 1
             print(f"  {key}: {res['action']} {res['decision'] or ''} ({res['model_calls']} calls, "
                   f"{res['seconds']} s)", flush=True)
-        runs[key] = {k: res[k] for k in ("action", "decision", "reason", "error", "usage", "model_calls", "seconds")}
+        runs[key] = {k: res[k] for k in ("action", "decision", "reason", "error", "usage", "model_calls", "seconds",
+                                         "from_text")}
         if key.startswith("hard/"):
             hard[rid] = res["action"]
             continue

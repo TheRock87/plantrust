@@ -37,7 +37,8 @@
   ]
  },
  "error": null,
- "input_hash": "c7d11a4b50affc5c",
+ "from_text": false,
+ "input_hash": "51d1eb74742c9608",
  "key": "h13-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -76,7 +77,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2741,
+  "input_tokens": 2743,
   "models": [
    "voxtral-small-latest"
   ],

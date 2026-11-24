@@ -31,13 +31,14 @@
   ]
  },
  "error": null,
- "input_hash": "86caa8e54b9624ac",
+ "from_text": false,
+ "input_hash": "e7f804743816e592",
  "key": "h30-r0.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the bedroom door missing from the plan?",
- "seconds": 5.1,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -65,16 +66,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check if the bedroom door is missing from the plan.",
+   "text": "The note does not settle it; a drafter will check.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2979,
+  "input_tokens": 2983,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 83,
+  "output_tokens": 81,
   "usd": 0.0
  }
 }

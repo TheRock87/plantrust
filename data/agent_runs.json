@@ -3,11 +3,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 5.8,
+  "seconds": 5.7,
   "usage": {
-   "input_tokens": 2732,
+   "input_tokens": 2736,
    "models": [
     "voxtral-small-latest"
    ],
@@ -19,11 +20,12 @@
   "action": "add_door",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2972,
+   "input_tokens": 2978,
    "models": [
     "voxtral-small-latest"
    ],
@@ -35,15 +37,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
+  "from_text": true,
+  "model_calls": 2,
   "reason": "Is the living room wet?",
-  "seconds": 4.6,
+  "seconds": 3.4,
   "usage": {
-   "input_tokens": 2717,
+   "input_tokens": 1740,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 63,
    "usd": 0.0
   }
  },
@@ -51,9 +54,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.5,
+  "seconds": 4.4,
   "usage": {
    "input_tokens": 2718,
    "models": [
@@ -67,11 +71,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
-  "seconds": 5.1,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2712,
+   "input_tokens": 2732,
    "models": [
     "voxtral-small-latest"
    ],
@@ -83,11 +88,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the living room wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2721,
+   "input_tokens": 2727,
    "models": [
     "voxtral-small-latest"
    ],
@@ -99,9 +105,10 @@
   "action": "mark_wet",
   "decision": "reject",
   "error": null,
+  "from_text": false,
   "model_calls": 2,
   "reason": "the drafter rejected the edit",
-  "seconds": 3.4,
+  "seconds": 3.3,
   "usage": {
    "input_tokens": 1760,
    "models": [
@@ -115,11 +122,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.3,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2768,
+   "input_tokens": 2774,
    "models": [
     "voxtral-small-latest"
    ],
@@ -131,11 +139,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2742,
+   "input_tokens": 2746,
    "models": [
     "voxtral-small-latest"
    ],
@@ -147,11 +156,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 5.3,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2719,
+   "input_tokens": 2723,
    "models": [
     "voxtral-small-latest"
    ],
@@ -163,15 +173,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
-  "seconds": 4.2,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2999,
+   "input_tokens": 3007,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 80,
+   "output_tokens": 82,
    "usd": 0.0
   }
  },
@@ -179,15 +190,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is the living room wet?",
-  "seconds": 4.6,
+  "reason": "Is there water in the living room?",
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2741,
+   "input_tokens": 2749,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 79,
    "usd": 0.0
   }
  },
@@ -195,11 +207,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2750,
+   "input_tokens": 2756,
    "models": [
     "voxtral-small-latest"
    ],
@@ -211,11 +224,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the hallway wet?",
-  "seconds": 4.8,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2710,
+   "input_tokens": 2708,
    "models": [
     "voxtral-small-latest"
    ],
@@ -227,11 +241,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 2728,
+   "input_tokens": 2732,
    "models": [
     "voxtral-small-latest"
    ],
@@ -243,11 +258,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2759,
+   "input_tokens": 2753,
    "models": [
     "voxtral-small-latest"
    ],
@@ -259,11 +275,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 3001,
+   "input_tokens": 2995,
    "models": [
     "voxtral-small-latest"
    ],
@@ -275,15 +292,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
-  "reason": "Is there water in the bathroom?",
-  "seconds": 4.6,
+  "from_text": true,
+  "model_calls": 2,
+  "reason": "Is the bathroom wet?",
+  "seconds": 3.1,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 1742,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 62,
    "usd": 0.0
   }
  },
@@ -291,31 +309,33 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
-  "seconds": 4.6,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2750,
+   "input_tokens": 2766,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
  "h07-r0.wet": {
-  "action": "no_change",
+  "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": null,
-  "seconds": 4.6,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2729,
+   "input_tokens": 2724,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 72,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -323,11 +343,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the stairwell wet?",
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 2724,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
@@ -339,11 +360,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2749,
+   "input_tokens": 2739,
    "models": [
     "voxtral-small-latest"
    ],
@@ -355,15 +377,16 @@
   "action": "no_change",
   "decision": null,
   "error": null,
-  "model_calls": 3,
+  "from_text": true,
+  "model_calls": 2,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 3.0,
   "usage": {
-   "input_tokens": 2713,
+   "input_tokens": 1747,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 72,
+   "output_tokens": 64,
    "usd": 0.0
   }
  },
@@ -371,11 +394,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
-  "seconds": 4.7,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2724,
+   "input_tokens": 2730,
    "models": [
     "voxtral-small-latest"
    ],
@@ -387,11 +411,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2742,
+   "input_tokens": 2744,
    "models": [
     "voxtral-small-latest"
    ],
@@ -403,11 +428,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2756,
+   "input_tokens": 2758,
    "models": [
     "voxtral-small-latest"
    ],
@@ -419,11 +445,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 7.3,
   "usage": {
-   "input_tokens": 2768,
+   "input_tokens": 2772,
    "models": [
     "voxtral-small-latest"
    ],
@@ -435,11 +462,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 3.8,
   "usage": {
-   "input_tokens": 2748,
+   "input_tokens": 2746,
    "models": [
     "voxtral-small-latest"
    ],
@@ -451,15 +479,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
+  "from_text": true,
+  "model_calls": 2,
   "reason": "Is the living room wet?",
-  "seconds": 4.7,
+  "seconds": 3.0,
   "usage": {
-   "input_tokens": 2723,
+   "input_tokens": 1746,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 63,
    "usd": 0.0
   }
  },
@@ -467,11 +496,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
-  "seconds": 4.8,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2714,
+   "input_tokens": 2724,
    "models": [
     "voxtral-small-latest"
    ],
@@ -483,11 +513,12 @@
   "action": "add_door",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 3004,
+   "input_tokens": 3002,
    "models": [
     "voxtral-small-latest"
    ],
@@ -499,15 +530,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is the bedroom wet?",
-  "seconds": 5.2,
+  "reason": "Is there water in the bedroom?",
+  "seconds": 10.9,
   "usage": {
-   "input_tokens": 2710,
+   "input_tokens": 2716,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 75,
+   "output_tokens": 77,
    "usd": 0.0
   }
  },
@@ -515,15 +547,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 3.6,
   "usage": {
-   "input_tokens": 2702,
+   "input_tokens": 2722,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 93,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -531,11 +564,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2737,
+   "input_tokens": 2735,
    "models": [
     "voxtral-small-latest"
    ],
@@ -547,11 +581,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2744,
+   "input_tokens": 2752,
    "models": [
     "voxtral-small-latest"
    ],
@@ -563,25 +598,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
-  "seconds": 4.5,
-  "usage": {
-   "input_tokens": 2718,
-   "models": [
-    "voxtral-small-latest"
-   ],
-   "output_tokens": 75,
-   "usd": 0.0
-  }
- },
- "h11-r1.wet": {
-  "action": "ask_drafter",
-  "decision": null,
-  "error": null,
-  "model_calls": 3,
-  "reason": "Is the closet wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
    "input_tokens": 2722,
    "models": [
@@ -591,19 +611,37 @@
    "usd": 0.0
   }
  },
+ "h11-r1.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "from_text": false,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 2716,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
  "h11-r2.wet": {
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Are there any signs of water damage in the bedroom?",
-  "seconds": 4.8,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2744,
+   "input_tokens": 2730,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 82,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -611,15 +649,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is there a door the plan misses?",
-  "seconds": 4.6,
+  "reason": "Is the plan missing a door?",
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2985,
+   "input_tokens": 2980,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 80,
+   "output_tokens": 79,
    "usd": 0.0
   }
  },
@@ -627,11 +666,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
-  "seconds": 4.5,
+  "seconds": 7.3,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2730,
    "models": [
     "voxtral-small-latest"
    ],
@@ -643,15 +683,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 5.1,
+  "reason": "Is the hallway wet?",
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2696,
+   "input_tokens": 2716,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 93,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -659,11 +700,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the living room wet?",
-  "seconds": 4.2,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2753,
+   "input_tokens": 2749,
    "models": [
     "voxtral-small-latest"
    ],
@@ -672,18 +714,19 @@
   }
  },
  "h12-r4.wet": {
-  "action": "ask_drafter",
+  "action": "no_change",
   "decision": null,
-  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
-  "model_calls": 6,
-  "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
-  "seconds": 9.5,
+  "error": null,
+  "from_text": false,
+  "model_calls": 5,
+  "reason": null,
+  "seconds": 7.7,
   "usage": {
-   "input_tokens": 6128,
+   "input_tokens": 4916,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 190,
+   "output_tokens": 135,
    "usd": 0.0
   }
  },
@@ -691,11 +734,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
-  "seconds": 4.9,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2740,
+   "input_tokens": 2742,
    "models": [
     "voxtral-small-latest"
    ],
@@ -707,31 +751,33 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
+  "from_text": true,
+  "model_calls": 2,
   "reason": "Is the hallway wet?",
-  "seconds": 4.3,
+  "seconds": 3.5,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 1742,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 75,
+   "output_tokens": 62,
    "usd": 0.0
   }
  },
  "h13-r1.wet": {
-  "action": "no_change",
+  "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 4,
-  "reason": null,
-  "seconds": 6.1,
+  "from_text": false,
+  "model_calls": 5,
+  "reason": "Is the wall to the living room wet on this side?",
+  "seconds": 7.6,
   "usage": {
-   "input_tokens": 3845,
+   "input_tokens": 5041,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 110,
+   "output_tokens": 170,
    "usd": 0.0
   }
  },
@@ -739,11 +785,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the hall wet?",
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2724,
+   "input_tokens": 2718,
    "models": [
     "voxtral-small-latest"
    ],
@@ -755,11 +802,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 2741,
+   "input_tokens": 2743,
    "models": [
     "voxtral-small-latest"
    ],
@@ -771,11 +819,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2736,
+   "input_tokens": 2734,
    "models": [
     "voxtral-small-latest"
    ],
@@ -787,15 +836,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is there water in the bedroom?",
-  "seconds": 4.7,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2722,
+   "input_tokens": 2716,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -803,11 +853,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 3009,
+   "input_tokens": 3013,
    "models": [
     "voxtral-small-latest"
    ],
@@ -819,11 +870,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the plan missing a door?",
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 2991,
+   "input_tokens": 2985,
    "models": [
     "voxtral-small-latest"
    ],
@@ -835,11 +887,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
+  "from_text": false,
   "model_calls": 6,
   "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
   "seconds": 9.5,
   "usage": {
-   "input_tokens": 6150,
+   "input_tokens": 6136,
    "models": [
     "voxtral-small-latest"
    ],
@@ -851,11 +904,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
-  "seconds": 4.9,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2716,
+   "input_tokens": 2714,
    "models": [
     "voxtral-small-latest"
    ],
@@ -867,11 +921,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the room wet?",
-  "seconds": 4.2,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2716,
+   "input_tokens": 2712,
    "models": [
     "voxtral-small-latest"
    ],
@@ -883,11 +938,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2754,
+   "input_tokens": 2748,
    "models": [
     "voxtral-small-latest"
    ],
@@ -899,11 +955,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2752,
+   "input_tokens": 2746,
    "models": [
     "voxtral-small-latest"
    ],
@@ -915,11 +972,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2753,
+   "input_tokens": 2757,
    "models": [
     "voxtral-small-latest"
    ],
@@ -931,11 +989,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.9,
   "usage": {
-   "input_tokens": 2995,
+   "input_tokens": 2987,
    "models": [
     "voxtral-small-latest"
    ],
@@ -947,11 +1006,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is there any water on the floor?",
-  "seconds": 4.4,
+  "seconds": 5.0,
   "usage": {
-   "input_tokens": 2737,
+   "input_tokens": 2733,
    "models": [
     "voxtral-small-latest"
    ],
@@ -963,11 +1023,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2732,
+   "input_tokens": 2746,
    "models": [
     "voxtral-small-latest"
    ],
@@ -979,11 +1040,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2726,
+   "input_tokens": 2730,
    "models": [
     "voxtral-small-latest"
    ],
@@ -995,11 +1057,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the closet wet?",
-  "seconds": 4.7,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1011,11 +1074,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.9,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2735,
+   "input_tokens": 2741,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1027,15 +1091,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
+  "from_text": false,
   "model_calls": 6,
   "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
   "seconds": 9.4,
   "usage": {
-   "input_tokens": 6227,
+   "input_tokens": 6138,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 253,
+   "output_tokens": 196,
    "usd": 0.0
   }
  },
@@ -1043,15 +1108,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.6,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2702,
+   "input_tokens": 2712,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 93,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -1059,15 +1125,16 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.3,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2764,
+   "input_tokens": 2762,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 72,
+   "output_tokens": 73,
    "usd": 0.0
   }
  },
@@ -1075,11 +1142,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2714,
+   "input_tokens": 2712,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1091,15 +1159,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is the bedroom wet?",
-  "seconds": 4.8,
+  "reason": "Is there any water in the bedroom?",
+  "seconds": 4.9,
   "usage": {
-   "input_tokens": 2708,
+   "input_tokens": 2717,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 75,
+   "output_tokens": 78,
    "usd": 0.0
   }
  },
@@ -1107,9 +1176,10 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
    "input_tokens": 2991,
    "models": [
@@ -1123,11 +1193,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2766,
+   "input_tokens": 2756,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1139,11 +1210,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2720,
+   "input_tokens": 2726,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1155,11 +1227,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2775,
+   "input_tokens": 2769,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1171,11 +1244,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the closet wet?",
-  "seconds": 4.8,
+  "seconds": 5.1,
   "usage": {
-   "input_tokens": 2712,
+   "input_tokens": 2714,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1187,11 +1261,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
-  "seconds": 4.7,
+  "seconds": 4.3,
   "usage": {
-   "input_tokens": 2716,
+   "input_tokens": 2718,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1203,11 +1278,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2724,
+   "input_tokens": 2718,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1219,11 +1295,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the hall wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2722,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1235,9 +1312,10 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
    "input_tokens": 2721,
    "models": [
@@ -1251,15 +1329,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 3004,
+   "input_tokens": 3000,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 79,
+   "output_tokens": 81,
    "usd": 0.0
   }
  },
@@ -1267,11 +1346,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 5.5,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2735,
+   "input_tokens": 2729,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1283,6 +1363,7 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the living room wet?",
   "seconds": 4.7,
@@ -1299,11 +1380,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2753,
+   "input_tokens": 2747,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1315,11 +1397,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
   "seconds": 4.5,
   "usage": {
-   "input_tokens": 3014,
+   "input_tokens": 3018,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1331,15 +1414,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
+  "from_text": true,
+  "model_calls": 2,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.8,
+  "seconds": 3.3,
   "usage": {
-   "input_tokens": 2724,
+   "input_tokens": 1745,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 75,
+   "output_tokens": 62,
    "usd": 0.0
   }
  },
@@ -1347,6 +1431,7 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
   "seconds": 4.6,
@@ -1355,7 +1440,7 @@
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 75,
+   "output_tokens": 70,
    "usd": 0.0
   }
  },
@@ -1363,11 +1448,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2752,
+   "input_tokens": 2756,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1379,11 +1465,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2726,
+   "input_tokens": 2713,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1395,11 +1482,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the living room wet?",
-  "seconds": 4.7,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2725,
+   "input_tokens": 2723,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1411,9 +1499,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the plan missing a door?",
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
    "input_tokens": 2971,
    "models": [
@@ -1427,11 +1516,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1443,11 +1533,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.8,
   "usage": {
-   "input_tokens": 2755,
+   "input_tokens": 2749,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1456,18 +1547,19 @@
   }
  },
  "h27-r5.doors": {
-  "action": "ask_drafter",
-  "decision": null,
+  "action": "add_door",
+  "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.8,
+  "reason": null,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 3416,
+   "input_tokens": 3436,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 143,
+   "output_tokens": 121,
    "usd": 0.0
   }
  },
@@ -1475,11 +1567,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the closet wet?",
-  "seconds": 5.0,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2710,
+   "input_tokens": 2708,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1491,11 +1584,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.2,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2711,
+   "input_tokens": 2715,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1507,11 +1601,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the living room wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2721,
+   "input_tokens": 2729,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1523,11 +1618,12 @@
   "action": "mark_wet",
   "decision": "reject",
   "error": null,
+  "from_text": false,
   "model_calls": 2,
   "reason": "the drafter rejected the edit",
-  "seconds": 3.3,
+  "seconds": 3.2,
   "usage": {
-   "input_tokens": 1756,
+   "input_tokens": 1760,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1539,15 +1635,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
   "seconds": 4.4,
   "usage": {
-   "input_tokens": 3029,
+   "input_tokens": 3023,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 82,
+   "output_tokens": 80,
    "usd": 0.0
   }
  },
@@ -1555,11 +1652,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 5.4,
   "usage": {
-   "input_tokens": 2747,
+   "input_tokens": 2761,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1571,11 +1669,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is there any water in the bathroom?",
-  "seconds": 4.7,
+  "seconds": 3.9,
   "usage": {
-   "input_tokens": 2733,
+   "input_tokens": 2735,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1587,11 +1686,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the plan missing a door?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2973,
+   "input_tokens": 2979,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1603,11 +1703,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 5.0,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2734,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1619,11 +1720,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the closet wet?",
-  "seconds": 4.4,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2732,
+   "input_tokens": 2726,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1635,15 +1737,16 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2726,
+   "input_tokens": 2728,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 70,
+   "output_tokens": 71,
    "usd": 0.0
   }
  },
@@ -1651,11 +1754,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2710,
+   "input_tokens": 2718,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1667,9 +1771,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the closet wet?",
-  "seconds": 4.8,
+  "seconds": 4.6,
   "usage": {
    "input_tokens": 2732,
    "models": [
@@ -1683,15 +1788,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom door missing from the plan?",
-  "seconds": 5.1,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2979,
+   "input_tokens": 2983,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 83,
+   "output_tokens": 81,
    "usd": 0.0
   }
  },
@@ -1699,11 +1805,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
-  "seconds": 4.3,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 3050,
+   "input_tokens": 3042,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1715,15 +1822,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
+  "from_text": false,
   "model_calls": 6,
   "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
-  "seconds": 9.5,
+  "seconds": 9.4,
   "usage": {
-   "input_tokens": 6327,
+   "input_tokens": 6200,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 256,
+   "output_tokens": 197,
    "usd": 0.0
   }
  },
@@ -1731,15 +1839,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is the hall wet?",
-  "seconds": 4.3,
+  "reason": "Is there water in the hall?",
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2716,
+   "input_tokens": 2718,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 75,
+   "output_tokens": 77,
    "usd": 0.0
   }
  },
@@ -1747,11 +1856,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.7,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2722,
+   "input_tokens": 2728,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1763,11 +1873,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2716,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1779,15 +1890,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.7,
+  "from_text": true,
+  "model_calls": 2,
+  "reason": "Is the bathroom wet?",
+  "seconds": 3.9,
   "usage": {
-   "input_tokens": 2698,
+   "input_tokens": 1743,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 93,
+   "output_tokens": 62,
    "usd": 0.0
   }
  },
@@ -1795,15 +1907,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
-  "seconds": 4.5,
+  "seconds": 3.9,
   "usage": {
-   "input_tokens": 3002,
+   "input_tokens": 3008,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 79,
+   "output_tokens": 81,
    "usd": 0.0
   }
  },
@@ -1811,15 +1924,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Are there any signs of water damage in the photos?",
-  "seconds": 4.6,
+  "reason": "Are there any signs of water damage on the walls?",
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2734,
+   "input_tokens": 2738,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 82,
+   "output_tokens": 81,
    "usd": 0.0
   }
  },
@@ -1827,9 +1941,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is there a door in the living room?",
-  "seconds": 4.8,
+  "seconds": 4.7,
   "usage": {
    "input_tokens": 3481,
    "models": [
@@ -1843,11 +1958,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2740,
+   "input_tokens": 2742,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1859,15 +1975,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.8,
+  "from_text": true,
+  "model_calls": 2,
+  "reason": "Is there a door on the left wall?",
+  "seconds": 3.2,
   "usage": {
-   "input_tokens": 3469,
+   "input_tokens": 2165,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 140,
+   "output_tokens": 111,
    "usd": 0.0
   }
  },
@@ -1875,11 +1992,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Are there any signs of water damage on the walls?",
-  "seconds": 4.4,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2726,
+   "input_tokens": 2724,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1891,11 +2009,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 5,
   "reason": "Is the kitchen wet?",
   "seconds": 7.7,
   "usage": {
-   "input_tokens": 5032,
+   "input_tokens": 5044,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1907,15 +2026,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
+  "from_text": false,
   "model_calls": 6,
   "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
   "seconds": 9.6,
   "usage": {
-   "input_tokens": 6181,
+   "input_tokens": 6213,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 205,
+   "output_tokens": 227,
    "usd": 0.0
   }
  },
@@ -1923,11 +2043,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
   "seconds": 4.5,
   "usage": {
-   "input_tokens": 2722,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1939,11 +2060,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2740,
+   "input_tokens": 2734,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1955,15 +2077,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is the stairwell wet?",
+  "reason": "Is the door wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2720,
+   "input_tokens": 2717,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -1971,11 +2094,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 5.2,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2746,
+   "input_tokens": 2738,
    "models": [
     "voxtral-small-latest"
    ],
@@ -1987,9 +2111,10 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.0,
+  "seconds": 4.5,
   "usage": {
    "input_tokens": 2756,
    "models": [
@@ -2003,11 +2128,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 2734,
+   "input_tokens": 2738,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2019,11 +2145,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2747,
+   "input_tokens": 2745,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2035,15 +2162,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.8,
+  "from_text": true,
+  "model_calls": 2,
+  "reason": "Is the bathroom wet?",
+  "seconds": 3.3,
   "usage": {
-   "input_tokens": 2702,
+   "input_tokens": 1741,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 93,
+   "output_tokens": 62,
    "usd": 0.0
   }
  },
@@ -2051,11 +2179,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2748,
+   "input_tokens": 2740,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2067,11 +2196,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is there water in the closet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2720,
+   "input_tokens": 2724,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2083,11 +2213,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2749,
+   "input_tokens": 2747,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2099,11 +2230,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2728,
+   "input_tokens": 2734,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2115,15 +2247,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is the living room wet?",
-  "seconds": 4.6,
+  "reason": "Is the room wet?",
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2711,
+   "input_tokens": 2716,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -2131,11 +2264,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the room wet?",
-  "seconds": 4.6,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2720,
+   "input_tokens": 2716,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2147,9 +2281,10 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
    "input_tokens": 2724,
    "models": [
@@ -2163,11 +2298,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the closet wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2736,
+   "input_tokens": 2734,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2179,11 +2315,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the stairwell wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2732,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2195,11 +2332,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.9,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2744,
+   "input_tokens": 2750,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2211,9 +2349,10 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.4,
+  "seconds": 4.6,
   "usage": {
    "input_tokens": 2722,
    "models": [
@@ -2227,11 +2366,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2720,
+   "input_tokens": 2712,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2243,11 +2383,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the hallway wet?",
-  "seconds": 5.0,
+  "seconds": 5.5,
   "usage": {
-   "input_tokens": 2720,
+   "input_tokens": 2722,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2259,11 +2400,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 3.8,
   "usage": {
-   "input_tokens": 2730,
+   "input_tokens": 2734,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2275,11 +2417,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the stairwell wet?",
-  "seconds": 4.4,
+  "seconds": 5.6,
   "usage": {
-   "input_tokens": 2726,
+   "input_tokens": 2730,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2291,11 +2434,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 3.8,
   "usage": {
-   "input_tokens": 2755,
+   "input_tokens": 2763,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2307,11 +2451,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2743,
+   "input_tokens": 2741,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2323,11 +2468,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2745,
+   "input_tokens": 2743,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2339,9 +2485,10 @@
   "action": "add_door",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 5.0,
+  "seconds": 4.7,
   "usage": {
    "input_tokens": 2977,
    "models": [
@@ -2355,9 +2502,10 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.3,
+  "seconds": 5.1,
   "usage": {
    "input_tokens": 2724,
    "models": [
@@ -2371,11 +2519,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.1,
   "usage": {
-   "input_tokens": 2757,
+   "input_tokens": 2759,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2387,11 +2536,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.8,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2716,
+   "input_tokens": 2710,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2403,11 +2553,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the plan missing a door?",
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2999,
+   "input_tokens": 2993,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2419,11 +2570,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2757,
+   "input_tokens": 2753,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2435,9 +2587,10 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.6,
   "usage": {
    "input_tokens": 2754,
    "models": [
@@ -2451,11 +2604,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the hall wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2732,
+   "input_tokens": 2734,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2467,11 +2621,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is there water in the living room?",
-  "seconds": 4.6,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2725,
+   "input_tokens": 2731,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2483,31 +2638,33 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2743,
+   "input_tokens": 2747,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 74,
+   "output_tokens": 73,
    "usd": 0.0
   }
  },
  "h44-r1.wet": {
-  "action": "ask_drafter",
-  "decision": null,
+  "action": "mark_wet",
+  "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.7,
+  "reason": null,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2705,
+   "input_tokens": 2729,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 96,
+   "output_tokens": 72,
    "usd": 0.0
   }
  },
@@ -2515,11 +2672,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
-  "seconds": 4.4,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2732,
+   "input_tokens": 2724,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2531,11 +2689,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the room wet?",
-  "seconds": 4.9,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2547,15 +2706,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.5,
+  "from_text": true,
+  "model_calls": 2,
+  "reason": "Is there a door on any wall?",
+  "seconds": 3.2,
   "usage": {
-   "input_tokens": 3396,
+   "input_tokens": 2136,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 141,
+   "output_tokens": 110,
    "usd": 0.0
   }
  },
@@ -2563,15 +2723,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
-  "seconds": 4.4,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2991,
+   "input_tokens": 2983,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 82,
+   "output_tokens": 80,
    "usd": 0.0
   }
  },
@@ -2579,11 +2740,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is there water in the kitchen?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2726,
+   "input_tokens": 2722,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2595,15 +2757,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.7,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2702,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 93,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -2611,11 +2774,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the plan missing a door?",
-  "seconds": 4.5,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2967,
+   "input_tokens": 2963,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2624,18 +2788,19 @@
   }
  },
  "h47-r0.wet": {
-  "action": "ask_drafter",
+  "action": "no_change",
   "decision": null,
   "error": null,
-  "model_calls": 3,
-  "reason": "no valid answer; a drafter checks",
-  "seconds": 4.7,
+  "from_text": true,
+  "model_calls": 2,
+  "reason": null,
+  "seconds": 3.3,
   "usage": {
-   "input_tokens": 2703,
+   "input_tokens": 1744,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 88,
+   "output_tokens": 63,
    "usd": 0.0
   }
  },
@@ -2643,11 +2808,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.8,
+  "seconds": 4.3,
   "usage": {
-   "input_tokens": 2711,
+   "input_tokens": 2705,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2659,9 +2825,10 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.3,
+  "seconds": 5.6,
   "usage": {
    "input_tokens": 2733,
    "models": [
@@ -2675,11 +2842,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2734,
+   "input_tokens": 2732,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2691,11 +2859,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 3016,
+   "input_tokens": 3024,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2707,11 +2876,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.7,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2714,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2723,11 +2893,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2741,
+   "input_tokens": 2745,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2739,15 +2910,16 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 2729,
+   "input_tokens": 2735,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 69,
+   "output_tokens": 70,
    "usd": 0.0
   }
  },
@@ -2755,11 +2927,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 4,
   "reason": null,
-  "seconds": 6.3,
+  "seconds": 6.2,
   "usage": {
-   "input_tokens": 3822,
+   "input_tokens": 3830,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2771,11 +2944,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.4,
+  "seconds": 5.0,
   "usage": {
-   "input_tokens": 2736,
+   "input_tokens": 2738,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2787,11 +2961,12 @@
   "action": "add_door",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.8,
+  "seconds": 4.3,
   "usage": {
-   "input_tokens": 3447,
+   "input_tokens": 3457,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2803,11 +2978,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the wall to the bathroom wet on this side?",
-  "seconds": 5.1,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2750,
+   "input_tokens": 2746,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2819,11 +2995,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2724,
+   "input_tokens": 2734,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2835,11 +3012,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.1,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2716,
+   "input_tokens": 2722,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2851,9 +3029,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
-  "seconds": 5.1,
+  "seconds": 4.8,
   "usage": {
    "input_tokens": 3013,
    "models": [
@@ -2867,9 +3046,10 @@
   "action": "mark_wet",
   "decision": "reject",
   "error": null,
+  "from_text": false,
   "model_calls": 2,
   "reason": "the drafter rejected the edit",
-  "seconds": 2.8,
+  "seconds": 3.4,
   "usage": {
    "input_tokens": 1759,
    "models": [
@@ -2883,11 +3063,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2748,
+   "input_tokens": 2756,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2899,9 +3080,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is there water in the bedroom?",
-  "seconds": 4.5,
+  "seconds": 4.3,
   "usage": {
    "input_tokens": 2716,
    "models": [
@@ -2915,11 +3097,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
   "seconds": 4.8,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2712,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2931,11 +3114,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.5,
   "usage": {
-   "input_tokens": 2992,
+   "input_tokens": 2990,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2947,11 +3131,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2727,
+   "input_tokens": 2723,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2963,11 +3148,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Are there any signs of water damage on the walls?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2720,
+   "input_tokens": 2724,
    "models": [
     "voxtral-small-latest"
    ],
@@ -2979,6 +3165,7 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
@@ -2995,11 +3182,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2748,
+   "input_tokens": 2750,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3011,11 +3199,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2988,
+   "input_tokens": 2986,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3027,11 +3216,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2736,
+   "input_tokens": 2738,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3043,11 +3233,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.5,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2738,
+   "input_tokens": 2728,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3059,11 +3250,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2741,
+   "input_tokens": 2733,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3075,11 +3267,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the room wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2722,
+   "input_tokens": 2718,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3091,11 +3284,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the kitchen wet?",
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2714,
+   "input_tokens": 2718,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3107,11 +3301,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the hall wet?",
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 2754,
+   "input_tokens": 2742,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3123,11 +3318,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2738,
+   "input_tokens": 2736,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3139,15 +3335,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
-  "model_calls": 3,
+  "from_text": true,
+  "model_calls": 2,
   "reason": "Is the stairwell wet?",
-  "seconds": 4.6,
+  "seconds": 3.2,
   "usage": {
-   "input_tokens": 2724,
+   "input_tokens": 1747,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 77,
+   "output_tokens": 63,
    "usd": 0.0
   }
  },
@@ -3155,11 +3352,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is the hall wet?",
-  "seconds": 4.7,
+  "reason": "Is the hallway wet?",
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2726,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3171,11 +3369,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.9,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2714,
+   "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3187,15 +3386,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the wall to the kitchen wet on this side?",
-  "seconds": 4.4,
+  "seconds": 5.0,
   "usage": {
-   "input_tokens": 2750,
+   "input_tokens": 2746,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 81,
+   "output_tokens": 87,
    "usd": 0.0
   }
  },
@@ -3203,11 +3403,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bedroom wet?",
-  "seconds": 4.7,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2712,
+   "input_tokens": 2718,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3219,11 +3420,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.5,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2753,
+   "input_tokens": 2751,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3235,15 +3437,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
+  "from_text": false,
   "model_calls": 6,
   "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
-  "seconds": 9.7,
+  "seconds": 9.9,
   "usage": {
-   "input_tokens": 6371,
+   "input_tokens": 6303,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 291,
+   "output_tokens": 230,
    "usd": 0.0
   }
  },
@@ -3251,9 +3454,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is the bathroom wet?",
-  "seconds": 4.4,
+  "seconds": 4.1,
   "usage": {
    "input_tokens": 2728,
    "models": [
@@ -3267,9 +3471,10 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.4,
   "usage": {
    "input_tokens": 2786,
    "models": [
@@ -3280,18 +3485,19 @@
   }
  },
  "h58-r3.doors": {
-  "action": "add_door",
-  "decision": "approve",
+  "action": "no_change",
+  "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 3457,
+   "input_tokens": 3446,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 124,
+   "output_tokens": 116,
    "usd": 0.0
   }
  },
@@ -3299,11 +3505,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Are there any signs of water damage on the walls?",
   "seconds": 4.7,
   "usage": {
-   "input_tokens": 2718,
+   "input_tokens": 2726,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3315,11 +3522,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2716,
+   "input_tokens": 2706,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3331,11 +3539,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.9,
   "usage": {
-   "input_tokens": 2721,
+   "input_tokens": 2725,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3347,11 +3556,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.4,
   "usage": {
-   "input_tokens": 2702,
+   "input_tokens": 2700,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3363,11 +3573,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2733,
+   "input_tokens": 2725,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3379,15 +3590,16 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2715,
+   "input_tokens": 2719,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 63,
+   "output_tokens": 71,
    "usd": 0.0
   }
  },
@@ -3395,15 +3607,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
-  "reason": "Is the meter reading behind the sink a false positive?",
-  "seconds": 5.0,
+  "reason": "Is the meter reading high behind the sink?",
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2720,
+   "input_tokens": 2726,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 83,
+   "output_tokens": 75,
    "usd": 0.0
   }
  },
@@ -3411,11 +3624,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.3,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2723,
+   "input_tokens": 2725,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3427,15 +3641,16 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.5,
   "usage": {
-   "input_tokens": 2734,
+   "input_tokens": 2716,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 76,
+   "output_tokens": 64,
    "usd": 0.0
   }
  },
@@ -3443,11 +3658,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.9,
   "usage": {
-   "input_tokens": 2739,
+   "input_tokens": 2735,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3459,15 +3675,16 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.4,
   "usage": {
    "input_tokens": 2720,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 62,
+   "output_tokens": 63,
    "usd": 0.0
   }
  },
@@ -3475,11 +3692,12 @@
   "action": "mark_wet",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.9,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2738,
+   "input_tokens": 2734,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3491,9 +3709,10 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Are there any signs of water damage on the walls?",
-  "seconds": 4.9,
+  "seconds": 4.8,
   "usage": {
    "input_tokens": 2716,
    "models": [
@@ -3507,11 +3726,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.3,
+  "seconds": 4.8,
   "usage": {
-   "input_tokens": 2983,
+   "input_tokens": 2989,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3523,11 +3743,12 @@
   "action": "add_door",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2979,
+   "input_tokens": 2977,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3539,11 +3760,12 @@
   "action": "add_door",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 5.0,
   "usage": {
-   "input_tokens": 2993,
+   "input_tokens": 2999,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3555,15 +3777,16 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "no valid answer; a drafter checks",
-  "seconds": 4.6,
+  "seconds": 4.2,
   "usage": {
-   "input_tokens": 2985,
+   "input_tokens": 2983,
    "models": [
     "voxtral-small-latest"
    ],
-   "output_tokens": 78,
+   "output_tokens": 76,
    "usd": 0.0
   }
  },
@@ -3571,11 +3794,12 @@
   "action": "no_change",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.6,
+  "seconds": 4.7,
   "usage": {
-   "input_tokens": 2977,
+   "input_tokens": 2969,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3587,11 +3811,12 @@
   "action": "ask_drafter",
   "decision": null,
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": "Is there a door on the left wall?",
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2955,
+   "input_tokens": 2953,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3603,11 +3828,12 @@
   "action": "add_door",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
-  "seconds": 4.7,
+  "seconds": 4.6,
   "usage": {
-   "input_tokens": 2980,
+   "input_tokens": 2974,
    "models": [
     "voxtral-small-latest"
    ],
@@ -3619,11 +3845,12 @@
   "action": "add_door",
   "decision": "approve",
   "error": null,
+  "from_text": false,
   "model_calls": 3,
   "reason": null,
   "seconds": 4.6,
   "usage": {
-   "input_tokens": 2984,
+   "input_tokens": 2980,
    "models": [
     "voxtral-small-latest"
    ],

@@ -36,7 +36,8 @@
   ]
  },
  "error": null,
- "input_hash": "c4f233796695196a",
+ "from_text": false,
+ "input_hash": "e7bb4feb2f1b12e4",
  "key": "h53-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -70,12 +71,12 @@
    "type": "tool_result"
   },
   {
-   "text": "A drafter will check for water damage in the closet.",
+   "text": "The drafter will check for water damage in the closet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2720,
+  "input_tokens": 2724,
   "models": [
    "voxtral-small-latest"
   ],

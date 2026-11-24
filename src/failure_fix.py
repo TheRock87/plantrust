@@ -74,9 +74,12 @@ def build():
                       "other question, so the drafter never sees one.")},
             {"title": "A second habit, a second code fix",
              "text": (f"The first rerun showed another weak-model habit: the model sometimes wrote its tool call as "
-                      f"text instead of calling the tool, so the run ended with no valid answer. The runner now "
-                      f"reminds it once. Runs with no valid answer: {no_answer(r_before)} before both fixes, "
-                      f"{no_answer(r_after)} after. Regression case {STUCK}: "
+                      f"text instead of calling the tool, so the run ended with no valid answer. A reminder to call "
+                      f"the tool made it worse (the model then said it had no tools), so it was dropped. Now code "
+                      f"reads a call written as text and sends it through the same guard and the same drafter: "
+                      f"{sum(r['from_text'] for k, r in r_after.items() if '/' not in k)} answers were read this way. "
+                      f"Runs with no valid answer: {no_answer(r_before)} before both fixes, {no_answer(r_after)} "
+                      f"after. Regression case {STUCK}: "
                       f"{'holds' if r_after[STUCK]['action'] == 'add_door' else 'still fails'} "
                       f"({r_after[STUCK]['action'].replace('_', ' ')}).")},
             {"title": "Before, after",

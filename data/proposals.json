@@ -124,12 +124,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is the living room wet?"
+    "question": "Is there water in the living room?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 1065.99,
    "kind": "wet",
-   "quote_or_evidence": "Is the living room wet?",
+   "quote_or_evidence": "Is there water in the living room?",
    "room_id": "h04-r7"
   },
   {
@@ -186,12 +186,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is there water in the bathroom?"
+    "question": "Is the bathroom wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 929.99,
    "kind": "wet",
-   "quote_or_evidence": "Is there water in the bathroom?",
+   "quote_or_evidence": "Is the bathroom wet?",
    "room_id": "h06-r5"
   },
   {
@@ -206,12 +206,14 @@
    "room_id": "h06-r8"
   },
   {
-   "action": "no_change",
-   "args": {},
+   "action": "ask_drafter",
+   "args": {
+    "question": "Is the bedroom wet?"
+   },
    "by": "agent",
-   "est_cost_at_risk_usd": 0.0,
+   "est_cost_at_risk_usd": 669.35,
    "kind": "wet",
-   "quote_or_evidence": "The bedroom has one door, I checked.",
+   "quote_or_evidence": "Is the bedroom wet?",
    "room_id": "h07-r0"
   },
   {
@@ -330,23 +332,23 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is the bedroom wet?"
+    "question": "Is there water in the bedroom?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 918.39,
    "kind": "wet",
-   "quote_or_evidence": "Is the bedroom wet?",
+   "quote_or_evidence": "Is there water in the bedroom?",
    "room_id": "h09-r7"
   },
   {
    "action": "ask_drafter",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "question": "Is the bathroom wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 911.19,
    "kind": "wet",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Is the bathroom wet?",
    "room_id": "h09-r8"
   },
   {
@@ -379,36 +381,34 @@
    "room_id": "h11-r0"
   },
   {
-   "action": "ask_drafter",
-   "args": {
-    "question": "Is the closet wet?"
-   },
+   "action": "no_change",
+   "args": {},
    "by": "agent",
-   "est_cost_at_risk_usd": 929.99,
+   "est_cost_at_risk_usd": 0.0,
    "kind": "wet",
-   "quote_or_evidence": "Is the closet wet?",
+   "quote_or_evidence": "Closet has one door.",
    "room_id": "h11-r1"
   },
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Are there any signs of water damage in the bedroom?"
+    "question": "Is the bedroom wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 940.38,
    "kind": "wet",
-   "quote_or_evidence": "Are there any signs of water damage in the bedroom?",
+   "quote_or_evidence": "Is the bedroom wet?",
    "room_id": "h11-r2"
   },
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is there a door the plan misses?"
+    "question": "Is the plan missing a door?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 16.81,
    "kind": "doors",
-   "quote_or_evidence": "Is there a door the plan misses?",
+   "quote_or_evidence": "Is the plan missing a door?",
    "room_id": "h11-r3"
   },
   {
@@ -425,12 +425,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "question": "Is the hallway wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 680.79,
    "kind": "wet",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Is the hallway wet?",
    "room_id": "h12-r0"
   },
   {
@@ -445,14 +445,12 @@
    "room_id": "h12-r3"
   },
   {
-   "action": "ask_drafter",
-   "args": {
-    "question": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks"
-   },
+   "action": "no_change",
+   "args": {},
    "by": "agent",
-   "est_cost_at_risk_usd": 1225.19,
+   "est_cost_at_risk_usd": 0.0,
    "kind": "wet",
-   "quote_or_evidence": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
+   "quote_or_evidence": "Checked the kitchen, nothing wet.",
    "room_id": "h12-r4"
   },
   {
@@ -478,12 +476,14 @@
    "room_id": "h12-r6"
   },
   {
-   "action": "no_change",
-   "args": {},
+   "action": "ask_drafter",
+   "args": {
+    "question": "Is the wall to the living room wet on this side?"
+   },
    "by": "agent",
-   "est_cost_at_risk_usd": 0.0,
+   "est_cost_at_risk_usd": 968.4,
    "kind": "wet",
-   "quote_or_evidence": "nothing wet. The wall to the living room is wet on that side.",
+   "quote_or_evidence": "Is the wall to the living room wet on this side?",
    "room_id": "h13-r1"
   },
   {
@@ -518,12 +518,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is there water in the bedroom?"
+    "question": "Is the bedroom wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 951.59,
    "kind": "wet",
-   "quote_or_evidence": "Is there water in the bedroom?",
+   "quote_or_evidence": "Is the bedroom wet?",
    "room_id": "h13-r5"
   },
   {
@@ -682,12 +682,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "question": "Is the bathroom wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 954.39,
    "kind": "wet",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Is the bathroom wet?",
    "room_id": "h19-r1"
   },
   {
@@ -713,12 +713,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is the bedroom wet?"
+    "question": "Is there any water in the bedroom?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 1203.59,
    "kind": "wet",
-   "quote_or_evidence": "Is the bedroom wet?",
+   "quote_or_evidence": "Is there any water in the bedroom?",
    "room_id": "h20-r4"
   },
   {
@@ -902,7 +902,7 @@
    "by": "agent",
    "est_cost_at_risk_usd": 0.0,
    "kind": "wet",
-   "quote_or_evidence": "Lights work in here.",
+   "quote_or_evidence": "Lights work in here",
    "room_id": "h26-r5"
   },
   {
@@ -946,14 +946,16 @@
    "room_id": "h27-r4"
   },
   {
-   "action": "ask_drafter",
+   "action": "add_door",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "wall": 0
    },
    "by": "agent",
+   "decision": "approve",
    "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
    "kind": "doors",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Closet has one door.",
    "room_id": "h27-r5"
   },
   {
@@ -1127,12 +1129,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is the hall wet?"
+    "question": "Is there water in the hall?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 799.59,
    "kind": "wet",
-   "quote_or_evidence": "Is the hall wet?",
+   "quote_or_evidence": "Is there water in the hall?",
    "room_id": "h31-r1"
   },
   {
@@ -1160,12 +1162,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "question": "Is the bathroom wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 939.99,
    "kind": "wet",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Is the bathroom wet?",
    "room_id": "h32-r0"
   },
   {
@@ -1182,12 +1184,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Are there any signs of water damage in the photos?"
+    "question": "Are there any signs of water damage on the walls?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 941.51,
    "kind": "wet",
-   "quote_or_evidence": "Are there any signs of water damage in the photos?",
+   "quote_or_evidence": "Are there any signs of water damage on the walls?",
    "room_id": "h32-r4"
   },
   {
@@ -1215,12 +1217,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "question": "Is there a door on the left wall?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 0.0,
    "kind": "doors",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Is there a door on the left wall?",
    "room_id": "h33-r3"
   },
   {
@@ -1279,12 +1281,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is the stairwell wet?"
+    "question": "Is the door wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 1495.19,
    "kind": "wet",
-   "quote_or_evidence": "Is the stairwell wet?",
+   "quote_or_evidence": "Is the door wet?",
    "room_id": "h35-r3"
   },
   {
@@ -1332,12 +1334,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "question": "Is the bathroom wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 922.79,
    "kind": "wet",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Is the bathroom wet?",
    "room_id": "h36-r3"
   },
   {
@@ -1383,12 +1385,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is the living room wet?"
+    "question": "Is the room wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 1650.38,
    "kind": "wet",
-   "quote_or_evidence": "Is the living room wet?",
+   "quote_or_evidence": "Is the room wet?",
    "room_id": "h37-r5"
   },
   {
@@ -1627,14 +1629,14 @@
    "room_id": "h44-r0"
   },
   {
-   "action": "ask_drafter",
-   "args": {
-    "question": "no valid answer; a drafter checks"
-   },
+   "action": "mark_wet",
+   "args": {},
    "by": "agent",
+   "decision": "approve",
    "est_cost_at_risk_usd": 915.98,
+   "field_was_right": false,
    "kind": "wet",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Hall is wet, baseboards are swelling.",
    "room_id": "h44-r1"
   },
   {
@@ -1662,12 +1664,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "question": "Is there a door on any wall?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 16.81,
    "kind": "doors",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Is there a door on any wall?",
    "room_id": "h45-r2"
   },
   {
@@ -1695,12 +1697,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "no valid answer; a drafter checks"
+    "question": "Is the bathroom wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 951.59,
    "kind": "wet",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Is the bathroom wet?",
    "room_id": "h46-r3"
   },
   {
@@ -1715,14 +1717,12 @@
    "room_id": "h46-r5"
   },
   {
-   "action": "ask_drafter",
-   "args": {
-    "question": "no valid answer; a drafter checks"
-   },
+   "action": "no_change",
+   "args": {},
    "by": "agent",
-   "est_cost_at_risk_usd": 1908.39,
+   "est_cost_at_risk_usd": 0.0,
    "kind": "wet",
-   "quote_or_evidence": "no valid answer; a drafter checks",
+   "quote_or_evidence": "Checked the living room, nothing wet.",
    "room_id": "h47-r0"
   },
   {
@@ -2058,12 +2058,12 @@
   {
    "action": "ask_drafter",
    "args": {
-    "question": "Is the hall wet?"
+    "question": "Is the hallway wet?"
    },
    "by": "agent",
    "est_cost_at_risk_usd": 545.18,
    "kind": "wet",
-   "quote_or_evidence": "Is the hall wet?",
+   "quote_or_evidence": "Is the hallway wet?",
    "room_id": "h56-r1"
   },
   {
@@ -2140,14 +2140,10 @@
    "room_id": "h58-r2"
   },
   {
-   "action": "add_door",
-   "args": {
-    "wall": 0
-   },
+   "action": "no_change",
+   "args": {},
    "by": "agent",
-   "decision": "approve",
-   "est_cost_at_risk_usd": 16.81,
-   "field_was_right": false,
+   "est_cost_at_risk_usd": 0.0,
    "kind": "doors",
    "quote_or_evidence": "The bathroom has one door, I checked.",
    "room_id": "h58-r3"

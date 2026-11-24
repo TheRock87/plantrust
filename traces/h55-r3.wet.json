@@ -40,13 +40,14 @@
   ]
  },
  "error": null,
- "input_hash": "86adae23b382d323",
+ "from_text": false,
+ "input_hash": "f0958ade5999bd8e",
  "key": "h55-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the kitchen wet?",
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -79,7 +80,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2714,
+  "input_tokens": 2718,
   "models": [
    "voxtral-small-latest"
   ],

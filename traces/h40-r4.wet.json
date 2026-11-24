@@ -39,13 +39,14 @@
   ]
  },
  "error": null,
- "input_hash": "e17cc06b4fe6739b",
+ "from_text": false,
+ "input_hash": "29494b1814adc15b",
  "key": "h40-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the stairwell wet?",
- "seconds": 4.4,
+ "seconds": 5.6,
  "steps": [
   {
    "args": {
@@ -78,7 +79,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2726,
+  "input_tokens": 2730,
   "models": [
    "voxtral-small-latest"
   ],

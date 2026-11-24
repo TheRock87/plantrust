@@ -138,7 +138,6 @@ def main():
         "agent_vs_baseline": {m: {"agent": d[m], "baseline": c[m], "agent_better": better(m, d[m], c[m])}
                               for m in ("fixed", "missed", "harmful_edits", "manual_items", "false_alarm_rooms",
                                         "usd_open")},
-        "harmful_goal_met": d["harmful_edits"] == 0,
         "who_does_what": who_does_what(answers, truth, plans, items),
         "error_types": ERRORS,
         "failure_fix": load(DATA / "failure_fix.json") if (DATA / "failure_fix.json").exists() else None,

@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "59c2638ca0b9e909",
+ "from_text": false,
+ "input_hash": "f60fde403b3ef101",
  "key": "h36-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Power is on, fans can go in tomorrow.",
  "reason": null,
- "seconds": 4.5,
+ "seconds": 4.4,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2748,
+  "input_tokens": 2740,
   "models": [
    "voxtral-small-latest"
   ],

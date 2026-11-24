@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "765cbc179c7a1d46",
+ "from_text": false,
+ "input_hash": "761e09d1772b0fd1",
  "key": "h56-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No water in the closet.",
  "reason": null,
- "seconds": 4.9,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2714,
+  "input_tokens": 2720,
   "models": [
    "voxtral-small-latest"
   ],

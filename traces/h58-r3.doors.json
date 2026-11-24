@@ -1,18 +1,11 @@
 {
- "action": "add_door",
- "args": {
-  "wall": 0
- },
- "decision": "approve",
+ "action": "no_change",
+ "args": {},
+ "decision": null,
  "draft": {
   "affected": true,
   "ceiling": 8.0,
-  "doors": [
-   {
-    "wall": 0,
-    "width": 3.0
-   }
-  ],
+  "doors": [],
   "flags": [],
   "id": "h58-r3",
   "label": "bathroom",
@@ -36,7 +29,8 @@
   ]
  },
  "error": null,
- "input_hash": "bda71adff3022fbf",
+ "from_text": false,
+ "input_hash": "c7b7c06e1c0f3034",
  "key": "h58-r3.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -83,28 +77,27 @@
   {
    "args": {
     "quote": "The bathroom has one door, I checked.",
-    "room_id": "h58-r3",
-    "wall": 0
+    "room_id": "h58-r3"
    },
-   "name": "add_door",
+   "name": "no_change",
    "type": "tool_call"
   },
   {
-   "name": "add_door",
-   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The plan is missing a door.",
+   "text": "The plan is correct.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3457,
+  "input_tokens": 3446,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 124,
+  "output_tokens": 116,
   "usd": 0.0
  }
 }

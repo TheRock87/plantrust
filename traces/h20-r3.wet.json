@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "cce8a98999cd2f6b",
+ "from_text": false,
+ "input_hash": "af08cb20a1ec1752",
  "key": "h20-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the kitchen wet?",
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -70,12 +71,12 @@
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check if the kitchen is wet.",
+   "text": "The note does not say whether the kitchen is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2714,
+  "input_tokens": 2712,
   "models": [
    "voxtral-small-latest"
   ],

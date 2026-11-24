@@ -38,13 +38,14 @@
   ]
  },
  "error": null,
- "input_hash": "65b90d9c58fedf39",
+ "from_text": false,
+ "input_hash": "14d54957dd451832",
  "key": "h52-r0.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "no valid answer; a drafter checks",
- "seconds": 5.1,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {

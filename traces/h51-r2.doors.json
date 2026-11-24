@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "e653d2d6d84a8b63",
+ "from_text": false,
+ "input_hash": "6a31a01bd7173f47",
  "key": "h51-r2.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "1 door in total",
  "reason": null,
- "seconds": 4.8,
+ "seconds": 4.3,
  "steps": [
   {
    "args": {
@@ -100,7 +101,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3447,
+  "input_tokens": 3457,
   "models": [
    "voxtral-small-latest"
   ],

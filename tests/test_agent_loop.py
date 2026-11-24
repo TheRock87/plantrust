@@ -110,18 +110,37 @@ def test_off_question_edit_never_reaches_the_drafter():
     assert asked == [] and res["action"] == "ask_drafter" and res["draft"] == ROOM
 
 
-def test_tool_call_written_as_text_gets_one_reminder():
-    # h27-r5: the model wrote its answer as text instead of calling the tool. The runner reminds it once.
-    as_text = '[{"name": "no_change", "arguments": {"room_id": "h99-r0", "quote": "Took photos of every wall."}}]'
-    res, _ = run([ai(text=as_text), ai(SAME), ai(text="No change.")])
-    assert res["action"] == "no_change" and res["model_calls"] == 3
-    res, _ = run([ai(text=as_text), ai(text=as_text)])  # only one reminder
-    assert res["action"] == "ask_drafter" and res["model_calls"] == 2
+def as_text(*calls):
+    """A tool call written as text, the way voxtral sometimes answers (h27-r5)."""
+    import json
+    return json.dumps([{"name": n, "arguments": a} for n, a in calls])
 
 
-def test_plain_text_gets_no_reminder():
-    res, _ = run([ai(text="I am not sure."), ai(SAME)])
-    assert res["action"] == "ask_drafter" and res["model_calls"] == 1
+def test_answer_written_as_text_is_read():
+    res, asked = run([ai(text=as_text(SAME))])
+    assert res["action"] == "no_change" and res["from_text"] and res["model_calls"] == 1 and asked == []
+
+
+def test_edit_written_as_text_goes_to_the_drafter():
+    res, asked = run([ai(text="```json\n" + as_text(WET) + "\n```")])
+    assert res["action"] == "mark_wet" and res["decision"] == "approve" and len(asked) == 1
+    assert res["draft"]["affected"] is True and ROOM["affected"] is False
+    res, asked = run([ai(text=as_text(WET))], decision="reject")
+    assert res["decision"] == "reject" and res["draft"]["affected"] is False
+
+
+def test_text_answer_passes_the_same_guard():
+    bad = ("mark_wet", {"room_id": "h99-r0", "quote": "carpet is wet"})
+    for text in (as_text(bad), as_text(WET, SAME)):  # bad quote; two answers
+        res, asked = run([ai(text=text)])
+        assert res["action"] == "ask_drafter" and asked == [] and res["draft"]["affected"] is False
+    res, asked = run([ai(text=as_text(WET))], kind="doors")  # off-question tool
+    assert res["action"] == "ask_drafter" and asked == []
+
+
+def test_plain_text_is_not_an_answer():
+    res, _ = run([ai(text="The plan is right."), ai(SAME)])
+    assert res["action"] == "ask_drafter" and res["model_calls"] == 1 and not res["from_text"]
 
 
 def test_each_question_gets_only_its_own_tools():

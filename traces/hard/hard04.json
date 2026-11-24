@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "ddf934c688c49d35",
+ "from_text": false,
+ "input_hash": "68be57bdb1ec5c3f",
  "key": "hard/hard04",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "the closet carpet pad is wet at the back",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2733,
+  "input_tokens": 2725,
   "models": [
    "voxtral-small-latest"
   ],

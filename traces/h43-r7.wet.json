@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "27a8131985b42010",
+ "from_text": false,
+ "input_hash": "d98bfdf808fea69c",
  "key": "h43-r7.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is there water in the living room?",
- "seconds": 4.6,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -70,12 +71,12 @@
    "type": "tool_result"
   },
   {
-   "text": "A drafter will check if the living room is wet.",
+   "text": "The note does not say whether the living room is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2725,
+  "input_tokens": 2731,
   "models": [
    "voxtral-small-latest"
   ],

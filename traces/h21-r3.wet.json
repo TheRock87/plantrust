@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "a7beb061bb97ef42",
+ "from_text": false,
+ "input_hash": "274b312ee89c84de",
  "key": "h21-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Standing water in the bathroom when we got here.",
  "reason": null,
- "seconds": 4.5,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2775,
+  "input_tokens": 2769,
   "models": [
    "voxtral-small-latest"
   ],

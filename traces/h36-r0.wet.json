@@ -38,13 +38,14 @@
   ]
  },
  "error": null,
- "input_hash": "28b232e11de24ff9",
+ "from_text": false,
+ "input_hash": "f42d75521818021f",
  "key": "h36-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Water ran under the bedroom carpet, the pad is soaked.",
  "reason": null,
- "seconds": 4.0,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {

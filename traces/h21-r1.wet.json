@@ -40,7 +40,8 @@
   ]
  },
  "error": null,
- "input_hash": "fef53f17a39033f3",
+ "from_text": false,
+ "input_hash": "a618ccef3e1faaf9",
  "key": "h21-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -74,12 +75,12 @@
    "type": "tool_result"
   },
   {
-   "text": "The note does not say whether the bedroom is wet.",
+   "text": "The drafter will check if the bedroom is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2720,
+  "input_tokens": 2726,
   "models": [
    "voxtral-small-latest"
   ],

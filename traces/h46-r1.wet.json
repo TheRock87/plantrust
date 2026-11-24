@@ -40,13 +40,14 @@
   ]
  },
  "error": null,
- "input_hash": "7da96cfc3d6a1f51",
+ "from_text": false,
+ "input_hash": "f3be9fef89c17747",
  "key": "h46-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is there water in the kitchen?",
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -79,7 +80,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2726,
+  "input_tokens": 2722,
   "models": [
    "voxtral-small-latest"
   ],

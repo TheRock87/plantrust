@@ -36,7 +36,8 @@
   ]
  },
  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
- "input_hash": "1e8bb932800ac295",
+ "from_text": false,
+ "input_hash": "1fe309e500237d06",
  "key": "h34-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 6,
@@ -84,7 +85,7 @@
   },
   {
    "args": {
-    "quote": "nothing wet in the living room.",
+    "quote": "nothing wet",
     "room_id": "h34-r2"
    },
    "name": "no_change",
@@ -97,7 +98,15 @@
   },
   {
    "args": {
-    "quote": "nothing wet in the living room.",
+    "quote": "nothing wet in the living room",
+    "room_id": "h34-r2"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "quote": "nothing wet",
     "room_id": "h34-r2"
    },
    "name": "no_change",
@@ -109,8 +118,13 @@
    "type": "tool_result"
   },
   {
+   "name": "no_change",
+   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
+   "type": "tool_result"
+  },
+  {
    "args": {
-    "quote": "nothing wet in the living room.",
+    "quote": "nothing wet in the living room",
     "room_id": "h34-r2"
    },
    "name": "no_change",
@@ -123,11 +137,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 6181,
+  "input_tokens": 6213,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 205,
+  "output_tokens": 227,
   "usd": 0.0
  }
 }

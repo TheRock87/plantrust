@@ -237,9 +237,9 @@
   },
   {
    "action": "mark_wet",
-   "approved": 14,
+   "approved": 15,
    "by": "agent",
-   "n": 17,
+   "n": 18,
    "status": "not enough cases yet"
   }
  ],
@@ -359,13 +359,13 @@
    "usd_total": 38094.56
   },
   "D": {
-   "approved_edits": 63,
+   "approved_edits": 64,
    "clean_rooms": 313,
    "errors": 95,
-   "false_alarm_rooms": 100,
-   "fixed": 63,
+   "false_alarm_rooms": 97,
+   "fixed": 64,
    "harmful_edits": 3,
-   "manual_items": 147,
+   "manual_items": 144,
    "missed": 1,
    "per_type": {
     "E1": {
@@ -399,15 +399,15 @@
      "total": 14
     },
     "E6": {
-     "fixed": 14,
+     "fixed": 15,
      "missed": 0,
-     "to_drafter": 5,
+     "to_drafter": 4,
      "total": 19
     }
    },
    "rejected_edits": 3,
-   "to_drafter": 31,
-   "usd_open": 0.0,
+   "to_drafter": 30,
+   "usd_open": 16.81,
    "usd_total": 38094.56
   },
   "v1": {
@@ -465,19 +465,20 @@
  },
  "run_report": {
   "answered": 207,
+  "answers_read_from_text": 12,
   "ask_drafter_by_reason": {
-   "agent chose it": 96,
-   "error": 6,
-   "no valid answer": 21
+   "agent chose it": 105,
+   "error": 5,
+   "no valid answer": 10
   },
   "avg_seconds": 4.8,
-  "failures": 6,
+  "failures": 5,
   "fallback_uses": 0,
   "model_called": 207,
   "not_run": 0,
   "off_question": 0,
   "questions": 207,
-  "tokens": 615783,
+  "tokens": 602893,
   "usd": 0.0
  },
  "triage": [
@@ -503,18 +504,11 @@
    "usd_at_risk": 5366.94
   },
   {
-   "edits": 0,
-   "house": "h12",
-   "manual": 5,
-   "status": "full review",
-   "usd_at_risk": 5317.54
-  },
-  {
-   "edits": 2,
+   "edits": 1,
    "house": "h58",
    "manual": 4,
    "status": "full review",
-   "usd_at_risk": 4816.41
+   "usd_at_risk": 4799.6
   },
   {
    "edits": 3,
@@ -566,11 +560,11 @@
    "usd_at_risk": 4095.55
   },
   {
-   "edits": 1,
-   "house": "h11",
-   "manual": 5,
+   "edits": 0,
+   "house": "h12",
+   "manual": 4,
    "status": "full review",
-   "usd_at_risk": 3927.16
+   "usd_at_risk": 4092.35
   },
   {
    "edits": 1,
@@ -650,6 +644,13 @@
    "usd_at_risk": 3045.77
   },
   {
+   "edits": 1,
+   "house": "h11",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 2997.17
+  },
+  {
    "edits": 2,
    "house": "h41",
    "manual": 1,
@@ -657,9 +658,9 @@
    "usd_at_risk": 2986.78
   },
   {
-   "edits": 1,
+   "edits": 2,
    "house": "h44",
-   "manual": 3,
+   "manual": 2,
    "status": "full review",
    "usd_at_risk": 2958.51
   },
@@ -669,6 +670,13 @@
    "manual": 3,
    "status": "full review",
    "usd_at_risk": 2805.57
+  },
+  {
+   "edits": 0,
+   "house": "h13",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 2750.79
   },
   {
    "edits": 1,
@@ -713,13 +721,6 @@
    "usd_at_risk": 2143.58
   },
   {
-   "edits": 3,
-   "house": "h47",
-   "manual": 1,
-   "status": "full review",
-   "usd_at_risk": 2141.43
-  },
-  {
    "edits": 2,
    "house": "h32",
    "manual": 4,
@@ -762,6 +763,13 @@
    "usd_at_risk": 1988.78
   },
   {
+   "edits": 1,
+   "house": "h07",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 1951.34
+  },
+  {
    "edits": 0,
    "house": "h60",
    "manual": 1,
@@ -790,13 +798,6 @@
    "usd_at_risk": 1881.58
   },
   {
-   "edits": 0,
-   "house": "h13",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 1782.39
-  },
-  {
    "edits": 1,
    "house": "h24",
    "manual": 2,
@@ -816,13 +817,6 @@
    "manual": 1,
    "status": "full review",
    "usd_at_risk": 1302.23
-  },
-  {
-   "edits": 1,
-   "house": "h07",
-   "manual": 1,
-   "status": "full review",
-   "usd_at_risk": 1281.99
   },
   {
    "edits": 1,
@@ -846,9 +840,9 @@
    "usd_at_risk": 845.2
   },
   {
-   "edits": 2,
+   "edits": 3,
    "house": "h27",
-   "manual": 3,
+   "manual": 2,
    "status": "full review",
    "usd_at_risk": 830.88
   },
@@ -865,6 +859,13 @@
    "manual": 0,
    "status": "quick review",
    "usd_at_risk": 347.16
+  },
+  {
+   "edits": 3,
+   "house": "h47",
+   "manual": 0,
+   "status": "quick review",
+   "usd_at_risk": 233.04
   },
   {
    "edits": 1,

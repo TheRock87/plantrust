@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "026362ffa0816dfa",
+ "from_text": false,
+ "input_hash": "7dc4e56bbcf57602",
  "key": "h27-r3.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the plan missing a door?",
- "seconds": 4.7,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {

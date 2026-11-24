@@ -35,12 +35,13 @@
     DATA.houses.forEach((h) => {
       const o = document.createElement("option");
       o.value = h.id;
-      o.textContent = `${h.id}: ${h.triage.status}, ${usd(h.triage.usd_at_risk)} at risk (${h.n_errors} planted error${h.n_errors === 1 ? "" : "s"})`;
+      o.textContent = `${h.id}: ${h.triage.status}, ${usd(h.triage.usd_at_risk)} in open items (${h.n_errors} planted error${h.n_errors === 1 ? "" : "s"})`;
       sel.appendChild(o);
     });
     sel.addEventListener("change", () => renderHouse(sel.value));
     renderHouse(DATA.houses[0].id);
     renderPart2();
+    renderDashboard();
   }
 
   /* ---------- plan viewer ---------- */
@@ -181,7 +182,6 @@
   /* ---------- results ---------- */
 
   const ROWS = ["v1", "B", "C", "D"];
-  const ROW_SHORT = { v1: "v1", B: "Code fixes", C: "Keyword baseline", D: "Agent" };
   const ofN = (a, n) => `${a} of ${n} (${pct(a, n)})`;
   const table = (id, html) => { $(id).className = "data"; $(id).innerHTML = html + "</tbody>"; };
 
@@ -203,14 +203,11 @@
     const list = (better) => Object.keys(METRIC).filter((m) => cmp[m].agent_better === better && cmp[m].agent !== cmp[m].baseline)
       .map((m) => `${METRIC[m]} (${fmt(m, cmp[m].agent)} against ${fmt(m, cmp[m].baseline)})`);
     const win = list(true), lose = list(false);
-    const d = DATA.scores.rows.D, h = DATA.scores.hard;
+    const h = DATA.scores.hard;
     let html = `<p><strong>Agent against the keyword baseline.</strong> ` +
       (win.length ? `The agent is better on ${win.join(", ")}. ` : "The agent is not better on any measure. ") +
       (lose.length ? `<strong>It is worse on ${lose.join(", ")}.</strong>` : "") + `</p>`;
     html += `<p>On ${h.D.cases} hand-written hard notes (negations, notes about another room, tricky archways): agent ${h.D.right} right, keyword rule ${h.C.right} right.</p>`;
-    html += DATA.harmful_goal_met
-      ? `<p>Goal met: the agent proposed no harmful edit.</p>`
-      : `<p><strong>Goal not met:</strong> the goal was no harmful edit from the agent; it proposed ${d.harmful_edits}. The drafter check stopped every one, which is why that check stays.</p>`;
     return html;
   }
 
@@ -239,15 +236,6 @@
       `Run report: model called for ${r.model_called} of ${r.questions} questions; ${r.failures} failures (step limit or error); ` +
       `${r.fallback_uses} fallback uses; ${r.tokens.toLocaleString("en-US")} tokens; ${usd2(r.usd)} spent; ${r.avg_seconds} s per question; ` +
       `${c.tools_per_question} tools and at most ${c.max_model_steps} model calls per question.`;
-
-    let th = `<thead><tr><th>Error type</th>${ROWS.map((k) => `<th>${esc(ROW_SHORT[k])}</th>`).join("")}</tr></thead><tbody>`;
-    Object.entries(DATA.error_types).forEach(([id, name]) => {
-      th += `<tr><td>${esc(id)} ${esc(name)}</td>` + ROWS.map((k) => {
-        const p = S.rows[k].per_type[id];
-        return `<td class="num">${p.fixed} / ${p.to_drafter} / ${p.missed} <span class="soft">of ${p.total}</span></td>`;
-      }).join("") + "</tr>";
-    });
-    table("#type-table", th);
 
     let wh = "<thead><tr><th>Error type</th><th>How often</th><th>Dollars at risk</th><th>Who fixes it</th><th>Why</th><th>Edits approved</th></tr></thead><tbody>";
     DATA.who_does_what.forEach((w) => {
@@ -278,8 +266,103 @@
         `on the last rerun, ${f.variance.changed} of ${f.variance.of} answers that no fix targeted came out different.`;
     }
     $("#failure-section").hidden = false;
-    $("#failure-fix").innerHTML = `<p class="measure">${esc(f.summary)}</p><dl class="story">` +
-      f.steps.map((s) => `<div><dt>${esc(s.title)}</dt><dd>${esc(s.text)}</dd></div>`).join("") + "</dl>";
+    // Short on the page: the summary and the result; the full story opens on request.
+    const last = f.steps[f.steps.length - 1];
+    $("#failure-fix").innerHTML = `<p class="measure">${esc(f.summary)}</p><p class="measure"><strong>${esc(last.title)}:</strong> ${esc(last.text)}</p>` +
+      `<details><summary>The full story (${f.steps.length} steps)</summary><dl class="story">` +
+      f.steps.map((s) => `<div><dt>${esc(s.title)}</dt><dd>${esc(s.text)}</dd></div>`).join("") + "</dl></details>";
+  }
+
+  /* ---------- dashboard: two interactions, state in memory only (a reload starts again) ---------- */
+
+  function renderDashboard() {
+    document.querySelectorAll("#dash-approach button").forEach((b) => b.addEventListener("click", () => showRow(b.dataset.row)));
+    showRow("D");
+    const budget = $("#dash-budget");
+    budget.max = DATA.scores.triage.length;
+    budget.addEventListener("input", () => showBudget(+budget.value));
+    showBudget(+budget.value);
+    const sel = $("#dash-house");
+    DATA.houses.forEach((h) => {
+      const n = h.rooms.reduce((a, r) => a + r.items.filter((i) => i.decision).length, 0);
+      const o = document.createElement("option");
+      o.value = h.id;
+      o.textContent = `${h.id}: ${n} edit${n === 1 ? "" : "s"} to decide`;
+      sel.appendChild(o);
+    });
+    sel.addEventListener("change", () => showHouse(sel.value));
+    showHouse(sel.value);
+  }
+
+  // 1. Approach switch: four tiles and one bar per error type for the chosen row.
+  function showRow(k) {
+    const s = DATA.scores.rows[k];
+    document.querySelectorAll("#dash-approach button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.row === k)));
+    $("#tile-fixed").textContent = ofN(s.fixed, s.errors);
+    $("#tile-harmful").textContent = String(s.harmful_edits);
+    $("#tile-manual").textContent = String(s.manual_items);
+    $("#tile-usd").textContent = `${usd(s.usd_open)} of ${usd(s.usd_total)}`;
+    $("#dash-bars").innerHTML = Object.entries(s.per_type).map(([code, t]) => {
+      const w = (n) => (t.total ? (100 * n) / t.total : 0).toFixed(1) + "%";
+      return `<li data-code="${esc(code)}"><span>${esc(code)} ${esc(DATA.error_types[code])}</span>
+        <span class="bar" aria-hidden="true"><span class="fixed" style="width:${w(t.fixed)}"></span><span class="drafter" style="width:${w(t.to_drafter)}"></span><span class="missed" style="width:${w(t.missed)}"></span></span>
+        <span class="counts">✓ ${t.fixed} fixed · ${t.to_drafter} to a drafter · ✗ ${t.missed} missed, of ${t.total}</span></li>`;
+    }).join("");
+  }
+
+  // 2. A drafter's day: review the first k houses in triage order (row D, sorted by dollars at risk).
+  function showBudget(k) {
+    const tri = DATA.scores.triage, top = tri.slice(0, k);
+    const sum = (hs, f) => hs.reduce((a, h) => a + f(h), 0);
+    const covered = sum(top, (h) => h.usd_at_risk), total = sum(tri, (h) => h.usd_at_risk);
+    $("#dash-budget-out").textContent = `${k} of ${tri.length} houses: ${usd(covered)} of ${usd(total)} in open items reviewed ` +
+      `(${pct(covered, total)}), ${sum(top, (h) => h.edits + h.manual)} items to check.`;
+  }
+
+  // 3. The drafter's job: decide each edit of one house; compare with the simulated drafter at the end.
+  let job = null;
+
+  function showHouse(hid) {
+    const house = DATA.houses.find((h) => h.id === hid);
+    const items = house.rooms.flatMap((r) => r.items.map((i) => ({ ...i, room: r })));
+    job = { edits: items.filter((i) => i.decision), asks: items.filter((i) => i.action === "ask_drafter"), mine: [] };
+    const line = (i) => `<p><strong>${esc(cap(roomName(i.room.label)))}</strong> ${esc(i.room.id)} · ${i.action === "ask_drafter" ? esc(i.after)
+      : i.action === "no_change" ? "keep the plan" : `${esc(i.before)} → ${esc(i.after)}`}</p>
+      <p class="soft">by ${esc(BY[i.by] || i.by)}${i.evidence && i.evidence !== i.after ? ` · ${i.by === "agent" && i.action !== "ask_drafter" ? "quote" : "evidence"}: “${esc(i.evidence)}”` : ""} · ${usd(i.usd)}</p>`;
+    let n = 0;
+    $("#dash-items").innerHTML = items.map((i) => {
+      if (!i.decision) {
+        const what = i.action === "ask_drafter" ? "drafter item: needs a person" : "nothing to approve";
+        return `<li>${line(i)}<p class="soft">${what}</p></li>`;
+      }
+      return `<li data-edit="${n++}">${line(i)}<div class="decide">
+        <button type="button" data-decide="approve" aria-pressed="false">✓ Approve</button>
+        <button type="button" data-decide="reject" aria-pressed="false">✗ Reject</button></div><p class="sim soft"></p></li>`;
+    }).join("");
+    document.querySelectorAll("#dash-items [data-edit]").forEach((li) => {
+      li.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+        job.mine[+li.dataset.edit] = b.dataset.decide;
+        li.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+        updateJob();
+      }));
+    });
+    updateJob();
+  }
+
+  function updateJob() {
+    const open = job.edits.filter((_, n) => !job.mine[n]).length;
+    // Still at risk: drafter items, plus every edit not decided yet or decided unlike the simulated drafter.
+    const risk = job.asks.reduce((a, i) => a + i.usd, 0) +
+      job.edits.reduce((a, i, n) => a + (job.mine[n] === i.decision ? 0 : i.usd), 0);
+    $("#dash-counter").textContent = `This house: $ still at risk: ${usd(risk)} · open items: ${open + job.asks.length}`;
+    const done = job.edits.length && !open;
+    const agree = job.edits.filter((i, n) => job.mine[n] === i.decision).length;
+    document.querySelectorAll("#dash-items [data-edit]").forEach((li) => {
+      const i = job.edits[+li.dataset.edit];
+      li.querySelector(".sim").textContent = done ? `Simulated drafter: ${i.decision === "approve" ? "✓ approved" : "✗ rejected"}` : "";
+    });
+    $("#dash-result").textContent = !job.edits.length ? "No edit to decide in this house; its items need a person."
+      : done ? `You agreed with the simulated drafter on ${agree} of ${job.edits.length}.` : "";
   }
 
   /* ---------- part 2: draft estimate ---------- */

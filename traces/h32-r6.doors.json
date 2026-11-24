@@ -31,13 +31,14 @@
   ]
  },
  "error": null,
- "input_hash": "a14e085cda06df47",
+ "from_text": false,
+ "input_hash": "4f2f5bbcd490b9a6",
  "key": "h32-r6.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is there a door in the living room?",
- "seconds": 4.8,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {

@@ -1,9 +1,9 @@
 {
- "action": "ask_drafter",
+ "action": "mark_wet",
  "args": {},
- "decision": null,
+ "decision": "approve",
  "draft": {
-  "affected": false,
+  "affected": true,
   "ceiling": 8.0,
   "doors": [
    {
@@ -38,13 +38,14 @@
   ]
  },
  "error": null,
- "input_hash": "c7ceafde1791c76c",
+ "from_text": false,
+ "input_hash": "ba8c6838752cc015",
  "key": "h44-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "",
- "reason": "no valid answer; a drafter checks",
- "seconds": 4.7,
+ "quote": "Hall is wet, baseboards are swelling.",
+ "reason": null,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -59,20 +60,29 @@
    "type": "tool_result"
   },
   {
-   "text": "[{\"name\": \"mark_wet\", \"arguments\": {\"room_id\": \"h44-r1\", \"quote\": \"Hall is wet, baseboards are swelling.\"}}]",
-   "type": "model_text"
+   "args": {
+    "quote": "Hall is wet, baseboards are swelling.",
+    "room_id": "h44-r1"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
   },
   {
-   "text": "I'm here to help, but I currently don't have the tools needed to fulfill your request. Is there something else I can assist you with?",
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The hallway is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2705,
+  "input_tokens": 2729,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 96,
+  "output_tokens": 72,
   "usd": 0.0
  }
 }

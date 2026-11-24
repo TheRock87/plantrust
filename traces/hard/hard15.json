@@ -40,13 +40,14 @@
   ]
  },
  "error": null,
- "input_hash": "cab3949b9f120f57",
+ "from_text": false,
+ "input_hash": "38e2dd0ee479ea60",
  "key": "hard/hard15",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "There used to be an archway to the hall, now it has a door.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 5.0,
  "steps": [
   {
    "args": {
@@ -80,7 +81,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2993,
+  "input_tokens": 2999,
   "models": [
    "voxtral-small-latest"
   ],

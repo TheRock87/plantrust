@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "e5688d33fe854ee5",
+ "from_text": false,
+ "input_hash": "4154981777f9aa19",
  "key": "h27-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Bathroom floor is dry, no damage.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2718,
+  "input_tokens": 2720,
   "models": [
    "voxtral-small-latest"
   ],

@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Are there any signs of water damage in the photos?"
+  "question": "Are there any signs of water damage on the walls?"
  },
  "decision": null,
  "draft": {
@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "9602f30bd8b11621",
+ "from_text": false,
+ "input_hash": "ca13207e1b58973b",
  "key": "h32-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Are there any signs of water damage in the photos?",
- "seconds": 4.6,
+ "reason": "Are there any signs of water damage on the walls?",
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -58,7 +59,7 @@
   },
   {
    "args": {
-    "question": "Are there any signs of water damage in the photos?",
+    "question": "Are there any signs of water damage on the walls?",
     "room_id": "h32-r4"
    },
    "name": "ask_drafter",
@@ -70,16 +71,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check for water damage in the photos.",
+   "text": "The note does not say whether this room is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2734,
+  "input_tokens": 2738,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 82,
+  "output_tokens": 81,
   "usd": 0.0
  }
 }

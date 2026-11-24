@@ -40,13 +40,14 @@
   ]
  },
  "error": null,
- "input_hash": "3a9115a216f84743",
+ "from_text": false,
+ "input_hash": "16268f1835445ba4",
  "key": "h23-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Living room is dry, meter reads normal.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {

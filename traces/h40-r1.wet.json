@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "c9f8844f335f45b4",
+ "from_text": false,
+ "input_hash": "139a56bc489df924",
  "key": "h40-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Lights work in here.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2720,
+  "input_tokens": 2712,
   "models": [
    "voxtral-small-latest"
   ],

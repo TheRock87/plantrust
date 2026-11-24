@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Is there a door the plan misses?"
+  "question": "Is the plan missing a door?"
  },
  "decision": null,
  "draft": {
@@ -39,13 +39,14 @@
   ]
  },
  "error": null,
- "input_hash": "fa5a58b75c3b265b",
+ "from_text": false,
+ "input_hash": "aa27674df538ef57",
  "key": "h11-r3.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is there a door the plan misses?",
- "seconds": 4.6,
+ "reason": "Is the plan missing a door?",
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -61,7 +62,7 @@
   },
   {
    "args": {
-    "question": "Is there a door the plan misses?",
+    "question": "Is the plan missing a door?",
     "room_id": "h11-r3"
    },
    "name": "ask_drafter",
@@ -78,11 +79,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 2985,
+  "input_tokens": 2980,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 80,
+  "output_tokens": 79,
   "usd": 0.0
  }
 }

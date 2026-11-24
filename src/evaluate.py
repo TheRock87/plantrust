@@ -151,6 +151,7 @@ def run_report(questions, runs):
             "usd": round(sum(r["usage"]["usd"] for r in data.values()), 6),
             "avg_seconds": round(sum(r["seconds"] for r in used) / max(len(used), 1), 1),
             # an edit that answers the other question (mark_wet on a door question, add_door on a wet question)
+            "answers_read_from_text": sum(r["from_text"] for r in data.values()),
             "off_question": sum(r["action"] == OFF_QUESTION[k.split(".")[1]] for k, r in data.items()),
             "ask_drafter_by_reason": dict(Counter(
                 "error" if r["error"] else "more than one answer" if "more than one" in (r["reason"] or "")

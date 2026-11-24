@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "586112133bd6a974",
+ "from_text": false,
+ "input_hash": "ccb0d842c05cc172",
  "key": "hard/hard08",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Wet towels on the bedroom floor from the owner. The floor itself is dry.",
+ "quote": "The floor itself is dry.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -56,7 +57,7 @@
   },
   {
    "args": {
-    "quote": "Wet towels on the bedroom floor from the owner. The floor itself is dry.",
+    "quote": "The floor itself is dry.",
     "room_id": "hard08"
    },
    "name": "no_change",
@@ -73,11 +74,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 2734,
+  "input_tokens": 2716,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 76,
+  "output_tokens": 64,
   "usd": 0.0
  }
 }

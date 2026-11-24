@@ -38,13 +38,14 @@
   ]
  },
  "error": null,
- "input_hash": "d1e01798e5c7e8ee",
+ "from_text": false,
+ "input_hash": "e7b8172a540ebc3b",
  "key": "h28-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No moisture in the hall walls.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 5.4,
  "steps": [
   {
    "args": {
@@ -77,7 +78,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2747,
+  "input_tokens": 2761,
   "models": [
    "voxtral-small-latest"
   ],

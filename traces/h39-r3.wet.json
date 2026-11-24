@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "88fd386de3c8ec54",
+ "from_text": false,
+ "input_hash": "4ce83dcfdbdea5ec",
  "key": "h39-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Closet is fine",
  "reason": null,
- "seconds": 4.4,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {

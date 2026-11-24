@@ -36,13 +36,14 @@
   ]
  },
  "error": null,
- "input_hash": "38d0df635275437d",
+ "from_text": false,
+ "input_hash": "fb17b1cfafb19c2c",
  "key": "h22-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the closet wet?",
- "seconds": 4.8,
+ "seconds": 5.1,
  "steps": [
   {
    "args": {
@@ -75,7 +76,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2712,
+  "input_tokens": 2714,
   "models": [
    "voxtral-small-latest"
   ],

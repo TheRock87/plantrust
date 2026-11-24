@@ -17,17 +17,17 @@
    "title": "Change the code, not the prompt"
   },
   {
-   "text": "The first rerun showed another weak-model habit: the model sometimes wrote its tool call as text instead of calling the tool, so the run ended with no valid answer. The runner now reminds it once. Runs with no valid answer: 13 before both fixes, 21 after. Regression case h27-r5.doors: still fails (ask drafter).",
+   "text": "The first rerun showed another weak-model habit: the model sometimes wrote its tool call as text instead of calling the tool, so the run ended with no valid answer. A reminder to call the tool made it worse (the model then said it had no tools), so it was dropped. Now code reads a call written as text and sends it through the same guard and the same drafter: 12 answers were read this way. Runs with no valid answer: 13 before both fixes, 10 after. Regression case h27-r5.doors: holds (add door).",
    "title": "A second habit, a second code fix"
   },
   {
-   "text": "Off-question answers 3 to 0; harmful edits 9 to 3; errors fixed 66 to 63 and missed 1 to 1 of 95; drafter items 138 to 147. h42-r1.doors now: ask drafter. The rerun repeats every model call: 30 of 191 answers that no fix targets also changed, which is the model's own variance.",
+   "text": "Off-question answers 3 to 0; harmful edits 9 to 3; errors fixed 66 to 64 and missed 1 to 1 of 95; drafter items 138 to 144. h42-r1.doors now: ask drafter. The rerun repeats every model call: 28 of 191 answers that no fix targets also changed, which is the model's own variance.",
    "title": "Before, after"
   }
  ],
  "summary": "In the first full run, the agent answered 3 door questions with mark_wet: an edit for a different question. The drafter rejected each one, but each cost a review.",
  "variance": {
-  "changed": 30,
+  "changed": 28,
   "of": 191
  }
 }

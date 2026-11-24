@@ -34,13 +34,14 @@
   ]
  },
  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
- "input_hash": "a041f4ec720f2151",
+ "from_text": false,
+ "input_hash": "a10ab3d167393c6b",
  "key": "h58-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 6,
  "quote": "",
  "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
- "seconds": 9.7,
+ "seconds": 9.9,
  "steps": [
   {
    "args": {
@@ -82,32 +83,6 @@
   },
   {
    "args": {
-    "quote": "nothing wet",
-    "room_id": "h58-r0"
-   },
-   "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "args": {
-    "quote": "nothing wet in the hall",
-    "room_id": "h58-r0"
-   },
-   "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "name": "no_change",
-   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
-   "type": "tool_result"
-  },
-  {
-   "name": "no_change",
-   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
-   "type": "tool_result"
-  },
-  {
-   "args": {
     "quote": "nothing wet in the hall",
     "room_id": "h58-r0"
    },
@@ -141,17 +116,17 @@
    "type": "tool_call"
   },
   {
+   "name": "no_change",
+   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
+   "type": "tool_result"
+  },
+  {
    "args": {
     "quote": "nothing wet in the hall",
     "room_id": "h58-r0"
    },
    "name": "no_change",
    "type": "tool_call"
-  },
-  {
-   "name": "no_change",
-   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
-   "type": "tool_result"
   },
   {
    "name": "no_change",
@@ -160,11 +135,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 6371,
+  "input_tokens": 6303,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 291,
+  "output_tokens": 230,
   "usd": 0.0
  }
 }

@@ -34,13 +34,14 @@
   ]
  },
  "error": null,
- "input_hash": "c586555a9208dda2",
+ "from_text": false,
+ "input_hash": "f93cf38f236ce795",
  "key": "h06-r3.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "One opening is an archway, no door.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -73,7 +74,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3001,
+  "input_tokens": 2995,
   "models": [
    "voxtral-small-latest"
   ],

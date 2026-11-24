@@ -40,13 +40,14 @@
   ]
  },
  "error": null,
- "input_hash": "90bf2ff74dcca08d",
+ "from_text": false,
+ "input_hash": "3976ccc0d3460f28",
  "key": "hard/hard12",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Are there any signs of water damage on the walls?",
- "seconds": 4.9,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
