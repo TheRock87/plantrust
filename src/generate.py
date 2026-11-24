@@ -1,8 +1,11 @@
-"""Generate 40 synthetic houses (truth.json) and simulated 360-degree tour measurements (tour.json).
+"""Generate 60 synthetic houses (truth.json) and simulated 360-degree tour measurements (tour.json).
 
 Houses are two rows of rectangular rooms that share walls. Every number is seeded.
+A tour door miscount has a cause, kept on the truth room only (`door_cause`): one door too many
+is an archway (opening, no door), one too few is a hidden door. Only the notes reveal it.
 """
 import random
+from collections import Counter
 
 from .common import DATA, N_HOUSES, SEED, dims, save, walls
 
@@ -71,6 +74,7 @@ def make_house(rng, idx):
             "doors": doors,
             "affected": rng.random() < 0.6,
             "flags": flags,
+            "door_cause": None,  # set by make_tour; plant.py removes it from the AI plan
         })
     if not any(r["affected"] for r in rooms):
         rooms[0]["affected"] = True
@@ -83,7 +87,9 @@ def make_tour(rng, house):
     for r in house["rooms"]:
         doors = len(r["doors"])
         if rng.random() < 0.08:
-            doors = max(0, doors + rng.choice([-1, 1]))
+            delta = rng.choice([-1, 1])
+            doors = max(0, doors + delta)
+            r["door_cause"] = "archway" if delta > 0 else "hidden_door"  # on the truth room, never in the tour
         label = r["label"] if rng.random() > 0.05 else rng.choice([l for l in LABELS if l != r["label"]])
         out[r["id"]] = {
             "walls": [round(w * (1 + rng.uniform(-0.02, 0.02)), 1) for w in walls(r["polygon"])],
@@ -102,8 +108,10 @@ def main():
         tour[house["id"]] = make_tour(random.Random(SEED * 2000 + i), house)
     save(DATA / "truth.json", truth)
     save(DATA / "tour.json", tour)
-    n_rooms = sum(len(h["rooms"]) for h in truth.values())
-    print(f"generate: {len(truth)} houses, {n_rooms} rooms")
+    rooms = [r for h in truth.values() for r in h["rooms"]]
+    causes = Counter(r["door_cause"] for r in rooms if r["door_cause"])
+    print(f"generate: {len(truth)} houses, {len(rooms)} rooms, door miscounts {sum(causes.values())} "
+          f"({sum(causes.values()) / len(rooms):.1%}): {dict(sorted(causes.items()))}")
 
 
 if __name__ == "__main__":

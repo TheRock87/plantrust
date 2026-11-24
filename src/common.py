@@ -8,7 +8,7 @@ TRACES = ROOT / "traces"
 SITE_DATA = ROOT / "site" / "data"
 
 SEED = 2026
-N_HOUSES = 40
+N_HOUSES = 60
 
 
 def save(path: Path, obj) -> None:

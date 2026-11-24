@@ -3,167 +3,325 @@
   {
    "code": "E3",
    "detail": "one door removed",
-   "room_id": "h01-r3"
+   "room_id": "h01-r1",
+   "subtle": false
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h01-r2",
+   "subtle": false
   }
  ],
  "h02": [
   {
    "code": "E4",
    "detail": "room deleted from the plan",
-   "room_id": "h02-r3"
+   "room_id": "h02-r0",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h02-r1",
+   "subtle": false
   },
   {
    "code": "E5",
-   "detail": "extended 1.5 ft into h02-r1",
-   "room_id": "h02-r0"
+   "detail": "extended 2 ft into h02-r3",
+   "room_id": "h02-r2",
+   "subtle": false
   }
  ],
  "h03": [
   {
    "code": "E4",
    "detail": "room deleted from the plan",
-   "room_id": "h03-r0"
+   "room_id": "h03-r4",
+   "subtle": false
   },
   {
-   "code": "E5",
-   "detail": "extended 1 ft into h03-r3",
-   "room_id": "h03-r4"
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h03-r2",
+   "subtle": false
+  },
+  {
+   "code": "E1",
+   "detail": "shrunk by 4%",
+   "room_id": "h03-r0",
+   "subtle": true
   }
  ],
  "h04": [],
  "h05": [
   {
    "code": "E1",
-   "detail": "shrunk by 10%",
-   "room_id": "h05-r0"
+   "detail": "shrunk by 6%",
+   "room_id": "h05-r0",
+   "subtle": true
   },
   {
    "code": "E4",
    "detail": "room deleted from the plan",
-   "room_id": "h05-r3"
+   "room_id": "h05-r4",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h05-r1",
+   "subtle": false
   }
  ],
  "h06": [
   {
    "code": "E5",
-   "detail": "extended 2 ft into h06-r5",
-   "room_id": "h06-r6"
+   "detail": "extended 1.5 ft into h06-r6",
+   "room_id": "h06-r5",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h06-r8",
+   "subtle": false
   }
  ],
- "h07": [],
+ "h07": [
+  {
+   "code": "E1",
+   "detail": "shrunk by 16%",
+   "room_id": "h07-r0",
+   "subtle": false
+  }
+ ],
  "h08": [
   {
    "code": "E5",
    "detail": "extended 2 ft into h08-r3",
-   "room_id": "h08-r2"
+   "room_id": "h08-r2",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h08-r6",
+   "subtle": false
   },
   {
    "code": "E4",
    "detail": "room deleted from the plan",
-   "room_id": "h08-r5"
+   "room_id": "h08-r0",
+   "subtle": false
   }
  ],
  "h09": [
   {
    "code": "E3",
    "detail": "one door removed",
-   "room_id": "h09-r5"
+   "room_id": "h09-r5",
+   "subtle": false
   },
   {
    "code": "E2",
-   "detail": "ceiling 17 ft drawn as 8 ft",
-   "room_id": "h09-r2"
+   "detail": "ceiling 8 ft drawn as 8.9 ft",
+   "room_id": "h09-r6",
+   "subtle": true
   }
  ],
  "h10": [],
- "h11": [],
+ "h11": [
+  {
+   "code": "E5",
+   "detail": "extended 1.5 ft into h11-r5",
+   "room_id": "h11-r4",
+   "subtle": false
+  }
+ ],
  "h12": [],
- "h13": [],
+ "h13": [
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h13-r1",
+   "subtle": false
+  }
+ ],
  "h14": [
   {
    "code": "E3",
    "detail": "one door removed",
-   "room_id": "h14-r2"
+   "room_id": "h14-r2",
+   "subtle": false
   },
   {
    "code": "E4",
    "detail": "room deleted from the plan",
-   "room_id": "h14-r6"
+   "room_id": "h14-r6",
+   "subtle": false
+  },
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h14-r1",
+   "subtle": false
   }
  ],
  "h15": [
   {
    "code": "E2",
    "detail": "ceiling 8 ft drawn as 10 ft",
-   "room_id": "h15-r2"
+   "room_id": "h15-r3",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h15-r8",
+   "subtle": false
   }
  ],
- "h16": [],
+ "h16": [
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 8.8 ft",
+   "room_id": "h16-r0",
+   "subtle": true
+  }
+ ],
  "h17": [],
  "h18": [],
  "h19": [
   {
    "code": "E1",
-   "detail": "stretched by 9%",
-   "room_id": "h19-r3"
+   "detail": "stretched by 18%",
+   "room_id": "h19-r0",
+   "subtle": false
   }
  ],
- "h20": [],
+ "h20": [
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h20-r5",
+   "subtle": false
+  }
+ ],
  "h21": [
   {
    "code": "E5",
    "detail": "extended 1 ft into h21-r1",
-   "room_id": "h21-r0"
+   "room_id": "h21-r0",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h21-r3",
+   "subtle": false
   }
  ],
  "h22": [],
- "h23": [],
- "h24": [],
+ "h23": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h23-r6",
+   "subtle": false
+  }
+ ],
+ "h24": [
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h24-r0",
+   "subtle": false
+  }
+ ],
  "h25": [
   {
    "code": "E1",
-   "detail": "shrunk by 8%",
-   "room_id": "h25-r4"
+   "detail": "shrunk by 6%",
+   "room_id": "h25-r1",
+   "subtle": true
+  },
+  {
+   "code": "E5",
+   "detail": "extended 1 ft into h25-r4",
+   "room_id": "h25-r3",
+   "subtle": false
   }
  ],
  "h26": [],
  "h27": [
   {
    "code": "E2",
-   "detail": "ceiling 17 ft drawn as 8 ft",
-   "room_id": "h27-r0"
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h27-r3",
+   "subtle": false
   },
   {
    "code": "E3",
    "detail": "one door removed",
-   "room_id": "h27-r5"
+   "room_id": "h27-r5",
+   "subtle": false
+  },
+  {
+   "code": "E1",
+   "detail": "shrunk by 6%",
+   "room_id": "h27-r2",
+   "subtle": true
   }
  ],
- "h28": [],
+ "h28": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h28-r6",
+   "subtle": false
+  }
+ ],
  "h29": [],
  "h30": [
   {
    "code": "E1",
-   "detail": "stretched by 13%",
-   "room_id": "h30-r2"
+   "detail": "shrunk by 19%",
+   "room_id": "h30-r6",
+   "subtle": false
   },
   {
    "code": "E4",
    "detail": "room deleted from the plan",
-   "room_id": "h30-r6"
+   "room_id": "h30-r2",
+   "subtle": false
+  },
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h30-r0",
+   "subtle": false
   }
  ],
  "h31": [],
  "h32": [
   {
    "code": "E2",
-   "detail": "ceiling 8 ft drawn as 10 ft",
-   "room_id": "h32-r4"
+   "detail": "ceiling 8 ft drawn as 9 ft",
+   "room_id": "h32-r1",
+   "subtle": true
   },
   {
    "code": "E3",
    "detail": "one door removed",
-   "room_id": "h32-r0"
+   "room_id": "h32-r6",
+   "subtle": false
+  },
+  {
+   "code": "E1",
+   "detail": "stretched by 15%",
+   "room_id": "h32-r4",
+   "subtle": false
   }
  ],
  "h33": [],
@@ -171,53 +329,351 @@
   {
    "code": "E5",
    "detail": "extended 2 ft into h34-r2",
-   "room_id": "h34-r1"
+   "room_id": "h34-r1",
+   "subtle": false
   }
  ],
  "h35": [
   {
    "code": "E4",
    "detail": "room deleted from the plan",
-   "room_id": "h35-r0"
+   "room_id": "h35-r0",
+   "subtle": false
+  },
+  {
+   "code": "E1",
+   "detail": "stretched by 5%",
+   "room_id": "h35-r6",
+   "subtle": true
   }
  ],
- "h36": [],
+ "h36": [
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h36-r0",
+   "subtle": false
+  }
+ ],
  "h37": [
   {
    "code": "E1",
-   "detail": "shrunk by 16%",
-   "room_id": "h37-r1"
+   "detail": "stretched by 12%",
+   "room_id": "h37-r1",
+   "subtle": false
+  },
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h37-r6",
+   "subtle": false
   }
  ],
  "h38": [
   {
    "code": "E5",
-   "detail": "extended 2 ft into h38-r6",
-   "room_id": "h38-r7"
+   "detail": "extended 1.5 ft into h38-r5",
+   "room_id": "h38-r4",
+   "subtle": false
   },
   {
    "code": "E1",
-   "detail": "stretched by 17%",
-   "room_id": "h38-r6"
+   "detail": "shrunk by 4%",
+   "room_id": "h38-r1",
+   "subtle": true
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h38-r5",
+   "subtle": false
   }
  ],
  "h39": [
   {
    "code": "E4",
    "detail": "room deleted from the plan",
-   "room_id": "h39-r6"
+   "room_id": "h39-r4",
+   "subtle": false
   },
   {
    "code": "E1",
-   "detail": "stretched by 15%",
-   "room_id": "h39-r4"
+   "detail": "stretched by 9%",
+   "room_id": "h39-r8",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h39-r1",
+   "subtle": false
   }
  ],
  "h40": [
   {
    "code": "E1",
+   "detail": "stretched by 4%",
+   "room_id": "h40-r2",
+   "subtle": true
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h40-r5",
+   "subtle": false
+  }
+ ],
+ "h41": [
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h41-r3",
+   "subtle": false
+  },
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h41-r0",
+   "subtle": false
+  }
+ ],
+ "h42": [
+  {
+   "code": "E1",
+   "detail": "stretched by 18%",
+   "room_id": "h42-r0",
+   "subtle": false
+  }
+ ],
+ "h43": [
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h43-r7",
+   "subtle": false
+  }
+ ],
+ "h44": [
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h44-r1",
+   "subtle": false
+  },
+  {
+   "code": "E1",
    "detail": "shrunk by 11%",
-   "room_id": "h40-r1"
+   "room_id": "h44-r5",
+   "subtle": false
+  }
+ ],
+ "h45": [
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h45-r2",
+   "subtle": false
+  }
+ ],
+ "h46": [],
+ "h47": [
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h47-r5",
+   "subtle": false
+  },
+  {
+   "code": "E1",
+   "detail": "stretched by 13%",
+   "room_id": "h47-r7",
+   "subtle": false
+  },
+  {
+   "code": "E5",
+   "detail": "extended 2 ft into h47-r7",
+   "room_id": "h47-r6",
+   "subtle": false
+  }
+ ],
+ "h48": [
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h48-r3",
+   "subtle": false
+  },
+  {
+   "code": "E5",
+   "detail": "extended 2 ft into h48-r3",
+   "room_id": "h48-r2",
+   "subtle": false
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h48-r1",
+   "subtle": false
+  }
+ ],
+ "h49": [],
+ "h50": [
+  {
+   "code": "E1",
+   "detail": "shrunk by 19%",
+   "room_id": "h50-r4",
+   "subtle": false
+  },
+  {
+   "code": "E5",
+   "detail": "extended 1 ft into h50-r0",
+   "room_id": "h50-r1",
+   "subtle": false
+  },
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h50-r5",
+   "subtle": false
+  }
+ ],
+ "h51": [
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h51-r1",
+   "subtle": false
+  },
+  {
+   "code": "E2",
+   "detail": "ceiling 17 ft drawn as 8 ft",
+   "room_id": "h51-r5",
+   "subtle": false
+  },
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h51-r2",
+   "subtle": false
+  }
+ ],
+ "h52": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h52-r3",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h52-r1",
+   "subtle": false
+  }
+ ],
+ "h53": [
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h53-r2",
+   "subtle": false
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h53-r6",
+   "subtle": false
+  }
+ ],
+ "h54": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h54-r6",
+   "subtle": false
+  },
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h54-r4",
+   "subtle": false
+  },
+  {
+   "code": "E2",
+   "detail": "ceiling 8 ft drawn as 10 ft",
+   "room_id": "h54-r0",
+   "subtle": false
+  }
+ ],
+ "h55": [],
+ "h56": [
+  {
+   "code": "E1",
+   "detail": "stretched by 8%",
+   "room_id": "h56-r3",
+   "subtle": false
+  },
+  {
+   "code": "E5",
+   "detail": "extended 1.5 ft into h56-r8",
+   "room_id": "h56-r7",
+   "subtle": false
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h56-r4",
+   "subtle": false
+  }
+ ],
+ "h57": [
+  {
+   "code": "E1",
+   "detail": "shrunk by 8%",
+   "room_id": "h57-r2",
+   "subtle": false
+  },
+  {
+   "code": "E5",
+   "detail": "extended 2 ft into h57-r0",
+   "room_id": "h57-r1",
+   "subtle": false
+  }
+ ],
+ "h58": [
+  {
+   "code": "E6",
+   "detail": "wet room marked not affected",
+   "room_id": "h58-r2",
+   "subtle": false
+  },
+  {
+   "code": "E3",
+   "detail": "one door removed",
+   "room_id": "h58-r3",
+   "subtle": false
+  },
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h58-r7",
+   "subtle": false
+  }
+ ],
+ "h59": [
+  {
+   "code": "E5",
+   "detail": "extended 1 ft into h59-r2",
+   "room_id": "h59-r3",
+   "subtle": false
+  }
+ ],
+ "h60": [
+  {
+   "code": "E4",
+   "detail": "room deleted from the plan",
+   "room_id": "h60-r2",
+   "subtle": false
   }
  ]
 }
