@@ -38,7 +38,10 @@ def main():
     for by, items in proposals.items():
         for p in items:
             if p["action"] in EDITS:
-                p["decision"] = simulated_drafter(p, plans[p["room_id"]], truth[p["room_id"]])
+                decision = simulated_drafter(p, plans[p["room_id"]], truth[p["room_id"]])
+                if p.get("decision") not in (None, decision):  # agent edits were decided during the run
+                    raise ValueError(f"{p['room_id']}: recorded decision {p['decision']} but the drafter says {decision}")
+                p["decision"] = decision
                 p["field_was_right"] = field_matches(p["action"], plans[p["room_id"]], truth[p["room_id"]])
         n = Counter(p.get("decision", p["action"]) for p in items)
         print(f"drafter: {by}: {n['approve']} approved, {n['reject']} rejected, {n['ask_drafter']} manual items, "

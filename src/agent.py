@@ -1,65 +1,105 @@
-"""The small review agent, used only for rooms the code checks marked `unclear`.
+"""The small drafting agent: it answers door and wet questions that only the technician's note can settle.
 
+One run per question (room + `wet` or `doors`), one checkpointer thread per question.
 What `create_agent` does under the hood (the whole loop, nothing hidden):
- 1. Send the model the system prompt, the question about one room, and the JSON schema of each tool.
- 2. The model replies with text or with a tool call: a tool name plus JSON arguments.
- 3. The framework validates the arguments against the tool's pydantic schema and runs the Python function.
- 4. The tool's result goes back to the model as a new message in the conversation.
- 5. Steps 2 to 4 repeat until the model calls `submit_verdict`, which is marked return_direct,
-    so the loop ends right there, or until the step limit (recursion_limit) stops it.
- 6. Our wrapper reads the verdict. No verdict, a bad verdict, an API error or the step limit
-    all mean "send to drafter": the agent can never auto-accept by failing.
- Every message in the loop is saved to traces/<room id>.json and reused on the next run.
+ 1. Send the model the system prompt, the question, and the JSON schema of each tool.
+ 2. The model replies with text or with tool calls: a tool name plus JSON arguments.
+ 3. Before an edit tool (add_door, mark_wet) runs, HumanInTheLoopMiddleware pauses the run (a LangGraph
+    interrupt) when the call is valid. Our runner shows the proposed edit to the drafter (`decide`):
+    approve -> resume with Command(resume=...), the tool edits a draft copy of the room;
+    reject  -> stop; no retry, the room is counted and goes to the drafter.
+    An invalid call (quote not in the note, wrong room, bad wall) does not pause: the tool returns
+    the error to the model, which may try again. The drafter never sees an invalid edit.
+ 4. Other tool results go back to the model as new messages; steps 2 to 4 repeat.
+ 5. The run ends when the model replies with text. ModelCallLimitMiddleware stops it after 6 model calls.
+ 6. Our wrapper reads the answer. Exactly one valid answer counts. No answer, two answers, an error or
+    the step limit all mean ask_drafter: the agent can never change the final plan by failing.
+ Every message is saved to traces/<room id>.<question>.json and reused on the next run.
 """
 import hashlib
 import json
-from typing import Literal
 
 from pydantic import BaseModel, Field
 
 from . import llm
-from .common import DATA, TRACES, load, save
+from .cost import room_cost
+from .fixes import apply
 
 MODEL = llm.MODEL
 MAX_MODEL_STEPS = 6
-PROMPT_VERSION = "v3"
+RECURSION_LIMIT = 60  # graph steps; a backstop only, the model-call limit stops the loop first
+PROMPT_VERSION = "v4"
+EDIT_TOOLS = ("add_door", "mark_wet")
+ANSWER_TOOLS = EDIT_TOOLS + ("no_change", "ask_drafter")
 
-SYSTEM_PROMPT = """You review one room of a preliminary floor plan drawn by a scanner (the AI plan).
-A drafter's time is expensive, so only rooms that need a human should go to a drafter.
-A missed error costs more than a false alarm: it puts a wrong quantity into the repair estimate.
+SYSTEM_PROMPT = """You answer one question about one room of a floor plan drawn by a scanner (the AI plan).
+Code has already checked the measurements. Your question can be settled only by the technician's note.
+Read the note with get_notes (get_room and get_tour if useful), then answer with exactly one tool call:
+- mark_wet(room_id, quote): the note says THIS room is wet.
+- add_door(room_id, wall, quote): the note says this room has a door the plan does not show (wall 0 to 3).
+- no_change(room_id, quote): the note shows the plan is right.
+- ask_drafter(room_id, question): the note does not settle the question.
+`quote` must be copied exactly from this room's note, at least 3 words. A drafter approves or rejects every edit.
+A sentence about another room is not evidence for this room. "No water", "dry" and "nothing wet" mean dry.
+A tour that counted an archway or opening counted a door that is not there.
+If the tour counted fewer doors than the plan, the plan already has the door the tour missed: never add_door.
 
-Use the tools to read the room as drawn in the plan, the 360-degree tour measurements of the same room,
-and what the code checks found. Then call submit_verdict exactly once:
-- accept: the plan agrees with the tour within normal measurement noise, and you can say why.
-- send_to_drafter: anything a drafter must look at, or anything you are unsure about.
-
-Each finding from the code checks is a reason to look at the numbers, not a verdict. Tour walls carry about
-2 % noise and tour ceilings about 0.3 ft, so differences inside that are agreement. For each finding:
-- Weak spot (stairwell, tall ceiling, glass wall): accept if walls and ceiling match the tour within noise.
-- Overlap with another room: accept if this room's walls match its tour; the neighbour drawn wrong is the suspect.
-- Label differs from the tour: the label does not change quantities; accept if the measurements match.
-- Door count differs from the tour: send to drafter. A missing door is a real error type, even though tour
-  door counts are sometimes off by one.
-- Wall or ceiling near the limit: send to drafter.
-Give the reason in one or two sentences with the numbers."""
+Examples:
+- Doors: plan 1, tour 2. Note "One opening is an archway, no door." -> no_change, quote "One opening is an archway, no door."
+- Wet: the hall. Note "Hall carpet is soaked." -> mark_wet, quote "Hall carpet is soaked."
+- Wet: the closet. Note "No water in the closet." -> no_change, quote "No water in the closet."
+After a tool says your answer is recorded, reply with one short sentence and stop."""
 
 
 class RoomArgs(BaseModel):
     room_id: str = Field(description="The room id, for example h03-r2")
 
 
-class VerdictArgs(BaseModel):
-    room_id: str
-    verdict: Literal["accept", "send_to_drafter"]
-    reason: str = Field(description="One or two sentences with the numbers that decided it")
+class QuoteArgs(RoomArgs):
+    quote: str = Field(description="Exact words copied from this room's note")
 
 
-def make_tools(room_id, plan_room, tour_room, check, box):
-    """The 4 tools, bound to one room. `box` receives the verdict."""
+class DoorArgs(QuoteArgs):
+    wall: int = Field(description="Wall of the new door: 0 bottom, 1 right, 2 top, 3 left")
+
+
+class AskArgs(RoomArgs):
+    question: str = Field(description="What the drafter should check")
+
+
+def invalid(name, args, room_id, note, tour_has_more_doors):
+    """The error text for an answer call, or None if it is valid.
+
+    Pure (call arguments and fixed facts of the question only): HumanInTheLoopMiddleware runs it again on resume
+    as its `when` predicate, and the tool runs it as its guard, so both always agree.
+    `tour_has_more_doors`: add_door can be right only if the tour counted more doors than the plan (a rule, so code).
+    """
+    if name == "add_door" and not tour_has_more_doors:
+        return "Not recorded: the tour counted fewer doors than the plan, so the plan has no missing door."
+    if args.get("room_id") != room_id:
+        return f"Unknown room {args.get('room_id')}; this question is about {room_id}."
+    if name in ("add_door", "mark_wet", "no_change"):
+        q = str(args.get("quote") or "").strip()
+        if len(q.split()) < 3 or q not in note:
+            return "Not recorded: the quote must be copied exactly from this room's note (at least 3 words)."
+    if name == "add_door" and str(args.get("wall")) not in {"0", "1", "2", "3"}:
+        return "Not recorded: wall must be 0, 1, 2 or 3."
+    if name == "ask_drafter" and not str(args.get("question") or "").strip():
+        return "Not recorded: write the question for the drafter."
+    return None
+
+
+def make_tools(room_id, plan_room, tour_room, note, box):
+    """The 7 tools, bound to one room. Edits act on box['draft'], a copy; `box['answers']` collects answers."""
     from langchain_core.tools import StructuredTool
 
+    more = tour_room["doors"] > len(plan_room["doors"])
+
+    def invalid_here(name, args):
+        return invalid(name, args, room_id, note, more)
+
     def _only(rid):
-        return None if rid == room_id else f"Unknown room {rid}; this review is about {room_id}."
+        return None if rid == room_id else f"Unknown room {rid}; this question is about {room_id}."
 
     def get_room(room_id: str) -> str:
         return _only(room_id) or json.dumps(plan_room)
@@ -67,27 +107,52 @@ def make_tools(room_id, plan_room, tour_room, check, box):
     def get_tour(room_id: str) -> str:
         return _only(room_id) or json.dumps(tour_room)
 
-    def get_check_results(room_id: str) -> str:
-        return _only(room_id) or json.dumps({"status": check["status"], "reasons": check["reasons"],
-                                             "numbers": check["numbers"],
-                                             "estimated_cost_at_risk_usd": check["est_cost_at_risk_usd"]})
+    def get_notes(room_id: str) -> str:
+        return _only(room_id) or note
 
-    def submit_verdict(room_id: str, verdict: str, reason: str) -> str:
-        if room_id != box["room_id"]:
-            return f"Verdict ignored: this review is about {box['room_id']}."
-        box["verdict"], box["reason"] = verdict, reason
-        return "Verdict recorded."
+    def _edit(name, args):
+        if err := invalid_here(name, args):
+            return err
+        if not box["approved"]:  # cannot happen through the HITL gate; refuse rather than edit unreviewed
+            return "Not applied: an edit needs the drafter's approval."
+        box["approved"] = False
+        edit_args = {"wall": int(args["wall"])} if name == "add_door" else {}
+        box["draft"] = apply(box["draft"], {"action": name, "args": edit_args})
+        box["answers"].append({"action": name, "args": edit_args, "quote": args["quote"]})
+        return "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence."
+
+    def add_door(room_id: str, wall: int, quote: str) -> str:
+        return _edit("add_door", {"room_id": room_id, "wall": wall, "quote": quote})
+
+    def mark_wet(room_id: str, quote: str) -> str:
+        return _edit("mark_wet", {"room_id": room_id, "quote": quote})
+
+    def no_change(room_id: str, quote: str) -> str:
+        if err := invalid_here("no_change", {"room_id": room_id, "quote": quote}):
+            return err
+        box["answers"].append({"action": "no_change", "args": {}, "quote": quote})
+        return "Answer recorded: no change. Reply with one short sentence."
+
+    def ask_drafter(room_id: str, question: str) -> str:
+        if err := invalid_here("ask_drafter", {"room_id": room_id, "question": question}):
+            return err
+        box["answers"].append({"action": "ask_drafter", "args": {"question": question}, "quote": ""})
+        return "Answer recorded: a drafter will check. Reply with one short sentence."
 
     mk = StructuredTool.from_function
     return [
         mk(get_room, name="get_room", args_schema=RoomArgs,
-           description="The AI plan's version of the room: polygon in feet, ceiling, doors, flags."),
+           description="The AI plan's version of the room: polygon in feet, ceiling, doors, wet status (affected)."),
         mk(get_tour, name="get_tour", args_schema=RoomArgs,
            description="The 360-degree tour measurements of the room: walls, ceiling, door count, label."),
-        mk(get_check_results, name="get_check_results", args_schema=RoomArgs,
-           description="What the plain-code checks found for this room, with the numbers."),
-        mk(submit_verdict, name="submit_verdict", args_schema=VerdictArgs, return_direct=True,
-           description="Final answer for this room: accept or send_to_drafter, with the reason."),
+        mk(get_notes, name="get_notes", args_schema=RoomArgs, description="The technician's note for the room."),
+        mk(add_door, name="add_door", args_schema=DoorArgs,
+           description="Propose adding a door the plan misses. A drafter approves or rejects it."),
+        mk(mark_wet, name="mark_wet", args_schema=QuoteArgs,
+           description="Propose marking the room as wet. A drafter approves or rejects it."),
+        mk(no_change, name="no_change", args_schema=QuoteArgs, description="Final answer: the plan is right."),
+        mk(ask_drafter, name="ask_drafter", args_schema=AskArgs,
+           description="Final answer: the note does not settle it; a drafter checks."),
     ]
 
 
@@ -108,79 +173,98 @@ def trace_steps(messages):
     return steps
 
 
-def review_room(room_id, plan_room, tour_room, check, model, fallbacks=()):
-    """Run the agent on one room. Never raises; any failure becomes send_to_drafter."""
+def question_text(room_id, kind, plan_room, tour_room):
+    if kind == "wet":
+        return f"Room {room_id} ({plan_room['label']}). The plan says this room is not wet. Is it wet?"
+    return (f"Room {room_id} ({plan_room['label']}). The plan shows {len(plan_room['doors'])} door(s); "
+            f"the tour counted {tour_room['doors']}. Is the plan missing a door?")
+
+
+def answer_question(room_id, kind, plan_room, tour_room, note, model, decide, fallbacks=()):
+    """Run the agent on one question. Never raises. `decide(proposal)` is the drafter: 'approve' or 'reject'.
+
+    Returns action, args, quote, decision (edits only), reason, error, draft, steps, usage, model_calls.
+    """
     from langchain.agents import create_agent
+    from langchain.agents.middleware import HumanInTheLoopMiddleware, ModelCallLimitMiddleware
+    from langgraph.checkpoint.memory import InMemorySaver
+    from langgraph.types import Command
 
-    box = {"room_id": room_id, "verdict": None, "reason": None}
-    agent = create_agent(model, make_tools(room_id, plan_room, tour_room, check, box), system_prompt=SYSTEM_PROMPT,
-                         middleware=llm.agent_middleware(fallbacks))
-    messages, error = [], None
-    try:
-        out = agent.invoke({"messages": [{"role": "user", "content": f"Review room {room_id}."}]},
-                           config={"recursion_limit": 2 * MAX_MODEL_STEPS + 1})
-        messages = out["messages"]
-    except Exception as e:  # step limit, API error, invalid tool output: all go to a drafter
-        error = f"{type(e).__name__}: {str(e)[:200]}"
-    verdict, reason = box["verdict"], box["reason"]
-    if verdict not in ("accept", "send_to_drafter"):
-        verdict = "send_to_drafter"
-        reason = "Agent could not decide" + (f" ({error})" if error else "") + "; a drafter checks it."
-    return {"verdict": verdict, "reason": reason, "error": error,
-            "steps": trace_steps(messages), "usage": llm.usage(messages)}
+    box = {"draft": json.loads(json.dumps(plan_room)), "answers": [], "approved": False}
+    more = tour_room["doors"] > len(plan_room["doors"])
+    gate = {"allowed_decisions": ["approve", "reject"],
+            "when": lambda req: invalid(req.tool_call["name"], req.tool_call["args"], room_id, note, more) is None}
+    middleware = [ModelCallLimitMiddleware(thread_limit=MAX_MODEL_STEPS, exit_behavior="error"),
+                  HumanInTheLoopMiddleware(interrupt_on={t: gate for t in EDIT_TOOLS},
+                                           description_prefix="Drafter: approve or reject this edit"),
+                  *llm.agent_middleware(fallbacks)]
+    agent = create_agent(model, make_tools(room_id, plan_room, tour_room, note, box), system_prompt=SYSTEM_PROMPT,
+                         middleware=middleware, checkpointer=InMemorySaver())
+    config = {"configurable": {"thread_id": f"{room_id}.{kind}"}, "recursion_limit": RECURSION_LIMIT}
+    proposal, decision, stop, error = None, None, None, None
+
+    def run(inp):
+        """One graph run. Only the agent's own failures are caught; a bug in our code below still crashes."""
+        nonlocal error
+        try:
+            return agent.invoke(inp, config)
+        except Exception as e:  # step limit, API error, bad tool output: all go to a drafter
+            error = f"{type(e).__name__}: {str(e)[:200]}"
+            return {}
+
+    out = run({"messages": [{"role": "user", "content": question_text(room_id, kind, plan_room, tour_room)}]})
+    while out.get("__interrupt__"):
+        last = [m for m in agent.get_state(config).values["messages"] if m.__class__.__name__ == "AIMessage"][-1]
+        answers_in_turn = [c for c in last.tool_calls if c["name"] in ANSWER_TOOLS]
+        requests = out["__interrupt__"][0].value["action_requests"]
+        if proposal is not None:
+            stop = "more than one answer (a second edit after the drafter's decision)"
+            break
+        if len(requests) != 1 or len(answers_in_turn) != 1:
+            stop = "more than one answer in one turn"
+            break
+        name, args = requests[0]["name"], requests[0]["args"]
+        edit_args = {"wall": int(args["wall"])} if name == "add_door" else {}
+        proposal = {"room_id": room_id, "kind": kind, "action": name, "args": edit_args, "by": "agent",
+                    "quote_or_evidence": args["quote"]}
+        proposal["est_cost_at_risk_usd"] = round(
+            abs(room_cost(apply(plan_room, proposal))["usd"] - room_cost(plan_room)["usd"]), 2)
+        decision = decide(proposal)
+        if decision != "approve":
+            break  # no retry after a reject
+        box["approved"] = True
+        out = run(Command(resume={"decisions": [{"type": "approve"}]}))
+    messages = agent.get_state(config).values.get("messages", [])
+
+    res = {"action": "ask_drafter", "args": {}, "quote": "", "decision": None, "reason": None}
+    if error:
+        res["reason"] = f"agent error ({error}); a drafter checks"
+    elif decision == "reject":
+        res.update(action=proposal["action"], args=proposal["args"], quote=proposal["quote_or_evidence"],
+                   decision="reject", reason="the drafter rejected the edit")
+    elif stop:
+        res["reason"] = stop + "; a drafter checks"
+    elif len(box["answers"]) == 1:
+        a = box["answers"][0]
+        res.update(action=a["action"], args=a["args"], quote=a["quote"],
+                   decision="approve" if a["action"] in EDIT_TOOLS else None,
+                   reason=a["args"].get("question") if a["action"] == "ask_drafter" else None)
+    else:
+        res["reason"] = ("no valid answer" if not box["answers"] else "more than one answer") + "; a drafter checks"
+    edited = res["action"] in EDIT_TOOLS and res["decision"] == "approve"
+    res.update(error=error, draft=box["draft"] if edited else json.loads(json.dumps(plan_room)),
+               steps=trace_steps(messages), usage=llm.usage(messages),
+               model_calls=sum(m.__class__.__name__ == "AIMessage" for m in messages))
+    return res
 
 
-def input_hash(plan_room, tour_room, check):
-    blob = json.dumps([MODEL, PROMPT_VERSION, SYSTEM_PROMPT, plan_room, tour_room, check], sort_keys=True)
+def input_hash(kind, plan_room, tour_room, note):
+    blob = json.dumps([MODEL, PROMPT_VERSION, SYSTEM_PROMPT, kind, plan_room, tour_room, note], sort_keys=True)
     return hashlib.sha256(blob.encode()).hexdigest()[:16]
 
 
 def main():
-    plans, tours, checks = load(DATA / "ai_plan.json"), load(DATA / "tour.json"), load(DATA / "checks.json")
-    jobs = []
-    for hid in sorted(checks):
-        rooms = {r["id"]: r for r in plans[hid]["rooms"]}
-        for rid, chk in sorted(checks[hid].items()):
-            if chk["status"] == "unclear":
-                jobs.append((hid, rid, rooms[rid], tours[hid][rid], chk))
-
-    model, fallbacks = None, []
-    verdicts, cached, new, skipped = {}, 0, 0, 0
-    for hid, rid, plan_room, tour_room, chk in jobs:
-        path = TRACES / f"{rid}.json"
-        h = input_hash(plan_room, tour_room, chk)
-        if path.exists() and load(path).get("input_hash") == h:
-            verdicts[rid] = load(path)
-            cached += 1
-            continue
-        if model is None:
-            if not llm.has_key():
-                print(f"agent: no {llm.key_names()} (environment or .env); unclear rooms without "
-                      "a cached trace are left for the drafter and marked 'agent not run'.")
-                skipped = len(jobs) - cached - new
-                break
-            model, fallbacks = llm.get_model(), llm.get_fallbacks()
-        if llm.over_budget():
-            print(f"agent: budget cap {llm.BUDGET_USD} USD reached; remaining rooms go to the drafter.")
-            skipped = len(jobs) - cached - new
-            break
-        res = review_room(rid, plan_room, tour_room, chk, model, fallbacks)
-        res.update({"room_id": rid, "house": hid, "input_hash": h, "model": MODEL})
-        if llm.is_rate_limit(res["error"]):
-            print(f"  {rid}: provider limit hit ({res['error'][:80]}); stopping, rerun later to continue.")
-            skipped = len(jobs) - cached - new
-            break
-        save(path, res)
-        llm.record(res["usage"])
-        verdicts[rid] = res
-        new += 1
-        print(f"  {rid}: {res['verdict']}  ({res['usage']['input_tokens']}+{res['usage']['output_tokens']} tokens)",
-              flush=True)
-
-    save(DATA / "agent_verdicts.json", {rid: {k: v[k] for k in ("verdict", "reason", "usage", "error")}
-                                        for rid, v in verdicts.items()})
-    print(f"agent: {len(jobs)} unclear rooms, {cached} from cache, {new} new, {skipped} not run; "
-          f"total spend so far {llm.ledger()['usd']:.4f} USD")
+    raise NotImplementedError("v2 step 6 adds the live run (cache per question, run report); not built yet.")
 
 
 if __name__ == "__main__":
