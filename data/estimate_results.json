@@ -5,6 +5,452 @@
    "drafted_by": "agent",
    "lines": [
     {
+     "code": "LBR-TECH-HR",
+     "description": "Water mitigation technician, per hour",
+     "often_missed": false,
+     "quantity": 5,
+     "reason": "Technician labor is always needed for mitigation work.",
+     "share_of_similar": 0.86,
+     "similar_jobs": 14,
+     "source_jobs": 12,
+     "total_usd": 318.35,
+     "unit": "HR",
+     "unit_price_usd": 63.67
+    },
+    {
+     "code": "DRY-FLDCUT-LF",
+     "description": "Flood cut wet drywall 2 ft, per LF",
+     "often_missed": false,
+     "quantity": 44.0,
+     "reason": "Drywall is wet well above two feet, requiring flood cutting.",
+     "share_of_similar": 0.79,
+     "similar_jobs": 14,
+     "source_jobs": 11,
+     "total_usd": 139.92,
+     "unit": "LF",
+     "unit_price_usd": 3.18
+    },
+    {
+     "code": "MON-MOIST-DAY",
+     "description": "Moisture monitoring and mapping, per day",
+     "often_missed": false,
+     "quantity": 3,
+     "reason": "Moisture monitoring is common in similar jobs.",
+     "share_of_similar": 0.79,
+     "similar_jobs": 14,
+     "source_jobs": 11,
+     "total_usd": 138.63,
+     "unit": "DAY",
+     "unit_price_usd": 46.21
+    },
+    {
+     "code": "BSB-RMV-LF",
+     "description": "Remove baseboard, per LF",
+     "often_missed": false,
+     "quantity": 47.0,
+     "reason": "Baseboards are present and need to be removed for drying.",
+     "share_of_similar": 0.79,
+     "similar_jobs": 14,
+     "source_jobs": 11,
+     "total_usd": 53.11,
+     "unit": "LF",
+     "unit_price_usd": 1.13
+    },
+    {
+     "code": "EQ-DEHU-DAY",
+     "description": "Dehumidifier, large, per 24 hour period",
+     "often_missed": false,
+     "quantity": 3,
+     "reason": "Dehumidifiers are commonly used in similar jobs.",
+     "share_of_similar": 0.71,
+     "similar_jobs": 14,
+     "source_jobs": 10,
+     "total_usd": 231.06,
+     "unit": "EA-DAY",
+     "unit_price_usd": 77.02
+    },
+    {
+     "code": "FLR-HARD-EXT-SF",
+     "description": "Water extraction from hard surface floor, per SF",
+     "often_missed": false,
+     "quantity": 135.0,
+     "reason": "Water extraction from the vinyl floor is necessary.",
+     "share_of_similar": 0.64,
+     "similar_jobs": 14,
+     "source_jobs": 9,
+     "total_usd": 41.85,
+     "unit": "SF",
+     "unit_price_usd": 0.31
+    },
+    {
+     "code": "EQ-AIRM-DAY",
+     "description": "Air mover, per 24 hour period",
+     "often_missed": false,
+     "quantity": 21,
+     "reason": "Air movers are commonly used in similar jobs.",
+     "share_of_similar": 0.64,
+     "similar_jobs": 14,
+     "source_jobs": 9,
+     "total_usd": 647.01,
+     "unit": "EA-DAY",
+     "unit_price_usd": 30.81
+    },
+    {
+     "code": "CAB-TOE-RMV-LF",
+     "description": "Detach cabinet toe kick, per LF",
+     "often_missed": false,
+     "quantity": 5,
+     "reason": "Base cabinets are wet, requiring toe kick removal.",
+     "share_of_similar": 0.57,
+     "similar_jobs": 14,
+     "source_jobs": 8,
+     "total_usd": 23.1,
+     "unit": "LF",
+     "unit_price_usd": 4.62
+    },
+    {
+     "code": "CLN-FINAL-SF",
+     "description": "Final cleaning, per SF",
+     "often_missed": false,
+     "quantity": 135.0,
+     "reason": "Final cleaning is common in similar jobs.",
+     "share_of_similar": 0.57,
+     "similar_jobs": 14,
+     "source_jobs": 8,
+     "total_usd": 28.35,
+     "unit": "SF",
+     "unit_price_usd": 0.21
+    },
+    {
+     "code": "INS-RMV-SF",
+     "description": "Remove wet wall insulation, per SF",
+     "often_missed": false,
+     "quantity": 88.0,
+     "reason": "Wet wall insulation needs to be removed.",
+     "share_of_similar": 0.5,
+     "similar_jobs": 14,
+     "source_jobs": 7,
+     "total_usd": 76.56,
+     "unit": "SF",
+     "unit_price_usd": 0.87
+    },
+    {
+     "code": "VAN-DR-EA",
+     "description": "Detach and reset vanity",
+     "often_missed": false,
+     "quantity": 1,
+     "reason": "The vanity is wet and needs to be detached and reset.",
+     "share_of_similar": 0.5,
+     "similar_jobs": 14,
+     "source_jobs": 7,
+     "total_usd": 143.78,
+     "unit": "EA",
+     "unit_price_usd": 143.78
+    },
+    {
+     "code": "CLN-TOILET-EA",
+     "description": "Clean and sanitize toilet seat and bowl",
+     "often_missed": true,
+     "quantity": 1,
+     "reason": "The toilet is present and needs to be cleaned and sanitized.",
+     "share_of_similar": 0.5,
+     "similar_jobs": 14,
+     "source_jobs": 7,
+     "total_usd": 22.59,
+     "unit": "EA",
+     "unit_price_usd": 22.59
+    },
+    {
+     "code": "PLM-TOILET-DR",
+     "description": "Detach and reset toilet",
+     "often_missed": false,
+     "quantity": 1,
+     "reason": "The toilet is wet and needs to be detached and reset.",
+     "share_of_similar": 0.43,
+     "similar_jobs": 14,
+     "source_jobs": 6,
+     "total_usd": 189.99,
+     "unit": "EA",
+     "unit_price_usd": 189.99
+    },
+    {
+     "code": "PPE-EA",
+     "description": "Personal protective equipment, per person per day",
+     "often_missed": false,
+     "quantity": 6,
+     "reason": "Personal protective equipment is necessary for the technicians.",
+     "share_of_similar": 0.36,
+     "similar_jobs": 14,
+     "source_jobs": 5,
+     "total_usd": 86.28,
+     "unit": "EA",
+     "unit_price_usd": 14.38
+    },
+    {
+     "code": "CLN-ANTI-SF",
+     "description": "Apply antimicrobial agent, per SF",
+     "often_missed": false,
+     "quantity": 223.0,
+     "reason": "Applying antimicrobial agent is common in similar jobs.",
+     "share_of_similar": 0.36,
+     "similar_jobs": 14,
+     "source_jobs": 5,
+     "total_usd": 64.67,
+     "unit": "SF",
+     "unit_price_usd": 0.29
+    },
+    {
+     "code": "EQ-SCRUB-DAY",
+     "description": "Air scrubber, per 24 hour period",
+     "often_missed": false,
+     "quantity": 3,
+     "reason": "Air scrubbers are commonly used in similar jobs.",
+     "share_of_similar": 0.29,
+     "similar_jobs": 14,
+     "source_jobs": 4,
+     "total_usd": 215.67,
+     "unit": "EA-DAY",
+     "unit_price_usd": 71.89
+    },
+    {
+     "code": "TRIM-CSG-RMV-LF",
+     "description": "Remove door casing, per LF",
+     "often_missed": true,
+     "quantity": 17,
+     "reason": "Door casing is present and needs to be removed.",
+     "share_of_similar": 0.29,
+     "similar_jobs": 14,
+     "source_jobs": 4,
+     "total_usd": 22.78,
+     "unit": "LF",
+     "unit_price_usd": 1.34
+    },
+    {
+     "code": "DRY-RMV-SF",
+     "description": "Remove wet drywall, per SF",
+     "often_missed": false,
+     "quantity": 268.0,
+     "reason": "Wet drywall needs to be removed.",
+     "share_of_similar": 0.29,
+     "similar_jobs": 14,
+     "source_jobs": 4,
+     "total_usd": 329.64,
+     "unit": "SF",
+     "unit_price_usd": 1.23
+    },
+    {
+     "code": "CAB-DRILL-EA",
+     "description": "Drill cabinet bases for drying, per cabinet",
+     "often_missed": false,
+     "quantity": 2,
+     "reason": "Cabinets are wet and need to be drilled for drying.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 14,
+     "source_jobs": 3,
+     "total_usd": 24.64,
+     "unit": "EA",
+     "unit_price_usd": 12.32
+    },
+    {
+     "code": "DOR-DR-EA",
+     "description": "Detach and reset interior door",
+     "often_missed": false,
+     "quantity": 1,
+     "reason": "Interior doors are present and need to be detached and reset.",
+     "share_of_similar": 0.07,
+     "similar_jobs": 14,
+     "source_jobs": 1,
+     "total_usd": 39.03,
+     "unit": "EA",
+     "unit_price_usd": 39.03
+    },
+    {
+     "code": "APP-DW-DR",
+     "description": "Detach and reset dishwasher",
+     "often_missed": false,
+     "quantity": 1,
+     "reason": "The dishwasher is present and needs to be detached and reset.",
+     "share_of_similar": 0.07,
+     "similar_jobs": 14,
+     "source_jobs": 1,
+     "total_usd": 123.24,
+     "unit": "EA",
+     "unit_price_usd": 123.24
+    },
+    {
+     "code": "HVAC-REG-CLN",
+     "description": "Clean heating and cooling register",
+     "often_missed": true,
+     "quantity": 2,
+     "reason": "Heating and cooling registers are present and need to be cleaned.",
+     "share_of_similar": 0.07,
+     "similar_jobs": 14,
+     "source_jobs": 1,
+     "total_usd": 22.6,
+     "unit": "EA",
+     "unit_price_usd": 11.3
+    },
+    {
+     "code": "WIN-SCR-DR",
+     "description": "Detach and reset window screen",
+     "often_missed": true,
+     "quantity": 0,
+     "reason": "Window screens are present and need to be detached and reset.",
+     "share_of_similar": 0.07,
+     "similar_jobs": 14,
+     "source_jobs": 1,
+     "total_usd": 0.0,
+     "unit": "EA",
+     "unit_price_usd": 9.76
+    }
+   ],
+   "month": "2026-10",
+   "notes": "Category 2 water: vanity supply line burst. Vinyl floor, water standing at the edges. Drywall wet well above two feet, wicking high on the walls. Base cabinets are wet.",
+   "region": "FL-TAMPA",
+   "room_id": "h01-r3",
+   "room_type": "bathroom",
+   "size": "13.5 x 10 ft, ceiling 8 ft",
+   "steps": [
+    {
+     "args": {
+      "loss_category": 2,
+      "room_type": "bathroom"
+     },
+     "name": "item_frequency",
+     "type": "tool_call"
+    },
+    {
+     "name": "item_frequency",
+     "text": "{\"similar_jobs\": 14, \"items\": [{\"code\": \"LBR-TECH-HR\", \"description\": \"Water mitigation technician, per hour\", \"share_of_jobs\": 0.86, \"jobs\": 12, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\",",
+     "type": "tool_result"
+    },
+    {
+     "args": {
+      "loss_category": 2,
+      "room_type": "bathroom"
+     },
+     "name": "find_similar_jobs",
+     "type": "tool_call"
+    },
+    {
+     "name": "find_similar_jobs",
+     "text": "[{\"job\": \"J003\", \"category\": 2, \"notes\": \"Category 2 water: vanity supply line burst. Tile floor, water on the surface. Drywall wet well above two feet, wicking high on the walls. Base cabinets are wet. Floor register in the wet area.\", \"items\": [\"CAB-DRILL-EA\", \"CAB-TOE-RMV-LF\", \"CLN-ANTI-SF\", \"DRY-FLDCUT-LF\", \"DRY-RMV-SF\", \"EQ-DEHU-DAY\", \"EQ-SCRUB-DAY\", \"FLR-HARD-EXT-SF\", \"INS-RMV-SF\", \"LBR-TECH-HR\", \"PPE-EA\", \"TRIM-CSG-RMV-LF\"]}, {\"job\": \"J006\", \"category\": 2, \"notes\": \"Category 2 water: toilet overflowed. Vinyl floor, water standing at the edges. Drywall wet to about 16 inches. Base cabine",
+     "type": "tool_result"
+    },
+    {
+     "args": {
+      "items": [
+       {
+        "code": "LBR-TECH-HR",
+        "reason": "Technician labor is always needed for mitigation work."
+       },
+       {
+        "code": "DRY-FLDCUT-LF",
+        "reason": "Drywall is wet well above two feet, requiring flood cutting."
+       },
+       {
+        "code": "MON-MOIST-DAY",
+        "reason": "Moisture monitoring is common in similar jobs."
+       },
+       {
+        "code": "BSB-RMV-LF",
+        "reason": "Baseboards are present and need to be removed for drying."
+       },
+       {
+        "code": "EQ-DEHU-DAY",
+        "reason": "Dehumidifiers are commonly used in similar jobs."
+       },
+       {
+        "code": "FLR-HARD-EXT-SF",
+        "reason": "Water extraction from the vinyl floor is necessary."
+       },
+       {
+        "code": "EQ-AIRM-DAY",
+        "reason": "Air movers are commonly used in similar jobs."
+       },
+       {
+        "code": "CAB-TOE-RMV-LF",
+        "reason": "Base cabinets are wet, requiring toe kick removal."
+       },
+       {
+        "code": "CLN-FINAL-SF",
+        "reason": "Final cleaning is common in similar jobs."
+       },
+       {
+        "code": "INS-RMV-SF",
+        "reason": "Wet wall insulation needs to be removed."
+       },
+       {
+        "code": "VAN-DR-EA",
+        "reason": "The vanity is wet and needs to be detached and reset."
+       },
+       {
+        "code": "CLN-TOILET-EA",
+        "reason": "The toilet is present and needs to be cleaned and sanitized."
+       },
+       {
+        "code": "PLM-TOILET-DR",
+        "reason": "The toilet is wet and needs to be detached and reset."
+       },
+       {
+        "code": "PPE-EA",
+        "reason": "Personal protective equipment is necessary for the technicians."
+       },
+       {
+        "code": "CLN-ANTI-SF",
+        "reason": "Applying antimicrobial agent is common in similar jobs."
+       },
+       {
+        "code": "EQ-SCRUB-DAY",
+        "reason": "Air scrubbers are commonly used in similar jobs."
+       },
+       {
+        "code": "TRIM-CSG-RMV-LF",
+        "reason": "Door casing is present and needs to be removed."
+       },
+       {
+        "code": "DRY-RMV-SF",
+        "reason": "Wet drywall needs to be removed."
+       },
+       {
+        "code": "CAB-DRILL-EA",
+        "reason": "Cabinets are wet and need to be drilled for drying."
+       },
+       {
+        "code": "DOR-DR-EA",
+        "reason": "Interior doors are present and need to be detached and reset."
+       },
+       {
+        "code": "APP-DW-DR",
+        "reason": "The dishwasher is present and needs to be detached and reset."
+       },
+       {
+        "code": "HVAC-REG-CLN",
+        "reason": "Heating and cooling registers are present and need to be cleaned."
+       },
+       {
+        "code": "WIN-SCR-DR",
+        "reason": "Window screens are present and need to be detached and reset."
+       }
+      ],
+      "room_id": "h01-r3"
+     },
+     "name": "submit_draft",
+     "type": "tool_call"
+    },
+    {
+     "name": "submit_draft",
+     "text": "Draft recorded.",
+     "type": "tool_result"
+    }
+   ],
+   "total_usd": 2982.85
+  },
+  {
+   "check_often_missed": [],
+   "drafted_by": "agent",
+   "lines": [
+    {
      "code": "EQ-DEHU-DAY",
      "description": "Dehumidifier, large, per 24 hour period",
      "often_missed": false,
@@ -400,28 +846,41 @@
    "drafted_by": "agent",
    "lines": [
     {
-     "code": "LBR-TECH-HR",
-     "description": "Water mitigation technician, per hour",
+     "code": "BSB-RMV-LF",
+     "description": "Remove baseboard, per LF",
      "often_missed": false,
-     "quantity": 6,
-     "reason": "Technician labor is always needed.",
-     "share_of_similar": 0.86,
-     "similar_jobs": 14,
-     "source_jobs": 12,
-     "total_usd": 382.02,
-     "unit": "HR",
-     "unit_price_usd": 63.67
+     "quantity": 76.0,
+     "reason": "Baseboard removal is common in similar jobs.",
+     "share_of_similar": 0.89,
+     "similar_jobs": 19,
+     "source_jobs": 17,
+     "total_usd": 85.88,
+     "unit": "LF",
+     "unit_price_usd": 1.13
+    },
+    {
+     "code": "EQ-DEHU-DAY",
+     "description": "Dehumidifier, large, per 24 hour period",
+     "often_missed": false,
+     "quantity": 9,
+     "reason": "Dehumidifiers are commonly used in similar jobs.",
+     "share_of_similar": 0.84,
+     "similar_jobs": 19,
+     "source_jobs": 16,
+     "total_usd": 693.18,
+     "unit": "EA-DAY",
+     "unit_price_usd": 77.02
     },
     {
      "code": "DRY-FLDCUT-LF",
      "description": "Flood cut wet drywall 2 ft, per LF",
      "often_missed": false,
-     "quantity": 56.0,
-     "reason": "Drywall is wet above 2 feet.",
+     "quantity": 73.0,
+     "reason": "Flood cutting is common in similar jobs.",
      "share_of_similar": 0.79,
-     "similar_jobs": 14,
-     "source_jobs": 11,
-     "total_usd": 178.08,
+     "similar_jobs": 19,
+     "source_jobs": 15,
+     "total_usd": 232.14,
      "unit": "LF",
      "unit_price_usd": 3.18
     },
@@ -431,404 +890,412 @@
      "often_missed": false,
      "quantity": 3,
      "reason": "Moisture monitoring is common in similar jobs.",
-     "share_of_similar": 0.79,
-     "similar_jobs": 14,
-     "source_jobs": 11,
+     "share_of_similar": 0.74,
+     "similar_jobs": 19,
+     "source_jobs": 14,
      "total_usd": 138.63,
      "unit": "DAY",
      "unit_price_usd": 46.21
     },
     {
-     "code": "BSB-RMV-LF",
-     "description": "Remove baseboard, per LF",
+     "code": "LBR-TECH-HR",
+     "description": "Water mitigation technician, per hour",
      "often_missed": false,
-     "quantity": 59.0,
-     "reason": "Baseboards are present and need to be removed.",
-     "share_of_similar": 0.79,
-     "similar_jobs": 14,
+     "quantity": 8,
+     "reason": "Technician labor is common in similar jobs.",
+     "share_of_similar": 0.74,
+     "similar_jobs": 19,
+     "source_jobs": 14,
+     "total_usd": 509.36,
+     "unit": "HR",
+     "unit_price_usd": 63.67
+    },
+    {
+     "code": "CNT-MOVE-HR",
+     "description": "Move and block room contents, per hour",
+     "often_missed": true,
+     "quantity": 2,
+     "reason": "Moving contents is common in similar jobs.",
+     "share_of_similar": 0.58,
+     "similar_jobs": 19,
      "source_jobs": 11,
-     "total_usd": 66.67,
-     "unit": "LF",
-     "unit_price_usd": 1.13
-    },
-    {
-     "code": "EQ-DEHU-DAY",
-     "description": "Dehumidifier, large, per 24 hour period",
-     "often_missed": false,
-     "quantity": 6,
-     "reason": "Dehumidification is necessary for drying.",
-     "share_of_similar": 0.71,
-     "similar_jobs": 14,
-     "source_jobs": 10,
-     "total_usd": 462.12,
-     "unit": "EA-DAY",
-     "unit_price_usd": 77.02
-    },
-    {
-     "code": "FLR-HARD-EXT-SF",
-     "description": "Water extraction from hard surface floor, per SF",
-     "often_missed": false,
-     "quantity": 217.0,
-     "reason": "Water extraction from the tile floor is needed.",
-     "share_of_similar": 0.64,
-     "similar_jobs": 14,
-     "source_jobs": 9,
-     "total_usd": 67.27,
-     "unit": "SF",
-     "unit_price_usd": 0.31
-    },
-    {
-     "code": "EQ-AIRM-DAY",
-     "description": "Air mover, per 24 hour period",
-     "often_missed": false,
-     "quantity": 30,
-     "reason": "Air movers are commonly used in similar jobs.",
-     "share_of_similar": 0.64,
-     "similar_jobs": 14,
-     "source_jobs": 9,
-     "total_usd": 924.3,
-     "unit": "EA-DAY",
-     "unit_price_usd": 30.81
-    },
-    {
-     "code": "CAB-TOE-RMV-LF",
-     "description": "Detach cabinet toe kick, per LF",
-     "often_missed": false,
-     "quantity": 5,
-     "reason": "Base cabinets are wet and need to be detached.",
-     "share_of_similar": 0.57,
-     "similar_jobs": 14,
-     "source_jobs": 8,
-     "total_usd": 23.1,
-     "unit": "LF",
-     "unit_price_usd": 4.62
+     "total_usd": 112.96,
+     "unit": "HR",
+     "unit_price_usd": 56.48
     },
     {
      "code": "CLN-FINAL-SF",
      "description": "Final cleaning, per SF",
      "often_missed": false,
-     "quantity": 217.0,
+     "quantity": 312.0,
      "reason": "Final cleaning is common in similar jobs.",
-     "share_of_similar": 0.57,
-     "similar_jobs": 14,
-     "source_jobs": 8,
-     "total_usd": 45.57,
+     "share_of_similar": 0.53,
+     "similar_jobs": 19,
+     "source_jobs": 10,
+     "total_usd": 65.52,
      "unit": "SF",
      "unit_price_usd": 0.21
     },
     {
-     "code": "INS-RMV-SF",
-     "description": "Remove wet wall insulation, per SF",
+     "code": "EQ-AIRM-DAY",
+     "description": "Air mover, per 24 hour period",
      "often_missed": false,
-     "quantity": 112.0,
-     "reason": "Wet wall insulation needs to be removed.",
-     "share_of_similar": 0.5,
-     "similar_jobs": 14,
-     "source_jobs": 7,
-     "total_usd": 97.44,
-     "unit": "SF",
-     "unit_price_usd": 0.87
+     "quantity": 39,
+     "reason": "Air movers are commonly used in similar jobs.",
+     "share_of_similar": 0.53,
+     "similar_jobs": 19,
+     "source_jobs": 10,
+     "total_usd": 1201.59,
+     "unit": "EA-DAY",
+     "unit_price_usd": 30.81
     },
     {
-     "code": "VAN-DR-EA",
-     "description": "Detach and reset vanity",
+     "code": "FLR-WOOD-MAT-DAY",
+     "description": "Hardwood floor drying mat system, per day",
      "often_missed": false,
-     "quantity": 1,
-     "reason": "Vanity needs to be detached and reset.",
-     "share_of_similar": 0.5,
-     "similar_jobs": 14,
-     "source_jobs": 7,
-     "total_usd": 143.78,
-     "unit": "EA",
-     "unit_price_usd": 143.78
-    },
-    {
-     "code": "CLN-TOILET-EA",
-     "description": "Clean and sanitize toilet seat and bowl",
-     "often_missed": true,
-     "quantity": 1,
-     "reason": "Toilet cleaning is necessary due to the overflow.",
-     "share_of_similar": 0.5,
-     "similar_jobs": 14,
-     "source_jobs": 7,
-     "total_usd": 22.59,
-     "unit": "EA",
-     "unit_price_usd": 22.59
-    },
-    {
-     "code": "PLM-TOILET-DR",
-     "description": "Detach and reset toilet",
-     "often_missed": false,
-     "quantity": 1,
-     "reason": "Toilet needs to be detached and reset.",
-     "share_of_similar": 0.43,
-     "similar_jobs": 14,
+     "quantity": 3,
+     "reason": "Hardwood floor drying mats are used in similar jobs.",
+     "share_of_similar": 0.32,
+     "similar_jobs": 19,
      "source_jobs": 6,
-     "total_usd": 189.99,
-     "unit": "EA",
-     "unit_price_usd": 189.99
-    },
-    {
-     "code": "CLN-ANTI-SF",
-     "description": "Apply antimicrobial agent, per SF",
-     "often_missed": false,
-     "quantity": 329.0,
-     "reason": "Applying antimicrobial agent is common in similar jobs.",
-     "share_of_similar": 0.36,
-     "similar_jobs": 14,
-     "source_jobs": 5,
-     "total_usd": 95.41,
-     "unit": "SF",
-     "unit_price_usd": 0.29
-    },
-    {
-     "code": "PPE-EA",
-     "description": "Personal protective equipment, per person per day",
-     "often_missed": false,
-     "quantity": 6,
-     "reason": "Personal protective equipment is necessary for the technicians.",
-     "share_of_similar": 0.36,
-     "similar_jobs": 14,
-     "source_jobs": 5,
-     "total_usd": 86.28,
-     "unit": "EA",
-     "unit_price_usd": 14.38
+     "total_usd": 292.68,
+     "unit": "DAY",
+     "unit_price_usd": 97.56
     },
     {
      "code": "TRIM-CSG-RMV-LF",
      "description": "Remove door casing, per LF",
      "often_missed": true,
      "quantity": 17,
-     "reason": "Door casing needs to be removed.",
-     "share_of_similar": 0.29,
-     "similar_jobs": 14,
-     "source_jobs": 4,
+     "reason": "Door casing removal is common in similar jobs.",
+     "share_of_similar": 0.26,
+     "similar_jobs": 19,
+     "source_jobs": 5,
      "total_usd": 22.78,
      "unit": "LF",
      "unit_price_usd": 1.34
     },
     {
+     "code": "FLR-HARD-EXT-SF",
+     "description": "Water extraction from hard surface floor, per SF",
+     "often_missed": false,
+     "quantity": 312.0,
+     "reason": "Water extraction from hard surface floors is common in similar jobs.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 19,
+     "source_jobs": 4,
+     "total_usd": 96.72,
+     "unit": "SF",
+     "unit_price_usd": 0.31
+    },
+    {
+     "code": "INS-RMV-SF",
+     "description": "Remove wet wall insulation, per SF",
+     "often_missed": false,
+     "quantity": 146.0,
+     "reason": "Removing wet wall insulation is common in similar jobs.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 19,
+     "source_jobs": 4,
+     "total_usd": 127.02,
+     "unit": "SF",
+     "unit_price_usd": 0.87
+    },
+    {
+     "code": "PPE-EA",
+     "description": "Personal protective equipment, per person per day",
+     "often_missed": false,
+     "quantity": 6,
+     "reason": "Personal protective equipment is necessary due to the strong odor.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 19,
+     "source_jobs": 4,
+     "total_usd": 86.28,
+     "unit": "EA",
+     "unit_price_usd": 14.38
+    },
+    {
+     "code": "FLR-LAM-RMV-SF",
+     "description": "Remove laminate flooring, per SF",
+     "often_missed": false,
+     "quantity": 312.0,
+     "reason": "Removing laminate flooring is common in similar jobs.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 19,
+     "source_jobs": 4,
+     "total_usd": 399.36,
+     "unit": "SF",
+     "unit_price_usd": 1.28
+    },
+    {
+     "code": "CLN-ANTI-SF",
+     "description": "Apply antimicrobial agent, per SF",
+     "often_missed": false,
+     "quantity": 458.0,
+     "reason": "Applying antimicrobial agents is common in similar jobs.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 19,
+     "source_jobs": 4,
+     "total_usd": 132.82,
+     "unit": "SF",
+     "unit_price_usd": 0.29
+    },
+    {
+     "code": "WIN-SCR-DR",
+     "description": "Detach and reset window screen",
+     "often_missed": true,
+     "quantity": 1,
+     "reason": "Window screen removal is common in similar jobs.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 19,
+     "source_jobs": 4,
+     "total_usd": 9.76,
+     "unit": "EA",
+     "unit_price_usd": 9.76
+    },
+    {
+     "code": "FLR-PAD-RMV-SF",
+     "description": "Remove wet carpet pad, per SF",
+     "often_missed": false,
+     "quantity": 312.0,
+     "reason": "Removing wet carpet pad is common in similar jobs.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 19,
+     "source_jobs": 4,
+     "total_usd": 112.32,
+     "unit": "SF",
+     "unit_price_usd": 0.36
+    },
+    {
      "code": "DRY-RMV-SF",
      "description": "Remove wet drywall, per SF",
      "often_missed": false,
-     "quantity": 340.0,
-     "reason": "Wet drywall needs to be removed.",
-     "share_of_similar": 0.29,
-     "similar_jobs": 14,
+     "quantity": 442.0,
+     "reason": "Removing wet drywall is common in similar jobs.",
+     "share_of_similar": 0.21,
+     "similar_jobs": 19,
      "source_jobs": 4,
-     "total_usd": 418.2,
+     "total_usd": 543.66,
      "unit": "SF",
      "unit_price_usd": 1.23
     },
     {
-     "code": "EQ-SCRUB-DAY",
-     "description": "Air scrubber, per 24 hour period",
+     "code": "FLR-CRP-RMV-SF",
+     "description": "Remove wet carpet, per SF",
      "often_missed": false,
-     "quantity": 3,
-     "reason": "Air scrubber is commonly used in similar jobs.",
-     "share_of_similar": 0.29,
-     "similar_jobs": 14,
-     "source_jobs": 4,
-     "total_usd": 215.67,
-     "unit": "EA-DAY",
-     "unit_price_usd": 71.89
-    },
-    {
-     "code": "CAB-DRILL-EA",
-     "description": "Drill cabinet bases for drying, per cabinet",
-     "often_missed": false,
-     "quantity": 2,
-     "reason": "Cabinet bases need to be drilled for drying.",
-     "share_of_similar": 0.21,
-     "similar_jobs": 14,
+     "quantity": 312.0,
+     "reason": "Removing wet carpet is common in similar jobs.",
+     "share_of_similar": 0.16,
+     "similar_jobs": 19,
      "source_jobs": 3,
-     "total_usd": 24.64,
-     "unit": "EA",
-     "unit_price_usd": 12.32
+     "total_usd": 127.92,
+     "unit": "SF",
+     "unit_price_usd": 0.41
     },
     {
-     "code": "DOR-DR-EA",
-     "description": "Detach and reset interior door",
+     "code": "FLR-CRP-EXT-SF",
+     "description": "Water extraction from carpet, per SF",
      "often_missed": false,
-     "quantity": 1,
-     "reason": "Interior door needs to be detached and reset.",
-     "share_of_similar": 0.07,
-     "similar_jobs": 14,
-     "source_jobs": 1,
-     "total_usd": 39.03,
-     "unit": "EA",
-     "unit_price_usd": 39.03
-    },
-    {
-     "code": "APP-DW-DR",
-     "description": "Detach and reset dishwasher",
-     "often_missed": false,
-     "quantity": 1,
-     "reason": "Dishwasher needs to be detached and reset.",
-     "share_of_similar": 0.07,
-     "similar_jobs": 14,
-     "source_jobs": 1,
-     "total_usd": 123.24,
-     "unit": "EA",
-     "unit_price_usd": 123.24
+     "quantity": 312.0,
+     "reason": "Water extraction from carpet is common in similar jobs.",
+     "share_of_similar": 0.16,
+     "similar_jobs": 19,
+     "source_jobs": 3,
+     "total_usd": 143.52,
+     "unit": "SF",
+     "unit_price_usd": 0.46
     },
     {
      "code": "HVAC-REG-CLN",
      "description": "Clean heating and cooling register",
      "often_missed": true,
      "quantity": 0,
-     "reason": "Heating and cooling register needs to be cleaned.",
-     "share_of_similar": 0.07,
-     "similar_jobs": 14,
-     "source_jobs": 1,
+     "reason": "Cleaning heating and cooling registers is common in similar jobs.",
+     "share_of_similar": 0.11,
+     "similar_jobs": 19,
+     "source_jobs": 2,
      "total_usd": 0.0,
      "unit": "EA",
      "unit_price_usd": 11.3
     },
     {
-     "code": "WIN-SCR-DR",
-     "description": "Detach and reset window screen",
-     "often_missed": true,
+     "code": "CNT-BARRIER-SF",
+     "description": "Containment barrier, plastic sheeting, per SF",
+     "often_missed": false,
+     "quantity": 96.0,
+     "reason": "Containment barriers are common in similar jobs.",
+     "share_of_similar": 0.11,
+     "similar_jobs": 19,
+     "source_jobs": 2,
+     "total_usd": 88.32,
+     "unit": "SF",
+     "unit_price_usd": 0.92
+    },
+    {
+     "code": "DOR-DR-EA",
+     "description": "Detach and reset interior door",
+     "often_missed": false,
+     "quantity": 1,
+     "reason": "Detaching and resetting interior doors is common in similar jobs.",
+     "share_of_similar": 0.11,
+     "similar_jobs": 19,
+     "source_jobs": 2,
+     "total_usd": 39.03,
+     "unit": "EA",
+     "unit_price_usd": 39.03
+    },
+    {
+     "code": "CAB-TOE-RMV-LF",
+     "description": "Detach cabinet toe kick, per LF",
+     "often_missed": false,
      "quantity": 0,
-     "reason": "Window screen needs to be detached and reset.",
-     "share_of_similar": 0.07,
-     "similar_jobs": 14,
+     "reason": "Detaching cabinet toe kicks is common in similar jobs.",
+     "share_of_similar": 0.05,
+     "similar_jobs": 19,
      "source_jobs": 1,
      "total_usd": 0.0,
-     "unit": "EA",
-     "unit_price_usd": 9.76
+     "unit": "LF",
+     "unit_price_usd": 4.62
+    },
+    {
+     "code": "EQ-SCRUB-DAY",
+     "description": "Air scrubber, per 24 hour period",
+     "often_missed": false,
+     "quantity": 3,
+     "reason": "Air scrubbers are commonly used in similar jobs.",
+     "share_of_similar": 0.05,
+     "similar_jobs": 19,
+     "source_jobs": 1,
+     "total_usd": 215.67,
+     "unit": "EA-DAY",
+     "unit_price_usd": 71.89
     }
    ],
    "month": "2026-10",
-   "notes": "Category 2 water: toilet overflowed. Tile floor, water on the surface. Base cabinets are wet.",
+   "notes": "Category 3 water: sewer line backed up. Hardwood floor, boards starting to cup. Drywall wet well above two feet, wicking high on the walls. 1 window on the outside wall. Room is full of furniture. Strong odor; crew needs full protection.",
    "region": "FL-TAMPA",
-   "room_id": "h03-r2",
-   "room_type": "bathroom",
-   "size": "15.5 x 14 ft, ceiling 8 ft",
+   "room_id": "h03-r3",
+   "room_type": "living",
+   "size": "26 x 12 ft, ceiling 8 ft",
    "steps": [
     {
      "args": {
-      "loss_category": 2,
-      "room_type": "bathroom"
+      "loss_category": 3,
+      "room_type": "living"
      },
      "name": "item_frequency",
      "type": "tool_call"
     },
     {
      "name": "item_frequency",
-     "text": "{\"similar_jobs\": 14, \"items\": [{\"code\": \"LBR-TECH-HR\", \"description\": \"Water mitigation technician, per hour\", \"share_of_jobs\": 0.86, \"jobs\": 12, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.79, \"jobs\": 11, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\",",
-     "type": "tool_result"
-    },
-    {
-     "args": {
-      "loss_category": 2,
-      "room_type": "bathroom"
-     },
-     "name": "find_similar_jobs",
-     "type": "tool_call"
-    },
-    {
-     "name": "find_similar_jobs",
-     "text": "[{\"job\": \"J003\", \"category\": 2, \"notes\": \"Category 2 water: vanity supply line burst. Tile floor, water on the surface. Drywall wet well above two feet, wicking high on the walls. Base cabinets are wet. Floor register in the wet area.\", \"items\": [\"CAB-DRILL-EA\", \"CAB-TOE-RMV-LF\", \"CLN-ANTI-SF\", \"DRY-FLDCUT-LF\", \"DRY-RMV-SF\", \"EQ-DEHU-DAY\", \"EQ-SCRUB-DAY\", \"FLR-HARD-EXT-SF\", \"INS-RMV-SF\", \"LBR-TECH-HR\", \"PPE-EA\", \"TRIM-CSG-RMV-LF\"]}, {\"job\": \"J006\", \"category\": 2, \"notes\": \"Category 2 water: toilet overflowed. Vinyl floor, water standing at the edges. Drywall wet to about 16 inches. Base cabine",
+     "text": "{\"similar_jobs\": 19, \"items\": [{\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.89, \"jobs\": 17, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.84, \"jobs\": 16, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.79, \"jobs\": 15, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.74, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR",
      "type": "tool_result"
     },
     {
      "args": {
       "items": [
        {
-        "code": "LBR-TECH-HR",
-        "reason": "Technician labor is always needed."
+        "code": "BSB-RMV-LF",
+        "reason": "Baseboard removal is common in similar jobs."
+       },
+       {
+        "code": "EQ-DEHU-DAY",
+        "reason": "Dehumidifiers are commonly used in similar jobs."
        },
        {
         "code": "DRY-FLDCUT-LF",
-        "reason": "Drywall is wet above 2 feet."
+        "reason": "Flood cutting is common in similar jobs."
        },
        {
         "code": "MON-MOIST-DAY",
         "reason": "Moisture monitoring is common in similar jobs."
        },
        {
-        "code": "BSB-RMV-LF",
-        "reason": "Baseboards are present and need to be removed."
+        "code": "LBR-TECH-HR",
+        "reason": "Technician labor is common in similar jobs."
        },
        {
-        "code": "EQ-DEHU-DAY",
-        "reason": "Dehumidification is necessary for drying."
-       },
-       {
-        "code": "FLR-HARD-EXT-SF",
-        "reason": "Water extraction from the tile floor is needed."
-       },
-       {
-        "code": "EQ-AIRM-DAY",
-        "reason": "Air movers are commonly used in similar jobs."
-       },
-       {
-        "code": "CAB-TOE-RMV-LF",
-        "reason": "Base cabinets are wet and need to be detached."
+        "code": "CNT-MOVE-HR",
+        "reason": "Moving contents is common in similar jobs."
        },
        {
         "code": "CLN-FINAL-SF",
         "reason": "Final cleaning is common in similar jobs."
        },
        {
-        "code": "INS-RMV-SF",
-        "reason": "Wet wall insulation needs to be removed."
+        "code": "EQ-AIRM-DAY",
+        "reason": "Air movers are commonly used in similar jobs."
        },
        {
-        "code": "VAN-DR-EA",
-        "reason": "Vanity needs to be detached and reset."
-       },
-       {
-        "code": "CLN-TOILET-EA",
-        "reason": "Toilet cleaning is necessary due to the overflow."
-       },
-       {
-        "code": "PLM-TOILET-DR",
-        "reason": "Toilet needs to be detached and reset."
-       },
-       {
-        "code": "CLN-ANTI-SF",
-        "reason": "Applying antimicrobial agent is common in similar jobs."
-       },
-       {
-        "code": "PPE-EA",
-        "reason": "Personal protective equipment is necessary for the technicians."
+        "code": "FLR-WOOD-MAT-DAY",
+        "reason": "Hardwood floor drying mats are used in similar jobs."
        },
        {
         "code": "TRIM-CSG-RMV-LF",
-        "reason": "Door casing needs to be removed."
+        "reason": "Door casing removal is common in similar jobs."
        },
        {
-        "code": "DRY-RMV-SF",
-        "reason": "Wet drywall needs to be removed."
+        "code": "FLR-HARD-EXT-SF",
+        "reason": "Water extraction from hard surface floors is common in similar jobs."
        },
        {
-        "code": "EQ-SCRUB-DAY",
-        "reason": "Air scrubber is commonly used in similar jobs."
+        "code": "INS-RMV-SF",
+        "reason": "Removing wet wall insulation is common in similar jobs."
        },
        {
-        "code": "CAB-DRILL-EA",
-        "reason": "Cabinet bases need to be drilled for drying."
+        "code": "PPE-EA",
+        "reason": "Personal protective equipment is necessary due to the strong odor."
        },
        {
-        "code": "DOR-DR-EA",
-        "reason": "Interior door needs to be detached and reset."
+        "code": "FLR-LAM-RMV-SF",
+        "reason": "Removing laminate flooring is common in similar jobs."
        },
        {
-        "code": "APP-DW-DR",
-        "reason": "Dishwasher needs to be detached and reset."
-       },
-       {
-        "code": "HVAC-REG-CLN",
-        "reason": "Heating and cooling register needs to be cleaned."
+        "code": "CLN-ANTI-SF",
+        "reason": "Applying antimicrobial agents is common in similar jobs."
        },
        {
         "code": "WIN-SCR-DR",
-        "reason": "Window screen needs to be detached and reset."
+        "reason": "Window screen removal is common in similar jobs."
+       },
+       {
+        "code": "FLR-PAD-RMV-SF",
+        "reason": "Removing wet carpet pad is common in similar jobs."
+       },
+       {
+        "code": "DRY-RMV-SF",
+        "reason": "Removing wet drywall is common in similar jobs."
+       },
+       {
+        "code": "FLR-CRP-RMV-SF",
+        "reason": "Removing wet carpet is common in similar jobs."
+       },
+       {
+        "code": "FLR-CRP-EXT-SF",
+        "reason": "Water extraction from carpet is common in similar jobs."
+       },
+       {
+        "code": "HVAC-REG-CLN",
+        "reason": "Cleaning heating and cooling registers is common in similar jobs."
+       },
+       {
+        "code": "CNT-BARRIER-SF",
+        "reason": "Containment barriers are common in similar jobs."
+       },
+       {
+        "code": "DOR-DR-EA",
+        "reason": "Detaching and resetting interior doors is common in similar jobs."
+       },
+       {
+        "code": "CAB-TOE-RMV-LF",
+        "reason": "Detaching cabinet toe kicks is common in similar jobs."
+       },
+       {
+        "code": "EQ-SCRUB-DAY",
+        "reason": "Air scrubbers are commonly used in similar jobs."
        }
       ],
-      "room_id": "h03-r2"
+      "room_id": "h03-r3"
      },
      "name": "submit_draft",
      "type": "tool_call"
@@ -839,7 +1306,7 @@
      "type": "tool_result"
     }
    ],
-   "total_usd": 3766.81
+   "total_usd": 5477.12
   },
   {
    "check_often_missed": [],
@@ -1099,282 +1566,6 @@
     }
    ],
    "total_usd": 1971.58
-  },
-  {
-   "check_often_missed": [],
-   "drafted_by": "agent",
-   "lines": [
-    {
-     "code": "BSB-RMV-LF",
-     "description": "Remove baseboard, per LF",
-     "often_missed": false,
-     "quantity": 60.0,
-     "reason": "Notes: Drywall wet well above two feet, wicking high on the walls.",
-     "share_of_similar": 0.91,
-     "similar_jobs": 11,
-     "source_jobs": 10,
-     "total_usd": 67.8,
-     "unit": "LF",
-     "unit_price_usd": 1.13
-    },
-    {
-     "code": "DRY-FLDCUT-LF",
-     "description": "Flood cut wet drywall 2 ft, per LF",
-     "often_missed": false,
-     "quantity": 57.0,
-     "reason": "Notes: Drywall wet well above two feet, wicking high on the walls.",
-     "share_of_similar": 0.82,
-     "similar_jobs": 11,
-     "source_jobs": 9,
-     "total_usd": 181.26,
-     "unit": "LF",
-     "unit_price_usd": 3.18
-    },
-    {
-     "code": "EQ-DEHU-DAY",
-     "description": "Dehumidifier, large, per 24 hour period",
-     "often_missed": false,
-     "quantity": 9,
-     "reason": "History: 8 out of 11 similar jobs.",
-     "share_of_similar": 0.73,
-     "similar_jobs": 11,
-     "source_jobs": 8,
-     "total_usd": 693.18,
-     "unit": "EA-DAY",
-     "unit_price_usd": 77.02
-    },
-    {
-     "code": "MON-MOIST-DAY",
-     "description": "Moisture monitoring and mapping, per day",
-     "often_missed": false,
-     "quantity": 3,
-     "reason": "History: 8 out of 11 similar jobs.",
-     "share_of_similar": 0.73,
-     "similar_jobs": 11,
-     "source_jobs": 8,
-     "total_usd": 138.63,
-     "unit": "DAY",
-     "unit_price_usd": 46.21
-    },
-    {
-     "code": "LBR-TECH-HR",
-     "description": "Water mitigation technician, per hour",
-     "often_missed": false,
-     "quantity": 6,
-     "reason": "History: 7 out of 11 similar jobs.",
-     "share_of_similar": 0.64,
-     "similar_jobs": 11,
-     "source_jobs": 7,
-     "total_usd": 382.02,
-     "unit": "HR",
-     "unit_price_usd": 63.67
-    },
-    {
-     "code": "EQ-AIRM-DAY",
-     "description": "Air mover, per 24 hour period",
-     "often_missed": false,
-     "quantity": 42,
-     "reason": "History: 7 out of 11 similar jobs.",
-     "share_of_similar": 0.64,
-     "similar_jobs": 11,
-     "source_jobs": 7,
-     "total_usd": 1294.02,
-     "unit": "EA-DAY",
-     "unit_price_usd": 30.81
-    },
-    {
-     "code": "CNT-MOVE-HR",
-     "description": "Move and block room contents, per hour",
-     "often_missed": true,
-     "quantity": 2,
-     "reason": "Notes: Room is full of furniture.",
-     "share_of_similar": 0.55,
-     "similar_jobs": 11,
-     "source_jobs": 6,
-     "total_usd": 112.96,
-     "unit": "HR",
-     "unit_price_usd": 56.48
-    },
-    {
-     "code": "CLN-FINAL-SF",
-     "description": "Final cleaning, per SF",
-     "often_missed": false,
-     "quantity": 209.0,
-     "reason": "History: 5 out of 11 similar jobs.",
-     "share_of_similar": 0.45,
-     "similar_jobs": 11,
-     "source_jobs": 5,
-     "total_usd": 43.89,
-     "unit": "SF",
-     "unit_price_usd": 0.21
-    },
-    {
-     "code": "FLR-WOOD-MAT-DAY",
-     "description": "Hardwood floor drying mat system, per day",
-     "often_missed": false,
-     "quantity": 3,
-     "reason": "Notes: Hardwood floor, boards starting to cup.",
-     "share_of_similar": 0.36,
-     "similar_jobs": 11,
-     "source_jobs": 4,
-     "total_usd": 292.68,
-     "unit": "DAY",
-     "unit_price_usd": 97.56
-    },
-    {
-     "code": "WIN-SCR-DR",
-     "description": "Detach and reset window screen",
-     "often_missed": true,
-     "quantity": 2,
-     "reason": "Notes: 2 windows on the outside wall.",
-     "share_of_similar": 0.27,
-     "similar_jobs": 11,
-     "source_jobs": 3,
-     "total_usd": 19.52,
-     "unit": "EA",
-     "unit_price_usd": 9.76
-    },
-    {
-     "code": "TRIM-CSG-RMV-LF",
-     "description": "Remove door casing, per LF",
-     "often_missed": true,
-     "quantity": 17,
-     "reason": "History: 3 out of 11 similar jobs.",
-     "share_of_similar": 0.27,
-     "similar_jobs": 11,
-     "source_jobs": 3,
-     "total_usd": 22.78,
-     "unit": "LF",
-     "unit_price_usd": 1.34
-    },
-    {
-     "code": "DRY-RMV-SF",
-     "description": "Remove wet drywall, per SF",
-     "often_missed": false,
-     "quantity": 706.0,
-     "reason": "Notes: Drywall wet well above two feet, wicking high on the walls.",
-     "share_of_similar": 0.27,
-     "similar_jobs": 11,
-     "source_jobs": 3,
-     "total_usd": 868.38,
-     "unit": "SF",
-     "unit_price_usd": 1.23
-    },
-    {
-     "code": "HVAC-REG-CLN",
-     "description": "Clean heating and cooling register",
-     "often_missed": true,
-     "quantity": 2,
-     "reason": "Notes: Floor register in the wet area.",
-     "share_of_similar": 0.09,
-     "similar_jobs": 11,
-     "source_jobs": 1,
-     "total_usd": 22.6,
-     "unit": "EA",
-     "unit_price_usd": 11.3
-    }
-   ],
-   "month": "2026-10",
-   "notes": "Category 1 water: roof leak during a storm. Hardwood floor, boards starting to cup. Drywall wet well above two feet, wicking high on the walls. 2 windows on the outside wall. Floor register in the wet area.",
-   "region": "FL-TAMPA",
-   "room_id": "h08-r6",
-   "room_type": "living",
-   "size": "19 x 11 ft, ceiling 14 ft",
-   "steps": [
-    {
-     "args": {
-      "loss_category": 1,
-      "room_type": "living"
-     },
-     "name": "item_frequency",
-     "type": "tool_call"
-    },
-    {
-     "name": "item_frequency",
-     "text": "{\"similar_jobs\": 11, \"items\": [{\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.91, \"jobs\": 10, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.82, \"jobs\": 9, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.73, \"jobs\": 8, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.73, \"jobs\": 8, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR\", ",
-     "type": "tool_result"
-    },
-    {
-     "args": {
-      "loss_category": 1,
-      "room_type": "living"
-     },
-     "name": "find_similar_jobs",
-     "type": "tool_call"
-    },
-    {
-     "name": "find_similar_jobs",
-     "text": "[{\"job\": \"J026\", \"category\": 1, \"notes\": \"Category 1 water: pipe burst in the wall. Laminate floor is cupping at the seams. 3 windows on the outside wall. Room is full of furniture.\", \"items\": [\"BSB-RMV-LF\", \"CNT-MOVE-HR\", \"DOR-DR-EA\", \"EQ-DEHU-DAY\", \"LBR-TECH-HR\"]}, {\"job\": \"J043\", \"category\": 1, \"notes\": \"Category 1 water: water heater failed in the next room. Carpet and pad are soaked. Drywall wet to about 16 inches. 2 windows on the outside wall. Floor register in the wet area.\", \"items\": [\"BSB-RMV-LF\", \"DRY-FLDCUT-LF\", \"EQ-AIRM-DAY\", \"EQ-DEHU-DAY\", \"FLR-CRP-EXT-SF\", \"FLR-PAD-RMV-SF\"]}, {\"",
-     "type": "tool_result"
-    },
-    {
-     "args": {
-      "items": [
-       {
-        "code": "BSB-RMV-LF",
-        "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
-       },
-       {
-        "code": "DRY-FLDCUT-LF",
-        "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
-       },
-       {
-        "code": "EQ-DEHU-DAY",
-        "reason": "History: 8 out of 11 similar jobs."
-       },
-       {
-        "code": "MON-MOIST-DAY",
-        "reason": "History: 8 out of 11 similar jobs."
-       },
-       {
-        "code": "LBR-TECH-HR",
-        "reason": "History: 7 out of 11 similar jobs."
-       },
-       {
-        "code": "EQ-AIRM-DAY",
-        "reason": "History: 7 out of 11 similar jobs."
-       },
-       {
-        "code": "CNT-MOVE-HR",
-        "reason": "Notes: Room is full of furniture."
-       },
-       {
-        "code": "CLN-FINAL-SF",
-        "reason": "History: 5 out of 11 similar jobs."
-       },
-       {
-        "code": "FLR-WOOD-MAT-DAY",
-        "reason": "Notes: Hardwood floor, boards starting to cup."
-       },
-       {
-        "code": "WIN-SCR-DR",
-        "reason": "Notes: 2 windows on the outside wall."
-       },
-       {
-        "code": "TRIM-CSG-RMV-LF",
-        "reason": "History: 3 out of 11 similar jobs."
-       },
-       {
-        "code": "DRY-RMV-SF",
-        "reason": "Notes: Drywall wet well above two feet, wicking high on the walls."
-       },
-       {
-        "code": "HVAC-REG-CLN",
-        "reason": "Notes: Floor register in the wet area."
-       }
-      ],
-      "room_id": "h08-r6"
-     },
-     "name": "submit_draft",
-     "type": "tool_call"
-    },
-    {
-     "name": "submit_draft",
-     "text": "Draft recorded.",
-     "type": "tool_result"
-    }
-   ],
-   "total_usd": 4139.72
   }
  ],
  "scores": {

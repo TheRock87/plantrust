@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "5fa0edb2532f3c3b",
+ "input_hash": "2c2d54d2ccdd2efd",
  "key": "h08-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No water in the bathroom.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2752,
+  "input_tokens": 2756,
   "models": [
    "voxtral-small-latest"
   ],

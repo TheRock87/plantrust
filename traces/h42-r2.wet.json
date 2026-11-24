@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "f6d860bd641a9d55",
+ "input_hash": "cba38cc34bed68dc",
  "key": "h42-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Closet floor is dry, no damage.",
  "reason": null,
- "seconds": 4.4,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2755,
+  "input_tokens": 2757,
   "models": [
    "voxtral-small-latest"
   ],

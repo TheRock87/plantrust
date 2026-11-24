@@ -36,7 +36,7 @@
   ]
  },
  "error": null,
- "input_hash": "0a77930eea6ab348",
+ "input_hash": "cce8a98999cd2f6b",
  "key": "h20-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -70,12 +70,12 @@
    "type": "tool_result"
   },
   {
-   "text": "A drafter will check if the kitchen is wet.",
+   "text": "The drafter will check if the kitchen is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2710,
+  "input_tokens": 2714,
   "models": [
    "voxtral-small-latest"
   ],

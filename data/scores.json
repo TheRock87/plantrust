@@ -230,9 +230,9 @@
   },
   {
    "action": "add_door",
-   "approved": 4,
+   "approved": 5,
    "by": "agent",
-   "n": 4,
+   "n": 5,
    "status": "not enough cases yet"
   },
   {
@@ -359,13 +359,13 @@
    "usd_total": 38094.56
   },
   "D": {
-   "approved_edits": 62,
+   "approved_edits": 63,
    "clean_rooms": 313,
    "errors": 95,
-   "false_alarm_rooms": 95,
-   "fixed": 62,
+   "false_alarm_rooms": 100,
+   "fixed": 63,
    "harmful_edits": 3,
-   "manual_items": 144,
+   "manual_items": 147,
    "missed": 1,
    "per_type": {
     "E1": {
@@ -381,9 +381,9 @@
      "total": 13
     },
     "E3": {
-     "fixed": 4,
+     "fixed": 5,
      "missed": 1,
-     "to_drafter": 6,
+     "to_drafter": 5,
      "total": 11
     },
     "E4": {
@@ -406,7 +406,7 @@
     }
    },
    "rejected_edits": 3,
-   "to_drafter": 32,
+   "to_drafter": 31,
    "usd_open": 0.0,
    "usd_total": 38094.56
   },
@@ -467,20 +467,139 @@
   "answered": 207,
   "ask_drafter_by_reason": {
    "agent chose it": 96,
-   "error": 5,
-   "no valid answer": 19
+   "error": 6,
+   "no valid answer": 21
   },
-  "avg_seconds": 4.7,
-  "failures": 5,
+  "avg_seconds": 4.8,
+  "failures": 6,
   "fallback_uses": 0,
   "model_called": 207,
   "not_run": 0,
   "off_question": 0,
   "questions": 207,
-  "tokens": 604607,
+  "tokens": 615783,
   "usd": 0.0
  },
  "triage": [
+  {
+   "edits": 0,
+   "house": "h55",
+   "manual": 5,
+   "status": "full review",
+   "usd_at_risk": 6239.14
+  },
+  {
+   "edits": 1,
+   "house": "h02",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 5815.21
+  },
+  {
+   "edits": 1,
+   "house": "h01",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 5366.94
+  },
+  {
+   "edits": 0,
+   "house": "h12",
+   "manual": 5,
+   "status": "full review",
+   "usd_at_risk": 5317.54
+  },
+  {
+   "edits": 2,
+   "house": "h58",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 4816.41
+  },
+  {
+   "edits": 3,
+   "house": "h51",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 4707.28
+  },
+  {
+   "edits": 0,
+   "house": "h31",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 4458.75
+  },
+  {
+   "edits": 1,
+   "house": "h53",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 4399.38
+  },
+  {
+   "edits": 1,
+   "house": "h28",
+   "manual": 5,
+   "status": "full review",
+   "usd_at_risk": 4312.21
+  },
+  {
+   "edits": 2,
+   "house": "h37",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 4267.95
+  },
+  {
+   "edits": 2,
+   "house": "h08",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 4234.93
+  },
+  {
+   "edits": 1,
+   "house": "h36",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 4095.55
+  },
+  {
+   "edits": 1,
+   "house": "h11",
+   "manual": 5,
+   "status": "full review",
+   "usd_at_risk": 3927.16
+  },
+  {
+   "edits": 1,
+   "house": "h09",
+   "manual": 5,
+   "status": "full review",
+   "usd_at_risk": 3775.69
+  },
+  {
+   "edits": 2,
+   "house": "h05",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 3712.68
+  },
+  {
+   "edits": 0,
+   "house": "h26",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 3649.59
+  },
+  {
+   "edits": 0,
+   "house": "h33",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 3627.56
+  },
   {
    "edits": 2,
    "house": "h03",
@@ -489,11 +608,32 @@
    "usd_at_risk": 3603.74
   },
   {
-   "edits": 2,
-   "house": "h08",
+   "edits": 1,
+   "house": "h20",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 3444.37
+  },
+  {
+   "edits": 1,
+   "house": "h35",
    "manual": 3,
    "status": "full review",
-   "usd_at_risk": 3304.94
+   "usd_at_risk": 3332.33
+  },
+  {
+   "edits": 2,
+   "house": "h38",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 3242.34
+  },
+  {
+   "edits": 2,
+   "house": "h40",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 3102.21
   },
   {
    "edits": 2,
@@ -503,18 +643,60 @@
    "usd_at_risk": 3061.0
   },
   {
-   "edits": 2,
-   "house": "h05",
-   "manual": 2,
+   "edits": 1,
+   "house": "h14",
+   "manual": 4,
    "status": "full review",
-   "usd_at_risk": 2923.09
+   "usd_at_risk": 3045.77
   },
   {
    "edits": 2,
-   "house": "h58",
-   "manual": 4,
+   "house": "h41",
+   "manual": 1,
    "status": "full review",
-   "usd_at_risk": 2365.64
+   "usd_at_risk": 2986.78
+  },
+  {
+   "edits": 1,
+   "house": "h44",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 2958.51
+  },
+  {
+   "edits": 0,
+   "house": "h29",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 2805.57
+  },
+  {
+   "edits": 1,
+   "house": "h06",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 2674.36
+  },
+  {
+   "edits": 1,
+   "house": "h34",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 2355.18
+  },
+  {
+   "edits": 2,
+   "house": "h15",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 2244.66
+  },
+  {
+   "edits": 2,
+   "house": "h21",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 2226.85
   },
   {
    "edits": 2,
@@ -525,52 +707,101 @@
   },
   {
    "edits": 0,
+   "house": "h46",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 2143.58
+  },
+  {
+   "edits": 3,
+   "house": "h47",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 2141.43
+  },
+  {
+   "edits": 2,
+   "house": "h32",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 2075.08
+  },
+  {
+   "edits": 2,
+   "house": "h25",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 2070.39
+  },
+  {
+   "edits": 2,
+   "house": "h56",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 2030.05
+  },
+  {
+   "edits": 1,
+   "house": "h54",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 2018.63
+  },
+  {
+   "edits": 0,
+   "house": "h04",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 1998.78
+  },
+  {
+   "edits": 0,
+   "house": "h43",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 1988.78
+  },
+  {
+   "edits": 0,
    "house": "h60",
    "manual": 1,
    "status": "full review",
    "usd_at_risk": 1907.58
   },
   {
-   "edits": 1,
-   "house": "h28",
-   "manual": 5,
-   "status": "full review",
-   "usd_at_risk": 1897.83
-  },
-  {
-   "edits": 1,
-   "house": "h01",
+   "edits": 0,
+   "house": "h18",
    "manual": 2,
    "status": "full review",
-   "usd_at_risk": 1873.36
+   "usd_at_risk": 1891.58
   },
   {
-   "edits": 2,
-   "house": "h41",
-   "manual": 1,
+   "edits": 0,
+   "house": "h23",
+   "manual": 2,
    "status": "full review",
-   "usd_at_risk": 1811.99
+   "usd_at_risk": 1883.41
+  },
+  {
+   "edits": 0,
+   "house": "h22",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 1881.58
+  },
+  {
+   "edits": 0,
+   "house": "h13",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 1782.39
   },
   {
    "edits": 1,
-   "house": "h02",
-   "manual": 4,
+   "house": "h24",
+   "manual": 2,
    "status": "full review",
-   "usd_at_risk": 1742.44
-  },
-  {
-   "edits": 2,
-   "house": "h51",
-   "manual": 4,
-   "status": "full review",
-   "usd_at_risk": 1630.91
-  },
-  {
-   "edits": 1,
-   "house": "h53",
-   "manual": 4,
-   "status": "full review",
-   "usd_at_risk": 1610.62
+   "usd_at_risk": 1496.22
   },
   {
    "edits": 2,
@@ -580,88 +811,53 @@
    "usd_at_risk": 1374.46
   },
   {
-   "edits": 1,
-   "house": "h54",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 1330.64
-  },
-  {
    "edits": 2,
-   "house": "h15",
+   "house": "h57",
    "manual": 1,
    "status": "full review",
-   "usd_at_risk": 1171.47
+   "usd_at_risk": 1302.23
   },
   {
    "edits": 1,
-   "house": "h14",
-   "manual": 4,
+   "house": "h07",
+   "manual": 1,
    "status": "full review",
-   "usd_at_risk": 1105.78
+   "usd_at_risk": 1281.99
   },
   {
    "edits": 1,
    "house": "h30",
    "manual": 3,
    "status": "full review",
-   "usd_at_risk": 1066.97
+   "usd_at_risk": 1190.59
+  },
+  {
+   "edits": 1,
+   "house": "h19",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 973.11
   },
   {
    "edits": 0,
-   "house": "h23",
+   "house": "h49",
    "manual": 2,
    "status": "full review",
-   "usd_at_risk": 945.83
-  },
-  {
-   "edits": 1,
-   "house": "h20",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 939.99
+   "usd_at_risk": 845.2
   },
   {
    "edits": 2,
-   "house": "h21",
+   "house": "h27",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 830.88
+  },
+  {
+   "edits": 0,
+   "house": "h17",
    "manual": 1,
    "status": "full review",
-   "usd_at_risk": 925.67
-  },
-  {
-   "edits": 1,
-   "house": "h36",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 913.18
-  },
-  {
-   "edits": 1,
-   "house": "h35",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 892.75
-  },
-  {
-   "edits": 2,
-   "house": "h38",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 807.16
-  },
-  {
-   "edits": 2,
-   "house": "h40",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 806.79
-  },
-  {
-   "edits": 2,
-   "house": "h56",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 554.88
+   "usd_at_risk": 677.99
   },
   {
    "edits": 3,
@@ -672,59 +868,10 @@
   },
   {
    "edits": 1,
-   "house": "h24",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 311.04
-  },
-  {
-   "edits": 1,
-   "house": "h34",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 252.0
-  },
-  {
-   "edits": 3,
-   "house": "h47",
-   "manual": 0,
-   "status": "quick review",
-   "usd_at_risk": 233.04
-  },
-  {
-   "edits": 2,
-   "house": "h32",
-   "manual": 4,
-   "status": "full review",
-   "usd_at_risk": 159.96
-  },
-  {
-   "edits": 1,
-   "house": "h11",
-   "manual": 4,
-   "status": "full review",
-   "usd_at_risk": 136.8
-  },
-  {
-   "edits": 2,
-   "house": "h57",
-   "manual": 1,
-   "status": "full review",
-   "usd_at_risk": 120.24
-  },
-  {
-   "edits": 1,
    "house": "h59",
    "manual": 0,
    "status": "quick review",
    "usd_at_risk": 104.4
-  },
-  {
-   "edits": 1,
-   "house": "h09",
-   "manual": 5,
-   "status": "full review",
-   "usd_at_risk": 61.73
   },
   {
    "edits": 1,
@@ -734,171 +881,24 @@
    "usd_at_risk": 59.4
   },
   {
-   "edits": 2,
-   "house": "h25",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 28.8
-  },
-  {
-   "edits": 1,
-   "house": "h44",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 27.36
-  },
-  {
-   "edits": 2,
-   "house": "h37",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 21.6
-  },
-  {
-   "edits": 1,
-   "house": "h19",
-   "manual": 1,
-   "status": "full review",
-   "usd_at_risk": 18.72
-  },
-  {
    "edits": 1,
    "house": "h42",
    "manual": 1,
    "status": "full review",
-   "usd_at_risk": 15.84
-  },
-  {
-   "edits": 2,
-   "house": "h27",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 10.08
-  },
-  {
-   "edits": 0,
-   "house": "h04",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 1,
-   "house": "h06",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 1,
-   "house": "h07",
-   "manual": 0,
-   "status": "quick review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h10",
-   "manual": 0,
-   "status": "ready",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h12",
-   "manual": 5,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h13",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h17",
-   "manual": 1,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h18",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h22",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h26",
-   "manual": 1,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h29",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h31",
-   "manual": 4,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h33",
-   "manual": 4,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h43",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 0.0
+   "usd_at_risk": 32.65
   },
   {
    "edits": 0,
    "house": "h45",
    "manual": 1,
    "status": "full review",
-   "usd_at_risk": 0.0
+   "usd_at_risk": 16.81
   },
   {
    "edits": 0,
-   "house": "h46",
-   "manual": 4,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h49",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 0.0
-  },
-  {
-   "edits": 0,
-   "house": "h55",
-   "manual": 5,
-   "status": "full review",
+   "house": "h10",
+   "manual": 0,
+   "status": "ready",
    "usd_at_risk": 0.0
   }
  ]

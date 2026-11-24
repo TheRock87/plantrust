@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "3b2f4157afa10280",
+ "input_hash": "bd8f3cb844768ee8",
  "key": "hard/hard18",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is there a door on the left wall?",
- "seconds": 5.0,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -75,7 +75,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2949,
+  "input_tokens": 2955,
   "models": [
    "voxtral-small-latest"
   ],

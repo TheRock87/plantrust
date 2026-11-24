@@ -34,13 +34,13 @@
   ]
  },
  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
- "input_hash": "399266c593a83e5a",
+ "input_hash": "c41812f83fe902d3",
  "key": "h12-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 6,
  "quote": "",
  "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
- "seconds": 9.6,
+ "seconds": 9.5,
  "steps": [
   {
    "args": {
@@ -121,7 +121,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 6108,
+  "input_tokens": 6128,
   "models": [
    "voxtral-small-latest"
   ],

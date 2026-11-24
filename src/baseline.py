@@ -10,8 +10,7 @@ import re
 
 from .checks import notes_questions
 from .common import DATA, load, save
-from .cost import room_cost
-from .fixes import apply
+from .fixes import question_usd
 
 WET_WORDS = ("wet", "water", "soaked")
 ARCH_WORDS = ("archway", "opening")
@@ -33,11 +32,10 @@ def propose(checks, plans, notes):
         room = plans[rid]
         p = {"room_id": rid, "kind": item["kind"], "action": action, "args": {}, "by": "baseline",
              "quote_or_evidence": quote or item["why"], "est_cost_at_risk_usd": 0.0}
-        if action == "mark_wet":
-            p["est_cost_at_risk_usd"] = round(room_cost(apply(room, p))["usd"] - room_cost(room)["usd"], 2)
-        elif action == "ask_drafter":
+        if action in ("mark_wet", "ask_drafter"):
+            p["est_cost_at_risk_usd"] = question_usd(item["kind"], room)
+        if action == "ask_drafter":
             p["args"] = {"question": f"check: {item['why']}"}
-            p["est_cost_at_risk_usd"] = checks[rid.split("-")[0]][rid]["est_cost_at_risk_usd"]
         out.append(p)
     return out
 

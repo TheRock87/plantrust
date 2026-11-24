@@ -38,13 +38,13 @@
   ]
  },
  "error": null,
- "input_hash": "3e43418c1c412af5",
+ "input_hash": "40b5d8f74d2335ea",
  "key": "hard/hard09",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "It did not, the pad under the hall runner is still soaked.",
+ "quote": "the pad under the hall runner is still soaked",
  "reason": null,
- "seconds": 4.2,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -60,7 +60,7 @@
   },
   {
    "args": {
-    "quote": "It did not, the pad under the hall runner is still soaked.",
+    "quote": "the pad under the hall runner is still soaked",
     "room_id": "hard09"
    },
    "name": "mark_wet",
@@ -77,11 +77,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 2744,
+  "input_tokens": 2739,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 73,
+  "output_tokens": 68,
   "usd": 0.0
  }
 }

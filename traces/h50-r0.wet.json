@@ -38,7 +38,7 @@
   ]
  },
  "error": null,
- "input_hash": "3318d48d47e51d04",
+ "input_hash": "5620795cb1ba9f3b",
  "key": "h50-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -72,12 +72,12 @@
    "type": "tool_result"
   },
   {
-   "text": "The plan is right.",
+   "text": "The bedroom is dry.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2745,
+  "input_tokens": 2741,
   "models": [
    "voxtral-small-latest"
   ],

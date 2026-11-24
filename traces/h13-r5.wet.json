@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "c50c3d712cfe16cc",
+ "input_hash": "fd6b6af25b05b1e5",
  "key": "h13-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is there water in the bedroom?",
- "seconds": 4.8,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -75,7 +75,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2712,
+  "input_tokens": 2722,
   "models": [
    "voxtral-small-latest"
   ],

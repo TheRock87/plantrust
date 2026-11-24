@@ -1,0 +1,243 @@
+{
+ "error": null,
+ "input_hash": "9ad78a3c9197bd89",
+ "items": [
+  {
+   "code": "BSB-RMV-LF",
+   "reason": "Baseboard removal is common in similar jobs."
+  },
+  {
+   "code": "EQ-DEHU-DAY",
+   "reason": "Dehumidifiers are commonly used in similar jobs."
+  },
+  {
+   "code": "DRY-FLDCUT-LF",
+   "reason": "Flood cutting is common in similar jobs."
+  },
+  {
+   "code": "MON-MOIST-DAY",
+   "reason": "Moisture monitoring is common in similar jobs."
+  },
+  {
+   "code": "LBR-TECH-HR",
+   "reason": "Technician labor is common in similar jobs."
+  },
+  {
+   "code": "CNT-MOVE-HR",
+   "reason": "Moving contents is common in similar jobs."
+  },
+  {
+   "code": "CLN-FINAL-SF",
+   "reason": "Final cleaning is common in similar jobs."
+  },
+  {
+   "code": "EQ-AIRM-DAY",
+   "reason": "Air movers are commonly used in similar jobs."
+  },
+  {
+   "code": "FLR-WOOD-MAT-DAY",
+   "reason": "Hardwood floor drying mats are used in similar jobs."
+  },
+  {
+   "code": "TRIM-CSG-RMV-LF",
+   "reason": "Door casing removal is common in similar jobs."
+  },
+  {
+   "code": "FLR-HARD-EXT-SF",
+   "reason": "Water extraction from hard surface floors is common in similar jobs."
+  },
+  {
+   "code": "INS-RMV-SF",
+   "reason": "Removing wet wall insulation is common in similar jobs."
+  },
+  {
+   "code": "PPE-EA",
+   "reason": "Personal protective equipment is necessary due to the strong odor."
+  },
+  {
+   "code": "FLR-LAM-RMV-SF",
+   "reason": "Removing laminate flooring is common in similar jobs."
+  },
+  {
+   "code": "CLN-ANTI-SF",
+   "reason": "Applying antimicrobial agents is common in similar jobs."
+  },
+  {
+   "code": "WIN-SCR-DR",
+   "reason": "Window screen removal is common in similar jobs."
+  },
+  {
+   "code": "FLR-PAD-RMV-SF",
+   "reason": "Removing wet carpet pad is common in similar jobs."
+  },
+  {
+   "code": "DRY-RMV-SF",
+   "reason": "Removing wet drywall is common in similar jobs."
+  },
+  {
+   "code": "FLR-CRP-RMV-SF",
+   "reason": "Removing wet carpet is common in similar jobs."
+  },
+  {
+   "code": "FLR-CRP-EXT-SF",
+   "reason": "Water extraction from carpet is common in similar jobs."
+  },
+  {
+   "code": "HVAC-REG-CLN",
+   "reason": "Cleaning heating and cooling registers is common in similar jobs."
+  },
+  {
+   "code": "CNT-BARRIER-SF",
+   "reason": "Containment barriers are common in similar jobs."
+  },
+  {
+   "code": "DOR-DR-EA",
+   "reason": "Detaching and resetting interior doors is common in similar jobs."
+  },
+  {
+   "code": "CAB-TOE-RMV-LF",
+   "reason": "Detaching cabinet toe kicks is common in similar jobs."
+  },
+  {
+   "code": "EQ-SCRUB-DAY",
+   "reason": "Air scrubbers are commonly used in similar jobs."
+  }
+ ],
+ "steps": [
+  {
+   "args": {
+    "loss_category": 3,
+    "room_type": "living"
+   },
+   "name": "item_frequency",
+   "type": "tool_call"
+  },
+  {
+   "name": "item_frequency",
+   "text": "{\"similar_jobs\": 19, \"items\": [{\"code\": \"BSB-RMV-LF\", \"description\": \"Remove baseboard, per LF\", \"share_of_jobs\": 0.89, \"jobs\": 17, \"often_missed\": false}, {\"code\": \"EQ-DEHU-DAY\", \"description\": \"Dehumidifier, large, per 24 hour period\", \"share_of_jobs\": 0.84, \"jobs\": 16, \"often_missed\": false}, {\"code\": \"DRY-FLDCUT-LF\", \"description\": \"Flood cut wet drywall 2 ft, per LF\", \"share_of_jobs\": 0.79, \"jobs\": 15, \"often_missed\": false}, {\"code\": \"MON-MOIST-DAY\", \"description\": \"Moisture monitoring and mapping, per day\", \"share_of_jobs\": 0.74, \"jobs\": 14, \"often_missed\": false}, {\"code\": \"LBR-TECH-HR",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "items": [
+     {
+      "code": "BSB-RMV-LF",
+      "reason": "Baseboard removal is common in similar jobs."
+     },
+     {
+      "code": "EQ-DEHU-DAY",
+      "reason": "Dehumidifiers are commonly used in similar jobs."
+     },
+     {
+      "code": "DRY-FLDCUT-LF",
+      "reason": "Flood cutting is common in similar jobs."
+     },
+     {
+      "code": "MON-MOIST-DAY",
+      "reason": "Moisture monitoring is common in similar jobs."
+     },
+     {
+      "code": "LBR-TECH-HR",
+      "reason": "Technician labor is common in similar jobs."
+     },
+     {
+      "code": "CNT-MOVE-HR",
+      "reason": "Moving contents is common in similar jobs."
+     },
+     {
+      "code": "CLN-FINAL-SF",
+      "reason": "Final cleaning is common in similar jobs."
+     },
+     {
+      "code": "EQ-AIRM-DAY",
+      "reason": "Air movers are commonly used in similar jobs."
+     },
+     {
+      "code": "FLR-WOOD-MAT-DAY",
+      "reason": "Hardwood floor drying mats are used in similar jobs."
+     },
+     {
+      "code": "TRIM-CSG-RMV-LF",
+      "reason": "Door casing removal is common in similar jobs."
+     },
+     {
+      "code": "FLR-HARD-EXT-SF",
+      "reason": "Water extraction from hard surface floors is common in similar jobs."
+     },
+     {
+      "code": "INS-RMV-SF",
+      "reason": "Removing wet wall insulation is common in similar jobs."
+     },
+     {
+      "code": "PPE-EA",
+      "reason": "Personal protective equipment is necessary due to the strong odor."
+     },
+     {
+      "code": "FLR-LAM-RMV-SF",
+      "reason": "Removing laminate flooring is common in similar jobs."
+     },
+     {
+      "code": "CLN-ANTI-SF",
+      "reason": "Applying antimicrobial agents is common in similar jobs."
+     },
+     {
+      "code": "WIN-SCR-DR",
+      "reason": "Window screen removal is common in similar jobs."
+     },
+     {
+      "code": "FLR-PAD-RMV-SF",
+      "reason": "Removing wet carpet pad is common in similar jobs."
+     },
+     {
+      "code": "DRY-RMV-SF",
+      "reason": "Removing wet drywall is common in similar jobs."
+     },
+     {
+      "code": "FLR-CRP-RMV-SF",
+      "reason": "Removing wet carpet is common in similar jobs."
+     },
+     {
+      "code": "FLR-CRP-EXT-SF",
+      "reason": "Water extraction from carpet is common in similar jobs."
+     },
+     {
+      "code": "HVAC-REG-CLN",
+      "reason": "Cleaning heating and cooling registers is common in similar jobs."
+     },
+     {
+      "code": "CNT-BARRIER-SF",
+      "reason": "Containment barriers are common in similar jobs."
+     },
+     {
+      "code": "DOR-DR-EA",
+      "reason": "Detaching and resetting interior doors is common in similar jobs."
+     },
+     {
+      "code": "CAB-TOE-RMV-LF",
+      "reason": "Detaching cabinet toe kicks is common in similar jobs."
+     },
+     {
+      "code": "EQ-SCRUB-DAY",
+      "reason": "Air scrubbers are commonly used in similar jobs."
+     }
+    ],
+    "room_id": "h03-r3"
+   },
+   "name": "submit_draft",
+   "type": "tool_call"
+  },
+  {
+   "name": "submit_draft",
+   "text": "Draft recorded.",
+   "type": "tool_result"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3711,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 740,
+  "usd": 0.0
+ }
+}

@@ -1,6 +1,8 @@
 {
  "action": "ask_drafter",
- "args": {},
+ "args": {
+  "question": "Is the hallway wet?"
+ },
  "decision": null,
  "draft": {
   "affected": false,
@@ -38,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "e8965088b9b3842b",
+ "input_hash": "603bf59c7f266a2d",
  "key": "h12-r6.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 2,
+ "model_calls": 3,
  "quote": "",
- "reason": "no valid answer; a drafter checks",
- "seconds": 3.1,
+ "reason": "Is the hallway wet?",
+ "seconds": 4.3,
  "steps": [
   {
    "args": {
@@ -59,16 +61,29 @@
    "type": "tool_result"
   },
   {
-   "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h12-r6\", \"question\": \"Is the hallway wet?\"}}]",
+   "args": {
+    "question": "Is the hallway wet?",
+    "room_id": "h12-r6"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "A drafter will check if the hallway is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 1742,
+  "input_tokens": 2718,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 62,
+  "output_tokens": 75,
   "usd": 0.0
  }
 }

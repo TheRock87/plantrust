@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "01d67c117c1c0af9",
+ "input_hash": "a9c448dd13f1419a",
  "key": "h10-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "The bedroom next door is wet, not this one.",
  "reason": null,
- "seconds": 4.8,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {

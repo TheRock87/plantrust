@@ -1,5 +1,5 @@
 {
- "action": "no_change",
+ "action": "ask_drafter",
  "args": {},
  "decision": null,
  "draft": {
@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "adfb1b5e7b04c7c4",
+ "input_hash": "7bffa77019dd6f4d",
  "key": "h47-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Checked the living room, nothing wet.",
- "reason": null,
- "seconds": 4.5,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -57,29 +57,20 @@
    "type": "tool_result"
   },
   {
-   "args": {
-    "quote": "Checked the living room, nothing wet.",
-    "room_id": "h47-r0"
-   },
-   "name": "no_change",
-   "type": "tool_call"
+   "text": "[{\"name\": \"no_change\", \"arguments\": {\"room_id\": \"h47-r0\", \"quote\": \"nothing wet\"}}]",
+   "type": "model_text"
   },
   {
-   "name": "no_change",
-   "text": "Answer recorded: no change. Reply with one short sentence.",
-   "type": "tool_result"
-  },
-  {
-   "text": "The living room is not wet.",
+   "text": "I'm here to help, but I currently don't have the tools needed to fulfill your request. Is there something else I can assist you with?",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2712,
+  "input_tokens": 2703,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 72,
+  "output_tokens": 88,
   "usd": 0.0
  }
 }

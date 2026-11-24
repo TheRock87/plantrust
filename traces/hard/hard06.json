@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Is the meter reading high behind the sink?"
+  "question": "Is the meter reading behind the sink a false positive?"
  },
  "decision": null,
  "draft": {
@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "5cd398b52e2b16cb",
+ "input_hash": "4fcca40f1eccac8f",
  "key": "hard/hard06",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is the meter reading high behind the sink?",
- "seconds": 4.6,
+ "reason": "Is the meter reading behind the sink a false positive?",
+ "seconds": 5.0,
  "steps": [
   {
    "args": {
@@ -58,7 +58,7 @@
   },
   {
    "args": {
-    "question": "Is the meter reading high behind the sink?",
+    "question": "Is the meter reading behind the sink a false positive?",
     "room_id": "hard06"
    },
    "name": "ask_drafter",
@@ -70,16 +70,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check if the kitchen is wet.",
+   "text": "The drafter will check if the meter reading behind the sink is a false positive.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2728,
+  "input_tokens": 2720,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 75,
+  "output_tokens": 83,
   "usd": 0.0
  }
 }

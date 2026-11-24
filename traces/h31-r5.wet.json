@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "b64455ef047cf641",
+ "input_hash": "c859f784757e5393",
  "key": "h31-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the kitchen wet?",
- "seconds": 4.4,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {

@@ -36,13 +36,13 @@
   ]
  },
  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
- "input_hash": "654e7fa5b8beee01",
+ "input_hash": "1e8bb932800ac295",
  "key": "h34-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 6,
  "quote": "",
  "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
- "seconds": 9.5,
+ "seconds": 9.6,
  "steps": [
   {
    "args": {
@@ -84,17 +84,10 @@
   },
   {
    "args": {
-    "quote": "nothing wet",
+    "quote": "nothing wet in the living room.",
     "room_id": "h34-r2"
    },
    "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "args": {
-    "room_id": "h34-r2"
-   },
-   "name": "get_notes",
    "type": "tool_call"
   },
   {
@@ -103,23 +96,11 @@
    "type": "tool_result"
   },
   {
-   "name": "get_notes",
-   "text": "Checked the living room, nothing wet. Counted 1 door in the living room.",
-   "type": "tool_result"
-  },
-  {
    "args": {
-    "quote": "nothing wet in the living room",
+    "quote": "nothing wet in the living room.",
     "room_id": "h34-r2"
    },
    "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "args": {
-    "room_id": "h34-r2"
-   },
-   "name": "get_notes",
    "type": "tool_call"
   },
   {
@@ -128,42 +109,25 @@
    "type": "tool_result"
   },
   {
-   "name": "get_notes",
-   "text": "Checked the living room, nothing wet. Counted 1 door in the living room.",
-   "type": "tool_result"
-  },
-  {
    "args": {
-    "quote": "nothing wet in the living room",
+    "quote": "nothing wet in the living room.",
     "room_id": "h34-r2"
    },
    "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "args": {
-    "room_id": "h34-r2"
-   },
-   "name": "get_notes",
    "type": "tool_call"
   },
   {
    "name": "no_change",
    "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
-   "type": "tool_result"
-  },
-  {
-   "name": "get_notes",
-   "text": "Checked the living room, nothing wet. Counted 1 door in the living room.",
    "type": "tool_result"
   }
  ],
  "usage": {
-  "input_tokens": 6346,
+  "input_tokens": 6181,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 267,
+  "output_tokens": 205,
   "usd": 0.0
  }
 }

@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "ce9461fb6049e76b",
+ "input_hash": "4a9a2f34608897f7",
  "key": "h56-r7.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the wall to the kitchen wet on this side?",
- "seconds": 5.0,
+ "seconds": 4.4,
  "steps": [
   {
    "args": {
@@ -75,7 +75,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2754,
+  "input_tokens": 2750,
   "models": [
    "voxtral-small-latest"
   ],

@@ -1,13 +1,18 @@
 {
- "action": "ask_drafter",
+ "action": "add_door",
  "args": {
-  "question": "Is the wall to the bathroom wet on the closet side?"
+  "wall": 1
  },
- "decision": null,
+ "decision": "approve",
  "draft": {
   "affected": false,
   "ceiling": 8.0,
-  "doors": [],
+  "doors": [
+   {
+    "wall": 1,
+    "width": 3.0
+   }
+  ],
   "flags": [],
   "id": "h51-r2",
   "label": "closet",
@@ -31,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "029d87a73a6e96f8",
+ "input_hash": "e653d2d6d84a8b63",
  "key": "h51-r2.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "",
- "reason": "Is the wall to the bathroom wet on the closet side?",
- "seconds": 4.7,
+ "quote": "1 door in total",
+ "reason": null,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -77,28 +82,29 @@
   },
   {
    "args": {
-    "question": "Is the wall to the bathroom wet on the closet side?",
-    "room_id": "h51-r2"
+    "quote": "1 door in total",
+    "room_id": "h51-r2",
+    "wall": 1
    },
-   "name": "ask_drafter",
+   "name": "add_door",
    "type": "tool_call"
   },
   {
-   "name": "ask_drafter",
-   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "name": "add_door",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check if the wall to the bathroom is wet on the closet side.",
+   "text": "The plan is missing a door.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3450,
+  "input_tokens": 3447,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 134,
+  "output_tokens": 120,
   "usd": 0.0
  }
 }

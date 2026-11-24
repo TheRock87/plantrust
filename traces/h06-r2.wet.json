@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "b3439184d2186071",
+ "input_hash": "f7d5b3a6d1b827eb",
  "key": "h06-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No moisture in the closet walls.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2757,
+  "input_tokens": 2759,
   "models": [
    "voxtral-small-latest"
   ],

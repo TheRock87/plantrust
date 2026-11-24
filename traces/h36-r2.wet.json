@@ -37,13 +37,13 @@
   ]
  },
  "error": null,
- "input_hash": "cc7487510dc500b5",
+ "input_hash": "a76e0a4062e35965",
  "key": "h36-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Stairwell is dry, meter reads normal.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {

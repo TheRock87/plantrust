@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "5d39b8496e1943a9",
+ "input_hash": "36b6e65d3aaec406",
  "key": "h49-r1.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "no valid answer; a drafter checks",
- "seconds": 4.7,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {

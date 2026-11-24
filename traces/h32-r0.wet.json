@@ -1,8 +1,6 @@
 {
  "action": "ask_drafter",
- "args": {
-  "question": "Is the bathroom wet?"
- },
+ "args": {},
  "decision": null,
  "draft": {
   "affected": false,
@@ -36,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "83197f18faed0358",
+ "input_hash": "2af3d2542bcd7466",
  "key": "h32-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is the bathroom wet?",
- "seconds": 4.9,
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -57,29 +55,20 @@
    "type": "tool_result"
   },
   {
-   "args": {
-    "question": "Is the bathroom wet?",
-    "room_id": "h32-r0"
-   },
-   "name": "ask_drafter",
-   "type": "tool_call"
+   "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h32-r0\", \"question\": \"Is the bathroom wet?\"}}]",
+   "type": "model_text"
   },
   {
-   "name": "ask_drafter",
-   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
-   "type": "tool_result"
-  },
-  {
-   "text": "The note does not say whether the bathroom is wet.",
+   "text": "I'm here to help, but I currently don't have the tools needed to fulfill your request. Is there something else I can assist you with?",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2718,
+  "input_tokens": 2698,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 75,
+  "output_tokens": 93,
   "usd": 0.0
  }
 }

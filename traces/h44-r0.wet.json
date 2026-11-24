@@ -37,13 +37,13 @@
   ]
  },
  "error": null,
- "input_hash": "ce735b286a4ea23b",
+ "input_hash": "8ba6d5227fc22319",
  "key": "h44-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Stairwell floor is dry, no damage.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -76,7 +76,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2751,
+  "input_tokens": 2743,
   "models": [
    "voxtral-small-latest"
   ],

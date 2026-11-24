@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "cd090222a7d11e52",
+ "input_hash": "91b39139bad5548c",
  "key": "h04-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Hall is fine",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 5.3,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2721,
+  "input_tokens": 2719,
   "models": [
    "voxtral-small-latest"
   ],

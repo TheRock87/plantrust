@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "9f512aab99f2396a",
+ "input_hash": "488e186c180d3091",
  "key": "h40-r7.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "The bedroom next door is wet, not this one.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2741,
+  "input_tokens": 2745,
   "models": [
    "voxtral-small-latest"
   ],

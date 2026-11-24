@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "84a7214535619e90",
+ "input_hash": "7f855b33d6854554",
  "key": "h32-r2.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "no valid answer; a drafter checks",
- "seconds": 4.4,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -56,7 +56,7 @@
   },
   {
    "args": {
-    "quote": "Bedroom has a hidden door to the next room",
+    "quote": "has a hidden door to the next room",
     "room_id": "h32-r2",
     "wall": 1
    },
@@ -74,11 +74,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3014,
+  "input_tokens": 3002,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 81,
+  "output_tokens": 79,
   "usd": 0.0
  }
 }

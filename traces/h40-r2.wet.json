@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "dbc061cbeb65ef16",
+ "input_hash": "d594f7e53b9b962e",
  "key": "h40-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the hallway wet?",
- "seconds": 4.8,
+ "seconds": 5.0,
  "steps": [
   {
    "args": {
@@ -75,7 +75,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2716,
+  "input_tokens": 2720,
   "models": [
    "voxtral-small-latest"
   ],

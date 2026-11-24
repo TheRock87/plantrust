@@ -1,8 +1,5 @@
-"""Score against answers.json.
-
-v1 functions (final_verdicts, score) stay for estimate.py and export.py.
-v2 rows (score_row): v1 reference, B (code checks + code fixes), C (B + keyword baseline); D comes in step 6.
-"""
+"""Score against answers.json: rows v1 (reference), B (code checks + code fixes), C (B + keyword baseline),
+D (B + agent), the hard set, the autonomy ladder, the run report and the house triage."""
 from collections import Counter
 
 from . import llm
@@ -10,7 +7,7 @@ from .baseline import answer as baseline_answer
 from .checks import notes_questions
 from .common import DATA, load, save
 from .cost import room_cost
-from .fixes import EDITS
+from .fixes import EDITS, question_usd
 from .plant import ERRORS
 
 
@@ -21,64 +18,35 @@ def actual_cost_at_risk(truth_room, plan_room):
     return round(abs(plan_usd - truth_usd), 2)
 
 
-def final_verdicts(checks, agent, use_agent):
-    """room_id -> (verdict, decided_by) for every room in every house."""
-    out = {}
-    for house in checks.values():
-        for rid, chk in house.items():
-            if chk["status"] == "pass":
-                out[rid] = ("accept", "code")
-            elif chk["status"] == "fail":
-                out[rid] = ("send_to_drafter", "code")
-            elif not use_agent:
-                out[rid] = ("send_to_drafter", "code (unclear)")
-            elif rid in agent:
-                out[rid] = (agent[rid]["verdict"], "agent")
-            else:
-                out[rid] = ("send_to_drafter", "agent not run")
-    return out
-
-
-def score(verdicts, truth, plans, answers):
-    err = {e["room_id"]: e["code"] for v in answers.values() for e in v}
-    per_type = {c: {"caught": 0, "total": 0} for c in ERRORS}
-    caught = total_err = false_alarm = clean = sent = 0
-    usd_caught = usd_total = 0.0
-    for hid, house in truth.items():
-        plan_rooms = {r["id"]: r for r in plans[hid]["rooms"]}
-        for r in house["rooms"]:
-            to_drafter = verdicts[r["id"]][0] == "send_to_drafter"
-            sent += to_drafter
-            if r["id"] in err:
-                code = err[r["id"]]
-                usd = actual_cost_at_risk(r, plan_rooms.get(r["id"]))
-                total_err += 1
-                usd_total += usd
-                per_type[code]["total"] += 1
-                if to_drafter:
-                    caught += 1
-                    usd_caught += usd
-                    per_type[code]["caught"] += 1
-            else:
-                clean += 1
-                false_alarm += to_drafter
-    return {
-        "caught": caught, "errors": total_err,
-        "false_alarms": false_alarm, "clean_rooms": clean,
-        "sent_to_drafter": sent, "rooms": clean + total_err,
-        "usd_at_risk_caught": round(usd_caught, 2), "usd_at_risk_total": round(usd_total, 2),
-        "per_type": per_type,
-    }
-
-
-def ask(rid, kind, why, by):
-    return {"room_id": rid, "kind": kind, "action": "ask_drafter", "args": {"question": f"check: {why}"}, "by": by}
+def ask(rid, kind, why, by, usd):
+    return {"room_id": rid, "kind": kind, "action": "ask_drafter", "args": {"question": f"check: {why}"}, "by": by,
+            "quote_or_evidence": why, "est_cost_at_risk_usd": usd}
 
 
 def v1_items(checks):
     """v1 reference: every room that does not pass goes to a drafter; no edits."""
-    return [ask(rid, "v1", "; ".join(c["reasons"]), "code") for h in checks.values() for rid, c in h.items()
-            if c["status"] != "pass"]
+    return [ask(rid, "v1", "; ".join(c["reasons"]), "code", c["est_cost_at_risk_usd"])
+            for h in checks.values() for rid, c in h.items() if c["status"] != "pass"]
+
+
+def plan_rooms(plans):
+    return {r["id"]: r for h in plans.values() for r in h["rooms"]}
+
+
+def b_items(proposals, checks, plans):
+    """Row B: code proposals; every door and wet question goes to a drafter (no one reads the notes)."""
+    rooms = plan_rooms(plans)
+    return proposals["code"] + [ask(rid, i["kind"], i["why"], "code (note not read)", question_usd(i["kind"], rooms[rid]))
+                                for rid, i in notes_questions(checks)]
+
+
+def d_items(proposals, checks, plans):
+    """Row D: code proposals, the agent's answers, and a drafter item for any question the agent has not answered."""
+    rooms = plan_rooms(plans)
+    answered = {(p["room_id"], p["kind"]) for p in proposals.get("agent", [])}
+    not_run = [ask(rid, i["kind"], i["why"], "agent not run", question_usd(i["kind"], rooms[rid]))
+               for rid, i in notes_questions(checks) if (rid, i["kind"]) not in answered]
+    return proposals["code"] + proposals.get("agent", []) + not_run, len(not_run)
 
 
 def score_row(items, truth, plans, answers):
@@ -195,13 +163,9 @@ def main():
     answers, checks = load(DATA / "answers.json"), load(DATA / "checks.json")
     proposals, hard = load(DATA / "proposals.json"), load(DATA / "notes_hard.json")
     questions = notes_questions(checks)
-    unread = [ask(rid, i["kind"], i["why"], "code (note not read)") for rid, i in questions]
-    answered = {(p["room_id"], p["kind"]) for p in proposals.get("agent", [])}
-    not_run = [ask(rid, i["kind"], i["why"], "agent not run") for rid, i in questions
-               if (rid, i["kind"]) not in answered]
-    agent_items = proposals["code"] + proposals.get("agent", []) + not_run
+    agent_items, not_run = d_items(proposals, checks, plans)
     rows = {"v1": score_row(v1_items(checks), truth, plans, answers),
-            "B": score_row(proposals["code"] + unread, truth, plans, answers),
+            "B": score_row(b_items(proposals, checks, plans), truth, plans, answers),
             "C": score_row(proposals["code"] + proposals["baseline"], truth, plans, answers),
             "D": score_row(agent_items, truth, plans, answers)}
     agent_hard = load(DATA / "agent_hard.json") if (DATA / "agent_hard.json").exists() else {}
@@ -214,7 +178,7 @@ def main():
     save(DATA / "scores.json", out)
     rep = out["run_report"]
     if not_run:
-        print(f"evaluate: the agent has not answered {len(not_run)} of {len(questions)} questions; row D is incomplete.")
+        print(f"evaluate: the agent has not answered {not_run} of {len(questions)} questions; row D is incomplete.")
     print(f"run report: model called for {rep['model_called']} of {rep['questions']} questions, "
           f"{rep['failures']} failures, {rep['fallback_uses']} fallback uses, {rep['tokens']} tokens, "
           f"{rep['usd']} USD, {rep['avg_seconds']} s per question, {rep['off_question']} off-question answers; "

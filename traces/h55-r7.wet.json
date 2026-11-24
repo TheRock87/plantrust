@@ -39,7 +39,7 @@
   ]
  },
  "error": null,
- "input_hash": "b801a224a44c1f28",
+ "input_hash": "162729614d1c230e",
  "key": "h55-r7.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -73,12 +73,12 @@
    "type": "tool_result"
   },
   {
-   "text": "A drafter will check if the stairwell is wet.",
+   "text": "The note does not say whether the stairwell is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2722,
+  "input_tokens": 2724,
   "models": [
    "voxtral-small-latest"
   ],

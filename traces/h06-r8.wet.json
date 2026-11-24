@@ -36,7 +36,7 @@
   ]
  },
  "error": null,
- "input_hash": "a45087943a02f02e",
+ "input_hash": "686fc4cd3f6d9c17",
  "key": "h06-r8.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -70,16 +70,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check if the kitchen is wet.",
+   "text": "The note does not settle it; a drafter will check.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2758,
+  "input_tokens": 2750,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 75,
+  "output_tokens": 77,
   "usd": 0.0
  }
 }

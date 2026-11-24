@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "97c5c9686573125b",
+ "input_hash": "327e49aea49a0cbc",
  "key": "h55-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the hall wet?",
- "seconds": 4.5,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -75,7 +75,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2742,
+  "input_tokens": 2754,
   "models": [
    "voxtral-small-latest"
   ],

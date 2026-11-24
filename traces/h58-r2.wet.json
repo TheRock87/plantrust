@@ -37,13 +37,13 @@
   ]
  },
  "error": null,
- "input_hash": "a028b78481492cfb",
+ "input_hash": "81729b2416230afd",
  "key": "h58-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Moisture meter reads high on the stairwell drywall.",
  "reason": null,
- "seconds": 5.7,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {

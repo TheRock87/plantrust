@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "e2510c934f16e3ca",
+ "input_hash": "6c8932154954c97b",
  "key": "h48-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No moisture in the kitchen walls.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.3,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 2729,
+  "input_tokens": 2733,
   "models": [
    "voxtral-small-latest"
   ],

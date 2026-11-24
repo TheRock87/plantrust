@@ -37,6 +37,18 @@ def apply(room, p):
     return r
 
 
+QUESTION_EDIT = {"wet": "mark_wet", "doors": "add_door"}
+
+
+def question_usd(kind, room):
+    """Dollars at risk of a door or wet question: how far the room's cost moves if its edit were right.
+
+    Used for every open question (drafter item), so a house with an open wet room does not sort as $0.
+    """
+    edited = apply(room, {"action": QUESTION_EDIT[kind], "args": {"wall": 0} if kind == "doors" else {}})
+    return round(abs(room_cost(edited)["usd"] - room_cost(room)["usd"]), 2)
+
+
 def tour_size(t):
     """Width and depth from the tour: average of opposite walls."""
     return round((t["walls"][0] + t["walls"][2]) / 2, 1), round((t["walls"][1] + t["walls"][3]) / 2, 1)

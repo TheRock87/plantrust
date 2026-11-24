@@ -37,7 +37,7 @@
   ]
  },
  "error": null,
- "input_hash": "25764514715e0024",
+ "input_hash": "c7d11a4b50affc5c",
  "key": "h13-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,

@@ -26,7 +26,7 @@ from pydantic import BaseModel, Field
 from . import llm
 from .common import DATA, TRACES, load, save
 from .cost import room_cost
-from .fixes import apply
+from .fixes import apply, question_usd
 
 MODEL = llm.MODEL
 MAX_MODEL_STEPS = 6
@@ -379,8 +379,9 @@ def main():
              "quote_or_evidence": res["quote"] or res["reason"] or "", "est_cost_at_risk_usd": 0.0}
         if res["action"] in EDIT_TOOLS:
             p["decision"] = res["decision"]
-            p["est_cost_at_risk_usd"] = round(abs(room_cost(apply(plan_room, p))["usd"] - room_cost(plan_room)["usd"]), 2)
-        elif res["action"] == "ask_drafter":
+        if res["action"] in EDIT_TOOLS + ("ask_drafter",):
+            p["est_cost_at_risk_usd"] = question_usd(kind, plan_room)
+        if res["action"] == "ask_drafter":
             p["args"] = {"question": res["args"].get("question") or res["reason"]}
         agent_items.append(p)
 

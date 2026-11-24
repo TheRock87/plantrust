@@ -38,13 +38,13 @@
   ]
  },
  "error": null,
- "input_hash": "43580d4bc639251a",
+ "input_hash": "1fdf53dc3e3165e2",
  "key": "h52-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 2,
  "quote": "The wall to the kitchen is wet on that side.",
  "reason": "the drafter rejected the edit",
- "seconds": 3.2,
+ "seconds": 2.8,
  "steps": [
   {
    "args": {

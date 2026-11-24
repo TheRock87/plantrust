@@ -14,7 +14,7 @@ from pydantic import BaseModel, Field
 
 from . import llm
 from .common import DATA, SEED, TRACES, dims, load, save
-from .evaluate import final_verdicts
+from .evaluate import d_items
 from .export import pick_houses
 from .history import DB, draw_job, quantities, scope_notes, true_items
 from .prices import CATALOG, MockPriceSource
@@ -229,17 +229,18 @@ def score(drafts, truth_sets):
 
 
 def demo_rooms():
-    """One accepted, water-affected room of each main type from the houses on the page.
+    """One trusted, water-affected room of each main type from the houses on the page.
 
+    Trusted: row D (code checks + agent) leaves nothing open on the room. Read from row D only, not the answer key.
     Each gets synthetic scope notes, so the agent has something to read.
     """
     plans, checks, answers = load(DATA / "ai_plan.json"), load(DATA / "checks.json"), load(DATA / "answers.json")
-    agent_path = DATA / "agent_verdicts.json"
-    verdicts = final_verdicts(checks, load(agent_path) if agent_path.exists() else {}, True)
+    items, _ = d_items(load(DATA / "proposals.json"), checks, plans)
+    open_rooms = {i["room_id"] for i in items if i["action"] != "no_change"}
     picked, seen = [], set()
-    for hid in pick_houses(answers, checks):
+    for hid in pick_houses(answers, items):
         for r in plans[hid]["rooms"]:
-            if (verdicts[r["id"]][0] == "accept" and r["affected"] and r["label"] not in seen
+            if (r["id"] not in open_rooms and r["affected"] and r["label"] not in seen
                     and r["label"] in ("kitchen", "bathroom", "bedroom", "living")):
                 seen.add(r["label"])
                 picked.append(r)
