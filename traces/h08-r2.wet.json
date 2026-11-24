@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the closet wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h08-r2",
+  "label": "closet",
+  "polygon": [
+   [
+    23.0,
+    0.0
+   ],
+   [
+    34.0,
+    0.0
+   ],
+   [
+    34.0,
+    12.0
+   ],
+   [
+    23.0,
+    12.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "6f885c92245cb23e",
+ "key": "h08-r2.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the closet wet?",
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h08-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Counted 1 door in the closet.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the closet wet?",
+    "room_id": "h08-r2"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3516,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 77,
+  "usd": 0.0
+ }
+}

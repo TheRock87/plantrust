@@ -1,0 +1,84 @@
+{
+ "action": "ask_drafter",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h49-r1",
+  "label": "closet",
+  "polygon": [
+   [
+    5.5,
+    0.0
+   ],
+   [
+    10.5,
+    0.0
+   ],
+   [
+    10.5,
+    14.0
+   ],
+   [
+    5.5,
+    14.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "c866b1d8ade36cc5",
+ "key": "h49-r1.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 4.5,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h49-r1"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Moisture meter reads high on the closet drywall. Pocket door in the closet, it slides into the wall.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Pocket door in the closet, it slides into the wall.",
+    "room_id": "h49-r1",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "Not recorded: the tour counted fewer doors than the plan, so the plan has no missing door.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3577,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 81,
+  "usd": 0.0
+ }
+}

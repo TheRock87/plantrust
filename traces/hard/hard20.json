@@ -1,0 +1,90 @@
+{
+ "action": "add_door",
+ "args": {
+  "wall": 0
+ },
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   },
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "hard20",
+  "label": "bathroom",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    0,
+    10
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "35d91b55e8181f58",
+ "key": "hard/hard20",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "This one has two doors.",
+ "reason": null,
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "hard20"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bath next door has an archway. This one has two doors.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "This one has two doors.",
+    "room_id": "hard20",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is missing a door.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3552,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 73,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "action": "add_door",
+ "args": {
+  "wall": 0
+ },
+ "decision": "approve",
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h51-r2",
+  "label": "closet",
+  "polygon": [
+   [
+    26.5,
+    0.0
+   ],
+   [
+    32.0,
+    0.0
+   ],
+   [
+    32.0,
+    16.0
+   ],
+   [
+    26.5,
+    16.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "2678764f8067e432",
+ "key": "h51-r2.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "1 door in total",
+ "reason": null,
+ "seconds": 5.1,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h51-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Closet: 1 door in total. The wall to the bathroom is wet on that side.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "1 door in total",
+    "room_id": "h51-r2",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is missing a door.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3564,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 75,
+  "usd": 0.0
+ }
+}

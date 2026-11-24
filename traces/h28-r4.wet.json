@@ -1,0 +1,78 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "reject",
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   },
+   {
+    "wall": 2,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h28-r4",
+  "label": "hallway",
+  "polygon": [
+   [
+    45.0,
+    0.0
+   ],
+   [
+    50.0,
+    0.0
+   ],
+   [
+    50.0,
+    13.0
+   ],
+   [
+    45.0,
+    13.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "9c03f1d9257d56d4",
+ "key": "h28-r4.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "The wall to the closet is wet on that side.",
+ "reason": "the drafter rejected the edit",
+ "seconds": 3.0,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h28-r4"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "The wall to the closet is wet on that side. No moisture in the hall walls. Found a door behind a curtain, the camera missed it.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "The wall to the closet is wet on that side.",
+    "room_id": "h28-r4"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2294,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 68,
+  "usd": 0.0
+ }
+}

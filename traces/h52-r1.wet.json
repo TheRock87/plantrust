@@ -1,0 +1,83 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h52-r1",
+  "label": "kitchen",
+  "polygon": [
+   [
+    10.5,
+    0.0
+   ],
+   [
+    32.0,
+    0.0
+   ],
+   [
+    32.0,
+    12.0
+   ],
+   [
+    10.5,
+    12.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "d1c848d501fc7c8a",
+ "key": "h52-r1.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Moisture meter reads high on the kitchen drywall",
+ "reason": null,
+ "seconds": 3.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h52-r1"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Moisture meter reads high on the kitchen drywall. One door in the kitchen.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Moisture meter reads high on the kitchen drywall",
+    "room_id": "h52-r1"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The kitchen is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3549,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 74,
+  "usd": 0.0
+ }
+}

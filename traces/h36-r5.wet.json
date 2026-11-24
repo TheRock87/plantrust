@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the living room wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h36-r5",
+  "label": "living",
+  "polygon": [
+   [
+    7.5,
+    12.0
+   ],
+   [
+    43.0,
+    12.0
+   ],
+   [
+    43.0,
+    22.0
+   ],
+   [
+    7.5,
+    22.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "e1de710d74bb2529",
+ "key": "h36-r5.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the living room wet?",
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h36-r5"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Counted 1 door in the living room. Power is on, fans can go in tomorrow.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the living room wet?",
+    "room_id": "h36-r5"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle the question.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3537,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 73,
+  "usd": 0.0
+ }
+}

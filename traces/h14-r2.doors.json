@@ -1,0 +1,98 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "reject",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h14-r2",
+  "label": "living",
+  "polygon": [
+   [
+    16.0,
+    0.0
+   ],
+   [
+    33.5,
+    0.0
+   ],
+   [
+    33.5,
+    11.0
+   ],
+   [
+    16.0,
+    11.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "c4e21709605971c2",
+ "key": "h14-r2.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "Moisture meter reads high on the living room drywall",
+ "reason": "the drafter rejected the edit",
+ "seconds": 3.1,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h14-r2"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h14-r2"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h14-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": true, \"ceiling\": 8.0, \"doors\": [{\"wall\": 1, \"width\": 2.5}], \"flags\": [], \"id\": \"h14-r2\", \"label\": \"living\", \"polygon\": [[16.0, 0.0], [33.5, 0.0], [33.5, 11.0], [16.0, 11.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 7.9, \"doors\": 2, \"label\": \"living\", \"walls\": [17.4, 10.9, 17.7, 10.9]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_notes",
+   "text": "Moisture meter reads high on the living room drywall. Lights work in here.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Moisture meter reads high on the living room drywall",
+    "room_id": "h14-r2"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2544,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 114,
+  "usd": 0.0
+ }
+}

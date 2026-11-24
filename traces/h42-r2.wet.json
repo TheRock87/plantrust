@@ -1,0 +1,83 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h42-r2",
+  "label": "closet",
+  "polygon": [
+   [
+    27.0,
+    0.0
+   ],
+   [
+    32.0,
+    0.0
+   ],
+   [
+    32.0,
+    10.0
+   ],
+   [
+    27.0,
+    10.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "c8e94a26415c3af0",
+ "key": "h42-r2.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Closet floor is dry, no damage.",
+ "reason": null,
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h42-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Closet has one door. Closet floor is dry, no damage. The kitchen next door is wet, not this one.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Closet floor is dry, no damage.",
+    "room_id": "h42-r2"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The closet is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3545,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 72,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,3634 @@
+{
+ "h01-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.7,
+  "usage": {
+   "input_tokens": 3525,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h01-r1.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 2,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 3.3,
+  "usage": {
+   "input_tokens": 2532,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 106,
+   "usd": 0.0
+  }
+ },
+ "h01-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3509,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h02-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3518,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h02-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3510,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h02-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3513,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h03-r0.wet": {
+  "action": "mark_wet",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 3.3,
+  "usage": {
+   "input_tokens": 2290,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 68,
+   "usd": 0.0
+  }
+ },
+ "h03-r2.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3570,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h04-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3536,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h04-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3520,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h04-r7.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3581,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 81,
+   "usd": 0.0
+  }
+ },
+ "h04-r7.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3531,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h05-r1.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3542,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h05-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hallway wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h06-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3520,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 68,
+   "usd": 0.0
+  }
+ },
+ "h06-r2.wet": {
+  "action": "mark_wet",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 3.4,
+  "usage": {
+   "input_tokens": 2290,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h06-r3.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the plan missing a door?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3560,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 79,
+   "usd": 0.0
+  }
+ },
+ "h06-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h06-r8.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3564,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h07-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h07-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the stairwell wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3520,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h07-r6.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3543,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 70,
+   "usd": 0.0
+  }
+ },
+ "h08-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the closet wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h08-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3522,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h08-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.0,
+  "usage": {
+   "input_tokens": 3536,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 68,
+   "usd": 0.0
+  }
+ },
+ "h08-r5.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.2,
+  "usage": {
+   "input_tokens": 3571,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 90,
+   "usd": 0.0
+  }
+ },
+ "h08-r6.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3562,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 76,
+   "usd": 0.0
+  }
+ },
+ "h09-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3546,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h09-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 7.9,
+  "usage": {
+   "input_tokens": 3519,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h09-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 4.1,
+  "usage": {
+   "input_tokens": 3510,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h09-r5.doors": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3569,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 83,
+   "usd": 0.0
+  }
+ },
+ "h09-r7.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3514,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h09-r8.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h10-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.6,
+  "usage": {
+   "input_tokens": 3527,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h10-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 3.7,
+  "usage": {
+   "input_tokens": 3555,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h11-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 5.1,
+  "usage": {
+   "input_tokens": 3514,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h11-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the closet wet?",
+  "seconds": 4.0,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h11-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 4,
+  "reason": "Is the bedroom wet?",
+  "seconds": 6.1,
+  "usage": {
+   "input_tokens": 5214,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 125,
+   "usd": 0.0
+  }
+ },
+ "h11-r3.doors": {
+  "action": "mark_wet",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 2295,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 70,
+   "usd": 0.0
+  }
+ },
+ "h11-r6.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3512,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h12-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 2,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 3.3,
+  "usage": {
+   "input_tokens": 2270,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 62,
+   "usd": 0.0
+  }
+ },
+ "h12-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 6.6,
+  "usage": {
+   "input_tokens": 3538,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 76,
+   "usd": 0.0
+  }
+ },
+ "h12-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 6.1,
+  "usage": {
+   "input_tokens": 3521,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 70,
+   "usd": 0.0
+  }
+ },
+ "h12-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3528,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h12-r6.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hallway wet?",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h13-r1.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 4,
+  "reason": null,
+  "seconds": 9.4,
+  "usage": {
+   "input_tokens": 4899,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 110,
+   "usd": 0.0
+  }
+ },
+ "h13-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3519,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h13-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3531,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h13-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3526,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h13-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3506,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h13-r7.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3582,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 80,
+   "usd": 0.0
+  }
+ },
+ "h14-r2.doors": {
+  "action": "mark_wet",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 3.1,
+  "usage": {
+   "input_tokens": 2544,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 114,
+   "usd": 0.0
+  }
+ },
+ "h14-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3537,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h14-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3506,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h15-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the room wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h15-r5.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 10.7,
+  "usage": {
+   "input_tokens": 3558,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 89,
+   "usd": 0.0
+  }
+ },
+ "h15-r8.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.0,
+  "usage": {
+   "input_tokens": 3540,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h16-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.3,
+  "usage": {
+   "input_tokens": 3552,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h17-r2.doors": {
+  "action": "add_door",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 3.5,
+  "usage": {
+   "input_tokens": 2299,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h17-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hallway wet?",
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3526,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h17-r5.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3528,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h17-r8.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.7,
+  "usage": {
+   "input_tokens": 3530,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h18-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the closet wet?",
+  "seconds": 4.3,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 71,
+   "usd": 0.0
+  }
+ },
+ "h18-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3527,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h18-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
+  "model_calls": 6,
+  "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
+  "seconds": 9.6,
+  "usage": {
+   "input_tokens": 7813,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 253,
+   "usd": 0.0
+  }
+ },
+ "h19-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3512,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h20-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.1,
+  "usage": {
+   "input_tokens": 3558,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h20-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 5.4,
+  "usage": {
+   "input_tokens": 3510,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h20-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 3.8,
+  "usage": {
+   "input_tokens": 3510,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h20-r5.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 2,
+  "reason": "more than one answer in one turn; a drafter checks",
+  "seconds": 3.4,
+  "usage": {
+   "input_tokens": 2304,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 112,
+   "usd": 0.0
+  }
+ },
+ "h20-r5.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.2,
+  "usage": {
+   "input_tokens": 3554,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h21-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 4,
+  "reason": "Is the bedroom wet?",
+  "seconds": 6.2,
+  "usage": {
+   "input_tokens": 5195,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 123,
+   "usd": 0.0
+  }
+ },
+ "h21-r3.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3561,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 74,
+   "usd": 0.0
+  }
+ },
+ "h22-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the closet wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h22-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 5.0,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h22-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3522,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 76,
+   "usd": 0.0
+  }
+ },
+ "h23-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hall wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h23-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3511,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h24-r2.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3571,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 79,
+   "usd": 0.0
+  }
+ },
+ "h24-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3525,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h24-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 5.0,
+  "usage": {
+   "input_tokens": 3523,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h24-r7.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3552,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h25-r0.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3589,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 79,
+   "usd": 0.0
+  }
+ },
+ "h25-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h25-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3512,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h26-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3544,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 82,
+   "usd": 0.0
+  }
+ },
+ "h26-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hall wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3526,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h26-r6.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 4.9,
+  "usage": {
+   "input_tokens": 3509,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h27-r3.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the plan missing a door?",
+  "seconds": 5.0,
+  "usage": {
+   "input_tokens": 3538,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 79,
+   "usd": 0.0
+  }
+ },
+ "h27-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.7,
+  "usage": {
+   "input_tokens": 3518,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h27-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 3.5,
+  "usage": {
+   "input_tokens": 3543,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h27-r5.doors": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3539,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h27-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the closet wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h27-r6.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3511,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h28-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 5.4,
+  "usage": {
+   "input_tokens": 3503,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 80,
+   "usd": 0.0
+  }
+ },
+ "h28-r1.wet": {
+  "action": "mark_wet",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 2.7,
+  "usage": {
+   "input_tokens": 2286,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 67,
+   "usd": 0.0
+  }
+ },
+ "h28-r4.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3591,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 81,
+   "usd": 0.0
+  }
+ },
+ "h28-r4.wet": {
+  "action": "mark_wet",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 3.0,
+  "usage": {
+   "input_tokens": 2294,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 68,
+   "usd": 0.0
+  }
+ },
+ "h28-r5.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3531,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h28-r8.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the plan missing a door?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3552,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 79,
+   "usd": 0.0
+  }
+ },
+ "h28-r8.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3522,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h29-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3521,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 74,
+   "usd": 0.0
+  }
+ },
+ "h29-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3520,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h29-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3512,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h29-r7.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the closet wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3524,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h30-r0.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the plan missing a door?",
+  "seconds": 4.9,
+  "usage": {
+   "input_tokens": 3546,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 79,
+   "usd": 0.0
+  }
+ },
+ "h30-r4.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3618,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 83,
+   "usd": 0.0
+  }
+ },
+ "h31-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
+  "model_calls": 6,
+  "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
+  "seconds": 9.6,
+  "usage": {
+   "input_tokens": 7784,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 197,
+   "usd": 0.0
+  }
+ },
+ "h31-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hall wet?",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3500,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h31-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3520,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h31-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3512,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h32-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h32-r2.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3577,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 81,
+   "usd": 0.0
+  }
+ },
+ "h32-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3522,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h32-r6.doors": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3593,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 80,
+   "usd": 0.0
+  }
+ },
+ "h33-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3530,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h33-r3.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 2,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 3.2,
+  "usage": {
+   "input_tokens": 2543,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 111,
+   "usd": 0.0
+  }
+ },
+ "h33-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3507,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h33-r5.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 4,
+  "reason": null,
+  "seconds": 6.1,
+  "usage": {
+   "input_tokens": 4882,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 107,
+   "usd": 0.0
+  }
+ },
+ "h34-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
+  "model_calls": 6,
+  "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
+  "seconds": 9.7,
+  "usage": {
+   "input_tokens": 7805,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 256,
+   "usd": 0.0
+  }
+ },
+ "h34-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.3,
+  "usage": {
+   "input_tokens": 3512,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h35-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3536,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 83,
+   "usd": 0.0
+  }
+ },
+ "h35-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the stairwell wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h35-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3529,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 71,
+   "usd": 0.0
+  }
+ },
+ "h36-r0.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3540,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h36-r1.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3531,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h36-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3539,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h36-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3510,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h36-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3537,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h36-r6.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 4,
+  "reason": "Is the closet wet?",
+  "seconds": 6.2,
+  "usage": {
+   "input_tokens": 5165,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 125,
+   "usd": 0.0
+  }
+ },
+ "h37-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3543,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h37-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3526,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h37-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the room wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h37-r6.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the room wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3506,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h38-r1.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3512,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h38-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3524,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 68,
+   "usd": 0.0
+  }
+ },
+ "h38-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the stairwell wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3524,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h39-r1.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3544,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h39-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3521,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 76,
+   "usd": 0.0
+  }
+ },
+ "h40-r1.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h40-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hallway wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h40-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3529,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h40-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the stairwell wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3524,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h40-r5.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3553,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 74,
+   "usd": 0.0
+  }
+ },
+ "h40-r6.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.1,
+  "usage": {
+   "input_tokens": 3537,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 71,
+   "usd": 0.0
+  }
+ },
+ "h40-r7.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.3,
+  "usage": {
+   "input_tokens": 3546,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 82,
+   "usd": 0.0
+  }
+ },
+ "h41-r0.doors": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3542,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h41-r1.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3519,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 74,
+   "usd": 0.0
+  }
+ },
+ "h41-r3.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3553,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h41-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h42-r1.doors": {
+  "action": "mark_wet",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 3.3,
+  "usage": {
+   "input_tokens": 2301,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 65,
+   "usd": 0.0
+  }
+ },
+ "h42-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3545,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h42-r5.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3546,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h43-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hall wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3534,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h43-r7.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the living room wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3509,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h44-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3543,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h44-r1.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3519,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h44-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h44-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is this room wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3510,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h45-r2.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is there a door the plan misses?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3541,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 80,
+   "usd": 0.0
+  }
+ },
+ "h46-r1.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3562,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 80,
+   "usd": 0.0
+  }
+ },
+ "h46-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h46-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h46-r5.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the plan missing a door?",
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3528,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 79,
+   "usd": 0.0
+  }
+ },
+ "h47-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h47-r1.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3503,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 70,
+   "usd": 0.0
+  }
+ },
+ "h48-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3521,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 70,
+   "usd": 0.0
+  }
+ },
+ "h48-r3.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3520,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h49-r1.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3577,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 81,
+   "usd": 0.0
+  }
+ },
+ "h49-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h50-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3550,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 82,
+   "usd": 0.0
+  }
+ },
+ "h50-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3529,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 70,
+   "usd": 0.0
+  }
+ },
+ "h50-r4.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 4,
+  "reason": null,
+  "seconds": 6.4,
+  "usage": {
+   "input_tokens": 4882,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 107,
+   "usd": 0.0
+  }
+ },
+ "h51-r1.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3534,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h51-r2.doors": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.1,
+  "usage": {
+   "input_tokens": 3564,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h51-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3527,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "h51-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 5.0,
+  "usage": {
+   "input_tokens": 3524,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h51-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h52-r0.doors": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 5.4,
+  "usage": {
+   "input_tokens": 3585,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 83,
+   "usd": 0.0
+  }
+ },
+ "h52-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 2,
+  "reason": "more than one answer in one turn; a drafter checks",
+  "seconds": 5.4,
+  "usage": {
+   "input_tokens": 2289,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 112,
+   "usd": 0.0
+  }
+ },
+ "h52-r1.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 3.6,
+  "usage": {
+   "input_tokens": 3549,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 74,
+   "usd": 0.0
+  }
+ },
+ "h53-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h53-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h53-r3.doors": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3545,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h53-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3537,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h53-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Are there any signs of water damage on the walls?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3512,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 82,
+   "usd": 0.0
+  }
+ },
+ "h53-r5.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3522,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "h54-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3538,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h54-r2.doors": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3569,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 81,
+   "usd": 0.0
+  }
+ },
+ "h54-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3534,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 70,
+   "usd": 0.0
+  }
+ },
+ "h54-r4.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3532,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h54-r5.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 5.1,
+  "usage": {
+   "input_tokens": 3530,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 80,
+   "usd": 0.0
+  }
+ },
+ "h55-r2.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the room wet?",
+  "seconds": 4.2,
+  "usage": {
+   "input_tokens": 3506,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "h55-r3.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the kitchen wet?",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3498,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h55-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hall wet?",
+  "seconds": 5.3,
+  "usage": {
+   "input_tokens": 3536,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h55-r6.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 8.5,
+  "usage": {
+   "input_tokens": 3538,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h55-r7.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the stairwell wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3514,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "h56-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the hall wet?",
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3516,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h56-r3.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.9,
+  "usage": {
+   "input_tokens": 3504,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 69,
+   "usd": 0.0
+  }
+ },
+ "h56-r7.wet": {
+  "action": "mark_wet",
+  "decision": "reject",
+  "error": null,
+  "model_calls": 2,
+  "reason": "the drafter rejected the edit",
+  "seconds": 3.1,
+  "usage": {
+   "input_tokens": 2282,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 68,
+   "usd": 0.0
+  }
+ },
+ "h57-r0.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bedroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3506,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h57-r2.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3549,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 68,
+   "usd": 0.0
+  }
+ },
+ "h58-r0.wet": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 6,
+  "reason": null,
+  "seconds": 9.2,
+  "usage": {
+   "input_tokens": 7856,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 195,
+   "usd": 0.0
+  }
+ },
+ "h58-r1.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the bathroom wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3526,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "h58-r2.wet": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.8,
+  "usage": {
+   "input_tokens": 3561,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 76,
+   "usd": 0.0
+  }
+ },
+ "h58-r3.doors": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3572,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 81,
+   "usd": 0.0
+  }
+ },
+ "h58-r5.wet": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the closet wet?",
+  "seconds": 5.2,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 77,
+   "usd": 0.0
+  }
+ },
+ "hard/hard01": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.2,
+  "usage": {
+   "input_tokens": 3509,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 72,
+   "usd": 0.0
+  }
+ },
+ "hard/hard02": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3517,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 66,
+   "usd": 0.0
+  }
+ },
+ "hard/hard03": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3490,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 65,
+   "usd": 0.0
+  }
+ },
+ "hard/hard04": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3527,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 74,
+   "usd": 0.0
+  }
+ },
+ "hard/hard05": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3515,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 71,
+   "usd": 0.0
+  }
+ },
+ "hard/hard06": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3528,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "hard/hard07": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3519,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "hard/hard08": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3536,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 76,
+   "usd": 0.0
+  }
+ },
+ "hard/hard09": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3540,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ },
+ "hard/hard10": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.9,
+  "usage": {
+   "input_tokens": 3508,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 63,
+   "usd": 0.0
+  }
+ },
+ "hard/hard11": {
+  "action": "mark_wet",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.4,
+  "usage": {
+   "input_tokens": 3530,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "hard/hard12": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is this room wet?",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3502,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 71,
+   "usd": 0.0
+  }
+ },
+ "hard/hard13": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3562,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 78,
+   "usd": 0.0
+  }
+ },
+ "hard/hard14": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3547,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 80,
+   "usd": 0.0
+  }
+ },
+ "hard/hard15": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3566,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 83,
+   "usd": 0.0
+  }
+ },
+ "hard/hard16": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "no valid answer; a drafter checks",
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3546,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 76,
+   "usd": 0.0
+  }
+ },
+ "hard/hard17": {
+  "action": "no_change",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.9,
+  "usage": {
+   "input_tokens": 3542,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 74,
+   "usd": 0.0
+  }
+ },
+ "hard/hard18": {
+  "action": "ask_drafter",
+  "decision": null,
+  "error": null,
+  "model_calls": 3,
+  "reason": "Is the plan missing a door?",
+  "seconds": 4.6,
+  "usage": {
+   "input_tokens": 3526,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 75,
+   "usd": 0.0
+  }
+ },
+ "hard/hard19": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.5,
+  "usage": {
+   "input_tokens": 3539,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 76,
+   "usd": 0.0
+  }
+ },
+ "hard/hard20": {
+  "action": "add_door",
+  "decision": "approve",
+  "error": null,
+  "model_calls": 3,
+  "reason": null,
+  "seconds": 4.7,
+  "usage": {
+   "input_tokens": 3552,
+   "models": [
+    "voxtral-small-latest"
+   ],
+   "output_tokens": 73,
+   "usd": 0.0
+  }
+ }
+}

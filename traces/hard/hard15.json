@@ -1,0 +1,90 @@
+{
+ "action": "add_door",
+ "args": {
+  "wall": 0
+ },
+ "decision": "approve",
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   },
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "hard15",
+  "label": "bedroom",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    0,
+    10
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "d1ad8b4dd2707f8a",
+ "key": "hard/hard15",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "There used to be an archway to the hall, now it has a door.",
+ "reason": null,
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "hard15"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "There used to be an archway to the hall, now it has a door.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "There used to be an archway to the hall, now it has a door.",
+    "room_id": "hard15",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is missing a door.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3566,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 83,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "action": "ask_drafter",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h13-r7",
+  "label": "bedroom",
+  "polygon": [
+   [
+    22.5,
+    15.0
+   ],
+   [
+    30.0,
+    15.0
+   ],
+   [
+    30.0,
+    30.0
+   ],
+   [
+    22.5,
+    30.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "1b0c712b2c0ce3ab",
+ "key": "h13-r7.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 4.5,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h13-r7"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Water ran under the bedroom carpet, the pad is soaked. Found a door behind a curtain, the camera missed it.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Found a door behind a curtain, the camera missed it.",
+    "room_id": "h13-r7",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "Not recorded: the tour counted fewer doors than the plan, so the plan has no missing door.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3582,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 80,
+  "usd": 0.0
+ }
+}

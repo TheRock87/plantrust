@@ -1,0 +1,83 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "hard01",
+  "label": "bathroom",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    0,
+    10
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "f5f1fc42bfebbf74",
+ "key": "hard/hard01",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Bath is fine, the hall next to it is soaked.",
+ "reason": null,
+ "seconds": 4.2,
+ "steps": [
+  {
+   "args": {
+    "room_id": "hard01"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bath is fine, the hall next to it is soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Bath is fine, the hall next to it is soaked.",
+    "room_id": "hard01"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The bathroom is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3509,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 72,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "action": "ask_drafter",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h01-r1",
+  "label": "living",
+  "polygon": [
+   [
+    14.5,
+    0.0
+   ],
+   [
+    46.0,
+    0.0
+   ],
+   [
+    46.0,
+    15.0
+   ],
+   [
+    14.5,
+    15.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "2719cef9dc8f01ac",
+ "key": "h01-r1.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 3.3,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h01-r1"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h01-r1"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h01-r1"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": false, \"ceiling\": 8.0, \"doors\": [{\"wall\": 3, \"width\": 2.5}], \"flags\": [], \"id\": \"h01-r1\", \"label\": \"living\", \"polygon\": [[14.5, 0.0], [46.0, 0.0], [46.0, 15.0], [14.5, 15.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 8.0, \"doors\": 2, \"label\": \"living\", \"walls\": [31.1, 15.0, 31.0, 14.9]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_notes",
+   "text": "Living room has two doors.",
+   "type": "tool_result"
+  },
+  {
+   "text": "[{\"name\": \"no_change\", \"arguments\": {\"room_id\": \"h01-r1\", \"quote\": \"Living room has two doors.\"}}]",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2532,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 106,
+  "usd": 0.0
+ }
+}

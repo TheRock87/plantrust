@@ -1,0 +1,83 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h21-r3",
+  "label": "bathroom",
+  "polygon": [
+   [
+    29.5,
+    14.0
+   ],
+   [
+    36.0,
+    14.0
+   ],
+   [
+    36.0,
+    28.0
+   ],
+   [
+    29.5,
+    28.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "fa96d07857de0729",
+ "key": "h21-r3.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Standing water in the bathroom when we got here.",
+ "reason": null,
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h21-r3"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bathroom has one door. Power is on, fans can go in tomorrow. Standing water in the bathroom when we got here.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Standing water in the bathroom when we got here.",
+    "room_id": "h21-r3"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The bathroom is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3561,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 74,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "reject",
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h03-r0",
+  "label": "hallway",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    10.5,
+    0.0
+   ],
+   [
+    10.5,
+    13.4
+   ],
+   [
+    0.0,
+    13.4
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "473cefcafd64130d",
+ "key": "h03-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "The wall to the kitchen is wet on that side.",
+ "reason": "the drafter rejected the edit",
+ "seconds": 3.3,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h03-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Power is on, fans can go in tomorrow. Hall has one door. The wall to the kitchen is wet on that side.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "The wall to the kitchen is wet on that side.",
+    "room_id": "h03-r0"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2290,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 68,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "reject",
+ "draft": {
+  "affected": true,
+  "ceiling": 17.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [
+   "stairs",
+   "tall_ceiling"
+  ],
+  "id": "h11-r3",
+  "label": "stairwell",
+  "polygon": [
+   [
+    29.5,
+    0.0
+   ],
+   [
+    36.0,
+    0.0
+   ],
+   [
+    36.0,
+    13.0
+   ],
+   [
+    29.5,
+    13.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "212de5ab61f9b804",
+ "key": "h11-r3.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "Water ran under the stairwell carpet, the pad is soaked.",
+ "reason": "the drafter rejected the edit",
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h11-r3"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Water ran under the stairwell carpet, the pad is soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Water ran under the stairwell carpet, the pad is soaked.",
+    "room_id": "h11-r3"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2295,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 70,
+  "usd": 0.0
+ }
+}

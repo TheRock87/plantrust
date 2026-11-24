@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the bedroom wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h07-r0",
+  "label": "bedroom",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    8.0,
+    0.0
+   ],
+   [
+    8.0,
+    8.4
+   ],
+   [
+    0.0,
+    8.4
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "47178f172f42fc61",
+ "key": "h07-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the bedroom wet?",
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h07-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "The bedroom has one door, I checked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the bedroom wet?",
+    "room_id": "h07-r0"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "A drafter will check if the bedroom is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3516,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 75,
+  "usd": 0.0
+ }
+}

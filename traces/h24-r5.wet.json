@@ -1,0 +1,89 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the living room wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 2.5
+   },
+   {
+    "wall": 0,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h24-r5",
+  "label": "living",
+  "polygon": [
+   [
+    0.0,
+    15.0
+   ],
+   [
+    12.0,
+    15.0
+   ],
+   [
+    12.0,
+    31.0
+   ],
+   [
+    0.0,
+    31.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "d3cd2667b087e799",
+ "key": "h24-r5.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the living room wet?",
+ "seconds": 5.0,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h24-r5"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Living room: 2 doors in total. Owner moved the furniture out already.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the living room wet?",
+    "room_id": "h24-r5"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3523,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 78,
+  "usd": 0.0
+ }
+}

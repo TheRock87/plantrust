@@ -1,0 +1,83 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h15-r5",
+  "label": "bathroom",
+  "polygon": [
+   [
+    0.0,
+    14.0
+   ],
+   [
+    10.0,
+    14.0
+   ],
+   [
+    10.0,
+    24.0
+   ],
+   [
+    0.0,
+    24.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "e7f677fafede4202",
+ "key": "h15-r5.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "No water in the bathroom. Bathroom is fine, the other bathroom next to it is soaked. Bathroom has one door.",
+ "reason": null,
+ "seconds": 10.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h15-r5"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "No water in the bathroom. Bathroom is fine, the other bathroom next to it is soaked. Bathroom has one door.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "No water in the bathroom. Bathroom is fine, the other bathroom next to it is soaked. Bathroom has one door.",
+    "room_id": "h15-r5"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The bathroom is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3558,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 89,
+  "usd": 0.0
+ }
+}

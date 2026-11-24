@@ -1,0 +1,83 @@
+{
+ "action": "ask_drafter",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h20-r5",
+  "label": "closet",
+  "polygon": [
+   [
+    25.5,
+    15.0
+   ],
+   [
+    32.0,
+    15.0
+   ],
+   [
+    32.0,
+    31.0
+   ],
+   [
+    25.5,
+    31.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "f5c04f9ccc594c16",
+ "key": "h20-r5.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "",
+ "reason": "more than one answer in one turn; a drafter checks",
+ "seconds": 3.4,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h20-r5"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Archway to the next room, no door. Water ran under the closet carpet, the pad is soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Archway to the next room, no door.",
+    "room_id": "h20-r5",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "quote": "Water ran under the closet carpet, the pad is soaked.",
+    "room_id": "h20-r5"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2304,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 112,
+  "usd": 0.0
+ }
+}

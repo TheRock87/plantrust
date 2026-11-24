@@ -1,0 +1,96 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h50-r4",
+  "label": "kitchen",
+  "polygon": [
+   [
+    6.5,
+    11.0
+   ],
+   [
+    20.3,
+    11.0
+   ],
+   [
+    20.3,
+    26.0
+   ],
+   [
+    6.5,
+    26.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "b60e75c24befbe22",
+ "key": "h50-r4.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 4,
+ "quote": "nothing wet. The kitchen has one door, I checked.",
+ "reason": null,
+ "seconds": 6.4,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h50-r4"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Checked the kitchen, nothing wet. The kitchen has one door, I checked. The wall to the living room is wet on that side.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "nothing wet",
+    "room_id": "h50-r4"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "nothing wet. The kitchen has one door, I checked.",
+    "room_id": "h50-r4"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The kitchen is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 4882,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 107,
+  "usd": 0.0
+ }
+}

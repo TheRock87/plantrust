@@ -1,0 +1,83 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h40-r7",
+  "label": "hallway",
+  "polygon": [
+   [
+    16.5,
+    14.0
+   ],
+   [
+    22.5,
+    14.0
+   ],
+   [
+    22.5,
+    28.0
+   ],
+   [
+    16.5,
+    28.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "2ea760982d7c0d72",
+ "key": "h40-r7.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "The bedroom next door is wet, not this one. The hall has one door, I checked.",
+ "reason": null,
+ "seconds": 4.3,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h40-r7"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "The bedroom next door is wet, not this one. The hall has one door, I checked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "The bedroom next door is wet, not this one. The hall has one door, I checked.",
+    "room_id": "h40-r7"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3546,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 82,
+  "usd": 0.0
+ }
+}

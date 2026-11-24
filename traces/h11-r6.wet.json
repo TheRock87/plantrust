@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the kitchen wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h11-r6",
+  "label": "kitchen",
+  "polygon": [
+   [
+    24.0,
+    13.0
+   ],
+   [
+    36.0,
+    13.0
+   ],
+   [
+    36.0,
+    25.0
+   ],
+   [
+    24.0,
+    25.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "fbc31bcc2a34986c",
+ "key": "h11-r6.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the kitchen wet?",
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h11-r6"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "The kitchen has one door, I checked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the kitchen wet?",
+    "room_id": "h11-r6"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The drafter will check if the kitchen is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3512,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 75,
+  "usd": 0.0
+ }
+}

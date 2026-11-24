@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the hallway wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h17-r3",
+  "label": "hallway",
+  "polygon": [
+   [
+    21.0,
+    0.0
+   ],
+   [
+    26.0,
+    0.0
+   ],
+   [
+    26.0,
+    12.0
+   ],
+   [
+    21.0,
+    12.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "a3bea589b4fc5a52",
+ "key": "h17-r3.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the hallway wet?",
+ "seconds": 4.4,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h17-r3"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Took photos of every wall. Hall: 1 door in total.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the hallway wet?",
+    "room_id": "h17-r3"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3526,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 77,
+  "usd": 0.0
+ }
+}

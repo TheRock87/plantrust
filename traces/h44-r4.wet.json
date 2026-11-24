@@ -1,0 +1,89 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is this room wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   },
+   {
+    "wall": 1,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h44-r4",
+  "label": "bedroom",
+  "polygon": [
+   [
+    0.0,
+    15.0
+   ],
+   [
+    11.0,
+    15.0
+   ],
+   [
+    11.0,
+    31.0
+   ],
+   [
+    0.0,
+    31.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "d5671b1918bc5772",
+ "key": "h44-r4.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is this room wet?",
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h44-r4"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Power is on, fans can go in tomorrow.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is this room wet?",
+    "room_id": "h44-r4"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "I will ask a drafter to check if this room is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3510,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 78,
+  "usd": 0.0
+ }
+}

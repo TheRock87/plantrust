@@ -1,0 +1,87 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   },
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "hard09",
+  "label": "hallway",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    0,
+    10
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "db2e5fc3a688c7dd",
+ "key": "hard/hard09",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "It did not, the pad under the hall runner is still soaked.",
+ "reason": null,
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "hard09"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Owner said it dried out. It did not, the pad under the hall runner is still soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "It did not, the pad under the hall runner is still soaked.",
+    "room_id": "hard09"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The hallway is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3540,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 73,
+  "usd": 0.0
+ }
+}

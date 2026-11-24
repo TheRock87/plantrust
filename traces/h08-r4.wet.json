@@ -1,0 +1,83 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h08-r4",
+  "label": "bedroom",
+  "polygon": [
+   [
+    0.0,
+    12.0
+   ],
+   [
+    15.5,
+    12.0
+   ],
+   [
+    15.5,
+    23.0
+   ],
+   [
+    0.0,
+    23.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "a2e9eaf2c9a7f7e7",
+ "key": "h08-r4.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "No water in the bedroom.",
+ "reason": null,
+ "seconds": 5.0,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h08-r4"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Counted 1 door in the bedroom. Power is on, fans can go in tomorrow. No water in the bedroom.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "No water in the bedroom.",
+    "room_id": "h08-r4"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3536,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 68,
+  "usd": 0.0
+ }
+}

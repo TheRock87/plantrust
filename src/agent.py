@@ -18,10 +18,12 @@ What `create_agent` does under the hood (the whole loop, nothing hidden):
 """
 import hashlib
 import json
+import time
 
 from pydantic import BaseModel, Field
 
 from . import llm
+from .common import DATA, TRACES, load, save
 from .cost import room_cost
 from .fixes import apply
 
@@ -263,8 +265,87 @@ def input_hash(kind, plan_room, tour_room, note):
     return hashlib.sha256(blob.encode()).hexdigest()[:16]
 
 
+def hard_rooms(case):
+    """A hand-made plan room and tour room for a hard-set case: only the fields the question needs matter."""
+    plan = {"id": case["id"], "label": case["label"], "polygon": [[0, 0], [10, 0], [10, 10], [0, 10]],
+            "ceiling": 8.0, "doors": [{"wall": 0, "width": 3.0}] * case["plan_doors"],
+            "affected": case["plan_affected"], "flags": []}
+    tour = {"walls": [10.0] * 4, "ceiling": 8.0, "doors": case["tour_doors"], "label": case["label"]}
+    return plan, tour
+
+
+def jobs():
+    """(trace key, room id, kind, plan room, tour room, note, decide) for every notes question, then the hard set."""
+    from .checks import notes_questions
+    from .drafter import simulated_drafter
+
+    plans = {r["id"]: r for h in load(DATA / "ai_plan.json").values() for r in h["rooms"]}
+    truth = {r["id"]: r for h in load(DATA / "truth.json").values() for r in h["rooms"]}
+    tours = {rid: t for h in load(DATA / "tour.json").values() for rid, t in h.items()}
+    notes = load(DATA / "notes.json")
+    out = []
+    for rid, item in sorted(notes_questions(load(DATA / "checks.json")), key=lambda x: (x[0], x[1]["kind"])):
+        decide = lambda p, pr=plans[rid], tr=truth[rid]: simulated_drafter(p, pr, tr)  # the drafter knows the house
+        out.append((f"{rid}.{item['kind']}", rid, item["kind"], plans[rid], tours[rid], notes[rid], decide))
+    for case in load(DATA / "notes_hard.json"):
+        plan, tour = hard_rooms(case)
+        kind = {"wet": "wet", "door": "doors"}[case["question"]]
+        out.append((f"hard/{case['id']}", case["id"], kind, plan, tour, case["note"], lambda p: "approve"))
+    return out
+
+
 def main():
-    raise NotImplementedError("v2 step 6 adds the live run (cache per question, run report); not built yet.")
+    model, fallbacks = None, []
+    agent_items, hard, runs = [], {}, {}
+    cached = new = 0
+    todo = jobs()
+    for n, (key, rid, kind, plan_room, tour_room, note, decide) in enumerate(todo):
+        path = TRACES / f"{key}.json"
+        h = input_hash(kind, plan_room, tour_room, note)
+        if path.exists() and load(path).get("input_hash") == h:
+            res = load(path)
+            cached += 1
+        else:
+            if model is None:
+                if not llm.has_key():
+                    raise SystemExit(f"agent: no {llm.key_names()} (environment or .env); {len(todo) - n} "
+                                     "questions have no cached answer.")
+                model, fallbacks = llm.get_model(), llm.get_fallbacks()
+            if llm.over_budget():
+                print(f"agent: budget cap {llm.BUDGET_USD} USD reached; stopping, rerun later.")
+                break
+            t0 = time.perf_counter()
+            res = answer_question(rid, kind, plan_room, tour_room, note, model, decide, fallbacks)
+            res["seconds"] = round(time.perf_counter() - t0, 1)
+            if llm.is_rate_limit(res["error"]):
+                print(f"  {key}: provider limit hit ({res['error'][:80]}); stopping, rerun later to continue.")
+                break
+            res.update(input_hash=h, model=MODEL, key=key)
+            save(path, res)
+            llm.record(res["usage"])
+            new += 1
+            print(f"  {key}: {res['action']} {res['decision'] or ''} ({res['model_calls']} calls, "
+                  f"{res['seconds']} s)", flush=True)
+        runs[key] = {k: res[k] for k in ("action", "decision", "reason", "error", "usage", "model_calls", "seconds")}
+        if key.startswith("hard/"):
+            hard[rid] = res["action"]
+            continue
+        p = {"room_id": rid, "kind": kind, "action": res["action"], "args": res["args"], "by": "agent",
+             "quote_or_evidence": res["quote"] or res["reason"] or "", "est_cost_at_risk_usd": 0.0}
+        if res["action"] in EDIT_TOOLS:
+            p["decision"] = res["decision"]
+            p["est_cost_at_risk_usd"] = round(abs(room_cost(apply(plan_room, p))["usd"] - room_cost(plan_room)["usd"]), 2)
+        elif res["action"] == "ask_drafter":
+            p["args"] = {"question": res["args"].get("question") or res["reason"]}
+        agent_items.append(p)
+
+    proposals = load(DATA / "proposals.json")
+    proposals["agent"] = agent_items
+    save(DATA / "proposals.json", proposals)
+    save(DATA / "agent_hard.json", hard)
+    save(DATA / "agent_runs.json", runs)
+    print(f"agent: {len(todo)} questions, {cached} from cache, {new} new, {len(todo) - len(runs)} not run; "
+          f"total spend so far {llm.ledger()['usd']:.4f} USD")
 
 
 if __name__ == "__main__":

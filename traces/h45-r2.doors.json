@@ -1,0 +1,80 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is there a door the plan misses?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [],
+  "flags": [],
+  "id": "h45-r2",
+  "label": "bathroom",
+  "polygon": [
+   [
+    28.5,
+    0.0
+   ],
+   [
+    38.0,
+    0.0
+   ],
+   [
+    38.0,
+    15.0
+   ],
+   [
+    28.5,
+    15.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "972a15d2c73f8500",
+ "key": "h45-r2.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is there a door the plan misses?",
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h45-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Took photos of every wall.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is there a door the plan misses?",
+    "room_id": "h45-r2"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3541,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 80,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "action": "ask_drafter",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "hard16",
+  "label": "closet",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    0,
+    10
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "3a02252053189381",
+ "key": "hard/hard16",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "hard16"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Pocket door slides into the wall, easy to miss.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Pocket door slides into the wall, easy to miss.",
+    "room_id": "hard16",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "Not recorded: the tour counted fewer doors than the plan, so the plan has no missing door.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3546,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 76,
+  "usd": 0.0
+ }
+}

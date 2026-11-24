@@ -1,0 +1,83 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h39-r1",
+  "label": "closet",
+  "polygon": [
+   [
+    10.0,
+    0.0
+   ],
+   [
+    15.0,
+    0.0
+   ],
+   [
+    15.0,
+    12.0
+   ],
+   [
+    10.0,
+    12.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "c5a4491cfa295d41",
+ "key": "h39-r1.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Water ran under the closet carpet, the pad is soaked.",
+ "reason": null,
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h39-r1"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "One door in the closet. Water ran under the closet carpet, the pad is soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Water ran under the closet carpet, the pad is soaked.",
+    "room_id": "h39-r1"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The closet is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3544,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 75,
+  "usd": 0.0
+ }
+}

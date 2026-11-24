@@ -1,0 +1,74 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "reject",
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h28-r1",
+  "label": "bathroom",
+  "polygon": [
+   [
+    20.5,
+    0.0
+   ],
+   [
+    30.0,
+    0.0
+   ],
+   [
+    30.0,
+    13.0
+   ],
+   [
+    20.5,
+    13.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "60e216db5c4e48d9",
+ "key": "h28-r1.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "The wall to the hall is wet on that side",
+ "reason": "the drafter rejected the edit",
+ "seconds": 2.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h28-r1"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "The wall to the hall is wet on that side. Bathroom: 1 door in total.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "The wall to the hall is wet on that side",
+    "room_id": "h28-r1"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2286,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 67,
+  "usd": 0.0
+ }
+}

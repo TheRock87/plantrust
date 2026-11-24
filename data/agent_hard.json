@@ -1,0 +1,22 @@
+{
+ "hard01": "no_change",
+ "hard02": "mark_wet",
+ "hard03": "no_change",
+ "hard04": "mark_wet",
+ "hard05": "no_change",
+ "hard06": "mark_wet",
+ "hard07": "no_change",
+ "hard08": "no_change",
+ "hard09": "mark_wet",
+ "hard10": "no_change",
+ "hard11": "mark_wet",
+ "hard12": "ask_drafter",
+ "hard13": "no_change",
+ "hard14": "add_door",
+ "hard15": "add_door",
+ "hard16": "ask_drafter",
+ "hard17": "no_change",
+ "hard18": "ask_drafter",
+ "hard19": "add_door",
+ "hard20": "add_door"
+}

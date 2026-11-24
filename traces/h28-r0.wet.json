@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the living room wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h28-r0",
+  "label": "living",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    20.5,
+    0.0
+   ],
+   [
+    20.5,
+    13.0
+   ],
+   [
+    0.0,
+    13.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "9c6450d2817a88af",
+ "key": "h28-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the living room wet?",
+ "seconds": 5.4,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h28-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Power is on, fans can go in tomorrow.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the living room wet?",
+    "room_id": "h28-r0"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "I will ask a drafter to check if the living room is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3503,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 80,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the kitchen wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 3.0
+   },
+   {
+    "wall": 3,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h51-r3",
+  "label": "kitchen",
+  "polygon": [
+   [
+    0.0,
+    16.0
+   ],
+   [
+    15.5,
+    16.0
+   ],
+   [
+    15.5,
+    29.0
+   ],
+   [
+    0.0,
+    29.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "e7b91bb86ac75935",
+ "key": "h51-r3.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the kitchen wet?",
+ "seconds": 5.0,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h51-r3"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Owner moved the furniture out already. Kitchen has two doors.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the kitchen wet?",
+    "room_id": "h51-r3"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The drafter will check if the kitchen is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3524,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 75,
+  "usd": 0.0
+ }
+}

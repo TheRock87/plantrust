@@ -1,0 +1,89 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 3.0
+   },
+   {
+    "wall": 1,
+    "width": 2.5
+   }
+  ],
+  "flags": [
+   "glass_wall"
+  ],
+  "id": "h28-r8",
+  "label": "kitchen",
+  "polygon": [
+   [
+    36.0,
+    13.0
+   ],
+   [
+    50.0,
+    13.0
+   ],
+   [
+    50.0,
+    25.0
+   ],
+   [
+    36.0,
+    25.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "eec9ee8a73fe45c4",
+ "key": "h28-r8.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "No water in the kitchen.",
+ "reason": null,
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h28-r8"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "No water in the kitchen. Water stayed in the bedroom next door.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "No water in the kitchen.",
+    "room_id": "h28-r8"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The kitchen is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3522,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 69,
+  "usd": 0.0
+ }
+}

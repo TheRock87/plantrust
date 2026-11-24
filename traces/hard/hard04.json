@@ -1,0 +1,83 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "hard04",
+  "label": "closet",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    0,
+    10
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "07a845522ef9347c",
+ "key": "hard/hard04",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Not much water, but the closet carpet pad is wet at the back.",
+ "reason": null,
+ "seconds": 4.5,
+ "steps": [
+  {
+   "args": {
+    "room_id": "hard04"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Not much water, but the closet carpet pad is wet at the back.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Not much water, but the closet carpet pad is wet at the back.",
+    "room_id": "hard04"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The closet is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3527,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 74,
+  "usd": 0.0
+ }
+}

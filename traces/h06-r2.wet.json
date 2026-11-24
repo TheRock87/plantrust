@@ -1,0 +1,74 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "reject",
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h06-r2",
+  "label": "closet",
+  "polygon": [
+   [
+    14.0,
+    0.0
+   ],
+   [
+    20.0,
+    0.0
+   ],
+   [
+    20.0,
+    11.0
+   ],
+   [
+    14.0,
+    11.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "7fb722f5c4d23d7a",
+ "key": "h06-r2.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "The wall to the other closet is wet on that side.",
+ "reason": "the drafter rejected the edit",
+ "seconds": 3.4,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h06-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "The wall to the other closet is wet on that side. No moisture in the closet walls. The closet has one door, I checked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "The wall to the other closet is wet on that side.",
+    "room_id": "h06-r2"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2290,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 69,
+  "usd": 0.0
+ }
+}

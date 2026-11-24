@@ -1,6 +1,6 @@
 {
- "calls": 234,
- "input_tokens": 508798,
- "output_tokens": 52840,
+ "calls": 465,
+ "input_tokens": 1334445,
+ "output_tokens": 71244,
  "usd": 0.0
 }

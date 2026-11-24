@@ -1,0 +1,87 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 3.0
+   },
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h41-r3",
+  "label": "living",
+  "polygon": [
+   [
+    0.0,
+    11.0
+   ],
+   [
+    25.5,
+    11.0
+   ],
+   [
+    25.5,
+    25.0
+   ],
+   [
+    0.0,
+    25.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "c6c41fdcfb967322",
+ "key": "h41-r3.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Water ran under the living room carpet, the pad is soaked.",
+ "reason": null,
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h41-r3"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Counted 2 doors in the living room. Water ran under the living room carpet, the pad is soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Water ran under the living room carpet, the pad is soaked.",
+    "room_id": "h41-r3"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The living room is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3553,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 77,
+  "usd": 0.0
+ }
+}

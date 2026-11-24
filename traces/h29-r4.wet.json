@@ -1,0 +1,86 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 17.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 2.5
+   }
+  ],
+  "flags": [
+   "stairs",
+   "tall_ceiling"
+  ],
+  "id": "h29-r4",
+  "label": "stairwell",
+  "polygon": [
+   [
+    31.0,
+    0.0
+   ],
+   [
+    36.0,
+    0.0
+   ],
+   [
+    36.0,
+    14.0
+   ],
+   [
+    31.0,
+    14.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "bde079545d56cf30",
+ "key": "h29-r4.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "No water in the stairwell.",
+ "reason": null,
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h29-r4"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "No water in the stairwell. One door in the stairwell.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "No water in the stairwell.",
+    "room_id": "h29-r4"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3520,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 69,
+  "usd": 0.0
+ }
+}

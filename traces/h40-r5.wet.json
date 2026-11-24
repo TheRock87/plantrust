@@ -1,0 +1,83 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h40-r5",
+  "label": "hallway",
+  "polygon": [
+   [
+    0.0,
+    14.0
+   ],
+   [
+    5.5,
+    14.0
+   ],
+   [
+    5.5,
+    28.0
+   ],
+   [
+    0.0,
+    28.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "72e2f58fda936246",
+ "key": "h40-r5.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Standing water in the hall when we got here.",
+ "reason": null,
+ "seconds": 4.5,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h40-r5"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Owner asked about the timeline. Standing water in the hall when we got here. One door in the hall.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Standing water in the hall when we got here.",
+    "room_id": "h40-r5"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The hall is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3553,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 74,
+  "usd": 0.0
+ }
+}

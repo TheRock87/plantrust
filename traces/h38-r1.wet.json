@@ -1,0 +1,83 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h38-r1",
+  "label": "bathroom",
+  "polygon": [
+   [
+    8.5,
+    0.0
+   ],
+   [
+    16.5,
+    0.0
+   ],
+   [
+    16.5,
+    15.3
+   ],
+   [
+    8.5,
+    15.3
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "3ed61d6bf57da5f7",
+ "key": "h38-r1.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Bathroom floor is dry, no damage.",
+ "reason": null,
+ "seconds": 4.5,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h38-r1"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bathroom floor is dry, no damage.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Bathroom floor is dry, no damage.",
+    "room_id": "h38-r1"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The bathroom is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3512,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 73,
+  "usd": 0.0
+ }
+}

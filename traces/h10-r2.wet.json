@@ -1,0 +1,86 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 17.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [
+   "stairs",
+   "tall_ceiling"
+  ],
+  "id": "h10-r2",
+  "label": "stairwell",
+  "polygon": [
+   [
+    33.0,
+    0.0
+   ],
+   [
+    38.0,
+    0.0
+   ],
+   [
+    38.0,
+    16.0
+   ],
+   [
+    33.0,
+    16.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "a164cc7d605644f3",
+ "key": "h10-r2.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Stairwell is fine, the bedroom next to it is soaked.",
+ "reason": null,
+ "seconds": 3.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h10-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Counted 1 door in the stairwell. Stairwell is fine, the bedroom next to it is soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Stairwell is fine, the bedroom next to it is soaked.",
+    "room_id": "h10-r2"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The stairwell is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3555,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 78,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "hard06",
+  "label": "kitchen",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    0,
+    10
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "f5a453447926561d",
+ "key": "hard/hard06",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Kitchen looks dry, but the meter reads high behind the sink.",
+ "reason": null,
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "hard06"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Kitchen looks dry, but the meter reads high behind the sink.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Kitchen looks dry, but the meter reads high behind the sink.",
+    "room_id": "hard06"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The kitchen is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3528,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 73,
+  "usd": 0.0
+ }
+}

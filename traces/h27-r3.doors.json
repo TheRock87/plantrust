@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the plan missing a door?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 10.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h27-r3",
+  "label": "bathroom",
+  "polygon": [
+   [
+    27.0,
+    0.0
+   ],
+   [
+    34.0,
+    0.0
+   ],
+   [
+    34.0,
+    10.0
+   ],
+   [
+    27.0,
+    10.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "bcdf87bca19be520",
+ "key": "h27-r3.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the plan missing a door?",
+ "seconds": 5.0,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h27-r3"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bathroom floor is dry, no damage.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the plan missing a door?",
+    "room_id": "h27-r3"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The drafter will check if the plan is missing a door.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3538,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 79,
+  "usd": 0.0
+ }
+}

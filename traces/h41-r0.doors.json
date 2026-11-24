@@ -1,0 +1,86 @@
+{
+ "action": "add_door",
+ "args": {
+  "wall": 0
+ },
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h41-r0",
+  "label": "bathroom",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    10.0,
+    0.0
+   ],
+   [
+    10.0,
+    11.0
+   ],
+   [
+    0.0,
+    11.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "e9eb33f65a7ad1de",
+ "key": "h41-r0.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Bathroom has one door.",
+ "reason": null,
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h41-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bathroom has one door.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Bathroom has one door.",
+    "room_id": "h41-r0",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is missing a door.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3542,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 77,
+  "usd": 0.0
+ }
+}

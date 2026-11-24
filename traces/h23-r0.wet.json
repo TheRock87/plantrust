@@ -1,0 +1,89 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the hall wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 3.0
+   },
+   {
+    "wall": 1,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h23-r0",
+  "label": "hallway",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    7.5,
+    0.0
+   ],
+   [
+    7.5,
+    16.0
+   ],
+   [
+    0.0,
+    16.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "ca9a067af5dd1254",
+ "key": "h23-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the hall wet?",
+ "seconds": 4.8,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h23-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Counted 2 doors in the hall.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the hall wet?",
+    "room_id": "h23-r0"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3516,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 77,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 15.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 3.0
+   }
+  ],
+  "flags": [
+   "tall_ceiling"
+  ],
+  "id": "h10-r0",
+  "label": "living",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    23.5,
+    0.0
+   ],
+   [
+    23.5,
+    16.0
+   ],
+   [
+    0.0,
+    16.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "b7c5efeaba139bd7",
+ "key": "h10-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "The bedroom next door is wet, not this one.",
+ "reason": null,
+ "seconds": 5.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h10-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Living room has one door. The bedroom next door is wet, not this one.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "The bedroom next door is wet, not this one.",
+    "room_id": "h10-r0"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The living room is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3527,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 75,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "action": "ask_drafter",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h24-r2",
+  "label": "bedroom",
+  "polygon": [
+   [
+    17.0,
+    0.0
+   ],
+   [
+    27.0,
+    0.0
+   ],
+   [
+    27.0,
+    15.0
+   ],
+   [
+    17.0,
+    15.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "98552a19029bc258",
+ "key": "h24-r2.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h24-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "There is a pocket door hidden in the bedroom wall. No moisture in the bedroom walls.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "There is a pocket door hidden in the bedroom wall.",
+    "room_id": "h24-r2",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "Not recorded: the tour counted fewer doors than the plan, so the plan has no missing door.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3571,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 79,
+  "usd": 0.0
+ }
+}

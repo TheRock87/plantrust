@@ -1,4 +1,4 @@
-"""Simulated drafter: approves an edit only if it makes the changed part of the room match the truth.
+"""Simulated drafter: approves an edit only if it fixes a wrong part of the room (it then matches the truth).
 
 The drafter knows the real house (truth.json). Each edit is checked on the field it changes:
 walls within 2 %, ceiling within 0.5 ft, door count, wet status. ask_drafter items are manual work, not decided here.
@@ -27,6 +27,8 @@ def field_matches(action, room, truth_room):
 
 def simulated_drafter(proposal, plan_room, truth_room):
     """`approve` or `reject` one edit. Takes the plan room too: the edit is applied to it, then compared."""
+    if field_matches(proposal["action"], plan_room, truth_room):
+        return "reject"  # the plan was already right there: the edit fixes nothing
     after = apply(plan_room, proposal)
     return "approve" if field_matches(proposal["action"], after, truth_room) else "reject"
 

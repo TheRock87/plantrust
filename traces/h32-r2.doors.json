@@ -1,0 +1,84 @@
+{
+ "action": "ask_drafter",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h32-r2",
+  "label": "bedroom",
+  "polygon": [
+   [
+    23.0,
+    0.0
+   ],
+   [
+    34.5,
+    0.0
+   ],
+   [
+    34.5,
+    13.0
+   ],
+   [
+    23.0,
+    13.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "b6fb6cd74b23a342",
+ "key": "h32-r2.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h32-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bedroom has a hidden door to the next room. Water ran under the bedroom carpet, the pad is soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Bedroom has a hidden door to the next room",
+    "room_id": "h32-r2",
+    "wall": 1
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "Not recorded: the tour counted fewer doors than the plan, so the plan has no missing door.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan has no missing door.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3577,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 81,
+  "usd": 0.0
+ }
+}

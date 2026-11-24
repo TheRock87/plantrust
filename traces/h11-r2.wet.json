@@ -1,0 +1,113 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the bedroom wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 2.5
+   },
+   {
+    "wall": 0,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h11-r2",
+  "label": "bedroom",
+  "polygon": [
+   [
+    19.0,
+    0.0
+   ],
+   [
+    29.5,
+    0.0
+   ],
+   [
+    29.5,
+    13.0
+   ],
+   [
+    19.0,
+    13.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "2b297486a74a0ae9",
+ "key": "h11-r2.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 4,
+ "quote": "",
+ "reason": "Is the bedroom wet?",
+ "seconds": 6.1,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h11-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Took photos of every wall. Counted 2 doors in the bedroom.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "room_id": "h11-r2"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h11-r2"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": false, \"ceiling\": 8.0, \"doors\": [{\"wall\": 3, \"width\": 2.5}, {\"wall\": 0, \"width\": 2.5}], \"flags\": [], \"id\": \"h11-r2\", \"label\": \"bedroom\", \"polygon\": [[19.0, 0.0], [29.5, 0.0], [29.5, 13.0], [19.0, 13.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 8.0, \"doors\": 2, \"label\": \"bedroom\", \"walls\": [10.6, 12.8, 10.6, 13.0]}",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the bedroom wet?",
+    "room_id": "h11-r2"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 5214,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 125,
+  "usd": 0.0
+ }
+}

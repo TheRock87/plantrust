@@ -1,0 +1,83 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h29-r3",
+  "label": "closet",
+  "polygon": [
+   [
+    26.0,
+    0.0
+   ],
+   [
+    31.0,
+    0.0
+   ],
+   [
+    31.0,
+    14.0
+   ],
+   [
+    26.0,
+    14.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "9e45d08302b5ad77",
+ "key": "h29-r3.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "The bedroom next door is wet, not this one.",
+ "reason": null,
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h29-r3"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "The bedroom next door is wet, not this one.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "The bedroom next door is wet, not this one.",
+    "room_id": "h29-r3"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The closet is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3521,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 74,
+  "usd": 0.0
+ }
+}

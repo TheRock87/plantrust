@@ -1,0 +1,83 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 10.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h54-r0",
+  "label": "closet",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    5.0,
+    0.0
+   ],
+   [
+    5.0,
+    14.0
+   ],
+   [
+    0.0,
+    14.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "3e59da5aa03d807e",
+ "key": "h54-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "No water in the closet.",
+ "reason": null,
+ "seconds": 4.5,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h54-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "One door in the closet. No water in the closet. The wall to the kitchen is wet on that side.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "No water in the closet.",
+    "room_id": "h54-r0"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The closet is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3538,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 69,
+  "usd": 0.0
+ }
+}

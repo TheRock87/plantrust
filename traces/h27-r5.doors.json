@@ -1,0 +1,86 @@
+{
+ "action": "add_door",
+ "args": {
+  "wall": 0
+ },
+ "decision": "approve",
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h27-r5",
+  "label": "closet",
+  "polygon": [
+   [
+    21.5,
+    10.0
+   ],
+   [
+    27.0,
+    10.0
+   ],
+   [
+    27.0,
+    24.0
+   ],
+   [
+    21.5,
+    24.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "5e3365b275027721",
+ "key": "h27-r5.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Closet has one door.",
+ "reason": null,
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h27-r5"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Closet has one door.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Closet has one door.",
+    "room_id": "h27-r5",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The closet has a door.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3539,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 75,
+  "usd": 0.0
+ }
+}

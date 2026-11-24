@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the bathroom wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h32-r4",
+  "label": "bathroom",
+  "polygon": [
+   [
+    0.0,
+    13.0
+   ],
+   [
+    9.8,
+    13.0
+   ],
+   [
+    9.8,
+    26.0
+   ],
+   [
+    0.0,
+    26.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "ce6cf36de0038cf2",
+ "key": "h32-r4.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the bathroom wet?",
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h32-r4"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "One door in the bathroom. Took photos of every wall.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the bathroom wet?",
+    "room_id": "h32-r4"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3522,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 77,
+  "usd": 0.0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 2.5
+   },
+   {
+    "wall": 0,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h26-r0",
+  "label": "bedroom",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    14.5,
+    0.0
+   ],
+   [
+    14.5,
+    15.0
+   ],
+   [
+    0.0,
+    15.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "0ae204b356aa388e",
+ "key": "h26-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Bedroom is fine, the closet next to it is soaked. No moisture in the bedroom walls.",
+ "reason": null,
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h26-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bedroom is fine, the closet next to it is soaked. No moisture in the bedroom walls.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Bedroom is fine, the closet next to it is soaked. No moisture in the bedroom walls.",
+    "room_id": "h26-r0"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3544,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 82,
+  "usd": 0.0
+ }
+}

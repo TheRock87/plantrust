@@ -5,6 +5,7 @@ v2 rows (score_row): v1 reference, B (code checks + code fixes), C (B + keyword 
 """
 from collections import Counter
 
+from . import llm
 from .baseline import answer as baseline_answer
 from .checks import notes_questions
 from .common import DATA, load, save
@@ -133,21 +134,90 @@ def hard_score(cases, decide):
 
 ROW_NAMES = {"v1": "v1: code checks only, every doubt to a drafter",
              "B": "B: code checks + code fixes; door and wet questions to a drafter",
-             "C": "C: B + keyword baseline on the notes"}
+             "C": "C: B + keyword baseline on the notes",
+             "D": "D: B + agent on the notes"}
 HARD_KIND = {"wet": "wet", "door": "doors"}  # hard-set question -> route kind
+LADDER_RATE, LADDER_MIN_N = 0.95, 20
+
+
+def ladder_status(approved, n):
+    if n < LADDER_MIN_N:
+        return "not enough cases yet"
+    return "auto-apply" if approved / n >= LADDER_RATE else "keep the drafter check"
+
+
+def ladder(items):
+    """Per fix type (who + action) in one row: approved X of N, and whether it may skip the drafter."""
+    out = {}
+    for i in items:
+        if i["action"] in EDITS:
+            s = out.setdefault((i["by"], i["action"]), {"by": i["by"], "action": i["action"], "approved": 0, "n": 0})
+            s["n"] += 1
+            s["approved"] += i["decision"] == "approve"
+    return [dict(s, status=ladder_status(s["approved"], s["n"])) for s in out.values()]
+
+
+def triage(items, house_ids):
+    """Per house, what a drafter faces: ready (nothing open), quick review (only edits), full review (manual items)."""
+    houses = {hid: {"edits": 0, "manual": 0, "usd_at_risk": 0.0} for hid in house_ids}
+    for i in items:
+        if i["action"] == "no_change":
+            continue
+        h = houses[i["room_id"].split("-")[0]]
+        h["edits" if i["action"] in EDITS else "manual"] += 1
+        h["usd_at_risk"] = round(h["usd_at_risk"] + i.get("est_cost_at_risk_usd", 0.0), 2)
+    return sorted(({"house": hid, **h, "status": "full review" if h["manual"] else "quick review" if h["edits"]
+                    else "ready"} for hid, h in houses.items()), key=lambda h: (-h["usd_at_risk"], h["house"]))
+
+
+def run_report(questions, runs):
+    """Model called for N of M questions, failures, fallback uses, tokens, seconds per question."""
+    fallback = llm.FALLBACK.split(":")[-1].replace("-latest", "")
+    data = {k: r for k, r in runs.items() if not k.startswith("hard/")}
+    used = [r for r in data.values() if r["model_calls"]]
+    return {"questions": len(questions), "answered": len(data), "not_run": len(questions) - len(data),
+            "model_called": len(used), "failures": sum(bool(r["error"]) for r in data.values()),
+            "fallback_uses": sum(any(fallback in m for m in r["usage"]["models"]) for r in data.values()),
+            "tokens": sum(r["usage"]["input_tokens"] + r["usage"]["output_tokens"] for r in data.values()),
+            "usd": round(sum(r["usage"]["usd"] for r in data.values()), 6),
+            "avg_seconds": round(sum(r["seconds"] for r in used) / max(len(used), 1), 1),
+            "ask_drafter_by_reason": dict(Counter(
+                "error" if r["error"] else "more than one answer" if "more than one" in (r["reason"] or "")
+                else "no valid answer" if "no valid answer" in (r["reason"] or "") else "agent chose it"
+                for r in data.values() if r["action"] == "ask_drafter"))}
 
 
 def main():
     truth, plans = load(DATA / "truth.json"), load(DATA / "ai_plan.json")
     answers, checks = load(DATA / "answers.json"), load(DATA / "checks.json")
     proposals, hard = load(DATA / "proposals.json"), load(DATA / "notes_hard.json")
-    unread = [ask(rid, i["kind"], i["why"], "code (note not read)") for rid, i in notes_questions(checks)]
+    questions = notes_questions(checks)
+    unread = [ask(rid, i["kind"], i["why"], "code (note not read)") for rid, i in questions]
+    answered = {(p["room_id"], p["kind"]) for p in proposals.get("agent", [])}
+    not_run = [ask(rid, i["kind"], i["why"], "agent not run") for rid, i in questions
+               if (rid, i["kind"]) not in answered]
+    agent_items = proposals["code"] + proposals.get("agent", []) + not_run
     rows = {"v1": score_row(v1_items(checks), truth, plans, answers),
             "B": score_row(proposals["code"] + unread, truth, plans, answers),
-            "C": score_row(proposals["code"] + proposals["baseline"], truth, plans, answers)}
-    hard_rows = {"C": hard_score(hard, lambda c: baseline_answer(HARD_KIND[c["question"]], c["note"])[0])}
-    save(DATA / "scores.json", {"rows": rows, "row_names": ROW_NAMES, "hard": hard_rows,
-                                "notes_questions": dict(Counter(i["kind"] for _, i in notes_questions(checks)))})
+            "C": score_row(proposals["code"] + proposals["baseline"], truth, plans, answers),
+            "D": score_row(agent_items, truth, plans, answers)}
+    agent_hard = load(DATA / "agent_hard.json") if (DATA / "agent_hard.json").exists() else {}
+    hard_rows = {"C": hard_score(hard, lambda c: baseline_answer(HARD_KIND[c["question"]], c["note"])[0]),
+                 "D": hard_score(hard, lambda c: agent_hard.get(c["id"], "not run"))}
+    runs = load(DATA / "agent_runs.json") if (DATA / "agent_runs.json").exists() else {}
+    out = {"rows": rows, "row_names": ROW_NAMES, "hard": hard_rows,
+           "notes_questions": dict(Counter(i["kind"] for _, i in questions)),
+           "ladder": ladder(agent_items), "triage": triage(agent_items, truth), "run_report": run_report(questions, runs)}
+    save(DATA / "scores.json", out)
+    rep = out["run_report"]
+    if not_run:
+        print(f"evaluate: the agent has not answered {len(not_run)} of {len(questions)} questions; row D is incomplete.")
+    print(f"run report: model called for {rep['model_called']} of {rep['questions']} questions, "
+          f"{rep['failures']} failures, {rep['fallback_uses']} fallback uses, {rep['tokens']} tokens, "
+          f"{rep['usd']} USD, {rep['avg_seconds']} s per question; ask_drafter: {rep['ask_drafter_by_reason']}")
+    for s in out["ladder"]:
+        print(f"ladder: {s['by']:5} {s['action']:14} approved {s['approved']} of {s['n']}: {s['status']}")
+    print("triage (row D):", dict(Counter(h["status"] for h in out["triage"])))
     print(f"{'row':4} {'fixed':>9} {'to drafter':>11} {'missed':>9} {'harmful':>8} {'manual':>7} "
           f"{'false alarms':>13} {'$ open':>18}")
     for name, s in rows.items():

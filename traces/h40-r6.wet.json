@@ -1,0 +1,89 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 16.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 2.5
+   },
+   {
+    "wall": 1,
+    "width": 3.0
+   }
+  ],
+  "flags": [
+   "tall_ceiling"
+  ],
+  "id": "h40-r6",
+  "label": "living",
+  "polygon": [
+   [
+    5.5,
+    14.0
+   ],
+   [
+    16.5,
+    14.0
+   ],
+   [
+    16.5,
+    28.0
+   ],
+   [
+    5.5,
+    28.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "70a4683ec0b66f17",
+ "key": "h40-r6.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "No water in the living room.",
+ "reason": null,
+ "seconds": 5.1,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h40-r6"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Owner asked about the timeline. No water in the living room. The living room has two doors, I checked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "No water in the living room.",
+    "room_id": "h40-r6"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The living room is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3537,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 71,
+  "usd": 0.0
+ }
+}

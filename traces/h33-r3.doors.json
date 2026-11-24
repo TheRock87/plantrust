@@ -1,0 +1,100 @@
+{
+ "action": "ask_drafter",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 1,
+    "width": 2.5
+   },
+   {
+    "wall": 2,
+    "width": 3.0
+   }
+  ],
+  "flags": [
+   "glass_wall"
+  ],
+  "id": "h33-r3",
+  "label": "living",
+  "polygon": [
+   [
+    0.0,
+    14.0
+   ],
+   [
+    13.5,
+    14.0
+   ],
+   [
+    13.5,
+    29.0
+   ],
+   [
+    0.0,
+    29.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "f65b391350230a27",
+ "key": "h33-r3.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 3.2,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h33-r3"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h33-r3"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h33-r3"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": false, \"ceiling\": 8.0, \"doors\": [{\"wall\": 1, \"width\": 2.5}, {\"wall\": 2, \"width\": 3.0}], \"flags\": [\"glass_wall\"], \"id\": \"h33-r3\", \"label\": \"living\", \"polygon\": [[0.0, 14.0], [13.5, 14.0], [13.5, 29.0], [0.0, 29.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 7.7, \"doors\": 3, \"label\": \"living\", \"walls\": [13.5, 15.0, 13.4, 15.0]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_notes",
+   "text": "Took photos of every wall.",
+   "type": "tool_result"
+  },
+  {
+   "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h33-r3\", \"question\": \"Is there a door on the left wall?\"}}]",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2543,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 111,
+  "usd": 0.0
+ }
+}

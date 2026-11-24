@@ -1,0 +1,77 @@
+{
+ "action": "add_door",
+ "args": {
+  "wall": 0
+ },
+ "decision": "reject",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h17-r2",
+  "label": "hallway",
+  "polygon": [
+   [
+    13.5,
+    0.0
+   ],
+   [
+    21.0,
+    0.0
+   ],
+   [
+    21.0,
+    12.0
+   ],
+   [
+    13.5,
+    12.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "c3aff6ed9a2654c8",
+ "key": "h17-r2.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "One opening is an archway, no door.",
+ "reason": "the drafter rejected the edit",
+ "seconds": 3.5,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h17-r2"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "One opening is an archway, no door. Hall is wet, baseboards are swelling.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "One opening is an archway, no door.",
+    "room_id": "h17-r2",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  }
+ ],
+ "usage": {
+  "input_tokens": 2299,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 72,
+  "usd": 0.0
+ }
+}

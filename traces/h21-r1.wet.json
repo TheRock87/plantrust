@@ -1,0 +1,113 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the bedroom wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 2.5
+   },
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h21-r1",
+  "label": "bedroom",
+  "polygon": [
+   [
+    20.0,
+    0.0
+   ],
+   [
+    36.0,
+    0.0
+   ],
+   [
+    36.0,
+    14.0
+   ],
+   [
+    20.0,
+    14.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "c9171e0f32d84843",
+ "key": "h21-r1.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 4,
+ "quote": "",
+ "reason": "Is the bedroom wet?",
+ "seconds": 6.2,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h21-r1"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Bedroom: 2 doors in total.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "room_id": "h21-r1"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h21-r1"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_room",
+   "text": "{\"affected\": false, \"ceiling\": 8.0, \"doors\": [{\"wall\": 2, \"width\": 2.5}, {\"wall\": 3, \"width\": 3.0}], \"flags\": [], \"id\": \"h21-r1\", \"label\": \"bedroom\", \"polygon\": [[20.0, 0.0], [36.0, 0.0], [36.0, 14.0], [20.0, 14.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 8.2, \"doors\": 2, \"label\": \"bedroom\", \"walls\": [16.0, 14.0, 15.8, 14.1]}",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the bedroom wet?",
+    "room_id": "h21-r1"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The drafter will check if the bedroom is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 5195,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 123,
+  "usd": 0.0
+ }
+}

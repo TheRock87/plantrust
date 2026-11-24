@@ -1,0 +1,86 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 17.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [
+   "stairs",
+   "tall_ceiling"
+  ],
+  "id": "h44-r0",
+  "label": "stairwell",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    5.0,
+    0.0
+   ],
+   [
+    5.0,
+    15.0
+   ],
+   [
+    0.0,
+    15.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "a68a25cc3cbdf675",
+ "key": "h44-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Stairwell floor is dry, no damage.",
+ "reason": null,
+ "seconds": 4.6,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h44-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Stairwell: 1 door in total. Stairwell floor is dry, no damage.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Stairwell floor is dry, no damage.",
+    "room_id": "h44-r0"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is right.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3543,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 72,
+  "usd": 0.0
+ }
+}

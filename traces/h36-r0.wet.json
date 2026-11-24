@@ -1,0 +1,87 @@
+{
+ "action": "mark_wet",
+ "args": {},
+ "decision": "approve",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   },
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h36-r0",
+  "label": "bedroom",
+  "polygon": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    10.0,
+    0.0
+   ],
+   [
+    10.0,
+    12.0
+   ],
+   [
+    0.0,
+    12.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "eeeae0eb8c3e710c",
+ "key": "h36-r0.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Water ran under the bedroom carpet, the pad is soaked.",
+ "reason": null,
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h36-r0"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "The bedroom has two doors, I checked. Water ran under the bedroom carpet, the pad is soaked.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Water ran under the bedroom carpet, the pad is soaked.",
+    "room_id": "h36-r0"
+   },
+   "name": "mark_wet",
+   "type": "tool_call"
+  },
+  {
+   "name": "mark_wet",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The bedroom is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3540,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 75,
+  "usd": 0.0
+ }
+}

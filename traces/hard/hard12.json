@@ -1,0 +1,89 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is this room wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 3.0
+   },
+   {
+    "wall": 0,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "hard12",
+  "label": "bedroom",
+  "polygon": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    0,
+    10
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "8eee65a8aad98c33",
+ "key": "hard/hard12",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is this room wet?",
+ "seconds": 4.7,
+ "steps": [
+  {
+   "args": {
+    "room_id": "hard12"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Took photos of every wall.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is this room wet?",
+    "room_id": "hard12"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "A drafter will check if this room is wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3502,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 71,
+  "usd": 0.0
+ }
+}

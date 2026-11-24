@@ -1,0 +1,85 @@
+{
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the bathroom wet?"
+ },
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 0,
+    "width": 2.5
+   }
+  ],
+  "flags": [],
+  "id": "h12-r5",
+  "label": "bathroom",
+  "polygon": [
+   [
+    20.0,
+    12.0
+   ],
+   [
+    36.0,
+    12.0
+   ],
+   [
+    36.0,
+    22.0
+   ],
+   [
+    20.0,
+    22.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "fcb60aafbfd6de78",
+ "key": "h12-r5.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the bathroom wet?",
+ "seconds": 4.8,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h12-r5"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Power is on, fans can go in tomorrow. Counted 1 door in the bathroom.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "question": "Is the bathroom wet?",
+    "room_id": "h12-r5"
+   },
+   "name": "ask_drafter",
+   "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3528,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 77,
+  "usd": 0.0
+ }
+}

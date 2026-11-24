@@ -1,0 +1,87 @@
+{
+ "action": "no_change",
+ "args": {},
+ "decision": null,
+ "draft": {
+  "affected": false,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 2,
+    "width": 2.5
+   },
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h27-r4",
+  "label": "living",
+  "polygon": [
+   [
+    0.0,
+    10.0
+   ],
+   [
+    21.5,
+    10.0
+   ],
+   [
+    21.5,
+    24.0
+   ],
+   [
+    0.0,
+    24.0
+   ]
+  ]
+ },
+ "error": null,
+ "input_hash": "65439675577dbf64",
+ "key": "h27-r4.wet",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 3,
+ "quote": "Living room floor is dry, no damage.",
+ "reason": null,
+ "seconds": 3.5,
+ "steps": [
+  {
+   "args": {
+    "room_id": "h27-r4"
+   },
+   "name": "get_notes",
+   "type": "tool_call"
+  },
+  {
+   "name": "get_notes",
+   "text": "Living room floor is dry, no damage. Owner moved the furniture out already. Counted 2 doors in the living room.",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "Living room floor is dry, no damage.",
+    "room_id": "h27-r4"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The living room is not wet.",
+   "type": "model_text"
+  }
+ ],
+ "usage": {
+  "input_tokens": 3543,
+  "models": [
+   "voxtral-small-latest"
+  ],
+  "output_tokens": 73,
+  "usd": 0.0
+ }
+}

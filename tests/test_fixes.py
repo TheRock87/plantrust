@@ -70,6 +70,11 @@ def test_drafter_checks_the_changed_field_against_the_truth():
     assert simulated_drafter({"room_id": "a", "action": "set_ceiling", "args": {"ceiling": 9.0}}, plan, truth) == "reject"
 
 
+def test_drafter_rejects_an_edit_that_changes_nothing():
+    plan, truth = room("a", 0, 10), room("a", 0, 10)  # both wet already
+    assert simulated_drafter({"room_id": "a", "action": "mark_wet", "args": {}}, plan, truth) == "reject"
+
+
 def test_approved_code_fixes_on_the_data():
     """End to end on data/: every approved fix lands on a planted error and puts the room where the truth has it."""
     truth = {r["id"]: r for h in load(DATA / "truth.json").values() for r in h["rooms"]}
