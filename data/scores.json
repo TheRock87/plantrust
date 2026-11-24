@@ -1,73 +1,116 @@
 {
- "agent_complete": true,
- "code_only": {
-  "caught": 32,
-  "clean_rooms": 250,
-  "errors": 32,
-  "false_alarms": 71,
-  "llm_usd_per_house": 0.0,
-  "per_type": {
-   "E1": {
-    "caught": 8,
-    "total": 8
-   },
-   "E2": {
-    "caught": 4,
-    "total": 4
-   },
-   "E3": {
-    "caught": 5,
-    "total": 5
-   },
-   "E4": {
-    "caught": 8,
-    "total": 8
-   },
-   "E5": {
-    "caught": 7,
-    "total": 7
-   }
-  },
-  "rooms": 282,
-  "sent_to_drafter": 103,
-  "usd_at_risk_caught": 9228.78,
-  "usd_at_risk_total": 9228.78
+ "notes_questions": {
+  "doors": 31,
+  "wet": 176
  },
- "code_plus_agent": {
-  "agent_rooms_needed": 76,
-  "agent_rooms_run": 76,
-  "caught": 32,
-  "clean_rooms": 250,
-  "errors": 32,
-  "false_alarms": 36,
-  "llm_usd_per_house": 0.0,
-  "per_type": {
-   "E1": {
-    "caught": 8,
-    "total": 8
-   },
-   "E2": {
-    "caught": 4,
-    "total": 4
-   },
-   "E3": {
-    "caught": 5,
-    "total": 5
-   },
-   "E4": {
-    "caught": 8,
-    "total": 8
-   },
-   "E5": {
-    "caught": 7,
-    "total": 7
-   }
-  },
-  "rooms": 282,
-  "sent_to_drafter": 68,
-  "tokens_per_house": 3938,
-  "usd_at_risk_caught": 9228.78,
-  "usd_at_risk_total": 9228.78
+ "row_names": {
+  "B": "B: code checks + code fixes; door and wet questions to a drafter",
+  "v1": "v1: code checks only, every doubt to a drafter"
  },
- "llm_usd_total": 0.0
+ "rows": {
+  "B": {
+   "approved_edits": 44,
+   "clean_rooms": 313,
+   "errors": 95,
+   "false_alarm_rooms": 147,
+   "fixed": 44,
+   "harmful_edits": 0,
+   "manual_items": 228,
+   "missed": 0,
+   "per_type": {
+    "E1": {
+     "fixed": 18,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 19
+    },
+    "E2": {
+     "fixed": 12,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 13
+    },
+    "E3": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 11,
+     "total": 11
+    },
+    "E4": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E5": {
+     "fixed": 14,
+     "missed": 0,
+     "to_drafter": 0,
+     "total": 14
+    },
+    "E6": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    }
+   },
+   "rejected_edits": 0,
+   "to_drafter": 51,
+   "usd_open": 0.0,
+   "usd_total": 38094.56
+  },
+  "v1": {
+   "approved_edits": 0,
+   "clean_rooms": 313,
+   "errors": 95,
+   "false_alarm_rooms": 89,
+   "fixed": 0,
+   "harmful_edits": 0,
+   "manual_items": 170,
+   "missed": 14,
+   "per_type": {
+    "E1": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E2": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 13,
+     "total": 13
+    },
+    "E3": {
+     "fixed": 0,
+     "missed": 1,
+     "to_drafter": 10,
+     "total": 11
+    },
+    "E4": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E5": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 14,
+     "total": 14
+    },
+    "E6": {
+     "fixed": 0,
+     "missed": 13,
+     "to_drafter": 6,
+     "total": 19
+    }
+   },
+   "rejected_edits": 0,
+   "to_drafter": 81,
+   "usd_open": 14354.65,
+   "usd_total": 38094.56
+  }
+ }
 }

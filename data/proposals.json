@@ -1,0 +1,871 @@
+{
+ "code": [
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 32.2 x 10.1 ft kitchen"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1873.36,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a kitchen (32.2 x 10.1 ft) that is missing from the plan",
+   "room_id": "h01-r2"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 26.6 x 13.0 ft kitchen"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1742.44,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a kitchen (26.6 x 13.0 ft) that is missing from the plan",
+   "room_id": "h02-r0"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 12.0,
+    "keep": "left",
+    "width": 9.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 11.0 ft in the plan, 8.9 ft in the tour (+23.6%)",
+   "room_id": "h02-r2"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "check: wall 2 is 13.4 ft in the plan, 14.0 ft in the tour (-4.3%)"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 0.0,
+   "kind": "wall_near",
+   "quote_or_evidence": "wall 2 is 13.4 ft in the plan, 14.0 ft in the tour (-4.3%)",
+   "room_id": "h03-r0"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 20.0 x 11.9 ft bedroom"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1335.6,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a bedroom (20.0 x 11.9 ft) that is missing from the plan",
+   "room_id": "h03-r4"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 13.0,
+    "keep": "left",
+    "width": 25.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 21.6,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 3 is 24.0 ft in the plan, 25.6 ft in the tour (-6.3%)",
+   "room_id": "h05-r0"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 19.2 x 16.1 ft bedroom"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1554.7,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a bedroom (19.2 x 16.1 ft) that is missing from the plan",
+   "room_id": "h05-r4"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 15.0,
+    "keep": "left",
+    "width": 5.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 3 is 7.0 ft in the plan, 5.4 ft in the tour (+29.6%)",
+   "room_id": "h06-r5"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 10.1,
+    "keep": "left",
+    "width": 8.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 2 is 8.4 ft in the plan, 10.1 ft in the tour (-16.8%)",
+   "room_id": "h07-r0"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 15.0 x 12.0 ft kitchen"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1194.95,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a kitchen (15.0 x 12.0 ft) that is missing from the plan",
+   "room_id": "h08-r0"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 12.0,
+    "keep": "left",
+    "width": 8.9
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 11.0 ft in the plan, 8.8 ft in the tour (+25.0%)",
+   "room_id": "h08-r2"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "check: ceiling 8.9 ft in the plan, 8 ft in the tour"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 44.92,
+   "kind": "ceiling_near",
+   "quote_or_evidence": "ceiling 8.9 ft in the plan, 8 ft in the tour",
+   "room_id": "h09-r6"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 12.0,
+    "keep": "left",
+    "width": 18.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 136.8,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 3 is 20.0 ft in the plan, 18.4 ft in the tour (+8.7%)",
+   "room_id": "h11-r4"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 8.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 193.2,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 8 ft in the tour",
+   "room_id": "h14-r1"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 8.5 x 11.9 ft bathroom"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 912.58,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a bathroom (8.5 x 11.9 ft) that is missing from the plan",
+   "room_id": "h14-r6"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 7.9
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 98.28,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 7.9 ft in the tour",
+   "room_id": "h15-r3"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 7.7
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 59.4,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 8.8 ft in the plan, 7.7 ft in the tour",
+   "room_id": "h16-r0"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 15.0,
+    "keep": "left",
+    "width": 8.1
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 18.72,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 9.4 ft in the plan, 8.1 ft in the tour (+16.0%)",
+   "room_id": "h19-r0"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 14.0,
+    "keep": "left",
+    "width": 19.8
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 107.28,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 3 is 21.0 ft in the plan, 19.7 ft in the tour (+6.6%)",
+   "room_id": "h21-r0"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 10.1 x 12.9 ft closet"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 945.83,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a closet (10.1 x 12.9 ft) that is missing from the plan",
+   "room_id": "h23-r6"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 7.9
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 311.04,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 7.9 ft in the tour",
+   "room_id": "h24-r0"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 13.0,
+    "keep": "left",
+    "width": 14.6
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 12.96,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 13.7 ft in the plan, 14.7 ft in the tour (-6.8%)",
+   "room_id": "h25-r1"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 16.0,
+    "keep": "left",
+    "width": 13.9
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 15.84,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 3 is 15.0 ft in the plan, 13.8 ft in the tour (+8.7%)",
+   "room_id": "h25-r3"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 10.1,
+    "keep": "left",
+    "width": 9.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 10.08,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 4 is 9.4 ft in the plan, 10.1 ft in the tour (-6.9%)",
+   "room_id": "h27-r2"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 8.2
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 8.2 ft in the tour",
+   "room_id": "h27-r3"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 11.4 x 11.9 ft hallway"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 960.64,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a hallway (11.4 x 11.9 ft) that is missing from the plan",
+   "room_id": "h28-r6"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 8.5 x 12.1 ft closet"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 907.85,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a closet (8.5 x 12.1 ft) that is missing from the plan",
+   "room_id": "h30-r2"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 12.1,
+    "keep": "left",
+    "width": 17.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 159.12,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 2 is 9.7 ft in the plan, 12.2 ft in the tour (-20.5%)",
+   "room_id": "h30-r6"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 7.9
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 159.96,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 9 ft in the plan, 7.9 ft in the tour",
+   "room_id": "h32-r1"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 13.0,
+    "keep": "left",
+    "width": 8.4
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 9.8 ft in the plan, 8.3 ft in the tour (+18.1%)",
+   "room_id": "h32-r4"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 14.0,
+    "keep": "left",
+    "width": 5.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 252.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 7.5 ft in the plan, 5.5 ft in the tour (+36.4%)",
+   "room_id": "h34-r1"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 6.9 x 12.1 ft stairwell"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 788.35,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a stairwell (6.9 x 12.1 ft) that is missing from the plan",
+   "room_id": "h35-r0"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 12.0,
+    "keep": "left",
+    "width": 20.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 104.4,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 21.5 ft in the plan, 20.4 ft in the tour (+5.4%)",
+   "room_id": "h35-r6"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 13.1,
+    "keep": "left",
+    "width": 6.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 21.6,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 4 is 14.6 ft in the plan, 13.0 ft in the tour (+12.3%)",
+   "room_id": "h37-r1"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 7.8
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 7.8 ft in the tour",
+   "room_id": "h37-r6"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 15.9,
+    "keep": "left",
+    "width": 8.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 4 is 15.3 ft in the plan, 16.2 ft in the tour (-5.6%)",
+   "room_id": "h38-r1"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 13.0,
+    "keep": "left",
+    "width": 5.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 6.5 ft in the plan, 5.0 ft in the tour (+30.0%)",
+   "room_id": "h38-r4"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 7.5 x 12.9 ft closet"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 807.16,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a closet (7.5 x 12.9 ft) that is missing from the plan",
+   "room_id": "h38-r5"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 5.0 x 11.9 ft hallway"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 682.07,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a hallway (5.0 x 11.9 ft) that is missing from the plan",
+   "room_id": "h39-r4"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 12.1,
+    "keep": "left",
+    "width": 8.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 14.4,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 4 is 13.1 ft in the plan, 12.0 ft in the tour (+9.2%)",
+   "room_id": "h39-r8"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 13.9,
+    "keep": "left",
+    "width": 5.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 2 is 14.6 ft in the plan, 13.8 ft in the tour (+5.8%)",
+   "room_id": "h40-r2"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 10.0,
+    "keep": "left",
+    "width": 6.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 15.84,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 7.1 ft in the plan, 6.0 ft in the tour (+18.3%)",
+   "room_id": "h42-r0"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 16.1,
+    "keep": "left",
+    "width": 14.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 27.36,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 2 is 14.2 ft in the plan, 16.2 ft in the tour (-12.3%)",
+   "room_id": "h44-r5"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 7.8
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 195.6,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 7.8 ft in the tour",
+   "room_id": "h47-r5"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 11.0,
+    "keep": "left",
+    "width": 10.6
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 27.36,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 3 is 12.5 ft in the plan, 10.6 ft in the tour (+17.9%)",
+   "room_id": "h47-r6"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 11.0,
+    "keep": "left",
+    "width": 5.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 10.08,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 6.2 ft in the plan, 5.5 ft in the tour (+12.7%)",
+   "room_id": "h47-r7"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 8.6 x 13.9 ft bathroom"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 937.91,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a bathroom (8.6 x 13.9 ft) that is missing from the plan",
+   "room_id": "h48-r1"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 16.0,
+    "keep": "left",
+    "width": 23.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 28.8,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 25.0 ft in the plan, 22.7 ft in the tour (+10.1%)",
+   "room_id": "h48-r2"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 11.0,
+    "keep": "right",
+    "width": 5.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 14.4,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 6.0 ft in the plan, 5.0 ft in the tour (+20.0%)",
+   "room_id": "h50-r1"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 15.0,
+    "keep": "left",
+    "width": 17.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 13.8 ft in the plan, 17.2 ft in the tour (-19.8%)",
+   "room_id": "h50-r4"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 8.1
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 332.76,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 8.1 ft in the tour",
+   "room_id": "h50-r5"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 16.9
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 686.52,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 8 ft in the plan, 16.9 ft in the tour",
+   "room_id": "h51-r5"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 5.0 x 12.1 ft bathroom"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 679.43,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a bathroom (5.0 x 12.1 ft) that is missing from the plan",
+   "room_id": "h52-r3"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 7.8
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 179.76,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 7.8 ft in the tour",
+   "room_id": "h53-r2"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 18.1 x 14.9 ft kitchen"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1430.86,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a kitchen (18.1 x 14.9 ft) that is missing from the plan",
+   "room_id": "h53-r6"
+  },
+  {
+   "action": "set_ceiling",
+   "args": {
+    "ceiling": 8.1
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "ceiling",
+   "quote_or_evidence": "ceiling 10 ft in the plan, 8.1 ft in the tour",
+   "room_id": "h54-r0"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 21.6 x 10.0 ft bedroom"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1330.64,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a bedroom (21.6 x 10.0 ft) that is missing from the plan",
+   "room_id": "h54-r6"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 9.9,
+    "keep": "left",
+    "width": 5.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 4 is 10.8 ft in the plan, 9.8 ft in the tour (+10.2%)",
+   "room_id": "h56-r3"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 5.0 x 9.9 ft closet"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 554.88,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a closet (5.0 x 9.9 ft) that is missing from the plan",
+   "room_id": "h56-r4"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 15.0,
+    "keep": "left",
+    "width": 5.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 7.0 ft in the plan, 5.5 ft in the tour (+27.3%)",
+   "room_id": "h56-r7"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 13.0,
+    "keep": "right",
+    "width": 25.9
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 120.24,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 3 is 28.0 ft in the plan, 25.6 ft in the tour (+9.4%)",
+   "room_id": "h57-r1"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 15.0,
+    "keep": "left",
+    "width": 8.5
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 0.0,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 7.8 ft in the plan, 8.5 ft in the tour (-8.2%)",
+   "room_id": "h57-r2"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 11.0 x 13.9 ft bedroom"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1051.64,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a bedroom (11.0 x 13.9 ft) that is missing from the plan",
+   "room_id": "h58-r7"
+  },
+  {
+   "action": "set_room_size",
+   "args": {
+    "depth": 15.0,
+    "keep": "right",
+    "width": 6.0
+   },
+   "by": "code",
+   "decision": "approve",
+   "est_cost_at_risk_usd": 104.4,
+   "field_was_right": false,
+   "kind": "wall",
+   "quote_or_evidence": "wall 1 is 7.0 ft in the plan, 6.0 ft in the tour (+16.7%)",
+   "room_id": "h59-r3"
+  },
+  {
+   "action": "ask_drafter",
+   "args": {
+    "question": "draw the missing 34.9 x 9.8 ft kitchen"
+   },
+   "by": "code",
+   "est_cost_at_risk_usd": 1907.58,
+   "kind": "missing",
+   "quote_or_evidence": "Tour captured a kitchen (34.9 x 9.8 ft) that is missing from the plan",
+   "room_id": "h60-r2"
+  }
+ ]
+}

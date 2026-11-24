@@ -14,8 +14,8 @@ def tour_of(r, scale=1.0, ceiling=None, doors=None, label=None):
             "doors": len(r["doors"]) if doors is None else doors, "label": label or r["label"]}
 
 
-def run(rooms, tour):
-    return check_house({"rooms": rooms}, tour)
+def run(rooms, tour, notes=None):
+    return check_house({"rooms": rooms}, tour, notes or {})
 
 
 def test_clean_room_passes():
