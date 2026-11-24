@@ -136,7 +136,7 @@
     },
     {
      "expected": "mark_wet",
-     "got": "mark_wet",
+     "got": "ask_drafter",
      "id": "hard06"
     },
     {
@@ -210,7 +210,7 @@
      "id": "hard20"
     }
    ],
-   "right": 18
+   "right": 17
   }
  },
  "ladder": [
@@ -229,17 +229,17 @@
    "status": "not enough cases yet"
   },
   {
-   "action": "mark_wet",
-   "approved": 16,
+   "action": "add_door",
+   "approved": 4,
    "by": "agent",
-   "n": 24,
-   "status": "keep the drafter check"
+   "n": 4,
+   "status": "not enough cases yet"
   },
   {
-   "action": "add_door",
-   "approved": 6,
+   "action": "mark_wet",
+   "approved": 14,
    "by": "agent",
-   "n": 7,
+   "n": 17,
    "status": "not enough cases yet"
   }
  ],
@@ -359,13 +359,13 @@
    "usd_total": 38094.56
   },
   "D": {
-   "approved_edits": 66,
+   "approved_edits": 62,
    "clean_rooms": 313,
    "errors": 95,
-   "false_alarm_rooms": 91,
-   "fixed": 66,
-   "harmful_edits": 9,
-   "manual_items": 138,
+   "false_alarm_rooms": 95,
+   "fixed": 62,
+   "harmful_edits": 3,
+   "manual_items": 144,
    "missed": 1,
    "per_type": {
     "E1": {
@@ -381,9 +381,9 @@
      "total": 13
     },
     "E3": {
-     "fixed": 6,
+     "fixed": 4,
      "missed": 1,
-     "to_drafter": 4,
+     "to_drafter": 6,
      "total": 11
     },
     "E4": {
@@ -399,14 +399,14 @@
      "total": 14
     },
     "E6": {
-     "fixed": 16,
+     "fixed": 14,
      "missed": 0,
-     "to_drafter": 3,
+     "to_drafter": 5,
      "total": 19
     }
    },
-   "rejected_edits": 9,
-   "to_drafter": 28,
+   "rejected_edits": 3,
+   "to_drafter": 32,
    "usd_open": 0.0,
    "usd_total": 38094.56
   },
@@ -466,18 +466,18 @@
  "run_report": {
   "answered": 207,
   "ask_drafter_by_reason": {
-   "agent chose it": 90,
-   "error": 3,
-   "more than one answer": 2,
-   "no valid answer": 13
+   "agent chose it": 96,
+   "error": 5,
+   "no valid answer": 19
   },
-  "avg_seconds": 4.8,
-  "failures": 3,
+  "avg_seconds": 4.7,
+  "failures": 5,
   "fallback_uses": 0,
   "model_called": 207,
   "not_run": 0,
+  "off_question": 0,
   "questions": 207,
-  "tokens": 756892,
+  "tokens": 604607,
   "usd": 0.0
  },
  "triage": [
@@ -497,6 +497,13 @@
   },
   {
    "edits": 2,
+   "house": "h52",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 3061.0
+  },
+  {
+   "edits": 2,
    "house": "h05",
    "manual": 2,
    "status": "full review",
@@ -504,15 +511,8 @@
   },
   {
    "edits": 2,
-   "house": "h28",
-   "manual": 4,
-   "status": "full review",
-   "usd_at_risk": 2573.41
-  },
-  {
-   "edits": 2,
    "house": "h58",
-   "manual": 3,
+   "manual": 4,
    "status": "full review",
    "usd_at_risk": 2365.64
   },
@@ -524,13 +524,6 @@
    "usd_at_risk": 2148.7
   },
   {
-   "edits": 1,
-   "house": "h52",
-   "manual": 3,
-   "status": "full review",
-   "usd_at_risk": 2137.82
-  },
-  {
    "edits": 0,
    "house": "h60",
    "manual": 1,
@@ -538,9 +531,16 @@
    "usd_at_risk": 1907.58
   },
   {
-   "edits": 0,
+   "edits": 1,
+   "house": "h28",
+   "manual": 5,
+   "status": "full review",
+   "usd_at_risk": 1897.83
+  },
+  {
+   "edits": 1,
    "house": "h01",
-   "manual": 3,
+   "manual": 2,
    "status": "full review",
    "usd_at_risk": 1873.36
   },
@@ -559,16 +559,9 @@
    "usd_at_risk": 1742.44
   },
   {
-   "edits": 3,
-   "house": "h06",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 1632.38
-  },
-  {
-   "edits": 3,
+   "edits": 2,
    "house": "h51",
-   "manual": 2,
+   "manual": 4,
    "status": "full review",
    "usd_at_risk": 1630.91
   },
@@ -578,13 +571,6 @@
    "manual": 4,
    "status": "full review",
    "usd_at_risk": 1610.62
-  },
-  {
-   "edits": 3,
-   "house": "h56",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 1484.87
   },
   {
    "edits": 2,
@@ -608,9 +594,9 @@
    "usd_at_risk": 1171.47
   },
   {
-   "edits": 2,
+   "edits": 1,
    "house": "h14",
-   "manual": 2,
+   "manual": 4,
    "status": "full review",
    "usd_at_risk": 1105.78
   },
@@ -629,16 +615,9 @@
    "usd_at_risk": 945.83
   },
   {
-   "edits": 2,
-   "house": "h44",
-   "manual": 2,
-   "status": "full review",
-   "usd_at_risk": 943.34
-  },
-  {
    "edits": 1,
    "house": "h20",
-   "manual": 3,
+   "manual": 2,
    "status": "full review",
    "usd_at_risk": 939.99
   },
@@ -666,7 +645,7 @@
   {
    "edits": 2,
    "house": "h38",
-   "manual": 2,
+   "manual": 3,
    "status": "full review",
    "usd_at_risk": 807.16
   },
@@ -676,6 +655,13 @@
    "manual": 2,
    "status": "full review",
    "usd_at_risk": 806.79
+  },
+  {
+   "edits": 2,
+   "house": "h56",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 554.88
   },
   {
    "edits": 3,
@@ -706,14 +692,14 @@
    "usd_at_risk": 233.04
   },
   {
-   "edits": 3,
+   "edits": 2,
    "house": "h32",
-   "manual": 3,
+   "manual": 4,
    "status": "full review",
-   "usd_at_risk": 176.77
+   "usd_at_risk": 159.96
   },
   {
-   "edits": 2,
+   "edits": 1,
    "house": "h11",
    "manual": 4,
    "status": "full review",
@@ -755,6 +741,13 @@
    "usd_at_risk": 28.8
   },
   {
+   "edits": 1,
+   "house": "h44",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 27.36
+  },
+  {
    "edits": 2,
    "house": "h37",
    "manual": 3,
@@ -770,22 +763,15 @@
   },
   {
    "edits": 1,
-   "house": "h17",
+   "house": "h42",
    "manual": 1,
    "status": "full review",
-   "usd_at_risk": 16.81
-  },
-  {
-   "edits": 2,
-   "house": "h42",
-   "manual": 0,
-   "status": "quick review",
    "usd_at_risk": 15.84
   },
   {
-   "edits": 3,
+   "edits": 2,
    "house": "h27",
-   "manual": 2,
+   "manual": 3,
    "status": "full review",
    "usd_at_risk": 10.08
   },
@@ -798,9 +784,16 @@
   },
   {
    "edits": 1,
-   "house": "h07",
-   "manual": 2,
+   "house": "h06",
+   "manual": 3,
    "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 1,
+   "house": "h07",
+   "manual": 0,
+   "status": "quick review",
    "usd_at_risk": 0.0
   },
   {
@@ -813,14 +806,21 @@
   {
    "edits": 0,
    "house": "h12",
-   "manual": 3,
+   "manual": 5,
    "status": "full review",
    "usd_at_risk": 0.0
   },
   {
    "edits": 0,
    "house": "h13",
-   "manual": 2,
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h17",
+   "manual": 1,
    "status": "full review",
    "usd_at_risk": 0.0
   },
@@ -841,14 +841,14 @@
   {
    "edits": 0,
    "house": "h26",
-   "manual": 2,
+   "manual": 1,
    "status": "full review",
    "usd_at_risk": 0.0
   },
   {
    "edits": 0,
    "house": "h29",
-   "manual": 2,
+   "manual": 3,
    "status": "full review",
    "usd_at_risk": 0.0
   },
@@ -862,7 +862,7 @@
   {
    "edits": 0,
    "house": "h33",
-   "manual": 3,
+   "manual": 4,
    "status": "full review",
    "usd_at_risk": 0.0
   },

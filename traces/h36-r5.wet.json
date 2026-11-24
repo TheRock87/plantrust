@@ -1,8 +1,6 @@
 {
- "action": "ask_drafter",
- "args": {
-  "question": "Is the living room wet?"
- },
+ "action": "no_change",
+ "args": {},
  "decision": null,
  "draft": {
   "affected": false,
@@ -36,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "e1de710d74bb2529",
+ "input_hash": "2a251aa56892ab63",
  "key": "h36-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "",
- "reason": "Is the living room wet?",
- "seconds": 4.6,
+ "quote": "Power is on, fans can go in tomorrow.",
+ "reason": null,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -58,28 +56,28 @@
   },
   {
    "args": {
-    "question": "Is the living room wet?",
+    "quote": "Power is on, fans can go in tomorrow.",
     "room_id": "h36-r5"
    },
-   "name": "ask_drafter",
+   "name": "no_change",
    "type": "tool_call"
   },
   {
-   "name": "ask_drafter",
-   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The note does not settle the question.",
+   "text": "The living room is not wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3537,
+  "input_tokens": 2746,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 73,
+  "output_tokens": 74,
   "usd": 0.0
  }
 }

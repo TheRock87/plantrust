@@ -37,13 +37,13 @@
   ]
  },
  "error": null,
- "input_hash": "a164cc7d605644f3",
+ "input_hash": "0251a40cc48b01bd",
  "key": "h10-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Stairwell is fine, the bedroom next to it is soaked.",
+ "quote": "Stairwell is fine",
  "reason": null,
- "seconds": 3.7,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -59,7 +59,7 @@
   },
   {
    "args": {
-    "quote": "Stairwell is fine, the bedroom next to it is soaked.",
+    "quote": "Stairwell is fine",
     "room_id": "h10-r2"
    },
    "name": "no_change",
@@ -76,11 +76,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3555,
+  "input_tokens": 2744,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 78,
+  "output_tokens": 69,
   "usd": 0.0
  }
 }

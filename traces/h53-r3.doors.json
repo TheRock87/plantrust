@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "a2740eb8261872e2",
+ "input_hash": "6b3ffed82cd1862c",
  "key": "h53-r3.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Bathroom is fine, the other bathroom next to it is soaked.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -68,12 +68,12 @@
    "type": "tool_result"
   },
   {
-   "text": "The plan is right.",
+   "text": "The plan is correct.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3545,
+  "input_tokens": 2986,
   "models": [
    "voxtral-small-latest"
   ],

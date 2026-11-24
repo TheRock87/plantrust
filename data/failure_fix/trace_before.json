@@ -1,69 +1,74 @@
 {
+ "action": "mark_wet",
+ "args": {},
+ "decision": "reject",
+ "draft": {
+  "affected": true,
+  "ceiling": 8.0,
+  "doors": [
+   {
+    "wall": 3,
+    "width": 3.0
+   }
+  ],
+  "flags": [],
+  "id": "h42-r1",
+  "label": "kitchen",
+  "polygon": [
+   [
+    6.0,
+    0.0
+   ],
+   [
+    27.0,
+    0.0
+   ],
+   [
+    27.0,
+    10.0
+   ],
+   [
+    6.0,
+    10.0
+   ]
+  ]
+ },
  "error": null,
- "house": "h07",
- "input_hash": "0dde9f660dd71752",
- "model": "mistralai:voxtral-small-latest (fallback google_genai:gemini-flash-lite-latest)",
- "reason": "Known weak spot for scanners: stairwell, tall ceiling.",
- "room_id": "h07-r1",
+ "input_hash": "28c6b543e0d6593a",
+ "key": "h42-r1.doors",
+ "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
+ "model_calls": 2,
+ "quote": "Kitchen floor is wet along the walls",
+ "reason": "the drafter rejected the edit",
+ "seconds": 3.3,
  "steps": [
   {
    "args": {
-    "room_id": "h07-r1"
+    "room_id": "h42-r1"
    },
-   "name": "get_room",
+   "name": "get_notes",
    "type": "tool_call"
   },
   {
-   "args": {
-    "room_id": "h07-r1"
-   },
-   "name": "get_tour",
-   "type": "tool_call"
-  },
-  {
-   "args": {
-    "room_id": "h07-r1"
-   },
-   "name": "get_check_results",
-   "type": "tool_call"
-  },
-  {
-   "name": "get_room",
-   "text": "{\"affected\": false, \"ceiling\": 17.0, \"doors\": [{\"wall\": 0, \"width\": 2.5}], \"flags\": [\"stairs\", \"tall_ceiling\"], \"id\": \"h07-r1\", \"label\": \"stairwell\", \"polygon\": [[8.0, 0.0], [14.0, 0.0], [14.0, 10.0], [8.0, 10.0]]}",
-   "type": "tool_result"
-  },
-  {
-   "name": "get_tour",
-   "text": "{\"ceiling\": 17.1, \"doors\": 1, \"label\": \"stairwell\", \"walls\": [6.0, 10.1, 6.0, 10.2]}",
-   "type": "tool_result"
-  },
-  {
-   "name": "get_check_results",
-   "text": "{\"status\": \"unclear\", \"reasons\": [\"Known weak spot for scanners: stairwell, tall ceiling\"], \"numbers\": {\"affected\": false, \"flags\": [\"stairs\", \"tall_ceiling\"], \"overlaps\": [], \"plan_ceiling\": 17.0, \"plan_doors\": 1, \"plan_label\": \"stairwell\", \"plan_walls\": [6.0, 10.0, 6.0, 10.0], \"tour_ceiling\": 17.1, \"tour_doors\": 1, \"tour_label\": \"stairwell\", \"tour_walls\": [6.0, 10.1, 6.0, 10.2], \"worst_wall_diff_pct\": -2.0}, \"estimated_cost_at_risk_usd\": 0.0}",
+   "name": "get_notes",
+   "text": "Kitchen floor is wet along the walls. Power is on, fans can go in tomorrow.",
    "type": "tool_result"
   },
   {
    "args": {
-    "reason": "Known weak spot for scanners: stairwell, tall ceiling.",
-    "room_id": "h07-r1",
-    "verdict": "send_to_drafter"
+    "quote": "Kitchen floor is wet along the walls",
+    "room_id": "h42-r1"
    },
-   "name": "submit_verdict",
+   "name": "mark_wet",
    "type": "tool_call"
-  },
-  {
-   "name": "submit_verdict",
-   "text": "Verdict recorded.",
-   "type": "tool_result"
   }
  ],
  "usage": {
-  "input_tokens": 1780,
+  "input_tokens": 2301,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 126,
+  "output_tokens": 65,
   "usd": 0.0
- },
- "verdict": "send_to_drafter"
+ }
 }

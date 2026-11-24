@@ -1,9 +1,11 @@
 {
- "action": "mark_wet",
- "args": {},
- "decision": "approve",
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the meter reading high behind the sink?"
+ },
+ "decision": null,
  "draft": {
-  "affected": true,
+  "affected": false,
   "ceiling": 8.0,
   "doors": [
    {
@@ -34,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "f5a453447926561d",
+ "input_hash": "5cd398b52e2b16cb",
  "key": "hard/hard06",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Kitchen looks dry, but the meter reads high behind the sink.",
- "reason": null,
- "seconds": 4.7,
+ "quote": "",
+ "reason": "Is the meter reading high behind the sink?",
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -56,28 +58,28 @@
   },
   {
    "args": {
-    "quote": "Kitchen looks dry, but the meter reads high behind the sink.",
+    "question": "Is the meter reading high behind the sink?",
     "room_id": "hard06"
    },
-   "name": "mark_wet",
+   "name": "ask_drafter",
    "type": "tool_call"
   },
   {
-   "name": "mark_wet",
-   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The kitchen is wet.",
+   "text": "The drafter will check if the kitchen is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3528,
+  "input_tokens": 2728,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 73,
+  "output_tokens": 75,
   "usd": 0.0
  }
 }

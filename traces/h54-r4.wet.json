@@ -36,7 +36,7 @@
   ]
  },
  "error": null,
- "input_hash": "89ef413bb93515f6",
+ "input_hash": "c1b51d41da64e29b",
  "key": "h54-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -70,16 +70,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The note does not settle it; a drafter will check.",
+   "text": "The note does not say whether the bedroom is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3532,
+  "input_tokens": 2736,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 77,
+  "output_tokens": 75,
   "usd": 0.0
  }
 }

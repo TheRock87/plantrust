@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "a46d3dce1e0aa91a",
+ "input_hash": "b36daf480007b3bd",
  "key": "h20-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Water ran under the closet carpet, the pad is soaked.",
  "reason": null,
- "seconds": 4.2,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3554,
+  "input_tokens": 2750,
   "models": [
    "voxtral-small-latest"
   ],

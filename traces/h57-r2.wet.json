@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "465bb633925ecb02",
+ "input_hash": "abe4e4df0f7d31a8",
  "key": "h57-r2.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Bathroom is fine",
  "reason": null,
- "seconds": 4.8,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3549,
+  "input_tokens": 2753,
   "models": [
    "voxtral-small-latest"
   ],

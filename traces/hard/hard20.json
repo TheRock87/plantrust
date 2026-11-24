@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "35d91b55e8181f58",
+ "input_hash": "4a7a2a8bc8f52f3a",
  "key": "hard/hard20",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "This one has two doors.",
  "reason": null,
- "seconds": 4.7,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -80,11 +80,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3552,
+  "input_tokens": 2976,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 73,
+  "output_tokens": 72,
   "usd": 0.0
  }
 }

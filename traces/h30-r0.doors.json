@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Is the plan missing a door?"
+  "question": "Is the bedroom door missing from the plan?"
  },
  "decision": null,
  "draft": {
@@ -31,13 +31,13 @@
   ]
  },
  "error": null,
- "input_hash": "b54c8cd9c7ef660e",
+ "input_hash": "2baa0757e9ba9046",
  "key": "h30-r0.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is the plan missing a door?",
- "seconds": 4.9,
+ "reason": "Is the bedroom door missing from the plan?",
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -53,7 +53,7 @@
   },
   {
    "args": {
-    "question": "Is the plan missing a door?",
+    "question": "Is the bedroom door missing from the plan?",
     "room_id": "h30-r0"
    },
    "name": "ask_drafter",
@@ -65,16 +65,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check if the plan is missing a door.",
+   "text": "The note does not settle it; a drafter will check.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3546,
+  "input_tokens": 2985,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 79,
+  "output_tokens": 81,
   "usd": 0.0
  }
 }

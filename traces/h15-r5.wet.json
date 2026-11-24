@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "e7f677fafede4202",
+ "input_hash": "c937e361a13695f6",
  "key": "h15-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "No water in the bathroom. Bathroom is fine, the other bathroom next to it is soaked. Bathroom has one door.",
+ "quote": "No water in the bathroom.",
  "reason": null,
- "seconds": 10.7,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -56,7 +56,7 @@
   },
   {
    "args": {
-    "quote": "No water in the bathroom. Bathroom is fine, the other bathroom next to it is soaked. Bathroom has one door.",
+    "quote": "No water in the bathroom.",
     "room_id": "h15-r5"
    },
    "name": "no_change",
@@ -73,11 +73,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3558,
+  "input_tokens": 2758,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 89,
+  "output_tokens": 69,
   "usd": 0.0
  }
 }

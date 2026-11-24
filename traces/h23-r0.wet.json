@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "ca9a067af5dd1254",
+ "input_hash": "612366fff2aa39a6",
  "key": "h23-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the hall wet?",
- "seconds": 4.8,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -74,16 +74,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The note does not settle it; a drafter will check.",
+   "text": "The note does not say whether the hall is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3516,
+  "input_tokens": 2714,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 77,
+  "output_tokens": 75,
   "usd": 0.0
  }
 }

@@ -29,13 +29,13 @@
   ]
  },
  "error": null,
- "input_hash": "23c0502cc342de32",
+ "input_hash": "70eb9f767552c8da",
  "key": "h13-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 4,
  "quote": "nothing wet. The wall to the living room is wet on that side.",
  "reason": null,
- "seconds": 9.4,
+ "seconds": 6.0,
  "steps": [
   {
    "args": {
@@ -81,7 +81,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 4899,
+  "input_tokens": 3853,
   "models": [
    "voxtral-small-latest"
   ],

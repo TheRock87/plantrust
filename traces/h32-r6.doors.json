@@ -1,18 +1,13 @@
 {
- "action": "add_door",
+ "action": "ask_drafter",
  "args": {
-  "wall": 0
+  "question": "Is the living room door on the plan?"
  },
- "decision": "approve",
+ "decision": null,
  "draft": {
   "affected": true,
   "ceiling": 8.0,
-  "doors": [
-   {
-    "wall": 0,
-    "width": 3.0
-   }
-  ],
+  "doors": [],
   "flags": [],
   "id": "h32-r6",
   "label": "living",
@@ -36,14 +31,28 @@
   ]
  },
  "error": null,
- "input_hash": "1b9bf9ab814e91c9",
+ "input_hash": "95eb2143c6e938d2",
  "key": "h32-r6.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Counted 1 door in the living room",
- "reason": null,
- "seconds": 4.5,
+ "quote": "",
+ "reason": "Is the living room door on the plan?",
+ "seconds": 4.6,
  "steps": [
+  {
+   "args": {
+    "room_id": "h32-r6"
+   },
+   "name": "get_room",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "room_id": "h32-r6"
+   },
+   "name": "get_tour",
+   "type": "tool_call"
+  },
   {
    "args": {
     "room_id": "h32-r6"
@@ -52,35 +61,44 @@
    "type": "tool_call"
   },
   {
+   "name": "get_room",
+   "text": "{\"affected\": true, \"ceiling\": 8.0, \"doors\": [], \"flags\": [], \"id\": \"h32-r6\", \"label\": \"living\", \"polygon\": [[17.0, 13.0], [40.0, 13.0], [40.0, 26.0], [17.0, 26.0]]}",
+   "type": "tool_result"
+  },
+  {
+   "name": "get_tour",
+   "text": "{\"ceiling\": 8.1, \"doors\": 1, \"label\": \"living\", \"walls\": [22.9, 13.1, 23.2, 13.0]}",
+   "type": "tool_result"
+  },
+  {
    "name": "get_notes",
    "text": "Counted 1 door in the living room. Living room is wet, baseboards are swelling. Power is on, fans can go in tomorrow.",
    "type": "tool_result"
   },
   {
    "args": {
-    "quote": "Counted 1 door in the living room",
-    "room_id": "h32-r6",
-    "wall": 0
+    "question": "Is the living room door on the plan?",
+    "room_id": "h32-r6"
    },
-   "name": "add_door",
+   "name": "ask_drafter",
    "type": "tool_call"
   },
   {
-   "name": "add_door",
-   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The plan is missing a door.",
+   "text": "The drafter will check if the living room door is on the plan.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3593,
+  "input_tokens": 3469,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 80,
+  "output_tokens": 128,
   "usd": 0.0
  }
 }

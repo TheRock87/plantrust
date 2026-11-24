@@ -38,13 +38,13 @@
   ]
  },
  "error": null,
- "input_hash": "7d1fd828bfb3f76b",
+ "input_hash": "3318d48d47e51d04",
  "key": "h50-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Bedroom is dry, meter reads normal. The hall next door is wet, not this one.",
+ "quote": "Bedroom is dry, meter reads normal.",
  "reason": null,
- "seconds": 4.8,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -60,7 +60,7 @@
   },
   {
    "args": {
-    "quote": "Bedroom is dry, meter reads normal. The hall next door is wet, not this one.",
+    "quote": "Bedroom is dry, meter reads normal.",
     "room_id": "h50-r0"
    },
    "name": "no_change",
@@ -77,11 +77,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3550,
+  "input_tokens": 2745,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 82,
+  "output_tokens": 71,
   "usd": 0.0
  }
 }

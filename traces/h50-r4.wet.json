@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "b60e75c24befbe22",
+ "input_hash": "5e82a64abcc79ca8",
  "key": "h50-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 4,
  "quote": "nothing wet. The kitchen has one door, I checked.",
  "reason": null,
- "seconds": 6.4,
+ "seconds": 6.2,
  "steps": [
   {
    "args": {
@@ -86,7 +86,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 4882,
+  "input_tokens": 3820,
   "models": [
    "voxtral-small-latest"
   ],

@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "fd54640e48812dbf",
+ "input_hash": "5798b571aef60912",
  "key": "h08-r6.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Standing water in the living room when we got here.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -75,7 +75,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3562,
+  "input_tokens": 2774,
   "models": [
    "voxtral-small-latest"
   ],

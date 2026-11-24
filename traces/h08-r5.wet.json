@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "f40b49c78353547e",
+ "input_hash": "5fa0edb2532f3c3b",
  "key": "h08-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "The living room next door is wet, not this one. The bathroom has one door, I checked. No water in the bathroom.",
+ "quote": "No water in the bathroom.",
  "reason": null,
- "seconds": 4.2,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -56,7 +56,7 @@
   },
   {
    "args": {
-    "quote": "The living room next door is wet, not this one. The bathroom has one door, I checked. No water in the bathroom.",
+    "quote": "No water in the bathroom.",
     "room_id": "h08-r5"
    },
    "name": "no_change",
@@ -73,11 +73,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3571,
+  "input_tokens": 2752,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 90,
+  "output_tokens": 69,
   "usd": 0.0
  }
 }

@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "b0a97b4c70eff395",
+ "input_hash": "456eb61cd5739037",
  "key": "h40-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "No water in the kitchen. The kitchen has one door, I checked.",
+ "quote": "No water in the kitchen.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -58,7 +58,7 @@
   },
   {
    "args": {
-    "quote": "No water in the kitchen. The kitchen has one door, I checked.",
+    "quote": "No water in the kitchen.",
     "room_id": "h40-r3"
    },
    "name": "no_change",
@@ -75,11 +75,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3529,
+  "input_tokens": 2724,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 78,
+  "output_tokens": 69,
   "usd": 0.0
  }
 }

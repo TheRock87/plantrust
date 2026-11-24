@@ -102,6 +102,35 @@ def test_add_door_refused_when_the_tour_counted_fewer_doors():
     assert "fewer doors" in [s for s in res["steps"] if s["type"] == "tool_result"][0]["text"]
 
 
+def test_off_question_edit_never_reaches_the_drafter():
+    # The step 7 failure: a door question answered with mark_wet. The tool is not offered and the guard refuses it.
+    model = ScriptedModel(messages=iter([ai(WET), ai(text="Done.")]))
+    asked = []
+    res = answer_question("h99-r0", "doors", ROOM, TOUR, NOTE, model, lambda p: asked.append(p))
+    assert asked == [] and res["action"] == "ask_drafter" and res["draft"] == ROOM
+
+
+def test_tool_call_written_as_text_gets_one_reminder():
+    # h27-r5: the model wrote its answer as text instead of calling the tool. The runner reminds it once.
+    as_text = '[{"name": "no_change", "arguments": {"room_id": "h99-r0", "quote": "Took photos of every wall."}}]'
+    res, _ = run([ai(text=as_text), ai(SAME), ai(text="No change.")])
+    assert res["action"] == "no_change" and res["model_calls"] == 3
+    res, _ = run([ai(text=as_text), ai(text=as_text)])  # only one reminder
+    assert res["action"] == "ask_drafter" and res["model_calls"] == 2
+
+
+def test_plain_text_gets_no_reminder():
+    res, _ = run([ai(text="I am not sure."), ai(SAME)])
+    assert res["action"] == "ask_drafter" and res["model_calls"] == 1
+
+
+def test_each_question_gets_only_its_own_tools():
+    from src.agent import make_tools
+    names = lambda kind: {t.name for t in make_tools("h99-r0", kind, ROOM, TOUR, NOTE, {})}
+    assert names("doors") == {"get_room", "get_tour", "get_notes", "add_door", "no_change", "ask_drafter"}
+    assert names("wet") == {"get_room", "get_tour", "get_notes", "mark_wet", "no_change", "ask_drafter"}
+
+
 def test_unreviewed_edit_is_refused_by_the_tool():
     # "2.0" fails the gate's check, so there is no pause; the schema turns it into 2 and the tool sees a valid call.
     door = ("add_door", {"room_id": "h99-r0", "wall": 2.0, "quote": "Took photos of every wall."})

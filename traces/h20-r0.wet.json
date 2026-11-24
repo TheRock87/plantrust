@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "9f68a1fa04539941",
+ "input_hash": "4ad9a67e5bff6fef",
  "key": "h20-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Bathroom is dry, meter reads normal.",
  "reason": null,
- "seconds": 5.1,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3558,
+  "input_tokens": 2758,
   "models": [
    "voxtral-small-latest"
   ],

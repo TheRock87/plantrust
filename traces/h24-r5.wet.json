@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "d3cd2667b087e799",
+ "input_hash": "71e1fdd54162d54e",
  "key": "h24-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the living room wet?",
- "seconds": 5.0,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -74,16 +74,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The note does not settle it; a drafter will check.",
+   "text": "The note does not say whether the living room is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3523,
+  "input_tokens": 2729,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 78,
+  "output_tokens": 77,
   "usd": 0.0
  }
 }

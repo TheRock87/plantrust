@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Is the living room wet?"
+  "question": "Is there water in the living room?"
  },
  "decision": null,
  "draft": {
@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "dcb91bb7059cdd2b",
+ "input_hash": "0d1ee6a62d325499",
  "key": "h04-r7.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is the living room wet?",
- "seconds": 4.6,
+ "reason": "Is there water in the living room?",
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -58,7 +58,7 @@
   },
   {
    "args": {
-    "question": "Is the living room wet?",
+    "question": "Is there water in the living room?",
     "room_id": "h04-r7"
    },
    "name": "ask_drafter",
@@ -70,16 +70,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check if the living room is wet.",
+   "text": "The note does not say whether the living room is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3531,
+  "input_tokens": 2741,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 77,
+  "output_tokens": 79,
   "usd": 0.0
  }
 }

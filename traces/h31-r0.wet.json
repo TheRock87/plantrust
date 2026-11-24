@@ -34,13 +34,13 @@
   ]
  },
  "error": "ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)",
- "input_hash": "15e86dab28824b56",
+ "input_hash": "db8a8badae63ec2a",
  "key": "h31-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 6,
  "quote": "",
  "reason": "agent error (ModelCallLimitExceededError: Model call limits exceeded: thread limit (6/6)); a drafter checks",
- "seconds": 9.6,
+ "seconds": 9.5,
  "steps": [
   {
    "args": {
@@ -82,7 +82,33 @@
   },
   {
    "args": {
-    "quote": "nothing wet in here.",
+    "quote": "nothing wet in here",
+    "room_id": "h31-r0"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "args": {
+    "quote": "nothing wet in here",
+    "room_id": "h31-r0"
+   },
+   "name": "no_change",
+   "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
+   "type": "tool_result"
+  },
+  {
+   "name": "no_change",
+   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
+   "type": "tool_result"
+  },
+  {
+   "args": {
+    "quote": "nothing wet in here",
     "room_id": "h31-r0"
    },
    "name": "no_change",
@@ -95,20 +121,7 @@
   },
   {
    "args": {
-    "quote": "nothing wet in here.",
-    "room_id": "h31-r0"
-   },
-   "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "name": "no_change",
-   "text": "Not recorded: the quote must be copied exactly from this room's note (at least 3 words).",
-   "type": "tool_result"
-  },
-  {
-   "args": {
-    "quote": "nothing wet in here.",
+    "quote": "nothing wet in here",
     "room_id": "h31-r0"
    },
    "name": "no_change",
@@ -121,11 +134,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 7784,
+  "input_tokens": 6335,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 197,
+  "output_tokens": 225,
   "usd": 0.0
  }
 }

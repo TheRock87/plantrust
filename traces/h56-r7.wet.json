@@ -1,7 +1,9 @@
 {
- "action": "mark_wet",
- "args": {},
- "decision": "reject",
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the wall to the kitchen wet on this side?"
+ },
+ "decision": null,
  "draft": {
   "affected": false,
   "ceiling": 8.0,
@@ -34,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "a19f70b337fd8227",
+ "input_hash": "ce9461fb6049e76b",
  "key": "h56-r7.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 2,
- "quote": "The wall to the kitchen is wet on that side.",
- "reason": "the drafter rejected the edit",
- "seconds": 3.1,
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the wall to the kitchen wet on this side?",
+ "seconds": 5.0,
  "steps": [
   {
    "args": {
@@ -56,19 +58,28 @@
   },
   {
    "args": {
-    "quote": "The wall to the kitchen is wet on that side.",
+    "question": "Is the wall to the kitchen wet on this side?",
     "room_id": "h56-r7"
    },
-   "name": "mark_wet",
+   "name": "ask_drafter",
    "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not say whether this room is wet.",
+   "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2282,
+  "input_tokens": 2754,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 68,
+  "output_tokens": 81,
   "usd": 0.0
  }
 }

@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Is this room wet?"
+  "question": "Is there any water in the room?"
  },
  "decision": null,
  "draft": {
@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "d5671b1918bc5772",
+ "input_hash": "0b7e0d6e645013ff",
  "key": "h44-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is this room wet?",
- "seconds": 4.7,
+ "reason": "Is there any water in the room?",
+ "seconds": 4.9,
  "steps": [
   {
    "args": {
@@ -62,7 +62,7 @@
   },
   {
    "args": {
-    "question": "Is this room wet?",
+    "question": "Is there any water in the room?",
     "room_id": "h44-r4"
    },
    "name": "ask_drafter",
@@ -74,12 +74,12 @@
    "type": "tool_result"
   },
   {
-   "text": "I will ask a drafter to check if this room is wet.",
+   "text": "A drafter will check if the room is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3510,
+  "input_tokens": 2721,
   "models": [
    "voxtral-small-latest"
   ],

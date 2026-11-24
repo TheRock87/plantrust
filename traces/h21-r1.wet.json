@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "c9171e0f32d84843",
+ "input_hash": "556278dbf9258a2a",
  "key": "h21-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 4,
+ "model_calls": 3,
  "quote": "",
  "reason": "Is the bedroom wet?",
- "seconds": 6.2,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -58,30 +58,6 @@
   {
    "name": "get_notes",
    "text": "Bedroom: 2 doors in total.",
-   "type": "tool_result"
-  },
-  {
-   "args": {
-    "room_id": "h21-r1"
-   },
-   "name": "get_room",
-   "type": "tool_call"
-  },
-  {
-   "args": {
-    "room_id": "h21-r1"
-   },
-   "name": "get_tour",
-   "type": "tool_call"
-  },
-  {
-   "name": "get_room",
-   "text": "{\"affected\": false, \"ceiling\": 8.0, \"doors\": [{\"wall\": 2, \"width\": 2.5}, {\"wall\": 3, \"width\": 3.0}], \"flags\": [], \"id\": \"h21-r1\", \"label\": \"bedroom\", \"polygon\": [[20.0, 0.0], [36.0, 0.0], [36.0, 14.0], [20.0, 14.0]]}",
-   "type": "tool_result"
-  },
-  {
-   "name": "get_tour",
-   "text": "{\"ceiling\": 8.2, \"doors\": 2, \"label\": \"bedroom\", \"walls\": [16.0, 14.0, 15.8, 14.1]}",
    "type": "tool_result"
   },
   {
@@ -103,11 +79,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 5195,
+  "input_tokens": 2726,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 123,
+  "output_tokens": 75,
   "usd": 0.0
  }
 }

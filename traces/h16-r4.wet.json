@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "e0f9ee7b5b61315c",
+ "input_hash": "4a431edbe85d71dc",
  "key": "h16-r4.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Bathroom is fine, the hall next to it is soaked.",
+ "quote": "Bathroom is fine",
  "reason": null,
- "seconds": 4.3,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -56,7 +56,7 @@
   },
   {
    "args": {
-    "quote": "Bathroom is fine, the hall next to it is soaked.",
+    "quote": "Bathroom is fine",
     "room_id": "h16-r4"
    },
    "name": "no_change",
@@ -73,11 +73,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3552,
+  "input_tokens": 2751,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 77,
+  "output_tokens": 68,
   "usd": 0.0
  }
 }

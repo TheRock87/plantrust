@@ -1,8 +1,6 @@
 {
  "action": "ask_drafter",
- "args": {
-  "question": "Is the bathroom wet?"
- },
+ "args": {},
  "decision": null,
  "draft": {
   "affected": false,
@@ -36,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "9fd9ea79d591ca3b",
+ "input_hash": "4fd5d1ae8c22616b",
  "key": "h34-r3.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 3,
+ "model_calls": 2,
  "quote": "",
- "reason": "Is the bathroom wet?",
- "seconds": 4.3,
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 2.9,
  "steps": [
   {
    "args": {
@@ -57,29 +55,16 @@
    "type": "tool_result"
   },
   {
-   "args": {
-    "question": "Is the bathroom wet?",
-    "room_id": "h34-r3"
-   },
-   "name": "ask_drafter",
-   "type": "tool_call"
-  },
-  {
-   "name": "ask_drafter",
-   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
-   "type": "tool_result"
-  },
-  {
-   "text": "A drafter will check if the bathroom is wet.",
+   "text": "[{\"name\": \"ask_drafter\", \"arguments\": {\"room_id\": \"h34-r3\", \"question\": \"Is the bathroom wet?\"}}]",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3512,
+  "input_tokens": 1747,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 75,
+  "output_tokens": 62,
   "usd": 0.0
  }
 }

@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Is this room wet?"
+  "question": "Are there any signs of water damage on the walls?"
  },
  "decision": null,
  "draft": {
@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "8eee65a8aad98c33",
+ "input_hash": "cbba131d35cb84ac",
  "key": "hard/hard12",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is this room wet?",
- "seconds": 4.7,
+ "reason": "Are there any signs of water damage on the walls?",
+ "seconds": 5.0,
  "steps": [
   {
    "args": {
@@ -62,7 +62,7 @@
   },
   {
    "args": {
-    "question": "Is this room wet?",
+    "question": "Are there any signs of water damage on the walls?",
     "room_id": "hard12"
    },
    "name": "ask_drafter",
@@ -74,16 +74,16 @@
    "type": "tool_result"
   },
   {
-   "text": "A drafter will check if this room is wet.",
+   "text": "A drafter will check for water damage in the bedroom.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3502,
+  "input_tokens": 2712,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 71,
+  "output_tokens": 78,
   "usd": 0.0
  }
 }

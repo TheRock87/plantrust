@@ -1,7 +1,9 @@
 {
- "action": "mark_wet",
- "args": {},
- "decision": "reject",
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is there a door the plan misses?"
+ },
+ "decision": null,
  "draft": {
   "affected": true,
   "ceiling": 17.0,
@@ -37,13 +39,13 @@
   ]
  },
  "error": null,
- "input_hash": "212de5ab61f9b804",
+ "input_hash": "b4eaf3ce187b5016",
  "key": "h11-r3.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 2,
- "quote": "Water ran under the stairwell carpet, the pad is soaked.",
- "reason": "the drafter rejected the edit",
- "seconds": 4.7,
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is there a door the plan misses?",
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -59,19 +61,28 @@
   },
   {
    "args": {
-    "quote": "Water ran under the stairwell carpet, the pad is soaked.",
+    "question": "Is there a door the plan misses?",
     "room_id": "h11-r3"
    },
-   "name": "mark_wet",
+   "name": "ask_drafter",
    "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2295,
+  "input_tokens": 2979,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 70,
+  "output_tokens": 80,
   "usd": 0.0
  }
 }

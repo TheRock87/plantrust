@@ -1,64 +1,85 @@
 """The page's "one failure, one fix" story. The words are written by hand; every number is read from files.
 
-  python -m src.failure_fix snapshot   # before the fix: keep the scores and the trace of the example room
+  python -m src.failure_fix snapshot   # before the fix: keep the scores, all agent answers, the example trace
   python -m src.failure_fix build      # after the fix and a rerun: write data/failure_fix.json for the page
+
+The rerun repeats every model call, and the model is not fully repeatable, so `build` also counts the answers
+that changed on questions the fix does not target (model variance), next to the change the fix made.
 """
 import shutil
 import sys
 
 from .common import DATA, TRACES, load, save
+from .evaluate import OFF_QUESTION
 
 DIR = DATA / "failure_fix"
-ROOM = "h07-r1"
-HOUSE = "h07"
+KEY = "h42-r1.doors"  # a door question the agent answered with mark_wet
 
 
 def snapshot():
     DIR.mkdir(parents=True, exist_ok=True)
     shutil.copy(DATA / "scores.json", DIR / "scores_before.json")
-    shutil.copy(TRACES / f"{ROOM}.json", DIR / "trace_before.json")
+    shutil.copy(DATA / "agent_runs.json", DIR / "runs_before.json")
+    shutil.copy(TRACES / f"{KEY}.json", DIR / "trace_before.json")
     print("failure_fix: snapshot saved")
 
 
+def tool_call(trace, names):
+    return next(s for s in trace["steps"] if s["type"] == "tool_call" and s["name"] in names)
+
+
 def build():
-    before = load(DIR / "scores_before.json")["code_plus_agent"]
-    after = load(DATA / "scores.json")["code_plus_agent"]
-    t_before = load(DIR / "trace_before.json")
-    t_after = load(TRACES / f"{ROOM}.json")
-    n = load(DATA / "checks.json")[HOUSE][ROOM]["numbers"]
+    s_before, s_after = load(DIR / "scores_before.json"), load(DATA / "scores.json")
+    before, after = s_before["rows"]["D"], s_after["rows"]["D"]
+    r_before, r_after = load(DIR / "runs_before.json"), load(DATA / "agent_runs.json")
+    t_before, t_after = load(DIR / "trace_before.json"), load(TRACES / f"{KEY}.json")
+    if t_before["input_hash"] == t_after["input_hash"]:
+        raise SystemExit("failure_fix: the example was not rerun after the fix (same input hash)")
+    rid = KEY.split(".")[0]
+    plan = next(r for h in load(DATA / "ai_plan.json").values() for r in h["rooms"] if r["id"] == rid)
+    tour = next(h[rid] for h in load(DATA / "tour.json").values() if rid in h)
+    note = load(DATA / "notes.json")[rid]
+    bad = tool_call(t_before, ("mark_wet", "add_door"))
     cases = load(DATA / "regression_cases.json")
-    agent_unclear = before["sent_to_drafter"] - after["sent_to_drafter"]
+    off = lambda runs: sum(r["action"] == OFF_QUESTION[k.split(".")[1]] for k, r in runs.items() if "/" not in k)
+    targeted = {k for k, r in r_before.items() if "/" not in k and r["action"] == OFF_QUESTION[k.split(".")[1]]}
+    drift = sum(r_before[k]["action"] != r_after[k]["action"] for k in r_before
+                if "/" not in k and k not in targeted and k in r_after)
+    untouched = sum(1 for k in r_before if "/" not in k and k not in targeted)
+    now = t_after["action"].replace("_", " ") + (f", \"{t_after['quote']}\"" if t_after["quote"] else "")
     story = {
-        "summary": (f"The first run of the agent sent all {before['agent_rooms_run']} unclear rooms to a drafter, "
-                    f"so it removed none of the {before['false_alarms']} false alarms the code checks had raised."),
+        "summary": (f"In the first full run, the agent answered {off(r_before)} door questions with mark_wet: "
+                    "an edit for a different question. The drafter rejected each one, but each cost a review."),
         "steps": [
             {"title": "Read the trace",
-             "text": (f"Room {ROOM}, a stairwell. Plan walls {n['plan_walls']}, tour walls {n['tour_walls']} ft "
-                      f"(worst {n['worst_wall_diff_pct']:+g}%), ceiling {n['plan_ceiling']:g} ft in the plan and "
-                      f"{n['tour_ceiling']:g} ft in the tour, doors {n['plan_doors']} and {n['tour_doors']}. "
-                      f"Everything agrees within noise, yet the agent answered: \"{t_before['reason']}\"")},
+             "text": (f"Question {KEY}: the plan shows {len(plan['doors'])} door, the tour counted {tour['doors']}. "
+                      f"The note says only: \"{note}\" The agent called {bad['name']} with the quote "
+                      f"\"{bad['args'].get('quote', '')}\": true, but about water, not doors.")},
             {"title": "Find the cause",
-             "text": ("The agent repeated the code's warning as its verdict. The instruction said what the inputs "
-                      "mean, but never that a warning is a reason to look at the numbers, not a reason to reject. "
-                      "So 'when unsure, send to a drafter' won every time.")},
-            {"title": "Add the case",
-             "text": (f"{len(cases)} rooms became regression cases with the verdict a drafter would expect, "
-                      f"including {ROOM} (accept) and a bathroom with a truly missing door (send to drafter). "
-                      "tests/test_failure_fix.py fails if a rerun breaks any of them.")},
-            {"title": "Change the instruction",
-             "text": ("Each warning now says what to check: a weak spot or an overlap is fine when this room's "
-                      "measurements match the tour; a label mismatch alone does not change quantities; a door-count "
-                      "mismatch still goes to a drafter, because a missing door is a real error type.")},
+             "text": ("Every question got all seven tools. The model picked the edit it had evidence for, not the one "
+                      "the question asked about. The prompt said to answer the question; with a small model, "
+                      "a sentence in a prompt is a hope, not a rule.")},
+            {"title": "Add the cases",
+             "text": (f"{len(cases)} real questions became regression cases, including this one, a negation "
+                      "(\"No water in the bedroom.\") and a note about another room. tests/test_failure_fix.py fails "
+                      "if a rerun breaks any of them.")},
+            {"title": "Change the code, not the prompt",
+             "text": ("Each question now gets only its own tools and its own short prompt (a door question: "
+                      "add_door, no_change, ask_drafter). The guard that checks quotes also refuses an edit for the "
+                      "other question, so the drafter never sees one.")},
             {"title": "Before, after",
-             "text": (f"False alarms {before['false_alarms']} to {after['false_alarms']} of {after['clean_rooms']} "
-                      f"clean rooms; errors caught {before['caught']} to {after['caught']} of {after['errors']}; "
-                      f"rooms sent to a drafter {before['sent_to_drafter']} to {after['sent_to_drafter']} "
-                      f"({agent_unclear} fewer). {ROOM} now: {t_after['verdict'].replace('_', ' ')}, "
-                      f"\"{t_after['reason']}\"")},
+             "text": (f"Off-question answers {off(r_before)} to {off(r_after)}; harmful edits {before['harmful_edits']} "
+                      f"to {after['harmful_edits']}; errors fixed {before['fixed']} to {after['fixed']} and missed "
+                      f"{before['missed']} to {after['missed']} of {after['errors']}; drafter items "
+                      f"{before['manual_items']} to {after['manual_items']}. {KEY} now: {now}. "
+                      f"The rerun repeats every model call: {drift} of {untouched} answers the fix does not target "
+                      f"also changed, which is the model's own variance.")},
         ],
     }
     save(DATA / "failure_fix.json", story)
     print("failure_fix: written")
+    for s in story["steps"]:
+        print(f"  {s['title']}: {s['text']}")
 
 
 if __name__ == "__main__":

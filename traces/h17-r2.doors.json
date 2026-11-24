@@ -1,9 +1,7 @@
 {
- "action": "add_door",
- "args": {
-  "wall": 0
- },
- "decision": "reject",
+ "action": "no_change",
+ "args": {},
+ "decision": null,
  "draft": {
   "affected": true,
   "ceiling": 8.0,
@@ -36,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "c3aff6ed9a2654c8",
+ "input_hash": "5b3c4b6b9df18fd3",
  "key": "h17-r2.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 2,
+ "model_calls": 3,
  "quote": "One opening is an archway, no door.",
- "reason": "the drafter rejected the edit",
- "seconds": 3.5,
+ "reason": null,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -59,15 +57,23 @@
   {
    "args": {
     "quote": "One opening is an archway, no door.",
-    "room_id": "h17-r2",
-    "wall": 0
+    "room_id": "h17-r2"
    },
-   "name": "add_door",
+   "name": "no_change",
    "type": "tool_call"
+  },
+  {
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is correct.",
+   "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2299,
+  "input_tokens": 2993,
   "models": [
    "voxtral-small-latest"
   ],

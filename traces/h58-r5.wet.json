@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Is the closet wet?"
+  "question": "Are there any signs of water damage on the walls?"
  },
  "decision": null,
  "draft": {
@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "a66b213b8c7a4f58",
+ "input_hash": "7152ee69d0d0f2b2",
  "key": "h58-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is the closet wet?",
- "seconds": 5.2,
+ "reason": "Are there any signs of water damage on the walls?",
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -58,7 +58,7 @@
   },
   {
    "args": {
-    "question": "Is the closet wet?",
+    "question": "Are there any signs of water damage on the walls?",
     "room_id": "h58-r5"
    },
    "name": "ask_drafter",
@@ -70,16 +70,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The note does not settle it; a drafter will check.",
+   "text": "A drafter will check for water damage in the closet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3508,
+  "input_tokens": 2726,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 77,
+  "output_tokens": 82,
   "usd": 0.0
  }
 }

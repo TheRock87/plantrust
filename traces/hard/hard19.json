@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "5e5de55dee463531",
+ "input_hash": "e3a13f3fd7c38d57",
  "key": "hard/hard19",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "No archway here, both openings have doors.",
  "reason": null,
- "seconds": 4.5,
+ "seconds": 4.4,
  "steps": [
   {
    "args": {
@@ -80,7 +80,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3539,
+  "input_tokens": 2978,
   "models": [
    "voxtral-small-latest"
   ],

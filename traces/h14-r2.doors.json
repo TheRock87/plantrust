@@ -1,7 +1,9 @@
 {
- "action": "mark_wet",
- "args": {},
- "decision": "reject",
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the plan missing a door?"
+ },
+ "decision": null,
  "draft": {
   "affected": true,
   "ceiling": 8.0,
@@ -34,44 +36,20 @@
   ]
  },
  "error": null,
- "input_hash": "c4e21709605971c2",
+ "input_hash": "1caedb38f60ac41e",
  "key": "h14-r2.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 2,
- "quote": "Moisture meter reads high on the living room drywall",
- "reason": "the drafter rejected the edit",
- "seconds": 3.1,
+ "model_calls": 3,
+ "quote": "",
+ "reason": "Is the plan missing a door?",
+ "seconds": 4.7,
  "steps": [
-  {
-   "args": {
-    "room_id": "h14-r2"
-   },
-   "name": "get_room",
-   "type": "tool_call"
-  },
-  {
-   "args": {
-    "room_id": "h14-r2"
-   },
-   "name": "get_tour",
-   "type": "tool_call"
-  },
   {
    "args": {
     "room_id": "h14-r2"
    },
    "name": "get_notes",
    "type": "tool_call"
-  },
-  {
-   "name": "get_room",
-   "text": "{\"affected\": true, \"ceiling\": 8.0, \"doors\": [{\"wall\": 1, \"width\": 2.5}], \"flags\": [], \"id\": \"h14-r2\", \"label\": \"living\", \"polygon\": [[16.0, 0.0], [33.5, 0.0], [33.5, 11.0], [16.0, 11.0]]}",
-   "type": "tool_result"
-  },
-  {
-   "name": "get_tour",
-   "text": "{\"ceiling\": 7.9, \"doors\": 2, \"label\": \"living\", \"walls\": [17.4, 10.9, 17.7, 10.9]}",
-   "type": "tool_result"
   },
   {
    "name": "get_notes",
@@ -80,19 +58,28 @@
   },
   {
    "args": {
-    "quote": "Moisture meter reads high on the living room drywall",
+    "question": "Is the plan missing a door?",
     "room_id": "h14-r2"
    },
-   "name": "mark_wet",
+   "name": "ask_drafter",
    "type": "tool_call"
+  },
+  {
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The note does not settle it; a drafter will check.",
+   "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2544,
+  "input_tokens": 2983,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 114,
+  "output_tokens": 79,
   "usd": 0.0
  }
 }

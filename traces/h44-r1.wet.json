@@ -1,9 +1,9 @@
 {
- "action": "mark_wet",
+ "action": "ask_drafter",
  "args": {},
- "decision": "approve",
+ "decision": null,
  "draft": {
-  "affected": true,
+  "affected": false,
   "ceiling": 8.0,
   "doors": [
    {
@@ -38,13 +38,13 @@
   ]
  },
  "error": null,
- "input_hash": "35563985377cf8ad",
+ "input_hash": "9fde8497130eec05",
  "key": "h44-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 3,
- "quote": "Hall is wet, baseboards are swelling.",
- "reason": null,
- "seconds": 4.6,
+ "model_calls": 2,
+ "quote": "",
+ "reason": "no valid answer; a drafter checks",
+ "seconds": 3.4,
  "steps": [
   {
    "args": {
@@ -59,29 +59,16 @@
    "type": "tool_result"
   },
   {
-   "args": {
-    "quote": "Hall is wet, baseboards are swelling.",
-    "room_id": "h44-r1"
-   },
-   "name": "mark_wet",
-   "type": "tool_call"
-  },
-  {
-   "name": "mark_wet",
-   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
-   "type": "tool_result"
-  },
-  {
-   "text": "The hall is wet.",
+   "text": "[{\"name\": \"mark_wet\", \"arguments\": {\"room_id\": \"h44-r1\", \"quote\": \"Hall is wet, baseboards are swelling.\"}}]",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3519,
+  "input_tokens": 1745,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 72,
+  "output_tokens": 65,
   "usd": 0.0
  }
 }

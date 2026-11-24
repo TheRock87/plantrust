@@ -1,7 +1,7 @@
 {
  "action": "add_door",
  "args": {
-  "wall": 0
+  "wall": 1
  },
  "decision": "approve",
  "draft": {
@@ -13,7 +13,7 @@
     "width": 3.0
    },
    {
-    "wall": 0,
+    "wall": 1,
     "width": 3.0
    }
   ],
@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "d1ad8b4dd2707f8a",
+ "input_hash": "aa0d44411f1b80f6",
  "key": "hard/hard15",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "There used to be an archway to the hall, now it has a door.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -64,7 +64,7 @@
    "args": {
     "quote": "There used to be an archway to the hall, now it has a door.",
     "room_id": "hard15",
-    "wall": 0
+    "wall": 1
    },
    "name": "add_door",
    "type": "tool_call"
@@ -80,7 +80,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3566,
+  "input_tokens": 2995,
   "models": [
    "voxtral-small-latest"
   ],

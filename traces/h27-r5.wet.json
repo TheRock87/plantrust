@@ -31,13 +31,13 @@
   ]
  },
  "error": null,
- "input_hash": "2d7a470eeaa4fb56",
+ "input_hash": "08ceb93434f9b5e1",
  "key": "h27-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the closet wet?",
- "seconds": 4.8,
+ "seconds": 4.4,
  "steps": [
   {
    "args": {
@@ -65,16 +65,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The note does not settle it; a drafter will check.",
+   "text": "The note does not say whether the closet is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3508,
+  "input_tokens": 2712,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 77,
+  "output_tokens": 75,
   "usd": 0.0
  }
 }

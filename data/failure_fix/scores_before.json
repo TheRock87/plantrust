@@ -1,72 +1,906 @@
 {
- "agent_complete": true,
- "code_only": {
-  "caught": 32,
-  "clean_rooms": 250,
-  "errors": 32,
-  "false_alarms": 71,
-  "llm_usd_per_house": 0.0,
-  "per_type": {
-   "E1": {
-    "caught": 8,
-    "total": 8
-   },
-   "E2": {
-    "caught": 4,
-    "total": 4
-   },
-   "E3": {
-    "caught": 5,
-    "total": 5
-   },
-   "E4": {
-    "caught": 8,
-    "total": 8
-   },
-   "E5": {
-    "caught": 7,
-    "total": 7
-   }
+ "hard": {
+  "C": {
+   "cases": 20,
+   "per_case": [
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard01"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard02"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard03"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard04"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard05"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "no_change",
+     "id": "hard06"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard07"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard08"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard09"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard10"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "no_change",
+     "id": "hard11"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard12"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard13"
+    },
+    {
+     "expected": "add_door",
+     "got": "ask_drafter",
+     "id": "hard14"
+    },
+    {
+     "expected": "add_door",
+     "got": "no_change",
+     "id": "hard15"
+    },
+    {
+     "expected": "no_change",
+     "got": "ask_drafter",
+     "id": "hard16"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard17"
+    },
+    {
+     "expected": "ask_drafter",
+     "got": "ask_drafter",
+     "id": "hard18"
+    },
+    {
+     "expected": "add_door",
+     "got": "no_change",
+     "id": "hard19"
+    },
+    {
+     "expected": "add_door",
+     "got": "no_change",
+     "id": "hard20"
+    }
+   ],
+   "right": 7
   },
-  "rooms": 282,
-  "sent_to_drafter": 103,
-  "usd_at_risk_caught": 9228.78,
-  "usd_at_risk_total": 9228.78
+  "D": {
+   "cases": 20,
+   "per_case": [
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard01"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard02"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard03"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard04"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard05"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard06"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard07"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard08"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard09"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard10"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard11"
+    },
+    {
+     "expected": "no_change",
+     "got": "ask_drafter",
+     "id": "hard12"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard13"
+    },
+    {
+     "expected": "add_door",
+     "got": "add_door",
+     "id": "hard14"
+    },
+    {
+     "expected": "add_door",
+     "got": "add_door",
+     "id": "hard15"
+    },
+    {
+     "expected": "no_change",
+     "got": "ask_drafter",
+     "id": "hard16"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard17"
+    },
+    {
+     "expected": "ask_drafter",
+     "got": "ask_drafter",
+     "id": "hard18"
+    },
+    {
+     "expected": "add_door",
+     "got": "add_door",
+     "id": "hard19"
+    },
+    {
+     "expected": "add_door",
+     "got": "add_door",
+     "id": "hard20"
+    }
+   ],
+   "right": 18
+  }
  },
- "code_plus_agent": {
-  "agent_rooms_needed": 76,
-  "agent_rooms_run": 76,
-  "caught": 32,
-  "clean_rooms": 250,
-  "errors": 32,
-  "false_alarms": 71,
-  "llm_usd_per_house": 0.0,
-  "per_type": {
-   "E1": {
-    "caught": 8,
-    "total": 8
-   },
-   "E2": {
-    "caught": 4,
-    "total": 4
-   },
-   "E3": {
-    "caught": 5,
-    "total": 5
-   },
-   "E4": {
-    "caught": 8,
-    "total": 8
-   },
-   "E5": {
-    "caught": 7,
-    "total": 7
-   }
+ "ladder": [
+  {
+   "action": "set_room_size",
+   "approved": 32,
+   "by": "code",
+   "n": 32,
+   "status": "auto-apply"
   },
-  "rooms": 282,
-  "sent_to_drafter": 103,
-  "usd_at_risk_caught": 9228.78,
-  "usd_at_risk_total": 9228.78
+  {
+   "action": "set_ceiling",
+   "approved": 12,
+   "by": "code",
+   "n": 12,
+   "status": "not enough cases yet"
+  },
+  {
+   "action": "mark_wet",
+   "approved": 16,
+   "by": "agent",
+   "n": 24,
+   "status": "keep the drafter check"
+  },
+  {
+   "action": "add_door",
+   "approved": 6,
+   "by": "agent",
+   "n": 7,
+   "status": "not enough cases yet"
+  }
+ ],
+ "notes_questions": {
+  "doors": 31,
+  "wet": 176
  },
- "llm_usd_total": 0.0
+ "row_names": {
+  "B": "B: code checks + code fixes; door and wet questions to a drafter",
+  "C": "C: B + keyword baseline on the notes",
+  "D": "D: B + agent on the notes",
+  "v1": "v1: code checks only, every doubt to a drafter"
+ },
+ "rows": {
+  "B": {
+   "approved_edits": 44,
+   "clean_rooms": 313,
+   "errors": 95,
+   "false_alarm_rooms": 147,
+   "fixed": 44,
+   "harmful_edits": 0,
+   "manual_items": 228,
+   "missed": 0,
+   "per_type": {
+    "E1": {
+     "fixed": 18,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 19
+    },
+    "E2": {
+     "fixed": 12,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 13
+    },
+    "E3": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 11,
+     "total": 11
+    },
+    "E4": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E5": {
+     "fixed": 14,
+     "missed": 0,
+     "to_drafter": 0,
+     "total": 14
+    },
+    "E6": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    }
+   },
+   "rejected_edits": 0,
+   "to_drafter": 51,
+   "usd_open": 0.0,
+   "usd_total": 38094.56
+  },
+  "C": {
+   "approved_edits": 55,
+   "clean_rooms": 313,
+   "errors": 95,
+   "false_alarm_rooms": 57,
+   "fixed": 55,
+   "harmful_edits": 53,
+   "manual_items": 101,
+   "missed": 8,
+   "per_type": {
+    "E1": {
+     "fixed": 18,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 19
+    },
+    "E2": {
+     "fixed": 12,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 13
+    },
+    "E3": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 11,
+     "total": 11
+    },
+    "E4": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E5": {
+     "fixed": 14,
+     "missed": 0,
+     "to_drafter": 0,
+     "total": 14
+    },
+    "E6": {
+     "fixed": 11,
+     "missed": 8,
+     "to_drafter": 0,
+     "total": 19
+    }
+   },
+   "rejected_edits": 53,
+   "to_drafter": 32,
+   "usd_open": 8789.52,
+   "usd_total": 38094.56
+  },
+  "D": {
+   "approved_edits": 66,
+   "clean_rooms": 313,
+   "errors": 95,
+   "false_alarm_rooms": 91,
+   "fixed": 66,
+   "harmful_edits": 9,
+   "manual_items": 138,
+   "missed": 1,
+   "per_type": {
+    "E1": {
+     "fixed": 18,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 19
+    },
+    "E2": {
+     "fixed": 12,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 13
+    },
+    "E3": {
+     "fixed": 6,
+     "missed": 1,
+     "to_drafter": 4,
+     "total": 11
+    },
+    "E4": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E5": {
+     "fixed": 14,
+     "missed": 0,
+     "to_drafter": 0,
+     "total": 14
+    },
+    "E6": {
+     "fixed": 16,
+     "missed": 0,
+     "to_drafter": 3,
+     "total": 19
+    }
+   },
+   "rejected_edits": 9,
+   "to_drafter": 28,
+   "usd_open": 0.0,
+   "usd_total": 38094.56
+  },
+  "v1": {
+   "approved_edits": 0,
+   "clean_rooms": 313,
+   "errors": 95,
+   "false_alarm_rooms": 89,
+   "fixed": 0,
+   "harmful_edits": 0,
+   "manual_items": 170,
+   "missed": 14,
+   "per_type": {
+    "E1": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E2": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 13,
+     "total": 13
+    },
+    "E3": {
+     "fixed": 0,
+     "missed": 1,
+     "to_drafter": 10,
+     "total": 11
+    },
+    "E4": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E5": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 14,
+     "total": 14
+    },
+    "E6": {
+     "fixed": 0,
+     "missed": 13,
+     "to_drafter": 6,
+     "total": 19
+    }
+   },
+   "rejected_edits": 0,
+   "to_drafter": 81,
+   "usd_open": 14354.65,
+   "usd_total": 38094.56
+  }
+ },
+ "run_report": {
+  "answered": 207,
+  "ask_drafter_by_reason": {
+   "agent chose it": 90,
+   "error": 3,
+   "more than one answer": 2,
+   "no valid answer": 13
+  },
+  "avg_seconds": 4.8,
+  "failures": 3,
+  "fallback_uses": 0,
+  "model_called": 207,
+  "not_run": 0,
+  "off_question": 3,
+  "questions": 207,
+  "tokens": 756892,
+  "usd": 0.0
+ },
+ "triage": [
+  {
+   "edits": 2,
+   "house": "h03",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 3603.74
+  },
+  {
+   "edits": 2,
+   "house": "h08",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 3304.94
+  },
+  {
+   "edits": 2,
+   "house": "h05",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 2923.09
+  },
+  {
+   "edits": 2,
+   "house": "h28",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 2573.41
+  },
+  {
+   "edits": 2,
+   "house": "h58",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 2365.64
+  },
+  {
+   "edits": 2,
+   "house": "h48",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 2148.7
+  },
+  {
+   "edits": 1,
+   "house": "h52",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 2137.82
+  },
+  {
+   "edits": 0,
+   "house": "h60",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 1907.58
+  },
+  {
+   "edits": 0,
+   "house": "h01",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 1873.36
+  },
+  {
+   "edits": 2,
+   "house": "h41",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 1811.99
+  },
+  {
+   "edits": 1,
+   "house": "h02",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 1742.44
+  },
+  {
+   "edits": 3,
+   "house": "h06",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 1632.38
+  },
+  {
+   "edits": 3,
+   "house": "h51",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 1630.91
+  },
+  {
+   "edits": 1,
+   "house": "h53",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 1610.62
+  },
+  {
+   "edits": 3,
+   "house": "h56",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 1484.87
+  },
+  {
+   "edits": 2,
+   "house": "h39",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 1374.46
+  },
+  {
+   "edits": 1,
+   "house": "h54",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 1330.64
+  },
+  {
+   "edits": 2,
+   "house": "h15",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 1171.47
+  },
+  {
+   "edits": 2,
+   "house": "h14",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 1105.78
+  },
+  {
+   "edits": 1,
+   "house": "h30",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 1066.97
+  },
+  {
+   "edits": 0,
+   "house": "h23",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 945.83
+  },
+  {
+   "edits": 2,
+   "house": "h44",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 943.34
+  },
+  {
+   "edits": 1,
+   "house": "h20",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 939.99
+  },
+  {
+   "edits": 2,
+   "house": "h21",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 925.67
+  },
+  {
+   "edits": 1,
+   "house": "h36",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 913.18
+  },
+  {
+   "edits": 1,
+   "house": "h35",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 892.75
+  },
+  {
+   "edits": 2,
+   "house": "h38",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 807.16
+  },
+  {
+   "edits": 2,
+   "house": "h40",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 806.79
+  },
+  {
+   "edits": 3,
+   "house": "h50",
+   "manual": 0,
+   "status": "quick review",
+   "usd_at_risk": 347.16
+  },
+  {
+   "edits": 1,
+   "house": "h24",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 311.04
+  },
+  {
+   "edits": 1,
+   "house": "h34",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 252.0
+  },
+  {
+   "edits": 3,
+   "house": "h47",
+   "manual": 0,
+   "status": "quick review",
+   "usd_at_risk": 233.04
+  },
+  {
+   "edits": 3,
+   "house": "h32",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 176.77
+  },
+  {
+   "edits": 2,
+   "house": "h11",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 136.8
+  },
+  {
+   "edits": 2,
+   "house": "h57",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 120.24
+  },
+  {
+   "edits": 1,
+   "house": "h59",
+   "manual": 0,
+   "status": "quick review",
+   "usd_at_risk": 104.4
+  },
+  {
+   "edits": 1,
+   "house": "h09",
+   "manual": 5,
+   "status": "full review",
+   "usd_at_risk": 61.73
+  },
+  {
+   "edits": 1,
+   "house": "h16",
+   "manual": 0,
+   "status": "quick review",
+   "usd_at_risk": 59.4
+  },
+  {
+   "edits": 2,
+   "house": "h25",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 28.8
+  },
+  {
+   "edits": 2,
+   "house": "h37",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 21.6
+  },
+  {
+   "edits": 1,
+   "house": "h19",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 18.72
+  },
+  {
+   "edits": 1,
+   "house": "h17",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 16.81
+  },
+  {
+   "edits": 2,
+   "house": "h42",
+   "manual": 0,
+   "status": "quick review",
+   "usd_at_risk": 15.84
+  },
+  {
+   "edits": 3,
+   "house": "h27",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 10.08
+  },
+  {
+   "edits": 0,
+   "house": "h04",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 1,
+   "house": "h07",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h10",
+   "manual": 0,
+   "status": "ready",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h12",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h13",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h18",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h22",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h26",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h29",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h31",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h33",
+   "manual": 3,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h43",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h45",
+   "manual": 1,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h46",
+   "manual": 4,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h49",
+   "manual": 2,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  },
+  {
+   "edits": 0,
+   "house": "h55",
+   "manual": 5,
+   "status": "full review",
+   "usd_at_risk": 0.0
+  }
+ ]
 }

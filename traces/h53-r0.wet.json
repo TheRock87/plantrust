@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "a1f3ed1cf3d29dbf",
+ "input_hash": "74a686545e84e382",
  "key": "h53-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the bedroom wet?",
- "seconds": 4.7,
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -75,7 +75,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3508,
+  "input_tokens": 2712,
   "models": [
    "voxtral-small-latest"
   ],

@@ -1,9 +1,11 @@
 {
- "action": "mark_wet",
- "args": {},
- "decision": "approve",
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the kitchen wet?"
+ },
+ "decision": null,
  "draft": {
-  "affected": true,
+  "affected": false,
   "ceiling": 8.0,
   "doors": [
    {
@@ -34,12 +36,12 @@
   ]
  },
  "error": null,
- "input_hash": "1e6b1a2985978196",
+ "input_hash": "a45087943a02f02e",
  "key": "h06-r8.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Moisture meter reads high on the kitchen drywall.",
- "reason": null,
+ "quote": "",
+ "reason": "Is the kitchen wet?",
  "seconds": 4.6,
  "steps": [
   {
@@ -56,24 +58,24 @@
   },
   {
    "args": {
-    "quote": "Moisture meter reads high on the kitchen drywall.",
+    "question": "Is the kitchen wet?",
     "room_id": "h06-r8"
    },
-   "name": "mark_wet",
+   "name": "ask_drafter",
    "type": "tool_call"
   },
   {
-   "name": "mark_wet",
-   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The kitchen is wet.",
+   "text": "The drafter will check if the kitchen is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3564,
+  "input_tokens": 2758,
   "models": [
    "voxtral-small-latest"
   ],

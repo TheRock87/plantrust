@@ -1,6 +1,8 @@
 {
- "action": "no_change",
- "args": {},
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the bedroom wet?"
+ },
  "decision": null,
  "draft": {
   "affected": false,
@@ -38,12 +40,12 @@
   ]
  },
  "error": null,
- "input_hash": "2424656e4a1ac9a6",
+ "input_hash": "a1e7354cf5b4ec5c",
  "key": "h06-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Two doors in the bedroom.",
- "reason": null,
+ "quote": "",
+ "reason": "Is the bedroom wet?",
  "seconds": 4.6,
  "steps": [
   {
@@ -60,28 +62,28 @@
   },
   {
    "args": {
-    "quote": "Two doors in the bedroom.",
+    "question": "Is the bedroom wet?",
     "room_id": "h06-r0"
    },
-   "name": "no_change",
+   "name": "ask_drafter",
    "type": "tool_call"
   },
   {
-   "name": "no_change",
-   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The plan is right.",
+   "text": "The note does not say whether the bedroom is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3520,
+  "input_tokens": 2736,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 68,
+  "output_tokens": 75,
   "usd": 0.0
  }
 }

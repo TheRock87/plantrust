@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "3bf53b6534e6e642",
+ "input_hash": "51c5f4ad9d9f0080",
  "key": "h04-r7.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "no valid answer; a drafter checks",
- "seconds": 4.8,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -74,11 +74,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3581,
+  "input_tokens": 3003,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 81,
+  "output_tokens": 80,
   "usd": 0.0
  }
 }

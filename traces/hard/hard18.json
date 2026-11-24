@@ -1,7 +1,7 @@
 {
  "action": "ask_drafter",
  "args": {
-  "question": "Is the plan missing a door?"
+  "question": "Is there a door on the left wall?"
  },
  "decision": null,
  "draft": {
@@ -36,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "265f10b4c6c6d199",
+ "input_hash": "3b2f4157afa10280",
  "key": "hard/hard18",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
- "reason": "Is the plan missing a door?",
- "seconds": 4.6,
+ "reason": "Is there a door on the left wall?",
+ "seconds": 5.0,
  "steps": [
   {
    "args": {
@@ -58,7 +58,7 @@
   },
   {
    "args": {
-    "question": "Is the plan missing a door?",
+    "question": "Is there a door on the left wall?",
     "room_id": "hard18"
    },
    "name": "ask_drafter",
@@ -70,16 +70,16 @@
    "type": "tool_result"
   },
   {
-   "text": "The drafter will check if the plan is missing a door.",
+   "text": "I will ask a drafter to check.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3526,
+  "input_tokens": 2949,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 75,
+  "output_tokens": 73,
   "usd": 0.0
  }
 }

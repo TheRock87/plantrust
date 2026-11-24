@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "4a9bfe8e9e3e0676",
+ "input_hash": "2b48d4d28ddab731",
  "key": "h51-r1.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "Moisture meter reads high on the bathroom drywall.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.5,
  "steps": [
   {
    "args": {
@@ -73,7 +73,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3534,
+  "input_tokens": 2736,
   "models": [
    "voxtral-small-latest"
   ],

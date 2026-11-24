@@ -40,13 +40,13 @@
   ]
  },
  "error": null,
- "input_hash": "1528f95ec31ae74c",
+ "input_hash": "8c54b7feb83e958a",
  "key": "h24-r7.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "No moisture in the kitchen walls. Kitchen is fine",
+ "quote": "No moisture in the kitchen walls.",
  "reason": null,
- "seconds": 4.4,
+ "seconds": 4.6,
  "steps": [
   {
    "args": {
@@ -62,7 +62,7 @@
   },
   {
    "args": {
-    "quote": "No moisture in the kitchen walls. Kitchen is fine",
+    "quote": "No moisture in the kitchen walls.",
     "room_id": "h24-r7"
    },
    "name": "no_change",
@@ -79,11 +79,11 @@
   }
  ],
  "usage": {
-  "input_tokens": 3552,
+  "input_tokens": 2757,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 73,
+  "output_tokens": 70,
   "usd": 0.0
  }
 }

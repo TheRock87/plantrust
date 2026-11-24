@@ -39,13 +39,13 @@
   ]
  },
  "error": null,
- "input_hash": "ae96b4db80d3a8c4",
+ "input_hash": "cbc592599500a92c",
  "key": "h26-r6.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "",
  "reason": "Is the living room wet?",
- "seconds": 4.9,
+ "seconds": 4.7,
  "steps": [
   {
    "args": {
@@ -78,7 +78,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3509,
+  "input_tokens": 2725,
   "models": [
    "voxtral-small-latest"
   ],

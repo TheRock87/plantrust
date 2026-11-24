@@ -138,6 +138,7 @@ ROW_NAMES = {"v1": "v1: code checks only, every doubt to a drafter",
              "D": "D: B + agent on the notes"}
 HARD_KIND = {"wet": "wet", "door": "doors"}  # hard-set question -> route kind
 LADDER_RATE, LADDER_MIN_N = 0.95, 20
+OFF_QUESTION = {"doors": "mark_wet", "wet": "add_door"}
 
 
 def ladder_status(approved, n):
@@ -181,6 +182,8 @@ def run_report(questions, runs):
             "tokens": sum(r["usage"]["input_tokens"] + r["usage"]["output_tokens"] for r in data.values()),
             "usd": round(sum(r["usage"]["usd"] for r in data.values()), 6),
             "avg_seconds": round(sum(r["seconds"] for r in used) / max(len(used), 1), 1),
+            # an edit that answers the other question (mark_wet on a door question, add_door on a wet question)
+            "off_question": sum(r["action"] == OFF_QUESTION[k.split(".")[1]] for k, r in data.items()),
             "ask_drafter_by_reason": dict(Counter(
                 "error" if r["error"] else "more than one answer" if "more than one" in (r["reason"] or "")
                 else "no valid answer" if "no valid answer" in (r["reason"] or "") else "agent chose it"
@@ -214,7 +217,8 @@ def main():
         print(f"evaluate: the agent has not answered {len(not_run)} of {len(questions)} questions; row D is incomplete.")
     print(f"run report: model called for {rep['model_called']} of {rep['questions']} questions, "
           f"{rep['failures']} failures, {rep['fallback_uses']} fallback uses, {rep['tokens']} tokens, "
-          f"{rep['usd']} USD, {rep['avg_seconds']} s per question; ask_drafter: {rep['ask_drafter_by_reason']}")
+          f"{rep['usd']} USD, {rep['avg_seconds']} s per question, {rep['off_question']} off-question answers; "
+          f"ask_drafter: {rep['ask_drafter_by_reason']}")
     for s in out["ladder"]:
         print(f"ladder: {s['by']:5} {s['action']:14} approved {s['approved']} of {s['n']}: {s['status']}")
     print("triage (row D):", dict(Counter(h["status"] for h in out["triage"])))

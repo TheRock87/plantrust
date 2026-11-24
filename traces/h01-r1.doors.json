@@ -1,7 +1,9 @@
 {
- "action": "ask_drafter",
- "args": {},
- "decision": null,
+ "action": "add_door",
+ "args": {
+  "wall": 0
+ },
+ "decision": "approve",
  "draft": {
   "affected": false,
   "ceiling": 8.0,
@@ -9,6 +11,10 @@
    {
     "wall": 3,
     "width": 2.5
+   },
+   {
+    "wall": 0,
+    "width": 3.0
    }
   ],
   "flags": [],
@@ -34,44 +40,20 @@
   ]
  },
  "error": null,
- "input_hash": "2719cef9dc8f01ac",
+ "input_hash": "c80ae7f49d7cd0fc",
  "key": "h01-r1.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 2,
- "quote": "",
- "reason": "no valid answer; a drafter checks",
- "seconds": 3.3,
+ "model_calls": 3,
+ "quote": "Living room has two doors.",
+ "reason": null,
+ "seconds": 4.6,
  "steps": [
-  {
-   "args": {
-    "room_id": "h01-r1"
-   },
-   "name": "get_room",
-   "type": "tool_call"
-  },
-  {
-   "args": {
-    "room_id": "h01-r1"
-   },
-   "name": "get_tour",
-   "type": "tool_call"
-  },
   {
    "args": {
     "room_id": "h01-r1"
    },
    "name": "get_notes",
    "type": "tool_call"
-  },
-  {
-   "name": "get_room",
-   "text": "{\"affected\": false, \"ceiling\": 8.0, \"doors\": [{\"wall\": 3, \"width\": 2.5}], \"flags\": [], \"id\": \"h01-r1\", \"label\": \"living\", \"polygon\": [[14.5, 0.0], [46.0, 0.0], [46.0, 15.0], [14.5, 15.0]]}",
-   "type": "tool_result"
-  },
-  {
-   "name": "get_tour",
-   "text": "{\"ceiling\": 8.0, \"doors\": 2, \"label\": \"living\", \"walls\": [31.1, 15.0, 31.0, 14.9]}",
-   "type": "tool_result"
   },
   {
    "name": "get_notes",
@@ -79,16 +61,30 @@
    "type": "tool_result"
   },
   {
-   "text": "[{\"name\": \"no_change\", \"arguments\": {\"room_id\": \"h01-r1\", \"quote\": \"Living room has two doors.\"}}]",
+   "args": {
+    "quote": "Living room has two doors.",
+    "room_id": "h01-r1",
+    "wall": 0
+   },
+   "name": "add_door",
+   "type": "tool_call"
+  },
+  {
+   "name": "add_door",
+   "text": "The drafter approved; the edit is on the draft. Answer recorded: reply with one short sentence.",
+   "type": "tool_result"
+  },
+  {
+   "text": "The plan is missing a door.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 2532,
+  "input_tokens": 2970,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 106,
+  "output_tokens": 76,
   "usd": 0.0
  }
 }

@@ -36,7 +36,7 @@
   ]
  },
  "error": null,
- "input_hash": "e9eb33f65a7ad1de",
+ "input_hash": "486d1c99303ba8fd",
  "key": "h41-r0.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
@@ -76,7 +76,7 @@
   }
  ],
  "usage": {
-  "input_tokens": 3542,
+  "input_tokens": 2971,
   "models": [
    "voxtral-small-latest"
   ],

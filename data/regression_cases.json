@@ -1,4 +1,7 @@
 [
- {"room_id": "h07-r1", "expected": "accept", "why": "Stairwell flagged as a weak spot; walls within 2 % and ceiling within 0.1 ft of the tour"},
- {"room_id": "h01-r3", "expected": "send_to_drafter", "why": "Planted error E3: the plan lost the bathroom's only door"}
+ {"key": "h42-r1.doors", "expected": ["ask_drafter", "no_change"], "why": "Door question; the note talks only about water. The first run answered mark_wet (off-question)."},
+ {"key": "h08-r4.wet", "expected": ["no_change"], "why": "Negation: 'No water in the bedroom.' The room is dry."},
+ {"key": "h04-r4.wet", "expected": ["no_change"], "why": "Another room: 'Hall is fine, the bedroom next to it is soaked.' This is the hall."},
+ {"key": "h51-r1.wet", "expected": ["mark_wet"], "why": "E6 wet room left out: 'Moisture meter reads high on the bathroom drywall.' No keyword, so the baseline misses it."},
+ {"key": "h27-r5.doors", "expected": ["add_door"], "why": "E3 missing door: 'Closet has one door.' The plan shows none."}
 ]

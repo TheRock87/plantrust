@@ -1,6 +1,8 @@
 {
- "action": "no_change",
- "args": {},
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is there any water in the bathroom?"
+ },
  "decision": null,
  "draft": {
   "affected": false,
@@ -34,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "79ab7eb64e5da0ce",
+ "input_hash": "86b87c438bf15277",
  "key": "h28-r5.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "Water stayed in the other bathroom next door.",
- "reason": null,
- "seconds": 4.4,
+ "quote": "",
+ "reason": "Is there any water in the bathroom?",
+ "seconds": 4.8,
  "steps": [
   {
    "args": {
@@ -56,28 +58,28 @@
   },
   {
    "args": {
-    "quote": "Water stayed in the other bathroom next door.",
+    "question": "Is there any water in the bathroom?",
     "room_id": "h28-r5"
    },
-   "name": "no_change",
+   "name": "ask_drafter",
    "type": "tool_call"
   },
   {
-   "name": "no_change",
-   "text": "Answer recorded: no change. Reply with one short sentence.",
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The bathroom is not wet.",
+   "text": "A drafter will check if the bathroom is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3531,
+  "input_tokens": 2737,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 72,
+  "output_tokens": 78,
   "usd": 0.0
  }
 }

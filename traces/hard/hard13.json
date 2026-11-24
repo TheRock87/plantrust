@@ -34,13 +34,13 @@
   ]
  },
  "error": null,
- "input_hash": "cccf76c272806499",
+ "input_hash": "d31c22bd4c369906",
  "key": "hard/hard13",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
  "quote": "One door to the hall. The other opening is an archway to the closet, no door.",
  "reason": null,
- "seconds": 4.6,
+ "seconds": 4.2,
  "steps": [
   {
    "args": {
@@ -68,12 +68,12 @@
    "type": "tool_result"
   },
   {
-   "text": "The plan is right.",
+   "text": "The plan is correct.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3562,
+  "input_tokens": 2987,
   "models": [
    "voxtral-small-latest"
   ],

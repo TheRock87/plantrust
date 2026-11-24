@@ -1,6 +1,8 @@
 {
- "action": "no_change",
- "args": {},
+ "action": "ask_drafter",
+ "args": {
+  "question": "Is the hall wet?"
+ },
  "decision": null,
  "draft": {
   "affected": false,
@@ -34,13 +36,13 @@
   ]
  },
  "error": null,
- "input_hash": "72875dcbd939eef4",
+ "input_hash": "1963c0f3d9871137",
  "key": "h58-r0.wet",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
- "model_calls": 6,
- "quote": "Checked the hall, nothing wet.",
- "reason": null,
- "seconds": 9.2,
+ "model_calls": 5,
+ "quote": "",
+ "reason": "Is the hall wet?",
+ "seconds": 8.2,
  "steps": [
   {
    "args": {
@@ -82,7 +84,7 @@
   },
   {
    "args": {
-    "quote": "nothing wet in the hall",
+    "quote": "nothing wet",
     "room_id": "h58-r0"
    },
    "name": "no_change",
@@ -90,9 +92,10 @@
   },
   {
    "args": {
+    "question": "Is the hall wet?",
     "room_id": "h58-r0"
    },
-   "name": "get_notes",
+   "name": "ask_drafter",
    "type": "tool_call"
   },
   {
@@ -101,34 +104,21 @@
    "type": "tool_result"
   },
   {
-   "name": "get_notes",
-   "text": "Checked the hall, nothing wet. Hall: 1 door in total.",
+   "name": "ask_drafter",
+   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "args": {
-    "quote": "Checked the hall, nothing wet.",
-    "room_id": "h58-r0"
-   },
-   "name": "no_change",
-   "type": "tool_call"
-  },
-  {
-   "name": "no_change",
-   "text": "Answer recorded: no change. Reply with one short sentence.",
-   "type": "tool_result"
-  },
-  {
-   "text": "The hall is not wet.",
+   "text": "A drafter will check if the hall is wet.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 7856,
+  "input_tokens": 5010,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 195,
+  "output_tokens": 171,
   "usd": 0.0
  }
 }

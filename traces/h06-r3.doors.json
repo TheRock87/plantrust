@@ -1,8 +1,6 @@
 {
- "action": "ask_drafter",
- "args": {
-  "question": "Is the plan missing a door?"
- },
+ "action": "no_change",
+ "args": {},
  "decision": null,
  "draft": {
   "affected": true,
@@ -36,12 +34,12 @@
   ]
  },
  "error": null,
- "input_hash": "43eee52ba77040e7",
+ "input_hash": "bca5e58d0737673a",
  "key": "h06-r3.doors",
  "model": "mistralai:voxtral-small-latest (fallback mistralai:ministral-14b-latest)",
  "model_calls": 3,
- "quote": "",
- "reason": "Is the plan missing a door?",
+ "quote": "One opening is an archway, no door.",
+ "reason": null,
  "seconds": 4.6,
  "steps": [
   {
@@ -58,28 +56,28 @@
   },
   {
    "args": {
-    "question": "Is the plan missing a door?",
+    "quote": "One opening is an archway, no door.",
     "room_id": "h06-r3"
    },
-   "name": "ask_drafter",
+   "name": "no_change",
    "type": "tool_call"
   },
   {
-   "name": "ask_drafter",
-   "text": "Answer recorded: a drafter will check. Reply with one short sentence.",
+   "name": "no_change",
+   "text": "Answer recorded: no change. Reply with one short sentence.",
    "type": "tool_result"
   },
   {
-   "text": "The note does not settle it; a drafter will check.",
+   "text": "The plan is correct.",
    "type": "model_text"
   }
  ],
  "usage": {
-  "input_tokens": 3560,
+  "input_tokens": 2995,
   "models": [
    "voxtral-small-latest"
   ],
-  "output_tokens": 79,
+  "output_tokens": 72,
   "usd": 0.0
  }
 }
