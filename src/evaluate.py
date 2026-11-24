@@ -1,10 +1,12 @@
 """Score against answers.json.
 
 v1 functions (final_verdicts, score) stay for estimate.py and export.py.
-v2 rows (score_row): v1 reference and B (code checks + code fixes) for now; C and D come in later steps.
+v2 rows (score_row): v1 reference, B (code checks + code fixes), C (B + keyword baseline); D comes in step 6.
 """
 from collections import Counter
 
+from .baseline import answer as baseline_answer
+from .checks import notes_questions
 from .common import DATA, load, save
 from .cost import room_cost
 from .fixes import EDITS
@@ -78,11 +80,6 @@ def v1_items(checks):
             if c["status"] != "pass"]
 
 
-def notes_questions(checks):
-    """Door and wet questions: only the words in the technician's note can answer them."""
-    return [(rid, i) for h in checks.values() for rid, c in h.items() for i in c["route"] if i["to"] == "notes"]
-
-
 def score_row(items, truth, plans, answers):
     """Outcome of each planted error: fixed (an approved edit), to_drafter (manual item or rejected edit), or missed.
 
@@ -128,18 +125,28 @@ def score_row(items, truth, plans, answers):
     }
 
 
+def hard_score(cases, decide):
+    """Hand-written hard notes: how often `decide(case)` gives the expected action."""
+    per = [{"id": c["id"], "expected": c["expected"], "got": decide(c)} for c in cases]
+    return {"right": sum(p["got"] == p["expected"] for p in per), "cases": len(per), "per_case": per}
+
+
 ROW_NAMES = {"v1": "v1: code checks only, every doubt to a drafter",
-             "B": "B: code checks + code fixes; door and wet questions to a drafter"}
+             "B": "B: code checks + code fixes; door and wet questions to a drafter",
+             "C": "C: B + keyword baseline on the notes"}
+HARD_KIND = {"wet": "wet", "door": "doors"}  # hard-set question -> route kind
 
 
 def main():
     truth, plans = load(DATA / "truth.json"), load(DATA / "ai_plan.json")
     answers, checks = load(DATA / "answers.json"), load(DATA / "checks.json")
-    proposals = load(DATA / "proposals.json")
+    proposals, hard = load(DATA / "proposals.json"), load(DATA / "notes_hard.json")
     unread = [ask(rid, i["kind"], i["why"], "code (note not read)") for rid, i in notes_questions(checks)]
     rows = {"v1": score_row(v1_items(checks), truth, plans, answers),
-            "B": score_row(proposals["code"] + unread, truth, plans, answers)}
-    save(DATA / "scores.json", {"rows": rows, "row_names": ROW_NAMES,
+            "B": score_row(proposals["code"] + unread, truth, plans, answers),
+            "C": score_row(proposals["code"] + proposals["baseline"], truth, plans, answers)}
+    hard_rows = {"C": hard_score(hard, lambda c: baseline_answer(HARD_KIND[c["question"]], c["note"])[0])}
+    save(DATA / "scores.json", {"rows": rows, "row_names": ROW_NAMES, "hard": hard_rows,
                                 "notes_questions": dict(Counter(i["kind"] for _, i in notes_questions(checks)))})
     print(f"{'row':4} {'fixed':>9} {'to drafter':>11} {'missed':>9} {'harmful':>8} {'manual':>7} "
           f"{'false alarms':>13} {'$ open':>18}")
@@ -151,6 +158,9 @@ def main():
     for name, s in rows.items():
         print(f"{name} per type (fixed/to drafter/missed of N): " + "  ".join(
             f"{c} {t['fixed']}/{t['to_drafter']}/{t['missed']} of {t['total']}" for c, t in s["per_type"].items()))
+    for name, h in hard_rows.items():
+        wrong = [f"{p['id']} {p['got']} (expected {p['expected']})" for p in h["per_case"] if p["got"] != p["expected"]]
+        print(f"{name} on the hard set: {h['right']} of {h['cases']} right; wrong: " + "; ".join(wrong))
 
 
 if __name__ == "__main__":

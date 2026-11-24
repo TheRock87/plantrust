@@ -128,8 +128,13 @@ def check_house(plan, tour, notes):
     return out
 
 
+def notes_questions(checks):
+    """(room_id, route item) for every door and wet question: only the words in the note can answer them."""
+    return [(rid, i) for h in checks.values() for rid, c in h.items() for i in c["route"] if i["to"] == "notes"]
+
+
 def main():
-    plans, tours, notes = load(DATA / "ai_plan.json"), load(DATA / "tour.json"), load(DATA / "notes.json")
+    plans, tours, notes =load(DATA / "ai_plan.json"), load(DATA / "tour.json"), load(DATA / "notes.json")
     results = {hid: check_house(plans[hid], tours[hid], notes) for hid in sorted(plans)}
     save(DATA / "checks.json", results)
     counts = {}

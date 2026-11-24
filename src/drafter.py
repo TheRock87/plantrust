@@ -40,8 +40,9 @@ def main():
             if p["action"] in EDITS:
                 p["decision"] = simulated_drafter(p, plans[p["room_id"]], truth[p["room_id"]])
                 p["field_was_right"] = field_matches(p["action"], plans[p["room_id"]], truth[p["room_id"]])
-        n = Counter(p.get("decision", "manual") for p in items)
-        print(f"drafter: {by}: {n['approve']} approved, {n['reject']} rejected, {n['manual']} manual items")
+        n = Counter(p.get("decision", p["action"]) for p in items)
+        print(f"drafter: {by}: {n['approve']} approved, {n['reject']} rejected, {n['ask_drafter']} manual items, "
+              f"{n['no_change']} no change")
     save(DATA / "proposals.json", proposals)
 
 

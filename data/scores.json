@@ -1,10 +1,119 @@
 {
+ "hard": {
+  "C": {
+   "cases": 20,
+   "per_case": [
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard01"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard02"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard03"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard04"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard05"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "no_change",
+     "id": "hard06"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard07"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard08"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "mark_wet",
+     "id": "hard09"
+    },
+    {
+     "expected": "no_change",
+     "got": "mark_wet",
+     "id": "hard10"
+    },
+    {
+     "expected": "mark_wet",
+     "got": "no_change",
+     "id": "hard11"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard12"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard13"
+    },
+    {
+     "expected": "add_door",
+     "got": "ask_drafter",
+     "id": "hard14"
+    },
+    {
+     "expected": "add_door",
+     "got": "no_change",
+     "id": "hard15"
+    },
+    {
+     "expected": "no_change",
+     "got": "ask_drafter",
+     "id": "hard16"
+    },
+    {
+     "expected": "no_change",
+     "got": "no_change",
+     "id": "hard17"
+    },
+    {
+     "expected": "ask_drafter",
+     "got": "ask_drafter",
+     "id": "hard18"
+    },
+    {
+     "expected": "add_door",
+     "got": "no_change",
+     "id": "hard19"
+    },
+    {
+     "expected": "add_door",
+     "got": "no_change",
+     "id": "hard20"
+    }
+   ],
+   "right": 7
+  }
+ },
  "notes_questions": {
   "doors": 31,
   "wet": 176
  },
  "row_names": {
   "B": "B: code checks + code fixes; door and wet questions to a drafter",
+  "C": "C: B + keyword baseline on the notes",
   "v1": "v1: code checks only, every doubt to a drafter"
  },
  "rows": {
@@ -58,6 +167,58 @@
    "rejected_edits": 0,
    "to_drafter": 51,
    "usd_open": 0.0,
+   "usd_total": 38094.56
+  },
+  "C": {
+   "approved_edits": 55,
+   "clean_rooms": 313,
+   "errors": 95,
+   "false_alarm_rooms": 57,
+   "fixed": 55,
+   "harmful_edits": 53,
+   "manual_items": 101,
+   "missed": 8,
+   "per_type": {
+    "E1": {
+     "fixed": 18,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 19
+    },
+    "E2": {
+     "fixed": 12,
+     "missed": 0,
+     "to_drafter": 1,
+     "total": 13
+    },
+    "E3": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 11,
+     "total": 11
+    },
+    "E4": {
+     "fixed": 0,
+     "missed": 0,
+     "to_drafter": 19,
+     "total": 19
+    },
+    "E5": {
+     "fixed": 14,
+     "missed": 0,
+     "to_drafter": 0,
+     "total": 14
+    },
+    "E6": {
+     "fixed": 11,
+     "missed": 8,
+     "to_drafter": 0,
+     "total": 19
+    }
+   },
+   "rejected_edits": 53,
+   "to_drafter": 32,
+   "usd_open": 8789.52,
    "usd_total": 38094.56
   },
   "v1": {
